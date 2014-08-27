@@ -9,8 +9,7 @@ Check me out; I'm a blogger now. This was built with Jekyll and is running on Gi
 
 I'm also trying out Prism as my code highlighter:
 
-{% prism javascript %}
-module.exports = function(grunt) {
+<pre><code class="language-javascript">module.exports = function(grunt) {
     grunt.initConfig({
         less: {
             development: {
@@ -34,6 +33,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
 };
-{% endprism %}
+</code></pre>
 
 I'm planning on pumping out a handfull of micro-blogs. Small things I've been planning on writing down, but haven't had a place to.
