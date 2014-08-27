@@ -88,9 +88,16 @@ body > section h1 {
 }
 .posts li {
   font-size: 20px;
+  line-height: 36px;
+}
+.post-header .meta {
+  color: #aaaaaa;
 }
 body {
   margin-top: 80px;
   text-align: center;
   color: #444444;
+}
+blockquote {
+  background-color: #f5f2f0;
 }

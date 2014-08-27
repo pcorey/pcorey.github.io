@@ -11,17 +11,8 @@ I'm also trying out Prism as my code highlighter:
 
 <pre><code class="language-javascript">module.exports = function(grunt) {
     grunt.initConfig({
-        less: {
-            development: {
-                options: {
-                    paths: ["./less"],
-                    yuicompress: true
-                },
-                files: {
-                    "css/main.css": "less/main.less"
-                }
-            }
-        },
+        ...
+        ...
         watch: {
             less: {
                 files: ["less/**/*.less"],
