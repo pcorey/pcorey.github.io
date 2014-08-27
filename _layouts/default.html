@@ -18,6 +18,7 @@
                     {% if site.twitter_username %}
                         <li><a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a></li>
                     {% endif %}
+                    <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
                 </ul>
             </nav>
             {{ content }}
