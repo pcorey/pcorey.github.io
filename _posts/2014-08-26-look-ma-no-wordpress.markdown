@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "Look Ma'! No Wordpress!"
+date:   2014-08-26 15:19:00
+categories:
+---
+
+Check me out; I'm a blogger now. This was built with Jekyll and is running on Github Pages. I'm using LESS for my CSS preprocessor and Grunt to keep my build process sane.
+
+I'm also trying out Prism as my code highlighter:
+
+{% prism javascript %}
+module.exports = function(grunt) {
+    grunt.initConfig({
+        less: {
+            development: {
+                options: {
+                    paths: ["./less"],
+                    yuicompress: true
+                },
+                files: {
+                    "css/main.css": "less/main.less"
+                }
+            }
+        },
+        watch: {
+            less: {
+                files: ["less/**/*.less"],
+                tasks: ["less"]
+            }
+        }
+    });
+
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+};
+{% endprism %}
+
+I'm planning on pumping out a handfull of micro-blogs. Small things I've been planning on writing down, but haven't had a place to.

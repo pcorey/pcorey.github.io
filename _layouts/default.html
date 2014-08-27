@@ -4,16 +4,24 @@
   {% include head.html %}
 
     <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrap">
-      {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
+        <section>
+            <nav>
+                <img src="{{ '/img/miloAndMe.png' | prepend: site.baseurl }}">
+                <a href="{{ site.baseurl }}/"><h1>1pxsolid<span>tomato</span></h1></a>
+                <ul>
+                    {% for page in site.pages %}
+                        {% if page.title %}<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>{% endif %}
+                    {% endfor %}
+                    {% if site.github_username %}
+                        <li><a href="https://github.com/{{ site.github_username }}">Github</a></li>
+                    {% endif %}
+                    {% if site.twitter_username %}
+                        <li><a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+            {{ content }}
+        </section>
+        {% include footer.html %}
     </body>
 </html>
