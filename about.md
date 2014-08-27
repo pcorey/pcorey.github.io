@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+My name is Pete Corey. I am software developer, hear me roar.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+I've worked at a variety of places like CDM Technologies, [Tapestry Solutions](https://www.tapestrysolutions.com/), [Amazon](http://www.amazon.com/) and I'm currently working as a contractor for [Surge Forward](http://www.surgeforward.com/).
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Send me an email and say [hello](mailto:hello@1pxsolidtomato.com).
