@@ -6,8 +6,8 @@
     <body>
         <section>
             <nav>
-                <img src="{{ '/img/miloAndMe.png' | prepend: site.baseurl }}">
-                <a href="{{ site.baseurl }}/"><h1>1pxsolid<span>tomato</span></h1></a>
+                <a href="{{ site.baseurl }}/"><img src="{{ '/img/miloAndMe.png' | prepend: site.baseurl }}">
+                <h1>1pxsolid<span>tomato</span></h1></a>
                 <ul>
                     {% for page in site.pages %}
                         {% if page.title %}<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>{% endif %}

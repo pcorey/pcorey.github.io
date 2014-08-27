@@ -58,7 +58,11 @@ body > section > nav ul li {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 18px;
 }
-body > section > nav ul li a:link {
+body > section > nav ul li a:link,
+body > section > nav ul li a:visited,
+body > section > nav ul li a:hover,
+body > section > nav ul li a:focus,
+body > section > nav ul li a:active {
   color: #aaaaaa;
 }
 body > section {
