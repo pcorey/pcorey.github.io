@@ -1,4 +1,13 @@
-module.exports = function(grunt) {
+---
+layout: post
+title:  "My Concurrent Jekyll Gruntfile"
+date:   2014-08-28
+categories:
+---
+
+I wanted to have a single default grunt command kick off my Jekyll server (<code class="language-*">jekyll serve --watch</code>), and my grunt watch task. After sleuthing around [StackOverflow](http://stackoverflow.com/questions/17849018/grunt-watch-command-never-runs-when-including-other-tasks-in-registertask-metho/17855350#17855350), I found a solution using [grunt-jekyll](https://github.com/dannygarcia/grunt-jekyll) and [grunt-concurrent](https://github.com/sindresorhus/grunt-concurrent). Concurrency is needed to prevent the jekyll server from blocking.
+
+<pre class="language-javascript"><code class="language-javascript">module.exports = function(grunt) {
     grunt.initConfig({
         jekyll: {
             serve: {
@@ -42,3 +51,4 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['concurrent:all']);
 };
+</code></pre>

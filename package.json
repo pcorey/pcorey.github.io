@@ -8,5 +8,8 @@
     "normalize.css": "~3.0.1"
   },
   "engine": "node >= 0.4.1",
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt-jekyll": "~0.4.2",
+    "grunt-concurrent": "~0.5.0"
+  }
 }

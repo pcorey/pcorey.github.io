@@ -90,7 +90,11 @@ body > section h1 {
   font-size: 20px;
   line-height: 36px;
 }
+.post-header h1 {
+  margin-bottom: 0;
+}
 .post-header .meta {
+  margin: 0 0 30px 0;
   color: #aaaaaa;
 }
 body {
