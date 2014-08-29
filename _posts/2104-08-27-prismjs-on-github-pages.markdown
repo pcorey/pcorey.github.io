@@ -20,6 +20,8 @@ BUT! After pushing those changes to Github, I recieved a build error email:
 
 The link leads to a page explaining how to use [Jekyll plugins with Github Pages](https://help.github.com/articles/using-jekyll-plugins-with-github-pages). Unfortunately, only a handfull of plugins are supported, and Prism isn't one of them.
 
+<br/>
+
 The workaround solution is to remove <code class="language-*">prism.rb</code> from your <code class="language-*">_plugins</code> directory, and use plain markdown to build your code blocks instead:
 
 <pre class="language-*"><code class="language-*">&lt;pre&gt;&lt;code class="language-javascript"&gt;

@@ -12,6 +12,20 @@ html {
 *:after {
   box-sizing: inherit;
 }
+blockquote {
+  border-left: 3px solid #444444;
+  padding: 30px 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+blockquote > *:nth-child(1) {
+  margin-top: 0;
+}
+blockquote > *:last-child {
+  margin-bottom: 0;
+}
 a:link {
   color: #ff6447;
   text-decoration: none;
@@ -101,7 +115,4 @@ body {
   margin-top: 80px;
   text-align: center;
   color: #444444;
-}
-blockquote {
-  background-color: #f5f2f0;
 }
