@@ -137,6 +137,7 @@ body > section h1 {
 }
 body > section .content {
   clear: both;
+  max-width: 824px;
 }
 @media (min-width: 800px) {
   body > section .content {
