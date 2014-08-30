@@ -1,6 +1,10 @@
 body > section {
-    display: inline-block;
-    width: 824px;
+    display: block;
+    vertical-align: top;
+    @media (min-width: @breakpoint-large) {
+        display: inline-block;
+        width: 824px;
+    }
     text-align: left;
 
     font-family: 'Arvo', serif;
@@ -9,5 +13,17 @@ body > section {
     }
     h1 {
         font-size: 38px;
+    }
+    .content {
+        clear: both;
+        @media (min-width: @breakpoint-small) {
+            display: inline-block;
+            width: ~"calc(100% - 174px)";
+        }
+        @media (min-width: @breakpoint-large) {
+            clear: none;
+            display: block;
+            width: 100%;
+        }
     }
 }

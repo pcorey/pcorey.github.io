@@ -1,14 +1,31 @@
 body > section > nav {
-    float: left;
-    margin-left: -200px;
-    width: 150px;
-    text-align: left;
+    text-align: center;
+    vertical-align: top;
+    margin-right: 20px;
+    @media (min-width: @breakpoint-small) {
+        text-align: left;
+        width: 150px;
+        display: inline-block;
+    }
+    @media (min-width: @breakpoint-large) {
+        display: block;
+        float: left;
+        margin-left: -200px;
+    }
 
     img {
+        display: none;
         width: 150px;
         height: 150px;
         border-radius: 75px;
         border: 1px solid @color1;
+        @media (min-width: @breakpoint-small) {
+            display: block;
+        }
+    }
+
+    svg {
+        max-width: 300px;
     }
 
     h1 {
@@ -23,9 +40,18 @@ body > section > nav {
     }
 
     ul {
+        margin-bottom: 80px;
+        padding-left: 0;
         list-style-type: none;
         li {
-            text-align: right;
+            display: inline-block;
+            text-align: center;
+            width: 4em;
+            @media (min-width: @breakpoint-small) {
+                display: block;
+                width: auto;
+                text-align: right;
+            }
             font-family: 'Josefin Sans', sans-serif;
             font-size: 18px;
             a:link, a:visited, a:hover, a:focus, a:active {

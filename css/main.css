@@ -43,16 +43,38 @@ a:active {
   color: #bb2509;
 }
 body > section > nav {
-  float: left;
-  margin-left: -200px;
-  width: 150px;
-  text-align: left;
+  text-align: center;
+  vertical-align: top;
+  margin-right: 20px;
+}
+@media (min-width: 800px) {
+  body > section > nav {
+    text-align: left;
+    width: 150px;
+    display: inline-block;
+  }
+}
+@media (min-width: 1324px) {
+  body > section > nav {
+    display: block;
+    float: left;
+    margin-left: -200px;
+  }
 }
 body > section > nav img {
+  display: none;
   width: 150px;
   height: 150px;
   border-radius: 75px;
   border: 1px solid #ff6447;
+}
+@media (min-width: 800px) {
+  body > section > nav img {
+    display: block;
+  }
+}
+body > section > nav svg {
+  max-width: 300px;
 }
 body > section > nav h1 {
   margin: 0;
@@ -65,12 +87,23 @@ body > section > nav h1 span {
   color: #ff6447;
 }
 body > section > nav ul {
+  margin-bottom: 80px;
+  padding-left: 0;
   list-style-type: none;
 }
 body > section > nav ul li {
-  text-align: right;
+  display: inline-block;
+  text-align: center;
+  width: 4em;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 18px;
+}
+@media (min-width: 800px) {
+  body > section > nav ul li {
+    display: block;
+    width: auto;
+    text-align: right;
+  }
 }
 body > section > nav ul li a:link,
 body > section > nav ul li a:visited,
@@ -80,10 +113,16 @@ body > section > nav ul li a:active {
   color: #aaaaaa;
 }
 body > section {
-  display: inline-block;
-  width: 824px;
+  display: block;
+  vertical-align: top;
   text-align: left;
   font-family: 'Arvo', serif;
+}
+@media (min-width: 1324px) {
+  body > section {
+    display: inline-block;
+    width: 824px;
+  }
 }
 body > section h1,
 body > section h2,
@@ -95,6 +134,22 @@ body > section h6 {
 }
 body > section h1 {
   font-size: 38px;
+}
+body > section .content {
+  clear: both;
+}
+@media (min-width: 800px) {
+  body > section .content {
+    display: inline-block;
+    width: calc(100% - 174px);
+  }
+}
+@media (min-width: 1324px) {
+  body > section .content {
+    clear: none;
+    display: block;
+    width: 100%;
+  }
 }
 .posts {
   list-style-type: none;
@@ -112,7 +167,7 @@ body > section h1 {
   color: #aaaaaa;
 }
 body {
-  margin-top: 80px;
+  margin: 80px 20px 20px 20px;
   text-align: center;
   color: #444444;
 }
