@@ -16,3 +16,4 @@ gems:
 
 exclude:
   - node_modules
+  - less
