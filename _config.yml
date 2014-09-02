@@ -10,3 +10,9 @@ github_username:  pcorey
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+gems:
+  - jekyll-sitemap
+
+exclude:
+  - node_modules
