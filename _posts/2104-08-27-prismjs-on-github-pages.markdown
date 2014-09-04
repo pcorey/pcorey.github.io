@@ -24,7 +24,7 @@ The link leads to a page explaining how to use [Jekyll plugins with Github Pages
 
 The workaround solution is to remove <code class="language-*">prism.rb</code> from your <code class="language-*">_plugins</code> directory, and use plain markdown to build your code blocks instead:
 
-<pre class="language-*"><code class="language-*">&lt;pre&gt;&lt;code class="language-javascript"&gt;
+<pre class="language-markup"><code class="language-markup">&lt;pre&gt;&lt;code class="language-javascript"&gt;
     //javascript goes here...
 &lt;/pre&gt;&lt;/code&gt;
 </code></pre>
