@@ -11,7 +11,7 @@ At first, I started to manually build out each of the forms as html/css partials
 
 While talking with another developer about a similar system he'd build, he mentioned absolutely positioning the inputs over a screenshot of the form pdf. Perfect! Well, almost. Using a static image wasn’t an option since I needed to do things like text-replacement and text color changes. However, using svgs would be the perfect solution. An svg would allow me to use Angular interpolation for text replacement, change text color using <code class="language-*">ng-class</code> and build expanding sections by injecting html in-between the svg objects.
 
-The first thing I needed to do was convert all of the pdf pages into svgs. I also needed to remove any explicit <code class="language-*">width</code> and <code class="language-*">height</code> attributes on the svg elements and replace them with a <code class="language-*">viewBox</code> attribute. Thanks to inkscape, I was able to whip up a quick shell script to convert every page file into a corresponding svg:
+The first thing I needed to do was convert all of the pdf pages into svgs. I also needed to remove any explicit <code class="language-*">width</code> and <code class="language-*">height</code> attributes on the svg elements and replace them with a <code class="language-*">viewBox</code> attribute. Thanks to [inkscape](http://www.inkscape.org/), I was able to whip up a quick shell script to convert every page file into a corresponding svg:
 
 <pre class="language-bash"><code class="language-bash">#!/usr/bin/zsh
 
