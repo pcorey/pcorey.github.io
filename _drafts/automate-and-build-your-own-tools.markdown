@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Automate and Build Your Own Tools"
+title:  "Smart Forms - Automate and Build Your Own Tools!"
 date:   2014-09-03
 categories:
 ---
 
-I was recently tasked with building out hundreds of pages of pdf based forms into online accessible “smart-forms” complete with text-replacement, expanding content and smart inputs (text, datepickers, pre-populated fields, selects, etc…).
+I was recently tasked with building out hundreds of pages of pdf based forms into online accessible “smart-forms” complete with text-replacement, expanding content and usable inputs (text, datepickers, pre-populated fields, selects, etc…).
 
-At first, I tried to manually build out each of the forms as html/css partials with [AngularJS](https://angularjs.org/) interpolation sections to accomplish my text replacement. I used Angular directives to accomplish any advanced functionality my inputs needed. Building out the forms manually turned out to be a huge undertaking. Simple pages would take ~45 minutes to build, and more extreme forms would take over 3 hours per page. There had to be another way...
+At first, I started to manually build out each of the forms as html/css partials with [AngularJS](https://angularjs.org/) interpolation to do the text replacement. I used Angular directives to accomplish any advanced functionality my inputs needed. Building out the forms manually turned out to be a huge undertaking. Simple pages would take ~45 minutes to build, and more extreme forms would take over 3 hours per page. There had to be some other way.
 
-After talking with another developer about absolutely positioning the inputs over a screenshot of the form pdf, I realized I had found my solution. Using a static image wasn’t an option since I needed to do things like text-replacement and text color changes. However, using svgs would be the perfect solution. An svg would allow me to use Angular interpolation for text replacement, change text color using <code class="language-*">ng-class</code> and build expanding sections by injecting html in-between the svg objects.
+While talking with another developer about a similar system he had build, he mentioned absolutely positioning the inputs over a screenshot of the form pdf. I realized that I had found my solution. Using a static image wasn’t an option since I needed to do things like text-replacement and text color changes. However, using svgs would be the perfect solution. An svg would allow me to use Angular interpolation for text replacement, change text color using <code class="language-*">ng-class</code> and build expanding sections by injecting html in-between the svg objects.
 
-The first thing I needed to do was convert all of the pdf pages into svgs. Each page was standard US Letter size (8.5in x 11in). Thanks to inkscape, I was able to whip up a quick shell script to convert every page file into a corresponding svg:
+The first thing I needed to do was convert all of the pdf pages into svgs. I also needed to remove any explicit <code class="language-*">width</code> and <code class="language-*">height</code> attributes on the svg elements and replace them with a <code class="language-*">viewBox</code> attribute. Thanks to inkscape, I was able to whip up a quick shell script to convert every page file into a corresponding svg:
 
 <pre class="language-bash"><code class="language-bash">#!/usr/bin/zsh
 
@@ -51,10 +51,26 @@ The one downside to this technique is that there is no word wrapping support. If
 
 <br/>
 
-The next step in the process was to manually position each of the inputs. It didn't take long to realize that absolutely positioning each element by hand would still take a considerable amount of time (although it was still faster than the original solution). I needed a tool to help me.
+For each form I wrote an html partial to pull in each page and to hold all of the inputs. [Sublime Text](http://www.sublimetext.com/) [snippets](http://sublimetext.info/docs/en/extensibility/snippets.html) helped speed up the process of creating all of these partials:
 
-I wanted something that would let me click and drag to outline input boxes. I then needed to specify what type of input it would be (text, datepicker, etc...), and any other parameters about it. I didn't want the tool to get in the way, and I didn't want to design an intense UI, so I opted for a simple [draggable div](https://docs.angularjs.org/guide/directive#creating-a-directive-that-adds-event-listeners). Lastly, I needed a way to export the raw html of the inputs created. All in all, the first iteration of this tool took roughly an hour of tinkering to build.
+<pre class="language-markup"><code class="language-markup">&lt;div class="page"&gt;
+    &lt;div class="svg-wrapper"&gt;
+        &lt;!-- page 1 inputs go here --&gt;
+        &lt;div ng-include="'forms/svg/formPage1.svg'" class="svg-include"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="page"&gt;
+    &lt;div class="svg-wrapper"&gt;
+        &lt;!-- page 2 inputs go here --&gt;
+        &lt;div ng-include="'forms/svg/formPage2.svg'" class="svg-include"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 
-After using the tool for a few pages, I noticed a few pain points. Originally, I was using the <code class="language-*">w</code>/<code class="language-*">s</code>/<code class="language-*">a</code>/<code class="language-*">d</code> and <code class="language-*">q</code>/<code class="language-*">e</code>/<code class="language-*">r</code>/<code class="language-*">f</code> keys to reposition and resize elements. This was cumbersome and time consuming, so I quickly hacked on mouse control. Holding shift and moving the mouse moved the currently selected elements. Holding alt would resize. Later, I noticed I was frequently creating grids of very similar inputs. Despite how similar they were, I was having to individually create and lay out each element. It took about 30 minutes to add on support for creating and positioning multiple elements simultaneously.
+The <code class="language-*">svg-wrapper</code> class has a <code class="language-*">display: relative</code>, while each of the inputs have <code class="language-*">display: absolute</code>.
 
-With my tool in its current form, I can build out complex form pages in minutes, as opposed to hours. Honestly, the tool is ugly. The code is some of the worst code I've written in years, but it doesn't need to be good. Aweful, throwaway code saved
+<br/>
+
+The next step in the process was to manually position each of the inputs. It didn't take long to realize that absolutely positioning each element by hand would take a considerable amount of time (although it was still faster than the original solution). I decided to build a tool to help me out.
+
+I hacked together a very simple [draggable](https://docs.angularjs.org/guide/directive#creating-a-directive-that-adds-event-listeners) Angular directive that let me click and drag to define input boxes. After a few iterations I had a tool that reduced the time to lay out a complex page from hours to just minutes. Honestly, the tool's code is some of the worst I've written in years, but I think that's what makes it amazing. Haphazardly built, poorly functioning code saved me from billing hundreds of hours of work to my client and produced a better result in the end. I'd call that a success!
