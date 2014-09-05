@@ -74,3 +74,5 @@ The <code class="language-*">svg-wrapper</code> class has a <code class="languag
 The next step in the process was to manually position each of the inputs. It didn't take long to realize that absolutely positioning each element by hand would take a considerable amount of time (although it was still faster than the original solution). I decided to build a tool to help me out.
 
 I hacked together a very simple [draggable](https://docs.angularjs.org/guide/directive#creating-a-directive-that-adds-event-listeners) Angular directive that let me click and drag to define input boxes. After a few iterations I had a tool that reduced the time to lay out a complex page from hours to just minutes. Honestly, the tool's code is some of the worst I've written in years, but I think that's what makes it amazing. Haphazardly built, poorly functioning code saved me from billing hundreds of hours of work to my client and produced a better result in the end. I'd call that a success!
+
+<video src="/webm/w9example.webm" controls preload></video>
