@@ -26,4 +26,4 @@ I'm also trying out Prism as my code highlighter:
 };
 </code></pre>
 
-I'm planning on pumping out a handfull of micro-blogs. Small things I've been planning on writing down, but haven't had a place to.
+I'm planning on pumping out a handful of micro-blogs. Small things I've been planning on writing down, but haven't had a place to.
