@@ -61,6 +61,9 @@ body > section > nav {
     margin-left: -200px;
   }
 }
+body > section > nav a {
+  display: block;
+}
 body > section > nav img {
   display: none;
   width: 150px;
@@ -75,7 +78,6 @@ body > section > nav img {
 }
 body > section > nav svg {
   max-width: 300px;
-  max-height: 100%;
 }
 body > section > nav h1 {
   margin: 0;
@@ -173,4 +175,7 @@ body {
   margin: 80px 20px 20px 20px;
   text-align: center;
   color: #444444;
+}
+p {
+  line-height: 23px;
 }
