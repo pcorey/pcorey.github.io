@@ -13,11 +13,11 @@ You may have noticed, but I've been having some issues with the svg logo I'm usi
 
 When the logo is displayed in the navbar, I indirectly set the <code class="language-*">width</code> to 150px (by setting the wrapping container's width to 150px). Because the <code class="language-*">viewBox</code> is set to <code class="language-*">"0 0 100 25"</code>, I would expect the <code class="language-*">height</code> of the rendered svg to be 38px (0.25 * 150px). This worked as expected in Chrome 37 and Firefox 31 on my windows machine. But strangely, in IE 11 the height of the svg element was set to 150px. Even more strangely, in Chrome 37 and Safari 7 on OSX the height of the svg seemed to be stretching to over 1000px.
 
-The fix was very simple. Setting a <code class="language-*">height</code> of 100% on the svg element will correctly set the height of the svg on all browsers.
+The fix was very simple. Setting a <code class="language-*">max-height</code> of 100% on the svg element will correctly set the height of the svg on all browsers.
 
 <pre class="language-css"><code class="language-css">svg {
     width: 150px;
-    height: 100%;
+    max-height: 100%;
 }
 </code></pre>
 
