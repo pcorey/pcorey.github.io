@@ -75,6 +75,7 @@ body > section > nav img {
 }
 body > section > nav svg {
   max-width: 300px;
+  max-height: 100%;
 }
 body > section > nav h1 {
   margin: 0;
