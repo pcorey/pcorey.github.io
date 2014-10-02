@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Frontend Workflow - T.U.S.T.A.C.R."
+title:  "Frontend Workflow - T.U.S.T.A.C.R. Part 1"
 date:   2014-09-24
 categories:
 ---
