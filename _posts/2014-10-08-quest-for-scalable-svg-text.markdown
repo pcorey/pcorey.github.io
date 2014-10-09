@@ -18,7 +18,7 @@ My first attempt was based around the idea of setting an SVG’s <code class="la
 
 Unfortunately, this approach had some issues in IE. While the SVG element correctly expanded to <code class="language-*">400px</code>, the height did not scale correctly. All of the SVG elements had a height of <code class="language-*">150px</code>. Strangely, the aspect ratios of the SVGs were maintained. The extra space above and below the SVGs seemed to be empty whitespace.
 
-Thierry Koblentz’s [intrinsic aspect ratio trick](http://alistapart.com/article/creating-intrinsic-ratios-for-video/) can be used to fix this IE problem, but the fix opens up another set of issues. This fix requires an extra wrapping div around each SVG element, and totally destroys the responsive aspect of using a bare SVG element. Any time the parent wrapper is resized, the top padding on the div wrapping the SVG must be recalculated. Check out the pen below to see it in action:
+Thierry Koblentz’s [intrinsic aspect ratio trick](http://alistapart.com/article/creating-intrinsic-ratios-for-video/) can be used to fix this IE problem, but the fix opens up another set of issues. This fix requires an extra wrapping div around each SVG element, and totally destroys the responsive aspect of using a bare SVG element. Any time the parent wrapper is resized, the top padding on the div wrapping the SVG must be recalculated **. Check out the pen below to see it in action:
 
 <p data-height="482" data-theme-id="0" data-slug-hash="wdGcq" data-default-tab="result" data-user="pcorey" class='codepen'>See the Pen <a href='http://codepen.io/pcorey/pen/wdGcq/'>SVG Scalable Text - IE</a> by Pete Corey (<a href='http://codepen.io/pcorey'>@pcorey</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
@@ -28,3 +28,7 @@ Thierry Koblentz’s [intrinsic aspect ratio trick](http://alistapart.com/articl
 I’ve also been trying to figure out how to remove the padding above and below the text element returned by the bounding box. I tried to use [getExtentOfChar](http://www.w3.org/TR/SVG/text.html#__svg__SVGTextContentElement__getExtentOfChar) to get a tighter height, but this seemed to return the same height as getBBox. Ideally, I would be able to have the SVG element tightly wrap the text and be able to specify my own padding/margin in the CSS.
 
 If these issues can be solved (or even just the IE issue), I feel like this would be an awesome technique for creating some really amazing layouts and designs. If you've found solutions to either of these problems, please let me know!
+
+## Update - 10/9/2014
+
+** For the IE intrinsic aspect ratio fix, I mentioned that I would need to recalculate the padding-top every time the outer wrapper was resized. That's not true! In the code pen above, I was setting the padding-top to a pixel value, but I can just as easily set it to a percentage, which solves this problem. Check out the updated pen above!
