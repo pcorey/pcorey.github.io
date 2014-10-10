@@ -5,7 +5,7 @@ date:   2014-10-08
 categories:
 ---
 
-In a [previous post](http://1pxsolidtomato.com/2014/09/09/responsive-svg-height-issue/), I mentioned using SVG to create a scalable text logo. This got me thinking about using SVG text tags to create text blocks that would scale to fit in their parent container. I’ve seen lots of examples of this kind of thing in print media, but I haven’t seen it on the web. A great example of this style can be found on this [seanwes blog post](http://seanwes.com/2013/25-things-ive-learned/). I attempted to recreate the lettering piece from #3 in the code pens below.
+In a [previous post](http://1pxsolidtomato.com/2014/09/09/responsive-svg-height-issue/), I mentioned using SVG to create a scalable text logo. This got me thinking about using SVG text tags to create text blocks that would scale to fit in their parent container. I’ve seen lots of examples of this kind of thing in print media, but I haven’t seen it on the web. A great example of this style can be found on this [seanwes blog post](http://seanwes.com/2013/on-saying-no/). I attempted to recreate the lettering piece from #3 in the code pens below.
 
 ## ViewBox Magic
 
