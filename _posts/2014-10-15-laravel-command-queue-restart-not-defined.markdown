@@ -30,4 +30,4 @@ Huh? I was running Laravel 4.2, and the docs clearly said that this command shou
 
 Maybe the restart command was introduced in version 4.2.5? I checked my minor version, and sure enough I was using 4.2.0. I changed my laravel version in composer.json from <code class="language-*">"laravel/framework": "4.2"</code> to <code class="language-*">"laravel/framework": "4.2.5"</code> and ran a <code class="language-*">composer update</code>. After that finished, I tried to run <code class="language-*">queue:restart</code> and it worked! After restarting the daemons, they correctly re-established their database connections.
 
-The moral of the story is that instead of using explicit minor versions, always grab the latest minor version: <code class="language-*">"laravel/framework": "4.2.*"</code>. Also, already read and re-read the docs.
+The moral of the story is that instead of using explicit minor versions, always grab the latest: <code class="language-*">"laravel/framework": "4.2.*"</code>. Also, already read and re-read the docs.
