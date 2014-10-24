@@ -11,7 +11,7 @@ After switching to <code class="language-*">queue:work --daemon ...</code> I not
 
 A few hours later, I noticed my logs being flodded with exceptions coming from my job classes: <code class="language-*">MySQL server has gone away</code>. Strange, those jobs should have been re-establishing their DB connection every time they were fired. After re-reading the docs, I realized that the in-memory framework didn't have the change I previously pushed because I never restarted the daemon jobs... I tried to run <code class="language-*">php artisan queue:restart</code> and was greeted with the following error:
 
-<pre><code class="language-*">  [InvalidArgumentException]               
+<pre class="language-*"><code class="language-*">  [InvalidArgumentException]               
   Command "queue:restart" is not defined.  
   Did you mean one of these?               
       queue:retry                          
