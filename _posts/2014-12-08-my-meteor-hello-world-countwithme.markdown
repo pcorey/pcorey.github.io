@@ -89,4 +89,4 @@ if (Meteor.isServer()) {
 
 ## Conclusion
 
-Check out [countwith.me](http://countwith.me). Ultimately, I’m very happy with how the project turned out. I never thought that such an incredibly simple webapp would teach me so much about a framework. Every little thing I learned about the framework gave me glimpses into much deeper topics that I’m anxious to explore. It’s interesting how such a seemsly simple framework can be so deeply nuanced.
+Check out [countwith.me](http://countwith.me). Also check out its [github repo](https://github.com/pcorey/countwith.me). Ultimately, I’m very happy with how the project turned out. I never thought that such an incredibly simple webapp would teach me so much about a framework. Every little thing I learned about the framework gave me glimpses into much deeper topics that I’m anxious to explore. It’s interesting how such a seemsly simple framework can be so deeply nuanced.
