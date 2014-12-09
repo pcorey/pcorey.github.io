@@ -21,8 +21,8 @@ module.exports = function(grunt) {
         },
         autoprefixer: {
             dist: {
-               src: 'css/main.css',
-               dest: 'css/main.css'
+                src: 'css/main.css',
+                dest: 'css/main.css'
             }
         },
         watch: {
