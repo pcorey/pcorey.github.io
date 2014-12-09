@@ -10,6 +10,7 @@
   "engine": "node >= 0.4.1",
   "devDependencies": {
     "grunt-jekyll": "~0.4.2",
-    "grunt-concurrent": "~0.5.0"
+    "grunt-concurrent": "~0.5.0",
+    "grunt-autoprefixer": "~2.0.0"
   }
 }

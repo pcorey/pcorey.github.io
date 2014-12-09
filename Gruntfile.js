@@ -19,10 +19,16 @@ module.exports = function(grunt) {
                 }
             }
         },
+        autoprefixer: {
+            dist: {
+               src: 'css/main.css',
+               dest: 'css/main.css'
+            }
+        },
         watch: {
             less: {
                 files: ['less/**/*.less'],
-                tasks: ['less']
+                tasks: ['less', 'autoprefixer']
             }
         },
         concurrent: {
@@ -37,6 +43,7 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-concurrent');
 
