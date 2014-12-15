@@ -5,7 +5,7 @@ date:   2014-12-15
 categories:
 ---
 
-Recently I decided to elevate my [Linux Mint 17.1](http://www.linuxmint.com/) development environment from its plebeian out-of-the-box [Cinnamon](http://cinnamon.linuxmint.com/) origins to its rightful place among the glorious #TilingWMMasterRace. I thought I’d document the process of installing and configuring [bspwm](https://github.com/baskerville/bspwm) to help others looking to do something similar.
+Recently I decided to elevate my [Linux Mint 17.1](http://www.linuxmint.com/) development environment from its plebeian out-of-the-box [Cinnamon](http://cinnamon.linuxmint.com/) origins to its rightful place among the glorious [#TilingWMMasterRace](https://twitter.com/#TilingWMMasterRace). I thought I’d document the process of installing and configuring [bspwm](https://github.com/baskerville/bspwm) to help others looking to do something similar.
 
 ## bspwm for dummies
 
@@ -25,7 +25,7 @@ echo -e “sxhkd -f 100 & \nexec bspwm” &gt; ~/.xinitrc
 
 ## sxhkdrc changes
 
-I run my linux dev environment as a virtual machine, which means that using super as my bspwm control key can cause issues. Thankfully it’s incredibly simple to remap these [sxhkd](https://github.com/baskerville/sxhkd) hotkey bindings in <code class="language-*">~/.config/sxhkd/sxhkdrc</code>:
+I run my linux dev environment as a virtual machine, which means that using super as my bspwm control key can cause issues. Thankfully it’s incredibly simple to remap these [sxhkd](https://github.com/baskerville/sxhkd) hotkeys in <code class="language-*">~/.config/sxhkd/sxhkdrc</code>:
 
 <pre><code class="language-bash">sed -i ‘s/super/alt/g’ ~/.config/sxhkd/sxhkdrc
 sed -i ‘s/alt + alt/alt + ctrl/g’ ~/.config/sxhkd/sxhkdrc
@@ -33,7 +33,7 @@ sed -i ‘s/alt + alt/alt + ctrl/g’ ~/.config/sxhkd/sxhkdrc
 
 ## .Xdefaults
 
-<code class="language-*">~/.Xdefaults</code> is where you configure the look and feel of [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html). I started with a template <code class="language-*">~/.Xdefaults</code> I found online, switched to use Ubuntu Mono and borrowed a nice color scheme I found on this [helpful article](http://blog.z3bra.org/2013/10/home-sweet-home.html). You can see what the [final result](https://github.com/pcorey/dotfiles/blob/master/.Xdefaults) on my github.
+<code class="language-*">~/.Xdefaults</code> is where you configure the look and feel of [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html). I started with a template <code class="language-*">~/.Xdefaults</code> I found online, switched to use Ubuntu Mono and borrowed a nice color scheme I found in this [helpful article](http://blog.z3bra.org/2013/10/home-sweet-home.html). You can see what the [final result](https://github.com/pcorey/dotfiles/blob/master/.Xdefaults) on my github.
 
 ## .xinitrc and .xsession
 
