@@ -18,7 +18,7 @@ In hindsight, this is obviously not going to work. The result of this expression
 
 After some googling, I came across [aspect-ratio media queries](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries#aspect-ratio). This is exactly what I needed! To build my layout, I use an aspect-ratio media query to alternate between binding against <code class="language-*">vh</code> and <code class="language-*">vw</code> based on whether the screen is in a horizontal aspect ratio, or a vertical one.
 
-I wipped up a quick [codepen](http://codepen.io/pcorey/pen/wBGLBv) to show this off. Resize the viewport to see it in action:
+I whipped up a quick [codepen](http://codepen.io/pcorey/pen/wBGLBv) to show this off. Resize the viewport to see it in action:
 
 <p data-height="500" data-theme-id="0" data-slug-hash="wBGLBv" data-default-tab="result" data-user="pcorey" class='codepen'>See the Pen <a href='http://codepen.io/pcorey/pen/wBGLBv/'>aspect-ratio media queries</a> by Pete Corey (<a href='http://codepen.io/pcorey'>@pcorey</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
