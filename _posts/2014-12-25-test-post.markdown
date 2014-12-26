@@ -5,4 +5,4 @@ date:   2014-12-25
 categories:
 ---
 
-This is a test post.
+This is a test post!
