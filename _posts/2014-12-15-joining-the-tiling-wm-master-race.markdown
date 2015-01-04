@@ -17,7 +17,7 @@ git clone https://github.com/baskerville/sxhkd.git
 cd ~/bspwm && make && sudo make install
 cd ~/sxhkd && make && sudo make install
 mkdir -p ~/.config/bspwm ~/.config/sxhkd
-cp ~/bspwm/examples/bspwmrc ~/.config/sxhkd/bspwmrc
+cp ~/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc
 cp ~/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc
 chmod +x ~/.config/bspwm/bspwmrc
 echo -e “sxhkd -f 100 & \nexec bspwm” &gt; ~/.xinitrc
