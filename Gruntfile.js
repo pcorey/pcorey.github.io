@@ -25,10 +25,17 @@ module.exports = function(grunt) {
                 dest: 'css/main.css'
             }
         },
+        cssmin: {
+            compress: {
+                files: {
+                    'css/main.css': ['css/main.css']
+                }
+            }
+        },
         watch: {
             less: {
                 files: ['less/**/*.less'],
-                tasks: ['less', 'autoprefixer']
+                tasks: ['less', 'autoprefixer', 'cssmin']
             }
         },
         concurrent: {
@@ -46,6 +53,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     grunt.registerTask('default', ['concurrent:all']);
 };
