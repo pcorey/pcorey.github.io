@@ -20,13 +20,13 @@ If you read through the Custom Block Helpers section of the Spacebar docs, you'l
     &#123;&#123;#if this&#125;&#125;
     &lt;h1&gt;&#123;&#123;title&#125;&#125;&lt;/h1&gt;
     &lt;div&gt;
-            &#123;&#123;&gt; Template.contentBlock&#125;&#125;
+        &#123;&#123;&gt; Template.contentBlock&#125;&#125;
     &lt;/div&gt;
     &#123;&#123;else&#125;&#125;
         &lt;h1&gt;No content provided&lt;/h1&gt;
         &lt;div&gt;
             &#123;&#123;#if Template.elseBlock&#125;&#125;
-            &#123;&#123;&gt; Template.elseBlock&#125;&#125;
+                &#123;&#123;&gt; Template.elseBlock&#125;&#125;
             &#123;&#123;else&#125;&#125;
                 &lt;p&gt;No elseBlock provided&lt;/p&gt;
             &#123;&#123;/if&#125;&#125;
