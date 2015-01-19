@@ -40,10 +40,10 @@ I fired up my trusty [Chrome Dev Tools](https://developer.chrome.com/devtools) a
 
 When it was executed as a debounce callback, the <code class="language-*">Meteor.subscribe</code> call was no longer part of a computation because it is [executed asynchronously](https://github.com/lodash/lodash/blob/master/lodash.src.js#L7117). <code class="language-*">Tracker.active</code> was returning <code class="language-*">false</code> within the context of the debounce callback. This means that the <code class="language-*">Tracker.onInvalidate</code> and <code class="language-*">Tracker.afterFlush</code> callbacks were never initiated within the <code class="language-*">subscribe</code> call as they would have been if <code class="language-*">subscribe</code> were called from directly within a computation. That caused the subscription to never "stop" and its subscription data stayed around forever. Effectively, I was piling up new subscriptions every time the search string changed.
 
-<pre class="language-javascript"><code class="language-javascript">Meteor.subscribe('col', 't');
-Meteor.subscribe('col', 'te');
-Meteor.subscribe('col', 'tes');
-Meteor.subscribe('col', 'test');
+<pre class="language-javascript"><code class="language-javascript">Meteor.subscribe('my-collection', 't');
+Meteor.subscribe('my-collection', 'te');
+Meteor.subscribe('my-collection', 'tes');
+Meteor.subscribe('my-collection', 'test');
 ...
 </code></pre>
 
