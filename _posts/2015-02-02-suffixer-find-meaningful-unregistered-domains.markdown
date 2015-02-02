@@ -5,7 +5,7 @@ date:   2015-02-02
 categories:
 ---
 
-Early last week I released a small web app, [Suffixer](http://www.suffixer.com)! The idea behind [Suffixer](http://www.suffixer.com) is to compile a database of all words that can be created with registerable Top Level Domains as their suffixes. You can then seach through that database and quickly determine if any of the resulting domains are available for registration.
+Early last week I released a small web app, [Suffixer](http://www.suffixer.com)! The idea behind [Suffixer](http://www.suffixer.com) is to compile a database of all words that can be created with registerable Top Level Domains as their suffixes. You can then search through that database and quickly determine if any of the resulting domains are available for registration.
 
 Like most of my recent projects, [Suffixer](http://www.suffixer.com) was built with [Meteor](https://www.meteor.com/). You can find the source [on github](https://github.com/pcorey/suffixer).
 
