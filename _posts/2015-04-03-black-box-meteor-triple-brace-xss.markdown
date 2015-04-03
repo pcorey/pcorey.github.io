@@ -73,7 +73,7 @@ document.head.appendChild(style);
 style.sheet.insertRule('[data-make-raw] { outline: 1px solid tomato; }',0);
 </code></pre>
 
-Here's an example running against Telescope:
+Here's an example running against [Telescope](http://www.telescopeapp.org/):
 
 <a href="https://s3-us-west-1.amazonaws.com/www.1pxsolidtomato.com/telescope.png"><img src="https://s3-us-west-1.amazonaws.com/www.1pxsolidtomato.com/telescope.png" alt="Telescope example" style="max-width: 100%;"></a>
 
