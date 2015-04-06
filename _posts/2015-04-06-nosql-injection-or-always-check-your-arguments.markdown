@@ -29,7 +29,19 @@ In this case, <code class="language-*">foo</code> is intended to be a string. Bu
 
 Suddenly, all of the sensitive documents for every user will be served to the malicious user. All of the sensitive documents in the database will have a value of <code class="language-*">foo</code> that is ordinally [greater than or equal to](http://docs.mongodb.org/manual/reference/operator/query/gte/) an empty string.
 
-To guard against this, always [check](http://docs.meteor.com/#/full/check_package) each of your arguments. To ensure that every argument sent to your methods and publications is being checked, you can add the [audit-argument-checks](https://github.com/meteor/meteor/tree/devel/packages/audit-argument-checks) package to your project:
+To guard against this, always [check](http://docs.meteor.com/#/full/check_package) each of your arguments:
+
+<pre class="language-javascript"><code class="language-javascript">Meteor.publish('injectMe', function(foo) {
+    check(foo, String);
+    return SensitiveDocuments.find({
+        foo: foo
+    });
+});
+</code></pre>
+
+This check will assert that <code class="language-javascript">foo</code> is a <code class="language-javascript">String</code>. If not, a <code class="language-javascript">Match.Error</code> exception is thrown.
+
+To ensure that every argument sent to your methods and publications is being checked, you can add the [audit-argument-checks](https://github.com/meteor/meteor/tree/devel/packages/audit-argument-checks) package to your project:
 
 <pre class="language-bash"><code class="language-bash">meteor add audit-argument-checks
 </code></pre>
