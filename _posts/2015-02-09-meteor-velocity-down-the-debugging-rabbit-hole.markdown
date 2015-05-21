@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Meteor Velocity: Down the Debugging Rabbit Hole"
+titleParts:  ["Meteor Velocity", "Down the Debugging", "Rabbit Hole"]
 date:   2015-02-09
 categories:
 ---

@@ -1,67 +1,117 @@
-body > section > nav {
-    text-align: center;
-    vertical-align: top;
-    margin-right: 20px;
-    @media (min-width: @breakpoint-small) {
-        text-align: left;
-        width: 150px;
-        display: inline-block;
+body > header {
+    //background-color: #f5f2f0;
+    margin: 0 0 1em;
+    //background-color: #444;
+    background-image: url('/img/vectorized.png');
+    background-size: cover;
+    background-position: 0 100%;
+    .wrapper {
+        max-width: 700px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
     }
-    @media (min-width: @breakpoint-large) {
-        display: block;
-        float: left;
-        margin-left: -200px;
-    }
-
-    a {
-        display: block;
-    }
-
     img {
-        display: none;
-        width: 150px;
-        height: 150px;
-        border-radius: 75px;
-        border: 1px solid @color1;
-        @media (min-width: @breakpoint-small) {
-            display: block;
-        }
+        height: 90px;
+        padding: 25px 0;
+        display: block;
+        mix-blend-mode: opacity;
     }
-
-    svg {
-        max-width: 300px;
-        max-height: 100%;
+    .menu-wrapper {
+        display: flex;
+        margin: 13px 0;
     }
-
-    h1 {
+    .menu-opener {
+        position: relative;
+        z-index: 2;
+    }
+    .menu {
+        position: relative;
+        z-index: 1;
         margin: 0;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 24px;
-        text-align: right;
-        color: @color3;
-        span {
-            color: @color1;
+        a {
+            font-family: 'Share Tech Mono';
+            font-size: 20px;
+            margin-left: 1em;
+            color: white;
+            line-height: 64px;
+            text-transform: uppercase;
         }
     }
-
-    ul {
-        margin-bottom: 80px;
-        padding-left: 0;
-        list-style-type: none;
-        li {
-            display: inline-block;
-            text-align: center;
-            width: 4em;
-            @media (min-width: @breakpoint-small) {
-                display: block;
-                width: auto;
-                text-align: right;
-            }
-            font-family: 'Josefin Sans', sans-serif;
-            font-size: 18px;
-            a:link, a:visited, a:hover, a:focus, a:active {
-                color: @color4;
-            }
-        }
-    }
+    // nav {
+    //     line-height: 60px;
+    //     a {
+    //         color: white;
+    //         text-transform: uppercase;
+    //         font-family: 'Share Tech Mono';
+    //     }
+    // }
 }
+
+// body > section > nav {
+//     text-align: center;
+//     vertical-align: top;
+//     margin-right: 20px;
+//     @media (min-width: @breakpoint-small) {
+//         text-align: left;
+//         width: 150px;
+//         display: inline-block;
+//     }
+//     @media (min-width: @breakpoint-large) {
+//         display: block;
+//         float: left;
+//         margin-left: -200px;
+//     }
+
+//     a {
+//         display: block;
+//     }
+
+//     img {
+//         display: none;
+//         width: 150px;
+//         height: 150px;
+//         border-radius: 75px;
+//         border: 1px solid @color1;
+//         @media (min-width: @breakpoint-small) {
+//             display: block;
+//         }
+//     }
+
+//     svg {
+//         max-width: 300px;
+//         max-height: 100%;
+//     }
+
+//     h1 {
+//         margin: 0;
+//         font-family: 'Josefin Sans', sans-serif;
+//         font-size: 24px;
+//         text-align: right;
+//         color: @color3;
+//         span {
+//             color: @color1;
+//         }
+//     }
+
+//     ul {
+//         margin-bottom: 80px;
+//         padding-left: 0;
+//         list-style-type: none;
+//         li {
+//             display: inline-block;
+//             text-align: center;
+//             width: 4em;
+//             @media (min-width: @breakpoint-small) {
+//                 display: block;
+//                 width: auto;
+//                 text-align: right;
+//             }
+//             font-family: 'Josefin Sans', sans-serif;
+//             font-size: 18px;
+//             a:link, a:visited, a:hover, a:focus, a:active {
+//                 color: @color4;
+//             }
+//         }
+//     }
+// }

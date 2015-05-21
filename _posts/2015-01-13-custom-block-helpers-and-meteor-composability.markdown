@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Custom Block Helpers and Meteor Composability"
+titleParts: ["Custom Block", "Helpers and", "Meteor Composability"]
 date:   2015-01-13
 categories:
 ---

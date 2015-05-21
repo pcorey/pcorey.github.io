@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Thinking Out Loud About Screencasting Platforms"
+titleParts: ["Thinking Out Loud About", "Screencasting Platforms"]
 date:   2014-11-21
 categories:
 ---

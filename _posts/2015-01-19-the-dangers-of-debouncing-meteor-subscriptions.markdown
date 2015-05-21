@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The Dangers of Debouncing Meteor Subscriptions"
+titleParts: ["The Dangers", "of Debouncing", "Meteor Subscriptions"]
 date:   2015-01-19
 categories:
 ---

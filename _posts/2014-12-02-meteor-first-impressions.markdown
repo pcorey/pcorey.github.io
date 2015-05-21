@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Meteor First Impressions"
+titleParts:  ["Meteor", "First Impressions"]
 date:   2014-12-02
 categories:
 ---

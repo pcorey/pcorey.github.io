@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Building Ms. Estelle Marie"
+titleParts:  ["Building Ms.", "Estelle Marie"]
 date:   2014-11-12
 categories:
 ---

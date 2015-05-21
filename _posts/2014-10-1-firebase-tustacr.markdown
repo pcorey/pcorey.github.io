@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Firebase! - T.U.S.T.A.C.R. Part 2"
+titleParts: ["Firebase!", "T.U.S.T.A.C.R. Part 2"]
 date:   2014-10-1
 categories:
 ---

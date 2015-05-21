@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Mongo Text Search with Meteor"
+titleParts: ["Mongo Text Search", "with Meteor"]
 date:   2015-01-26
 categories:
 ---

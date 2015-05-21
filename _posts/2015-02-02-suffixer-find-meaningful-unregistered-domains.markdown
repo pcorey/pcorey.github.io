@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Suffixer! Find Meaningful Unregistered Domains"
+titleParts: ["Suffixer!", "Find Meaningful Unregistered Domains"]
 date:   2015-02-02
 categories:
 ---

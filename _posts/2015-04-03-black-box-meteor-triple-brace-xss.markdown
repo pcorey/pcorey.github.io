@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Black Box Meteor - Triple Brace XSS"
+titleParts: ["Black Box Meteor", "Triple Brace XSS"]
 date:   2015-04-03
 categories:
 ---

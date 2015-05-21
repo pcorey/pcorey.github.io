@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "My Meteor Hello World - countwith.me"
+titleParts: ["My Meteor Hello World", "countwith.me"]
 date:   2014-12-08
 categories:
 ---

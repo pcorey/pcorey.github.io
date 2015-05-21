@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Smart Forms - Automate and Build Your Own Tools!"
+titleParts: ["Smart Forms", "Automate and Build", "Your Own Tools!"]
 date:   2014-09-04
 categories:
 ---

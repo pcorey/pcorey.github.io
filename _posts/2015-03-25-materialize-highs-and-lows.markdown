@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Materialize Highs and Lows"
+titleParts: ["Materialize", "Highs and Lows"]
 date:   2015-03-25
 categories:
 ---

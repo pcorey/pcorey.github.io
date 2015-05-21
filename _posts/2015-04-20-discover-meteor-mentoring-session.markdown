@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Discover Meteor - Mentoring Session"
+titleParts: ["Discover Meteor", "Mentoring Session"]
 date:   2015-04-20
 categories:
 ---

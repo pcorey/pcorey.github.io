@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Meteor Composability"
+titleParts:  ["Meteor Composability"]
 date:   2015-03-09
 categories:
 ---

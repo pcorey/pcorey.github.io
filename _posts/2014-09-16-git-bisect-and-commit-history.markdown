@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Git Bisect and Commit History"
+titleParts: ["Git Bisect", "and Commit History"]
 date:   2014-09-16
 categories:
 ---

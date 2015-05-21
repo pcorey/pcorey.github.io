@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "BYO Meteor Package"
+titleParts:  ["BYO Meteor", "Package"]
 date:   2014-12-22
 categories:
 ---

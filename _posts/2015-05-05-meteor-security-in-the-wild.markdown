@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Meteor Security in the Wild"
+titleParts: ["Meteor Security", "in the Wild"]
 date:   2015-05-05
 ---
 

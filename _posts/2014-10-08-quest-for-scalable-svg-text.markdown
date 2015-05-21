@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The Quest for Scalable SVG Text"
+titleParts:  ["The Quest for", "Scalable", "SVG Text"]
 date:   2014-10-08
 categories:
 ---

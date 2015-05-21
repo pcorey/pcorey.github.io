@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "CrossView Fun With CSS"
+titleParts: ["CrossView Fun", "With CSS"]
 date:   2014-11-02
 categories:
 ---

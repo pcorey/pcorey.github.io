@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Private Package Problems"
+titleParts:  ["Private Package", "Problems"]
 date:   2015-05-11
 categories:
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Hide Menu: My First Sublime Text Plugin"
+titleParts: ["Hide Menu", "My First Sublime Text Plugin"]
 date:   2014-12-24
 categories:
 ---

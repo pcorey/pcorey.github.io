@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "NoSQL Injection - Or, Always Check Your Arguments!"
+titleParts:  ["NoSQL Injection", "Or, Always Check Your Arguments!"]
 date:   2015-04-06
 categories:
 ---

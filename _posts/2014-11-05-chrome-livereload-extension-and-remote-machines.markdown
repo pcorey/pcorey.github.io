@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Chrome LiveReload Extension and Remote Machines"
+titleParts: ["Chrome LiveReload Extension", "and Remote Machines"]
 date:   2014-11-05
 categories:
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Laravel 4.2 Command \"Queue:Restart\" is Not Defined"
+titleParts:  ["Laravel 4.2 Command", "\"Queue:Restart\"", "is Not Defined"]
 date:   2014-10-15
 categories:
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Laravel Queue's Sleep Contributes to its Timeout"
+titleParts: ["Laravel Queue's", "Sleep Contributes", "to its Timeout"]
 date:   2014-10-23
 categories:
 ---

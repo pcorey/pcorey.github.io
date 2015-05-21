@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Throw Back Thursday: Julia Sets with Sass"
+titleParts: ["Throw Back Thursday", "Julia Sets with Sass"]
 date:   2014-12-18
 categories:
 ---

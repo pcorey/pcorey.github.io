@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Namecheap + Amazon S3"
+titleParts: ["Namecheap", "+ Amazon S3"]
 date:   2014-09-23
 categories:
 ---

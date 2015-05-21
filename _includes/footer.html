@@ -1,3 +1,7 @@
 <footer>
-    <script src="{{ '/js/prism.js' | prepend: site.baseurl }}"></script>
+    <script>
+        $(".menu-opener").click(function(){
+            $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
+        });
+    </script>
 </footer>

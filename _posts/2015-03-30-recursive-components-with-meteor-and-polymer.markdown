@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Recursive Components with Meteor and Polymer"
+titleParts:  ["Recursive Components", "with Meteor", "and Polymer"]
 date:   2015-03-30
 categories:
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Look Ma'! No Wordpress!"
+titleParts:  ["Look Ma'!", "No Wordpress!"]
 date:   2014-08-26 15:19:00
 categories:
 ---

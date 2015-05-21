@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Black Box Meteor - Package Scanning"
+titleParts:  ["Black Box Meteor", "Package Scanning"]
 date:   2015-04-24
 categories:
 ---

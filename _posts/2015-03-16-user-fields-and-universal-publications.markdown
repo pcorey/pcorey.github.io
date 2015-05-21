@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "User Fields and Universal Publications"
+titleParts:  ["User Fields and", "Universal Publications"]
 date:   2015-03-16
 categories:
 ---

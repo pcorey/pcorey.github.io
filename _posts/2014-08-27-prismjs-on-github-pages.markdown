@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Prism.js and Github Pages"
+titleParts: ["Prism.js", "and Github Pages"]
 date:   2014-08-27 15:19:00
 categories:
 ---

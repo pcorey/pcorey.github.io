@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Custom Categories with Meteor's Orion CMS"
+titleParts: ["Custom Categories", "with Meteor's Orion CMS"]
 date:   2015-02-23
 categories:
 ---

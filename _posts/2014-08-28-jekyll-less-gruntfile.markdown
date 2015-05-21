@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "My Concurrent Jekyll Gruntfile"
+titleParts: ["My Concurrent", "Jekyll Gruntfile"]
 date:   2014-08-28
 categories:
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Zapier Named Variables - Scheduling Posts Part 2"
+titleParts: ["Zapier Named Variables", "Scheduling Posts", "Part 2"]
 date:   2015-01-05
 categories:
 ---

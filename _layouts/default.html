@@ -4,8 +4,9 @@
   {% include head.html %}
 
     <body>
+        {% include header.html %}
         <section>
-            <nav>
+            <!-- <nav>
                 <a href="{{ site.baseurl }}/">
                     <img src="{{ '/img/portrait-150x150.png' | prepend: site.baseurl }}">
                     <svg viewbox="0 0 100 25">
@@ -22,9 +23,8 @@
                     {% if site.twitter_username %}
                         <li><a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a></li>
                     {% endif %}
-                    <!-- <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li> -->
                 </ul>
-            </nav>
+            </nav> -->
             <div class="content">
                 {{ content }}
             </div>

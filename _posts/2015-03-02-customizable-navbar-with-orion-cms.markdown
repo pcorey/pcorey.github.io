@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Customizable Meteor Navbar with Orion CMS"
+titleParts:  ["Customizable Meteor Navbar", "with Orion CMS"]
 date:   2015-03-02
 categories:
 ---

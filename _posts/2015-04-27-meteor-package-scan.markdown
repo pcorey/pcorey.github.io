@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Meteor Package Scan"
+titleParts:  ["Meteor", "Package Scan"]
 date:   2015-04-27
 categories:
 ---

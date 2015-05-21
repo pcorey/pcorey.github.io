@@ -3,7 +3,7 @@ body > section {
     vertical-align: top;
     @media (min-width: @breakpoint-large) {
         display: inline-block;
-        width: 824px;
+        width: 700px;
     }
     text-align: left;
 
@@ -15,16 +15,17 @@ body > section {
         font-size: 38px;
     }
     .content {
-        clear: both;
-        max-width: 824px;
-        @media (min-width: @breakpoint-small) {
-            display: inline-block;
-            width: ~"calc(100% - 174px)";
-        }
-        @media (min-width: @breakpoint-large) {
-            clear: none;
-            display: block;
-            width: 100%;
-        }
+        opacity: 0;
+        transition: all 0.25s ease-in-out;
+        //max-width: 824px;
+        // @media (min-width: @breakpoint-small) {
+        //     display: inline-block;
+        //     width: ~"calc(100% - 174px)";
+        // }
+        // @media (min-width: @breakpoint-large) {
+        //     clear: none;
+        //     display: block;
+        //     width: 100%;
+        // }
     }
 }

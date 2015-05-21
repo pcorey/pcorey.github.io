@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Aspect Ratio Media Queries"
+titleParts: ["Aspect Ratio", "Media Queries"]
 date:   2014-12-16
 categories:
 ---

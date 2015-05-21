@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Announcing East5th!"
+titleParts:  ["Announcing", "East5th!"]
 date:   2015-02-04
 categories:
 ---

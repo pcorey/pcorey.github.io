@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Mongo's Multi Parameter Saves the Day"
+titleParts: ["Mongo's Multi Parameter", "Saves the Day"]
 date:   2015-05-18
 categories:
 ---

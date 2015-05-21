@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Black Box Meteor - Method Auditing"
+titleParts:  ["Black Box Meteor", "Method Auditing"]
 date:   2015-04-15
 categories:
 ---

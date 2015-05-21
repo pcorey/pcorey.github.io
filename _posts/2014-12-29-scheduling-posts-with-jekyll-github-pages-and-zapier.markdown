@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Scheduling Posts with Jekyll, Github Pages & Zapier"
+titleParts: ["Scheduling Posts with", "Jekyll, Github", "Pages & Zapier"]
 date:   2014-12-29
 categories:
 ---

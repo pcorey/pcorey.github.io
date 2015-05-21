@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Responsive SVG Height Issue"
+titleParts: ["Responsive SVG", "Height Issue"]
 date:   2014-09-09
 categories:
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Meteor and Mongod.lock"
+titleParts:  ["Meteor and", "Mongod.lock"]
 date:   2015-02-16
 categories:
 ---
