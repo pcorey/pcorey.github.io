@@ -4,14 +4,23 @@ layout: default
 
 <div class="home">
 
-  <h1>All Posts</h1>
+  <header class="post-header">
+    <div class="bigtext">
+      <span>All Blog Posts</span>
+      <span>and Articles</span>
+    </div>
+    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
 
-  <ul class="posts">
     {% for post in site.posts %}
-      <li>
+        <div class="post-line">
+            <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+            <p><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span></p>
+        </div>
+      <!-- <div class="post-line">
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <!-- <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> -->
-      </li>
+        <div class="filler"></div>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </div> -->
     {% endfor %}
-  </ul>
 </div>

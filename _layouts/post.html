@@ -16,9 +16,15 @@ layout: default
   {{ content }}
   </article>
 
-  <footer>
-    <p>Interested in working together? I'm available <a href="http://www.east5th.co/">for hire</a>!</p>
-  </footer>
+  {% if page.categories contains "security" %}
+    <footer>
+        <p>Want more? Let me <a href="http://www.east5th.co/">assess the security</a> of your Meteor application!</p>
+    </footer>
+  {% else %}
+    <footer>
+        <p>Interested in working together? I'm available <a href="http://www.east5th.co/">for hire</a>!</p>
+    </footer>
+  {% endif %}
 
   <!-- {% include disqus.html %} -->
 </div>

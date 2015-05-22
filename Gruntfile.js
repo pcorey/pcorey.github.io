@@ -4,7 +4,8 @@ module.exports = function(grunt) {
             serve: {
                 options: {
                     serve: true,
-                    watch: true
+                    watch: true,
+                    host: '0.0.0.0'
                 }
             }
         },
