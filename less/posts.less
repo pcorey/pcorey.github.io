@@ -1,21 +1,32 @@
 .home {
-    .post-line {
-        // display: flex;
-        // font-size: 20px;
-        // line-height: 36px;
-        // .filler {
-        //     flex-grow: 1;
-        // }
-        // .post-date {
-        //     color: #ccc;
-        //     white-space: nowrap;
-        // }
+    .post-header {
         margin: 60px 0;
-        p {
-            text-align: center;
+        .bigtext {
+            margin: 0 auto;
+            max-width: 230px;
         }
-        .post-link {
-            font-size: 30px;
+    }
+    .post-line {
+        margin: 1em;
+        display: flex;
+        font-size: 20px;
+        line-height: 1.2;
+        .filler {
+            flex-grow: 1;
         }
+        .post-date {
+            color: #ddd;
+            white-space: nowrap;
+            @media (max-width: 700px) {
+                display: none;
+            }
+        }
+        // margin: 60px 0;
+        // p {
+        //     text-align: center;
+        // }
+        // .post-link {
+        //     font-size: 30px;
+        // }
     }
 }

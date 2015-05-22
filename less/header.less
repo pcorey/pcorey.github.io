@@ -11,13 +11,14 @@ body > header {
         display: flex;
         justify-content: space-between;
     }
-    svg {
+    img {
         height: 90px;
         padding: 25px 0;
         display: block;
         mix-blend-mode: opacity;
     }
     .menu-wrapper {
+        position: relative;
         display: flex;
         margin: 13px 0;
     }
@@ -31,12 +32,23 @@ body > header {
         margin: 0;
         a {
             font-family: Arvo,serif;
-            font-size: 18px;
+            font-size: 30px;
             margin-left: 1em;
             color: white;
             line-height: 64px;
             text-transform: uppercase;
-            text-shadow: 0 0 5px rgba(0,0,0,0.5);
+            &:last-of-type {
+                margin-right: 0.5em;
+            }
+        }
+        @media (max-width: 600px) {
+            position: absolute;
+            top: 64px;
+            right: 0;
+            left: auto;
+            a {
+                margin: 0 1em;
+            }
         }
     }
 }
