@@ -3,7 +3,6 @@ layout: post
 title:  "Mongo's Multi Parameter Saves the Day"
 titleParts: ["Mongo's Multi Parameter", "Saves the Day"]
 date:   2015-05-18
-categories: ["security"]
 ---
 
 In the past, I've seen the [multi parameter](http://docs.mongodb.org/manual/reference/method/db.collection.update/#multi-parameter) on [MongoDB](http://www.mongodb.com/) [updates](http://docs.mongodb.org/manual/reference/method/db.collection.update/) as an annoying inconvenience. Without fail, I'll forget to [add the flag](http://docs.meteor.com/#/full/update) when it's needed, and waste a frustrating amount of time trying to deduce why my update isn't behaving as expected. But, a recent trek through [Telescope's](https://github.com/TelescopeJS/Telescope) codebase revealed to me just how valuable it can be to default to updating a single item at a time. Come with me on a journey...
