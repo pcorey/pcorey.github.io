@@ -1,9 +1,9 @@
 # Site settings
-title: 1pxsolidtomato
-email: hello@1pxsolidtomato.com
+title: east5th - blog
+email: hello@east5th.co
 description: "Pete Corey's soapbox for shouting about computers and things."
 baseurl: ""
-url: "http://1pxsolidtomato.com"
+url: "http://blog.east5th.co"
 twitter_username: petecorey
 github_username:  pcorey
 
