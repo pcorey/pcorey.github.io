@@ -3,7 +3,7 @@ layout: post
 title:  "NoSQL Injection - Or, Always Check Your Arguments!"
 titleParts:  ["NoSQL Injection", "Or, Always Check Your Arguments!"]
 date:   2015-04-06
-categories:
+tags: ["security"]
 ---
 
 Since [Meteor](https://www.meteor.com/) only supports the [fantastic](http://en.wikipedia.org/wiki/Stockholm_syndrome) [MongoDB](http://www.mongodb.com/), we no longer have to worry about the ever present threat of [SQL injection](https://www.owasp.org/index.php/SQL_Injection). Gone are the days of query parameters and ORMs. Right? Wrong!

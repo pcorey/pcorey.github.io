@@ -3,7 +3,7 @@ layout: post
 title:  "Black Box Meteor - Method Auditing"
 titleParts:  ["Black Box Meteor", "Method Auditing"]
 date:   2015-04-15
-categories:
+tags: ["security"]
 ---
 
 When using [Meteor](https://www.meteor.com/) methods, a surprising amount of information can be passed down to the client. Let’s considering the following method definitions:

@@ -3,7 +3,7 @@ layout: post
 title:  "Black Box Meteor - Triple Brace XSS"
 titleParts: ["Black Box Meteor", "Triple Brace XSS"]
 date:   2015-04-03
-categories:
+tags: ["security"]
 ---
 
 [Meteor](https://www.meteor.com/) is an incredibly interesting framework from a security perspective. Due to the unique way in which it deals with it's client/server separation, most of the information and functionality passed to the client is presented in a very uniform, organized way. From a black box security testing perspective, this can make life much easier!

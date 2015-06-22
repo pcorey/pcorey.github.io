@@ -3,6 +3,7 @@ layout: post
 title:  "Meteor Security in the Wild"
 titleParts: ["Meteor Security", "in the Wild"]
 date:   2015-05-05
+tags: ["security"]
 ---
 
 I was recently poking through the [Meteor](https://www.meteor.com/) publications being used in a client project and I found an interesting vulnerability. Imagine an admin panel that shows a list of all users in the system. That page/route needs to subscribe to a publication that publishes all of the users, but only if the current user is an admin. We don't want non-administrators having access to all of the user data in the system! Are you imagining? Good! Here's the publication, as seen in the wild:

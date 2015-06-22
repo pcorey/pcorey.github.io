@@ -4,6 +4,7 @@ title:  "Black Box Meteor - Package Scanning"
 titleParts:  ["Black Box Meteor", "Package Scanning"]
 date:   2015-04-24
 categories:
+tags: ["security"]
 ---
 
 An interesting side effect of [Meteor’s](http://www.meteor.com/) packing system is that all packages used in a project are visible to the client. Open up a browser and take a look at the global <code class="language-javascript">Package</code> object:

@@ -3,7 +3,7 @@ layout: post
 title:  "Meteor Club Podcast - Talking Security"
 titleParts: ["Meteor Club Podcast", "Talking Security"]
 date:   2015-06-22
-categories:
+tags: ["security"]
 ---
 
 Recently I got to sit down with [Josh Owens](https://twitter.com/joshowens), [Ben Strahan](https://twitter.com/_benstr), and [Dean Radcliffe](https://twitter.com/chicagogrooves) on the [Meteor Club Podcast](https://podcast.meteorjs.club/). We talked about [Meteor](https://www.meteor.com/) security and how we got started with Meteor.

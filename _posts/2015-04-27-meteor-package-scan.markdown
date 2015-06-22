@@ -4,6 +4,7 @@ title:  "Meteor Package Scan"
 titleParts:  ["Meteor", "Package Scan"]
 date:   2015-04-27
 categories:
+tags: ["security"]
 ---
 
 In response to my last Meteor Black Box post about [Package Scanning](http://www.1pxsolidtomato.com/2015/04/24/black-box-meteor-package-scanning/), I was inspired to build a tool to help improve the safety of the Meteor package ecosystem. That tool is [Package Scan](https://github.com/East5th/package-scan)!
