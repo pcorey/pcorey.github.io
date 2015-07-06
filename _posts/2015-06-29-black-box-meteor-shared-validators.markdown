@@ -48,7 +48,7 @@ You’ll notice that the entire source of the <code class="language-javascript">
 
 ## Server-side Solution
 
-The correct place to keep your <code class="language-javascript">allow</code> and <code class="language-javascript">deny</code> methods is on the server. Peruse through the [official docs](http://docs.meteor.com/#/full/allow) and read the wording surrounding the <code class="language-javascript">allow</code> and <code class="language-javascript">deny</code> methods. Notice that they'll specifically marked as server functionality.
+The correct place to keep your <code class="language-javascript">allow</code> and <code class="language-javascript">deny</code> methods is on the server. Peruse through the [official docs](http://docs.meteor.com/#/full/allow) and read the wording surrounding the <code class="language-javascript">allow</code> and <code class="language-javascript">deny</code> methods. Notice that they're specifically marked as server functionality.
 
 > When a client calls <code class="language-javascript">insert</code>, <code class="language-javascript">update</code>, or <code class="language-javascript">remove</code> on a collection, the collection's <code class="language-javascript">allow</code> and <code class="language-javascript">deny</code> callbacks are called on the server to determine if the write should be allowed.
 
