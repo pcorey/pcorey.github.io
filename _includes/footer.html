@@ -1,7 +1,14 @@
 <footer>
-    <script>
-        $(".menu-opener").click(function(){
-            $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
-        });
-    </script>
+  <div class="footer-content">
+    {% if page.tags contains "security" %}
+      <p><img src="/img/portrait-150x150.png">Interested in a security assessment of your Meteor application? Check out <a href="http://assess.east5th.co/">East5th Assess</a>!</p>
+    {% else %}
+      <p><img src="/img/portrait-150x150.png">Interested in working together? I'm available <a href="http://www.east5th.co/">for hire</a>!</p>
+    {% endif %}
+  </div>
+  <script>
+      $(".menu-opener").click(function(){
+          $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
+      });
+  </script>
 </footer>
