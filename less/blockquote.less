@@ -1,5 +1,5 @@
 blockquote {
-    border-left: 3px solid #aaa;
+    border-left: 1px dashed @color4;
     padding: 30px 30px;
     margin-top: 0;
     margin-bottom: 0;
@@ -10,5 +10,9 @@ blockquote {
     }
     > *:last-child {
         margin-bottom: 0;
+    }
+    p {
+      color: @color4;
+      font-weight: 100;
     }
 }
