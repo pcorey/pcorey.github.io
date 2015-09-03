@@ -35,6 +35,7 @@ I decided to wrap this functionality into a package: [east5th:wrap-promise](http
 <pre class="language-javascript"><code class="language-javascript">Meteor.methods({
     lolpromises: function(a) {
         return wrapPromise(returnsPromise());
+    }
 });
 </code></pre>
 
@@ -49,5 +50,6 @@ Using the core promise package, our <code class="language-javascript">lolpromise
 <pre class="language-javascript"><code class="language-javascript">Meteor.methods({
     lolpromises: function(a) {
         return Promise.await(returnsPromise());
+    }
 });
 </code></pre>
