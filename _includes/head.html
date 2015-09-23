@@ -17,17 +17,21 @@
     <script src="{{ '/js/bigtext.js' | prepend: site.baseurl }}"></script>
     <script src="//use.typekit.net/zxo8nth.js"></script>
     <script>
+
+    function show() {
+      $(function() {
+        $('.bigtext').bigtext();
+        $('.content').css('opacity', 1);
+      });
+    }
+
     try {
       Typekit.load({
         async: true,
-        active: function() {
-          $(function() {
-            $('.bigtext').bigtext();
-            $('.content').css('opacity', 1);
-          });
-        }
+        inactive: show,
+        active: show
       });
-    } catch(e) {}</script>
-    <script>
-    </script>
+    } catch(e) {
+      show();
+    }</script>
 </head>
