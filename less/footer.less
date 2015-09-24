@@ -64,15 +64,21 @@ body > footer {
         padding: 0 0 2em 0;
         min-height: inherit;
         margin: 0 auto;
-        max-width: 600px;
+        max-width: 650px;
       }
-      input[type=email] {
+      .email-wrapper {
+        position: relative;
+      }
+      input {
         font-weight: 300;
         background: transparent;
         border: 2px solid #ddd;
         padding: 0.5em 1em;
-        width: ~"calc(100% - 148px)";
+        width: ~"calc(50% - 8px)";
         outline: none;
+      }
+      input[type=email] {
+        width: ~"calc(100% - 148px)";
       }
       input[type=submit] {
         position: absolute;
@@ -84,6 +90,22 @@ body > footer {
         background-color: white;
         color: #3489ff;
         font-weight: 900;
+      }
+      input[name=LNAME] {
+        margin-left: 16px;
+      }
+      input[name=LNAME], input[name=FNAME] {
+        margin-bottom: 16px;
+      }
+      @media (max-width: 700px) {
+        input[type=email] {
+          width: 100%;
+        }
+        input[type=submit] {
+          position: relative;
+          width: 100%;
+          margin-top: 16px;
+        }
       }
     }
 }
