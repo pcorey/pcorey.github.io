@@ -78,16 +78,16 @@ body > footer {
         background: transparent;
         border: 2px solid #ddd;
         padding: 0.5em 1em;
-        width: ~"calc(50% - 8px)";
         outline: none;
+        margin-left: 8px;
       }
       input[type=email] {
-        width: ~"calc(100% - 148px)";
+        width: ~"calc(70% - 166px)";
       }
       input[type=submit] {
-        position: absolute;
-        bottom: 0;
-        right: 0;
+        // position: absolute;
+        // bottom: 0;
+        // right: 0;
         padding: 0.5em 1em;
         width: 150px;
         border: 2px solid #ddd;
@@ -95,20 +95,23 @@ body > footer {
         color: #3489ff;
         font-weight: 900;
       }
-      input[name=LNAME] {
-        margin-left: 16px;
-      }
-      input[name=LNAME], input[name=FNAME] {
-        margin-bottom: 16px;
+      input[name=FNAME] {
+        width: ~"calc(30%)";
+        margin-left: 0;
       }
       @media (max-width: 700px) {
         input[type=email] {
           width: 100%;
+          margin-left: 0;
+          margin-top: 16px;
         }
         input[type=submit] {
-          position: relative;
           width: 100%;
+          margin-left: 0;
           margin-top: 16px;
+        }
+        input[name=FNAME] {
+          width: 100%;
         }
       }
     }
