@@ -47,4 +47,43 @@ body > footer {
         margin: 0 auto 2em;
       }
     }
+
+    .signup-form {
+      background-color: white;
+      font-size: 28px;
+      margin: 2em auto 0;
+      padding: 2em 25px 4em;
+    }
+    form {
+      position: relative;
+      max-width: 750px;
+      margin: 0 auto;
+      text-align: left;
+      p {
+        font-weight: 300;
+        padding: 0 0 2em 0;
+        min-height: inherit;
+        margin: 0 auto;
+        max-width: 600px;
+      }
+      input[type=email] {
+        font-weight: 300;
+        background: transparent;
+        border: 2px solid #ddd;
+        padding: 0.5em 1em;
+        width: ~"calc(100% - 148px)";
+        outline: none;
+      }
+      input[type=submit] {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0.5em 1em;
+        width: 150px;
+        border: 2px solid #ddd;
+        background-color: white;
+        color: #3489ff;
+        font-weight: 900;
+      }
+    }
 }
