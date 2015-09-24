@@ -10,7 +10,14 @@
                 {{ content }}
             </div>
         </section>
-        {% include footer.html %}
+        {% if page.hideFooter != true %}
+          {% include footer.html %}
+        {% endif %}
         {% include google_analytics.html %}
+        <script>
+            $(".menu-opener").click(function(){
+                $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
+            });
+        </script>
     </body>
 </html>
