@@ -8,7 +8,7 @@ tags: []
 
 I sometimes find myself coming up against constraints or limitations imposed upon my software either through the tools that I'm using, or by a limited understanding of how to use those tools. In these situations we're always given two options:
 
-1. Bend or reshape your solution to fix the constraint
+1. Bend or reshape your solution to fit the constraint
 2. Maintain your design and overcome the limitation
 
 A perfect example of this would be something as seemingly simple as sorting a collection of documents by ownership using [MongoDB](https://www.mongodb.com/).
