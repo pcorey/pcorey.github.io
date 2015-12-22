@@ -76,6 +76,14 @@ Now it's time to add our tests!
 
 Let's say we have a module in our application called `Foo`{:.language-javascript}. `Foo`{:.language-javascript} is simple. `Foo`{:.language-javascript} has a method called `bar`{:.language-javascript} that always returns `"woo!"`{:.language-javascript}. How would we write a test for that?
 
+First, we'll need to pull in our `Foo`{:.language-javascript} module. This is done through a simple [ES6 import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import):
+
+~~~ javascript
+import {Foo} from "../foo";
+~~~
+
+Next, we'll write a test that verifies the behavior we described above:
+
 ~~~ javascript
 describe("Foo", () => {
 
