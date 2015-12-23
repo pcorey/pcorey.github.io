@@ -52,6 +52,16 @@ Now we have a test file called `foo.js`{:.language-bash} in our `tests`{:.langua
 "test": "mocha ./tests --compilers js:babel-register"
 ~~~
 
+So now we've told mocha to use Babel to compile our ES6 before it runs our tests, but we need to tell it which set of ES6 features we want to support.
+
+Add a new file called `.babelrc`{:.language-bash} to your project. In that file, we'll specify that we want to use the [`"es2015"`{:.language-javascript} Babel preset](https://babeljs.io/docs/plugins/preset-es2015/):
+
+~~~ javascript
+{
+  "presets": ["es2015"]
+}
+~~~
+
 That's it! Now we can run our test suite:
 
 ~~~ bash
