@@ -148,7 +148,7 @@ At this point, if you've built our your `Foo`{:.language-javascript} and its cor
 ~~~ bash
 foo
    ✓ returns woo
-   ✓ does s
+   ✓ does something
 
 2 passing (2ms)
 ~~~
