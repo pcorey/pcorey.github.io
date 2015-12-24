@@ -36,7 +36,8 @@ First thing's first, let's get our application set up to run unit tests. We're g
 
 ~~~ bash
 npm init
-npm i --save-dev mocha chai sinon sinon-chai babel-register babel-preset-es2015
+npm i --save-dev mocha chai sinon sinon-chai \
+                 babel-register babel-preset-es2015
 ~~~
 
 Now we'll need to set up our test directory. Normally, mocha tests are placed in a `test/`{:.language-bash} directory, but Meteor will interpret that was a source directory and compile everything within it. Instead, we'll keep our tests in `tests/`{:.language-bash}, which Meteor happily ignores.
