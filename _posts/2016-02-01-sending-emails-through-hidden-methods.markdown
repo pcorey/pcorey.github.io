@@ -38,7 +38,7 @@ Meteor.call("sendEmail", "hello@east5th.co", "Hi Pete!");
 
 Sure enough, a few seconds later I received an email ___from the application owner___ with a message of `"Hi Pete!"`{:.language-javascript}. Uh oh.
 
-With a little devious thinking, it's not hard to imagine how this functionality could easily be abused by a potential hacker. Imagine someone leveraging your server and your SMTP account to send hundreds or thousands of spam emails. Or even worse, imagine an attacker impersonating the application or application owner and convincing users to click malicious links. Clearly, this is a bad thing.
+With a little devious thinking, it's not hard to imagine how this functionality could easily be abused by a potential hacker. Imagine someone leveraging your server and your SMTP account to send hundreds or thousands of spam emails. Or even worse, imagine an attacker impersonating the application or application owner and convincing users to click malicious links. This is a bad thing.
 
 ## Locking It Down
 
