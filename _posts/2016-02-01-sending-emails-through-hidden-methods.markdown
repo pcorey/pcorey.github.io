@@ -12,7 +12,7 @@ One of the first things I do when sleuthing my way through a new application is 
 
 <img src="https://s3-us-west-1.amazonaws.com/www.1pxsolidtomato.com/methodHandlers.png" style="max-width: 100%">
 
-When no methods appear in the `Meteor.connection._methodHandlers`{:.language-javascript} object, it means that the developer either didn't write any Meteor methods, or they wrote their methods in a server-only location which prevents them from being shipped and made accessible to the client.
+When no methods appear in the `Meteor.connection._methodHandlers`{:.language-javascript} object, it means that the developer either didn't write any Meteor methods, or they wrote their methods in a server-only location which prevents them from being shipped and made visible to the client.
 
 ## Finding Hidden Methods
 
