@@ -10,6 +10,7 @@ github_username:  pcorey
 # Build settings
 markdown: kramdown
 permalink: pretty
+highlighter: pygments
 
 gems:
   - jekyll-sitemap
