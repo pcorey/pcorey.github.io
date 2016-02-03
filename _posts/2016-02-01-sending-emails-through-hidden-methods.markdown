@@ -24,11 +24,11 @@ To find these method calls, I opened up the minified Javascript source of the ap
 
 While scanning through these calls to hidden methods, one method call in particular caught my eye:
 
-~~~ javascript
+```javascript
 ...
 Meteor.call("sendEmail", this.getEmail(), "Welcome...");
 ...
-~~~
+```
 
 It looked as if this method took an email address and a message as arguments, and sent that message to the provided email address. Without access to the source of the method, I didn't know if the method was doing some kind of validation on the provided email address. The only way to find out was to test it out. In my browser console, I tried the following:
 
