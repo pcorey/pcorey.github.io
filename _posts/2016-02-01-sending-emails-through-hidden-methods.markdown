@@ -24,17 +24,15 @@ To find these method calls, I opened up the minified Javascript source of the ap
 
 While scanning through these calls to hidden methods, one method call in particular caught my eye:
 
-~~~javascript
-...
+<pre class="language-javascript"><code class="language-javascript">...
 Meteor.call("sendEmail", this.getEmail(), "Welcome...");
 ...
-~~~
+</code></pre>
 
 It looked as if this method took an email address and a message as arguments, and sent that message to the provided email address. Without access to the source of the method, I didn't know if the method was doing some kind of validation on the provided email address. The only way to find out was to test it out. In my browser console, I tried the following:
 
-~~~ javascript
-Meteor.call("sendEmail", "hello@east5th.co", "Hi Pete!");
-~~~
+<pre class="language-javascript"><code class="language-javascript">Meteor.call("sendEmail", "hello@east5th.co", "Hi Pete!");
+</code></pre>
 
 Sure enough, a few seconds later I received an email ___from the application owner___ with a message of `"Hi Pete!"`{:.language-javascript}. Uh oh.
 
@@ -48,15 +46,14 @@ For example, if we're attempting to send a welcome email to a user after they si
 
 Or maybe an admin user may want the ability to send emails to users through some kind of admin panel. This could be implemented through a method that looks very similar to the `sendEmail`{:.language-javascript} method we saw earlier, but with a few key differences. First, we would verify that the current user has the expected permissions to send the email. We would also verify that we're sending the email to a user of the system, not an arbitrary email address:
 
-~~~ javascript
-sendEmail: function(userId) {
+<pre class="language-javascript"><code class="language-javascript">sendEmail: function(userId) {
   var user = Meteor.users.findOne(userId);
   if (Roles.userIsInRole(this.userId, "admin") &&
       user && user.emails && user.emails[0].address) {
     Email.send(...);
   }
 }
-~~~
+</code></pre>
 
 ## Final Thoughts
 
