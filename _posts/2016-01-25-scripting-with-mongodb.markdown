@@ -12,8 +12,7 @@ Recently, I was tasked with gathering some quick statistics on an ongoing [A/B t
 
 I fired up [Robomongo](http://robomongo.org/) and went to work. The first thing I needed to do was define the two (or more) groups that I wanted to gather statistics on. To keep things simple for this example, let's assume that users in Group A have a `group`{:.language-javascript} field on their user document with a value of `"A"`{:.language-javascript}, and users in Group B have `"B"`{:.language-javascript}:
 
-~~~ javascript
-var groups = [
+<pre class="language-javascript"><code class="language-javascript">var groups = [
   {
     query: {
       group: "A", 
@@ -27,44 +26,40 @@ var groups = [
     }
   }
 ];
-~~~
+</code></pre>
 
 Next, I wanted to loop through each of these groups, and find out how many users existed in each. This was fairly straight forward with some vanilla Javascript:
 
-~~~ javascript
-groups.forEach(function(group, index) {
+<pre class="language-javascript"><code class="language-javascript">groups.forEach(function(group, index) {
   group.cursor = db.users.find(group.query);
   group.count = group.cursor.count();
   ...
-~~~
+</code></pre>
 
 In addition to calculating how many users were in each group, I also wanted to calculate the total number of interactions per group. In this simplified system, interactions are represented as a many-to-one mapping between the `users`{:.language-javascript} collection and the `interactions`{:.language-javascript} collection.
 
 The first step to counting the number of interactions per group was to build a list of `userIds`{:.language-javascript} per group. This is an easy task thanks to Mongo's suite of [database cursor methods](https://docs.mongodb.org/v3.0/reference/method/cursor.hasNext/):
 
-~~~ javascript
-  ...
+<pre class="language-javascript"><code class="language-javascript">...
   group.userIds = [];
   while (group.cursor.hasNext()) {
     group.userIds.push(group.cursor.next()._id);
   }
   ...
-~~~
+</code></pre>
 
 Now we can construct a query to find and count the total number of interactions per group:
 
-~~~ javascript
-  ...
+<pre class="language-javascript"><code class="language-javascript">...
   group.interactions = db.interactions.find({
     userId: {$in: group.userIds}
   }).count();
   ...
-~~~
+</code></pre>
 
 We now have all of the information we need. The last step is to calculate the number of interactions per user and [print the results](https://docs.mongodb.org/manual/tutorial/getting-started-with-the-mongo-shell/#print).
 
-~~~ javascript
-  ...
+<pre class="language-javascript"><code class="language-javascript">...
   print([
     "Group " + index + ":",
     "Total users: " + group.count,
@@ -72,12 +67,11 @@ We now have all of the information we need. The last step is to calculate the nu
     "Interactions/user: " + group.interactions/group.count
   ].join("\n"));
 });
-~~~
+</code></pre>
 
 The results of this script should give us something like this:
 
-~~~ markdown
-Group 0:
+<pre class="language-markdown"><code class="language-markdown">Group 0:
 Total users: 1337
 Total interactions: 84329
 Interactions/user: 63.07329842931937
@@ -86,7 +80,7 @@ Group 1:
 Total users: 1335
 Total interactions: 79843
 Interactions/user: 59.80749063670412
-~~~
+</code></pre>
 
 Not a bad result for a few minutes of coding. You can find the [whole script here](https://gist.github.com/pcorey/0843081b858dd43b6d81). Feel free to download it and modify it to fit your needs.
 

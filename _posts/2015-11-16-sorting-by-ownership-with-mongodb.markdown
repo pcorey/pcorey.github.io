@@ -15,13 +15,12 @@ A perfect example of this would be something as seemingly simple as sorting a co
 
 Let's say we have a huge collection of documents in our database. An example document would look something like this:
 
-~~~ javascript
-{
+<pre class="language-javascript"><code class="language-javascript">{
   ownerId: "XuwWcLue9zom8DqEA",
   name: "Foo"
   ...
 }
-~~~
+</code></pre>
 
 Each document is owned by a particular user (denoted by the `ownerId`{:.language-javascript} field). On the front-end, we want to populate a table with these documents. The current user's documents should appear first, secondarily sorted by the document's `name`{:.language-javascript} field, and all other documents should follow, sorted by their name.
 
@@ -33,8 +32,7 @@ Unfortunately, while [there are tools](https://github.com/dburles/meteor-collect
 
 The second issue is the size of our imaginary collection. If our collection were smaller, we could just pull everything into memory and (painfully) sort the documents ourselves:
 
-~~~ javascript
-Collection.find({}).sort(function(a, b) {
+<pre class="language-javascript"><code class="language-javascript">Collection.find({}).sort(function(a, b) {
   if (a.ownerId === Meteor.userId()) {
     if (b.ownerId === Meteor.userId()) {
       return a.name < b.name ? -1 :
@@ -52,7 +50,7 @@ Collection.find({}).sort(function(a, b) {
            a.name == b.name ? 0 : 1;
   }
 });
-~~~
+</code></pre>
 
 Unfortunately, we have a very large number of documents, so pulling them all down into memory at once is unfeasible. This means that ___we need to sort and paginate our data in the database___. See issue #1.
 
@@ -71,30 +69,27 @@ At first, you may be thinking that ownership _is already encoded_ through the `o
 
 One way to do this is to create a field on the document when it's created. ___The value of this field is the owner's ID.___ Within that field we store a simple object that holds an ownership flag:
 
-~~~ javascript
-{
+<pre class="language-javascript"><code class="language-javascript">{
   …
   "XuwWcLue9zom8DqEA": {
     "owner": 1
   }
 }
-~~~
+</code></pre>
 
 This object can be inserted into each document automatically using a variety of hooking or data management techniques. Here's how you would implement it if you were using [`matb33:collection-hooks`{:.language-*}](https://github.com/matb33/meteor-collection-hooks):
 
-~~~ javascript
-Documents.before.insert(function(userId, doc) {
+<pre class="language-javascript"><code class="language-javascript">Documents.before.insert(function(userId, doc) {
   doc[userId] = {
     owner: 1
   };
   return doc;
 });
-~~~
+</code></pre>
 
 This seems a little unconventional, but it opens up the path to our goal: sorting by ownership. Check out how we would [construct our sorting query](http://docs.meteor.com/#/full/sortspecifiers):
 
-~~~ javascript
-
+<pre class="language-javascript"><code class="language-javascript">
 var sort = [
   [this.userId + ".owner", -1],
   ["name", 1]
@@ -106,7 +101,7 @@ Documents.find({
   sort: sort,
   ...
 });
-~~~
+</code></pre>
 
 Using this query, all documents we own will be returned first, sorted by their name, followed by all documents we don't own, sorted by their name. Victory!
 
@@ -122,8 +117,7 @@ Our aggregation will operate in two steps. The first step will be to calculate t
 
 We'll use the [`$cond`{:.language-javascript} operator](https://docs.mongodb.org/manual/reference/operator/aggregation/cond/#exp._S_cond) to calculate a new `owned`{:.language-javascript} flag on each document by comparing the value of `ownerId`{:.language-javascript} to the current user's ID (which is passed into our aggregation). This calculated value is set on each returned document during the [projection stage](https://docs.mongodb.org/manual/reference/operator/aggregation/project/#pipe._S_project) of our aggregation pipeline. Check it out:
 
-~~~ javascript
-Documents.aggregate([
+<pre class="language-javascript"><code class="language-javascript">Documents.aggregate([
     {
         $project: {
             owned: {$cond: [{$eq: ["$ownerId", this.userId]}, 1, 0]},
@@ -138,7 +132,7 @@ Documents.aggregate([
         }
     }
 ]);
-~~~
+</code></pre>
 
 We're using Mongo's aggregation framework within our Meteor application using the [`meteorhacks:aggregation`{:.language-*}](https://github.com/meteorhacks/meteor-aggregate) package. Be sure to check out Josh Owen's great article about [using `meteorhacks:aggregation`{:.language-*} to power your publications](http://joshowens.me/using-mongodb-aggregations-to-power-a-meteor-js-publication/).
 

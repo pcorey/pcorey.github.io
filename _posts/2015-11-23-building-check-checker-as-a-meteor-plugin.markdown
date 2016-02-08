@@ -20,8 +20,7 @@ Buried deep within the Meteor wiki, there's a [fantastic guide for working with 
 
 The first step to turning a package into a linter is to modify your `package.js`{:.language-bash}. Linters, minifiers, and compilers are all considered "plugins" within the Meteor ecosystem, and need to be registered as such. This is done through a call to `Package.registerBuildPlugin`{:.language-javascript}:
 
-~~~ javascript
-Package.registerBuildPlugin({
+<pre class="language-javascript"><code class="language-javascript">Package.registerBuildPlugin({
  name: "check-checker",
  sources: [
    "lib/rules/checks.js",
@@ -35,7 +34,7 @@ Package.registerBuildPlugin({
 Package.onUse(function(api) {
  api.use("isobuild:linter-plugin@1.0.0");
 });
-~~~
+</code></pre>
 
 <hr/>
 
@@ -43,14 +42,13 @@ In our package code, we register our linter with a call to `Plugin.registerLinte
 
 By specifying an architecture of `"os"`{:.language-javascript}, our linter will only rerun when changes are made to server code. Client source files will be ignored.
 
-~~~ javascript
-Plugin.registerLinter({
+<pre class="language-javascript"><code class="language-javascript">Plugin.registerLinter({
  extensions: ["js"],
  archMatching: "os"
 }, function() {
  return new CheckChecker();
 });
-~~~
+</code></pre>
 
 <hr/>
 
@@ -58,8 +56,7 @@ This last argument is the most important. You'll notice that we're returning a n
 
 This function is called directly by the linter for each set of files that match the criteria we specified above. The goal of our linter is to iterate over each of these files, looking for missing calls to `check`{:.language-javascript}. When we find a problem we report it through a call to the `error` function with is attached automatically to each file instance we're given.
 
-~~~ javascript
-function CheckChecker() {
+<pre class="language-javascript"><code class="language-javascript">function CheckChecker() {
  eslint.linter.defineRule('checks', checks);
 };
 
@@ -78,7 +75,7 @@ CheckChecker.prototype.processFilesForPackage = function(files, options) {
    });
  });
 };
-~~~
+</code></pre>
 
 <hr/>
 

@@ -26,8 +26,7 @@ Despite this hardened architectural approach, there was one piece of code that c
 
 The validation process seemed straight-forward. Each field in the `users`{:.language-javascript} schema maintained a list of roles allowed to modify that field. The `completeUserProfile`{:language-javascript} method looped over each field being modified and checked that the user had the required role:
 
-~~~javascript
-// go over each field and throw an error if it's not editable
+<pre class="language-javascript"><code class="language-javascript">// go over each field and throw an error if it's not editable
 // loop over each operation ($set, $unset, etc.)
 _.each(modifier, function (operation) {
   // loop over each property being operated on
@@ -38,23 +37,21 @@ _.each(modifier, function (operation) {
     }
   });
 });
-~~~
+</code></pre>
 
 So, users with `"member"`{:.language-javascript} or `"admin"`{:.language-javascript} roles could modify `telescope.displayName`{:.language-javascript}, but only users with the `"admin"`{:.language-javascript} role could modify `isAdmin`{:.language-javascript}:
 
-~~~ javascript
-displayName: {
+<pre class="language-javascript"><code class="language-javascript">displayName: {
   ...
   editableBy: ["member", "admin"]
 }
-~~~
+</code></pre>
 
-~~~ javascript
-isAdmin: {
+<pre class="language-javascript"><code class="language-javascript">isAdmin: {
   ...
   editableBy: ["admin"]
 }
-~~~
+</code></pre>
 
 ## $Renaming For Fun And Profit
 
@@ -62,13 +59,12 @@ But `$set`{:.language-*} and `$unset`{:.language-javascript} aren't the only [up
 
 What would happen if I [`$rename`{:.language-*}](https://docs.mongodb.org/manual/reference/operator/update/rename/) `displayName`{:.language-javascript} to `isAdmin`{:.language-javascript}? Let's try it!
 
-~~~ javascript
-Meteor.call("completeUserProfile", {
+<pre class="language-javascript"><code class="language-javascript">Meteor.call("completeUserProfile", {
   $rename: {
     "telescope.displayName": "isAdmin"
   }
 }, Meteor.userId());
-~~~
+</code></pre>
 
 Instantly, various admin controls appear in our browser ([isn't reactivity cool?](http://blog.east5th.co/2014/12/02/meteor-first-impressions/))! And just like that, we gave ourself admin permissions.
 
@@ -76,8 +72,7 @@ So, what's going on here?
 
 Let's assume we had a value in `displayName`{:.language-javascript}; let's say it was `"YouBetcha"`{:.language-javascript}. In that case, our user document would look something like this:
 
-~~~ javascript
-{
+<pre class="language-javascript"><code class="language-javascript">{
   ...
   isAdmin: false,
   telescope: {
@@ -85,19 +80,18 @@ Let's assume we had a value in `displayName`{:.language-javascript}; let's say i
     displayName: "YouBetcha"
   }
 }
-~~~
+</code></pre>
 
 By running an update on our user document that renames `telescope.displayName`{:.language-javascript} to `isAdmin`{:.language-javascript}, I'm effectively dumping the value of `"YouBetcha"`{:.language-javascript} into `isAdmin`{:.language-javascript}. My user document would now look something like this:
 
-~~~ javascript
-{
+<pre class="language-javascript"><code class="language-javascript">{
   ...
   isAdmin: "YouBetcha",
   telescope: {
     ...
   }
 }
-~~~
+</code></pre>
 
 Interestingly, [SimpleSchema](https://github.com/aldeed/meteor-simple-schema) does not enforce type constraints during `$rename`{:.language-javascript}, so we can happily dump our `String`{:.language-javascript} into the `Boolean`{:.language-javascript} `isAdmin`{:.language-javascript} field.
 
@@ -119,6 +113,5 @@ All of these things need to be taken into consideration when [writing collection
 
 Are you using a vulnerable version of Telescope? Use my [Package Scan](http://scan.east5th.co/) tool to find out. You can also include Package Scan as part of your build process by adding [`east5th:package-scan`](https://github.com/East5th/package-scan) to your Meteor project:
 
-~~~ bash
-meteor add east5th:package-scan
-~~~
+<pre class="language-bash"><code class="language-bash">meteor add east5th:package-scan
+</code></pre>

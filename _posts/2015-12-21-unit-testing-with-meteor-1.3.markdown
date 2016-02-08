@@ -34,52 +34,45 @@ Leveraging this new functionality takes a bit of work, but the payoffs are well 
 
 First thing's first, let's get our application set up to run unit tests. We're going to be using [Mocha](https://mochajs.org/) spiced up with [Chai](http://chaijs.com/guide/installation/) and [Sinon](http://sinonjs.org/). We'll also want to write our unit tests in [ES6](https://github.com/lukehoban/es6features), so we'll include [Babel](http://babeljs.io/) as well. Let's set up [npm](https://www.npmjs.com/) for our project and pull in the development dependencies we'll need to get testing:
 
-~~~ bash
-npm init
+<pre class="language-bash"><code class="language-bash">npm init
 npm i --save-dev mocha chai sinon sinon-chai \
                  babel-register babel-preset-es2015
-~~~
+</code></pre>
 
 Now we'll need to set up our test directory. Normally, mocha tests are placed in a `test/`{:.language-bash} directory, but Meteor will interpret that was a source directory and compile everything within it. Instead, we'll keep our tests in `tests/`{:.language-bash}, which Meteor happily ignores.
 
-~~~ bash
-mkdir tests/
+<pre class="language-bash"><code class="language-bash">mkdir tests/
 touch tests/foo.js
-~~~
+</code></pre>
 
 Now we have a test file called `foo.js`{:.language-bash} in our `tests`{:.language-bash} folder. Finally, let's add an `npm test`{:.language-bash} script that uses the Babel compiler, just to make our lives easier. Add the following entry to the `"scripts"`{:.language-javascript} entry of your `package.json`{:.language-bash}:
 
-~~~ javascript
-"test": "mocha ./tests --compilers js:babel-register"
-~~~
+<pre class="language-javascript"><code class="language-javascript">"test": "mocha ./tests --compilers js:babel-register"
+</code></pre>
 
 So now we've told mocha to use Babel to compile our ES6 before it runs our tests, but we need to tell it which set of ES6 features we want to support.
 
 Add a new file called `.babelrc`{:.language-bash} to your project. In that file, we'll specify that we want to use the [`"es2015"`{:.language-javascript} Babel preset](https://babeljs.io/docs/plugins/preset-es2015/):
 
-~~~ javascript
-{
+<pre class="language-javascript"><code class="language-javascript">{
   "presets": ["es2015"]
 }
-~~~
+</code></pre>
 
 That's it! Now we can run our test suite:
 
-~~~ bash
-npm test
-~~~
+<pre class="language-bash"><code class="language-bash">npm test
+</code></pre>
 
 Or we can run it in [watch mode](https://mochajs.org/#w-watch), which will instantly rerun the suite every time any Javascript files in or below the current working directory change:
 
-~~~ bash
-npm test -- -w
-~~~
+<pre class="language-bash"><code class="language-bash">npm test -- -w
+</code></pre>
 
 You should see a message like this, indicating that our test suite is working:
 
-~~~ bash
-0 passing (0ms)
-~~~
+<pre class="language-bash"><code class="language-bash">0 passing (0ms)
+</code></pre>
 
 Now it's time to add our tests!
 
@@ -89,14 +82,12 @@ Let's say we have a module in our application called `Foo`{:.language-javascript
 
 First, we'll need to pull in our `Foo`{:.language-javascript} module. This is done through a simple [ES6 import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import):
 
-~~~ javascript
-import {Foo} from "../foo";
-~~~
+<pre class="language-javascript"><code class="language-javascript">import {Foo} from "../foo";
+</code></pre>
 
 Next, we'll write a test that verifies the behavior we described above:
 
-~~~ javascript
-describe("Foo", () => {
+<pre class="language-javascript"><code class="language-javascript">describe("Foo", () => {
 
   it("returns woo", function() {
     let foo = new Foo(Meteor);
@@ -105,7 +96,7 @@ describe("Foo", () => {
   });
 
 });
-~~~
+</code></pre>
 
 That's fairly straight-forward. We're creating an instance of `Foo`{:.language-javascript}, and we're running `bar()`{:.language-javascript}. Lastly, we assert that the value we got from `bar()`{:.language-javscript} is `"woo!"`{:.language-javascript}.
 
@@ -113,8 +104,7 @@ That's fairly straight-forward. We're creating an instance of `Foo`{:.language-j
 
 Testing for this behavior is a little more complicated. We're going to write a [test double](http://www.martinfowler.com/bliki/TestDouble.html) for the `Meteor.call`{:.language-javascript} method that will let us spy on how this method is used by our code under test. Check it out:
 
-~~~ javascript
-let Meteor;
+<pre class="language-javascript"><code class="language-javascript">let Meteor;
 beforeEach(function() {
   Meteor = {
     call: sinon.spy()
@@ -128,7 +118,7 @@ it("does something", function() {
   foo.doSomething();
   expect(Meteor.call).to.have.been.calledWith("something", "woo!");
 });
-~~~
+</code></pre>
 
 Once again, we create an instance of `Foo`{:.language-javascript}. However this time, we call `doSomething()`{:.language-javascript} on the instance of `Foo`{:.language-javascript}, and then we assert that the `Meteor.call`{:.language-javascript} method was called with the arguments `"something"`{:.language-javascript} and `"woo!"`{:.language-javascript}. We can make this kind of assertion because we've replaced the normal `Meteor.call`{:.language-javascript} [with a spy](http://sinonjs.org/docs/#spies), which lets us observe all kinds of interesting things about how a function is used and how it behaves during the test.
 
@@ -136,8 +126,7 @@ Once again, we create an instance of `Foo`{:.language-javascript}. However this 
 
 You'll notice that each of these tests are passing a `Meteor`{:.language-javascript} object into `Foo`{:.language-javascript}. If you dig into the `Foo`{:.language-javascript} module, you'll see that any interactions it has with the outside world of Meteor are done through this passed in object:
 
-~~~ javascript
-export class Foo {
+<pre class="language-javascript"><code class="language-javascript">export class Foo {
   constructor(Meteor) {
     this.Meteor = Meteor;
   }
@@ -148,7 +137,7 @@ export class Foo {
     this.Meteor.call("something", this.bar());
   }
 }
-~~~
+</code></pre>
 
 In this scenario, `Meteor`{:.language-javascript} is a dependency of `Foo`{:.language-javascript}. `Foo`{:.language-javascript} needs `Meteor`{:.language-javascript} to function. This technique of passing in dependencies is known as [Dependency Injection](http://stackoverflow.com/a/130862), and can be very useful.
 
@@ -156,13 +145,12 @@ Accessing Meteor through a reference provided at construction may seem strange a
 
 At this point, if you've built our your `Foo`{:.language-javascript} and its corresponding tests, your watching test runner should be showing you two passing tests (completed in ___milliseconds___):
 
-~~~ bash
-foo
+<pre class="language-bash"><code class="language-bash">foo
    ✓ returns woo
    ✓ does something
 
 2 passing (2ms)
-~~~
+</code></pre>
 
 You can see the full test file, with a little extra boilderplate, [on Github](https://github.com/pcorey/hello-meteor-modules/blob/master/tests/foo.js), along with the source for the [`Foo`{:.language-javascript} module](https://github.com/pcorey/hello-meteor-modules/blob/master/foo.js).
 

@@ -15,13 +15,12 @@ Not only did I release the [Package Scan Web Tool](http://scan.east5th.co/), but
 Charles found an issue with older versions of [`babrahams:editable-json
 `{:.language-*}](https://github.com/JackAdams/meteor-editable-json) `(<= 0.5.1)`{:.language-*} that allows for any user to run arbitrary updates on any document in any collection. This means that a user could potentially run an update on their own user document to give themselves administrator permissions:
 
-~~~ javascript
-Meteor.call("editableJSON_update", "users", Meteor.userId(), {
+<pre class="language-javascript"><code class="language-javascript">Meteor.call("editableJSON_update", "users", Meteor.userId(), {
   $set: {
     roles: ["admin"]
   }
 });
-~~~
+</code></pre>
 
 <hr/>
 

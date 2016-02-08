@@ -10,30 +10,26 @@ Full [ES6](https://nodejs.org/en/docs/es6/) support is just around the corner. I
 
 Proxies make some incredibly exciting things possible. Imagine a [Meteor method](http://docs.meteor.com/#/full/meteor_methods) like the one below:
 
-~~~ javascript
-Meteor.methods({
+<pre class="language-javascript"><code class="language-javascript">Meteor.methods({
   foo: function(bar) {
     return Bars.remove(bar._id);
   }
 });
-~~~
+</code></pre>
 
 As [I've talked about in the past](http://blog.east5th.co/2015/08/31/incomplete-argument-checks/), this method exposes our application to a serious security vulnerability. A user can pass in an arbitrary [MongoDB query object](http://docs.meteor.com/#/full/selectors) in the `_id`{:.language-javascript} field of `bar`{:.language-javascript} like this:
 
-~~~ javascript
-Meteor.call("foo", {_id: {$gte: ""}});
-~~~
+<pre class="language-javascript"><code class="language-javascript">Meteor.call("foo", {_id: {$gte: ""}});
+</code></pre>
 
 This would delete all of the documents from our `Bars`{:.language-javascript} collection. Uh oh! Imagine if we could automatically detect and prevent that from happening, and instead throw an exception that tells the client:
 
-~~~ bash
-Meteor.Error: Tried to access unsafe field: _id
-~~~
+<pre class="language-bash"><code class="language-bash">Meteor.Error: Tried to access unsafe field: _id
+</code></pre>
 
 Our `_id`{:.language-javascript} field would be accessible ___only after we check it___:
 
-~~~ javascript
-Meteor.methods({
+<pre class="language-javascript"><code class="language-javascript">Meteor.methods({
   foo: function(bar) {
     check(bar, {
       _id: String
@@ -41,7 +37,7 @@ Meteor.methods({
     return Bars.remove(bar._id);
   }
 });
-~~~
+</code></pre>
 
 Any attempts to access a field on a user-provided object will throw an exception unless it's been explicitly checked for safety. If this were possible, it could be used to prevent entire categories of security vulnerabilities!
 
@@ -57,8 +53,7 @@ In the above example, our proxy sees that we're trying to access `_id`{:.languag
 
 A rough sketch of this kind of proxy would look something like this:
 
-~~~ javascript
-CheckProxy = {
+<pre class="language-javascript"><code class="language-javascript">CheckProxy = {
   get: function(target, field) {
     if (!target ||
         !target.__checked ||
@@ -68,12 +63,11 @@ CheckProxy = {
     return target[field];
   }
 };
-~~~
+</code></pre>
 
 But how does the proxy know when a field has been checked? We have to explicitly tell the proxy that each field has been checked after we've determined that it's safe to use. One way to do this is through a custom `set`{:.language-javascript} trap:
 
-~~~ javascript
-CheckProxy = {
+<pre class="language-javascript"><code class="language-javascript">CheckProxy = {
   ...
   set: function(target, field, value) {
     if (field == "__checked") {
@@ -88,12 +82,11 @@ CheckProxy = {
     return true;
   }
 };
-~~~
+</code></pre>
 
 If we wanted to use our proxy as-is, there would be a good amount of manual work involved. We'd have to instantiate a new proxy object for each one of our object arguments, and then explicitly notify the proxy after each check:
 
-~~~ javascript
-Meteor.methods({
+<pre class="language-javascript"><code class="language-javascript">Meteor.methods({
   foo: function(bar) {
     bar = new Proxy(bar, CheckProxy);
     check(bar, {
@@ -103,7 +96,7 @@ Meteor.methods({
     return Bars.remove(bar._id);
   }
 });
-~~~
+</code></pre>
 
 This is too much work! It wouldn't take long to lose diligence and fall back to not checking arguments at all.
 
@@ -111,8 +104,7 @@ Thankfully, we can hide all of this manual work through the magic of monkey patc
 
 The first thing we'll do is patch our `check`{:.language-javascript} method to tell our proxy whenever we check a field on an object:
 
-~~~ javascript
-_check = check;
+<pre class="language-javascript"><code class="language-javascript">_check = check;
 check = function(object, fields) {
   if (object instanceof Object) {
     Object.keys(fields).forEach(function(field) {
@@ -121,12 +113,11 @@ check = function(object, fields) {
   }
   _check.apply(this, arguments);
 };
-~~~
+</code></pre>
 
 Next, we just have to patch `Meteor.methods`{:.language-javascript} to automatically wrap each `Object`{:.language-javascript} argument in a proxy:
 
-~~~ javascript
-_methods = Meteor.methods;
+<pre class="language-javascript"><code class="language-javascript">_methods = Meteor.methods;
 Meteor.methods = function(methods) {
   _.each(methods, function(method, name, obj) {
     obj[name] = function() {
@@ -143,7 +134,7 @@ Meteor.methods = function(methods) {
   });
   _methods.apply(this, arguments);
 };
-~~~
+</code></pre>
 
 Whew, this is getting dense!
 

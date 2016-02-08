@@ -14,8 +14,7 @@ To be honest, I didn’t see this coming. I thought I’ve been doing everything
 
 This might be a little awkward, but let me show you... Suppose we’ve got a Job Board application. In it, there’s a Jobs collection. We’re using [`dburles:collection-helpers`{:.language-*}](https://github.com/dburles/meteor-collection-helpers) to build a simple Jobs model. Imagine that we want to allow users to close jobs they’ve created when the position is filled. Let’s create a model method that can be called from our controller layer (our [Meteor](https://www.meteor.com/) method):
 
-~~~ javascript
-Jobs.helpers({
+<pre class="language-javascript"><code class="language-javascript">Jobs.helpers({
   ...
   closeJob: () => {
     Jobs.update(this._id, {
@@ -26,12 +25,11 @@ Jobs.helpers({
   }
   ...
 });
-~~~
+</code></pre>
 
 Ah, but wait. When a job closes we also need to email the job owner and congratulate them on successfully filling the position. Let’s update our model.
 
-~~~ javascript
-closeJob: () => {
+<pre class="language-javascript"><code class="language-javascript">closeJob: () => {
   Jobs.update(this._id, {
     $set: {
       closed: true
@@ -43,14 +41,13 @@ closeJob: () => {
     body: "Congrats on filling the position!"
   });
 }
-~~~
+</code></pre>
 
 After getting some user feedback, we’ve realized that we need to congratulate the person who filled the position. Also, we should notify all of the other applicants who applied, but didn’t get the job. _Also_, we need to do some housekeeping and update the Organization that this job belongs to.
 
 Let’s get back to work on our model.
 
-~~~ javascript
-closeJob: () => {
+<pre class="language-javascript"><code class="language-javascript">closeJob: () => {
   Jobs.update(this._id, {
     $set: {
       closed: true
@@ -76,7 +73,7 @@ closeJob: () => {
 
   this.getOrganization().closeJob();
 }
-~~~
+</code></pre>
 
 Whew, that looks mostly complete!
 
@@ -84,8 +81,7 @@ Though technically, job owners will close a job for a variety of reasons. Maybe 
 
 Maybe the solution is to pass in flags to determine whether we should kick off various emails:
 
-~~~ javascript
-closeJob: (congratulateOwner, congratulateFiller, notifyApplicants) => {
+<pre class="language-javascript"><code class="language-javascript">closeJob: (congratulateOwner, congratulateFiller, notifyApplicants) => {
   Jobs.update(this._id, {
     $set: {
       closed: true
@@ -117,7 +113,7 @@ closeJob: (congratulateOwner, congratulateFiller, notifyApplicants) => {
 
   this.getOrganization().closeJob();
 }
-~~~
+</code></pre>
 
 The complexity of our model method is getting out of hand! The controller calling this method is forced to know much more about the internals of the method than it should. The bottom line is that our model is getting ___too fat___.
 
@@ -127,30 +123,27 @@ So how do we shed all of this weight that’s built up on our model? We can find
 
 Let’s take a step back and think about our domain in reverse. We have a few things we want to do on every job closure. Whenever a job is closed because a suitable applicant was found, we want to send an email congratulating the job owner:
 
-~~~ javascript
-when("JobWasFilled", job => {
+<pre class="language-javascript"><code class="language-javascript">when("JobWasFilled", job => {
   Email.send({
     to: job.getOwner().getEmail(),
     body: "Congrats on filling the position!"
   });
 });
-~~~
+</code></pre>
 
 We’ll also want to congratulate the user who filled the job:
 
-~~~ javascript
-when("JobWasFilled", job => {
+<pre class="language-javascript"><code class="language-javascript">when("JobWasFilled", job => {
   Email.send({
     to: job.getFiller().getEmail(),
     body: "Congrats on landing the job!"
   });
 });
-~~~
+</code></pre>
 
 Any time a job posting is closed for any reason, we’ll want to notify all of our users who applied for that job:
 
-~~~ javascript
-when("JobWasClosed", job => {
+<pre class="language-javascript"><code class="language-javascript">when("JobWasClosed", job => {
   job.getApplicants().forEach(applicant => {
     Email.send({
       to: applicant.getEmail(),
@@ -158,20 +151,18 @@ when("JobWasClosed", job => {
     });
   });
 });
-~~~
+</code></pre>
 
 And we also want to always update the job’s parent organization:
 
-~~~ javascript
-when("JobWasClosed", job => {
+<pre class="language-javascript"><code class="language-javascript">when("JobWasClosed", job => {
   job.getOrganization().closeJob();
 });
-~~~
+</code></pre>
 
 All of these pieces of code can live in their own files on the server. We can organize them in such a way that makes immediate sense to anyone looking at the structure of our project:
 
-~~~ bash
-server/
+<pre class="language-bash"><code class="language-bash">server/
   listeners/
     jobWasClosed/
       closeJobOnOrganization.js
@@ -179,12 +170,11 @@ server/
     jobWasFilled/
       congratulateOwner.js
       congratulateFiller.js
-~~~
+</code></pre>
 
 Now, our `closeJob`{:.language-javascript} model method is incredibly simple, straight forward, and best of all, _only has to worry about the model_:
 
-~~~ javascript
-closeJob: () => {
+<pre class="language-javascript"><code class="language-javascript">closeJob: () => {
   Jobs.update(this._id, {
     $set: {
       closed: true
@@ -193,19 +183,18 @@ closeJob: () => {
 
   EventEmitter.emit("JobWasClosed", this);
 }
-~~~
+</code></pre>
 
 We’ll also need to emit the `JobWasFilled`{:.language-javascript} event from our method layer:
 
-~~~ javascript
-Meteor.methods({
+<pre class="language-javascript"><code class="language-javascript">Meteor.methods({
   fillJob: jobId => {
     ...
     job.closeJob();
     EventEmitter.emit("JobWasFilled", job);
   }
 });
-~~~
+</code></pre>
 
 Now, when a job is filled, the `JobWasClosed`{:.language-javascript} event will be fired by the model, and the `JobWasFilled`{:.language-javascript} event will be fired by our method layer. Our listeners will pick up on these events and do their duty. If `closeJob`{:.language-javascript} is called through some other means, our `JobWasClosed`{:.language-javascript} listeners will be triggered, but the `JobWasFilled`{:.language-javascript} listeners will not. Perfect!
 

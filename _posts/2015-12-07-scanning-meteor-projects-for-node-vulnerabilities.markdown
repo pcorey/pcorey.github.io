@@ -20,8 +20,7 @@ Thankfully, [a bundled Meteor application](http://docs.meteor.com/#/full/meteorb
 
 A brand new Meteor project (`meteor create foo`{:.language-bash}) immediately pulls in over a dozen Node packages. Check them out:
 
-~~~ bash
-.
+<pre class="language-bash"><code class="language-bash">.
 ├── babel-compiler         <- Meteor package
 │   └── node_modules
 │       └── meteor-babel   <- Node package
@@ -59,29 +58,26 @@ A brand new Meteor project (`meteor create foo`{:.language-bash}) immediately pu
         ├── connect
         ├── send
         └── useragent
-~~~
+</code></pre>
 
 ## Using Node Security Project
 
 We can navigate into any of these Node package directories and run an NSP scan. For example, we can check the `sockjs`{:.langauge-*} package use by `ddp-server`{:.langauge-*} like this:
 
-~~~ bash
-cd .build/bundle/programs/server/npm/ddp-server/node_modules/sockjs
+<pre class="language-bash"><code class="language-bash">cd .build/bundle/programs/server/npm/ddp-server/node_modules/sockjs
 nsp check
-~~~
+</code></pre>
 
 Thankfully, there are no known vulnerabilities in this Node package:
 
-~~~ bash
-(+) No known vulnerabilities found
-~~~
+<pre class="language-bash"><code class="language-bash">(+) No known vulnerabilities found
+</code></pre>
 
 We could manually run this check for each Node package, but that would be incredibly time consuming. Why not automate the process?
 
 I wrote a quick bash script that looks for each `package.json`{:.language-bash} found within these top-level Node project folders and runs NSP on them. Here's the script:
 
-~~~ bash
-#!/usr/bin/env bash
+<pre class="language-bash"><code class="language-bash">#!/usr/bin/env bash
 
 find bundle/programs/server/npm/*/node_modules/*/package.json |
 while read file; do
@@ -93,20 +89,18 @@ while read file; do
   fi
   popd > /dev/null
 done
-~~~
+</code></pre>
 
 I named this script `mscan`{:.language-javascript} and threw it into my `~/bin`{:.language-bash} folder. To use it, build your meteor project, navigate into the newly created build directory, and run the script:
 
-~~~ bash
-meteor build --directory .build &&
+<pre class="language-bash"><code class="language-bash">meteor build --directory .build &&
 cd .build &&
 mscan
-~~~
+</code></pre>
 
 Even for a brand new Meteor project, the results of this scan are somewhat suprising:
 
-~~~ bash
-(+) 3 vulnerabilities found
+<pre class="language-bash"><code class="language-bash">(+) 3 vulnerabilities found
  Name        Installed   Patched     Path   More Info
  uglify-js   2.2.5       >=2.6.0            https://nodesecurity.io/advisories/48
  uglify-js   2.2.5       >= 2.4.24          https://nodesecurity.io/advisories/39
@@ -119,7 +113,7 @@ Even for a brand new Meteor project, the results of this scan are somewhat supri
  send   0.1.4       >= 0.8.4   connect > send   https://nodesecurity.io/advisories/32
  qs     0.6.5       >= 1.x     connect > qs     https://nodesecurity.io/advisories/28
  qs     0.6.5       >= 1.x     connect > qs     https://nodesecurity.io/advisories/29
-~~~
+</code></pre>
 
 It looks like Meteor core is pulling in a few Node packages with known security issues. Very interesting! It's worth taking a look at these advisories and considering what impact (if any) they might have on your Meteor application.
 
