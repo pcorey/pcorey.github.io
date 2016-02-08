@@ -40,7 +40,7 @@ In addition to calculating how many users were in each group, I also wanted to c
 
 The first step to counting the number of interactions per group was to build a list of `userIds`{:.language-javascript} per group. This is an easy task thanks to Mongo's suite of [database cursor methods](https://docs.mongodb.org/v3.0/reference/method/cursor.hasNext/):
 
-<pre class="language-javascript"><code class="language-javascript">...
+<pre class="language-javascript"><code class="language-javascript">  ...
   group.userIds = [];
   while (group.cursor.hasNext()) {
     group.userIds.push(group.cursor.next()._id);
@@ -50,7 +50,7 @@ The first step to counting the number of interactions per group was to build a l
 
 Now we can construct a query to find and count the total number of interactions per group:
 
-<pre class="language-javascript"><code class="language-javascript">...
+<pre class="language-javascript"><code class="language-javascript">  ...
   group.interactions = db.interactions.find({
     userId: {$in: group.userIds}
   }).count();
@@ -59,7 +59,7 @@ Now we can construct a query to find and count the total number of interactions 
 
 We now have all of the information we need. The last step is to calculate the number of interactions per user and [print the results](https://docs.mongodb.org/manual/tutorial/getting-started-with-the-mongo-shell/#print).
 
-<pre class="language-javascript"><code class="language-javascript">...
+<pre class="language-javascript"><code class="language-javascript">  ...
   print([
     "Group " + index + ":",
     "Total users: " + group.count,
