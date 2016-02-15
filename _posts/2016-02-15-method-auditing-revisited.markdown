@@ -30,7 +30,7 @@ That method ___can still be called from the client___:
 
 This means that one way of discovering hidden methods within a Meteor application is to simple search the bundled application source for Meteor method calls.
 
-When the Meteor application is minified, the `Meteor`{:.language-javascript} object is often transformed into some other variable name, so rather than searching for `/Meteor\.call("/`{:.language-javascript}, it's better to search for `/\.call("/`:
+When the Meteor application is minified, the `Meteor`{:.language-javascript} object is often transformed into some other variable name, so rather than searching for `/Meteor\.call("/`{:.language-javascript}, it's better to search for `/\.call("/`{:.language-javascript}:
 
 <img src="https://s3-us-west-1.amazonaws.com/www.1pxsolidtomato.com/call.png" style="max-width: 100%">
 
