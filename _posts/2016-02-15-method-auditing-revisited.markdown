@@ -52,4 +52,4 @@ These techniques will only reveal hidden methods that are being called by client
 
 In that case, the only way for a curious client to discover those truly hidden methods is make a call to every possible Meteor method to determine if it exists on the server. Thankfully, this kind of brute forcing is totally unfeasible, and would most likely never be worth an attacker's time.
 
-At the end of the day, it shouldn't matter whether attackers know methods exist. Even your most secret of methods should be made secure. Always assume that all of your methods will be called by all users, ___because they can be___!
+At the end of the day, it shouldn't matter whether attackers know methods exist. Even your most secret of methods should be made secure. Always assume that all of your methods will be called by all users, ___because they can be!___
