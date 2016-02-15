@@ -16,19 +16,17 @@ However, defining methods in server-only locations doesn't mean your methods are
 
 Even if a method is defined in a server-only location, it's still accessible from the client. For example, if you have a method defined in a `server.js`{:.language-bash} file:
 
-~~~ javascript
-Meteor.methods({
+<pre class="language-javascript"><code class="language-javascript">Meteor.methods({
   hiddenMethod: function(argument) {
     // Do secret things...
   }
 });
-~~~
+</code></pre>
 
 That method ___can still be called from the client___:
 
-~~~ javascript
-Meteor.call("hiddenMethod", argument);
-~~~
+<pre class="language-javascript"><code class="language-javascript">Meteor.call("hiddenMethod", argument);
+</code></pre>
 
 This means that one way of discovering hidden methods within a Meteor application is to simple search the bundled application source for Meteor method calls. When the Meteor application is minified, the `Meteor`{:.language-javascript} object is often transformed into some other variable name, so rather than searching for `/Meteor\.call("/`{:.language-javascript}, it's better to search for `/\.call("`. You may have to sift through false positives, but it's usually easy to figure out which calls relate to Meteor methods:
 
