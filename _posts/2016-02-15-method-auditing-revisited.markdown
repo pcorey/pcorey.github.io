@@ -28,7 +28,9 @@ That method ___can still be called from the client___:
 <pre class="language-javascript"><code class="language-javascript">Meteor.call("hiddenMethod", argument);
 </code></pre>
 
-This means that one way of discovering hidden methods within a Meteor application is to simple search the bundled application source for Meteor method calls. When the Meteor application is minified, the `Meteor`{:.language-javascript} object is often transformed into some other variable name, so rather than searching for `/Meteor\.call("/`{:.language-javascript}, it's better to search for `/\.call("`. You may have to sift through false positives, but it's usually easy to figure out which calls relate to Meteor methods:
+This means that one way of discovering hidden methods within a Meteor application is to simple search the bundled application source for Meteor method calls.
+
+When the Meteor application is minified, the `Meteor`{:.language-javascript} object is often transformed into some other variable name, so rather than searching for `/Meteor\.call("/`{:.language-javascript}, it's better to search for `/\.call("`:
 
 <img src="https://s3-us-west-1.amazonaws.com/www.1pxsolidtomato.com/call.png" style="max-width: 100%">
 
@@ -36,7 +38,9 @@ For example, in the above screenshot we can see a call to a Meteor method called
 
 ## Watching the Wire
 
-An alternative to searching through the source for method calls is to simple watch all of the DDP requests that are sent over the websocket connection. Any calls to Meteor methods will be clearly marked, along with a list of arguments being sent to this method. As you go about using the application, you can build up a list of Meteor methods, some of which may not have a corresponding handler in the `Meteor.connection._methodHandlers`{:.language-javascript} object.
+An alternative to searching through the source for method calls is to simple watch all of the DDP requests that are sent over the websocket connection. Any calls to Meteor methods will be clearly marked, along with a list of arguments being sent to this method.
+
+As you go about using the application, you can build up a list of Meteor methods, some of which may not have a corresponding handler in the `Meteor.connection._methodHandlers`{:.language-javascript} object.
 
 <img src="https://s3-us-west-1.amazonaws.com/www.1pxsolidtomato.com/upvote.png" style="max-width: 100%">
 
