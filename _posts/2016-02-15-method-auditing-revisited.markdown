@@ -48,7 +48,7 @@ In the above screenshot, we can see a call being made to the `"upvotePost"`{:.la
 
 ## Well Kept Secrets
 
-These techniques will only reveal hidden methods that are being called by client-side or shared code. It's still possible that the Meteor application made have other, completely hidden methods. These methods may be defined on the server, and only ever called by other server-only code.
+These techniques will only reveal hidden methods that are being called by client-side or shared code. It's still possible that the Meteor application may have other, completely hidden methods. These methods may be defined on the server, and only ever called by other server-only code.
 
 In that case, the only way for a curious client to discover those truly hidden methods is make a call to every possible Meteor method to determine if it exists on the server. Thankfully, this kind of brute forcing is totally unfeasible, and would most likely never be worth an attacker's time.
 
