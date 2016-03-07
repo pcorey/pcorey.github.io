@@ -50,7 +50,7 @@ Imagine that an attacker were to change the `name`{:.language-javascript} of one
 <pre class="language-javascript"><code class="language-javascript">Choices.update(..., {
   $set: {
     name: `&lt;script&gt;
-             Roles.addUsersToRoles("${Meteor.userId()}", "admin");
+             Roles.addUsersToRoles(`${Meteor.userId()}`, "admin");
           &lt;/script&gt;`
   }
 });</code></pre>
