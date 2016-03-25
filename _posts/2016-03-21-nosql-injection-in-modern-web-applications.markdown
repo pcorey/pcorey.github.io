@@ -6,7 +6,7 @@ date:   2016-03-21
 tags: ["security"]
 ---
 
-st month I was lucky enough to be able to attend and speak at the first ever [Crater Remote Conference](http://conf.crater.io/)!
+Last month I was lucky enough to be able to attend and speak at the first ever [Crater Remote Conference](http://conf.crater.io/)!
 
 I gave a talk entitled “NoSQL Injection in Modern Web Applications”. The talk was heavily focused on exploiting [NoSQL injection](https://www.owasp.org/index.php/Testing_for_NoSQL_injection) vulnerabilities in applications using [MongoDB](https://www.mongodb.com/). The bulk of the talk was spent in a hands-on demo showing how a malicious user could approach and attack a [Meteor](https://www.meteor.com/) application vulnerable to these types of attacks.
 
