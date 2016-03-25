@@ -6,6 +6,8 @@ date:   2015-07-06
 tags: [""]
 ---
 
+<p style="border: 1px dashed tomato; padding: 1em; background-color: rgba(255, 99, 71, 0.125);">The package-based Basic Auth solution presented in this post <b>leaves DDP endpoints exposed to unauthorized users</b>. For more information, read my follow-up post on <a href="/2016/03/28/bypassing-basic-auth-through-ddp-connections/">Bypassing Package-Based Basic Auth</a>.</p>
+
 Recently I’ve been playing with techniques for sharing private [Meteor](https://www.meteor.com/) applications with others. An example of this may be showing a beta version of an application to a client. That client may not want __any of the application__ exposed to the public, including splash pages or login screens.
 
 I've found that a quick solution to this problem is to use good old [basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
