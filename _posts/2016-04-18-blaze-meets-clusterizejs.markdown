@@ -128,7 +128,7 @@ let rows = data.cursor.fetch().map(function(document) {
 
   // Render the card and save it to the cache...
   html = Blaze.toHTMLWithData(template, document);
-  TemplateCache.get(document._id, html);
+  TemplateCache.set(document._id, html);
   return html;
 });
 ...
