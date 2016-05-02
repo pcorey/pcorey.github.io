@@ -18,7 +18,7 @@ As I mentioned in my last post, I can easily find myself lost on Twitter by the 
 
 Recently, I’ve been getting feedback from people who read my [Unit Testing With Meteor 1.3](http://blog.east5th.co/2015/12/21/unit-testing-with-meteor-1.3/).
 
-They like the idea of bypassing `meteor test`{:.language-javascript} for faster unit test turnarounds, but find the dependency injection technique I described to be too much work in practice. But without dependency injection, how do we get around Meteor’s “magic imports”?
+They like the idea of using [Mocha](https://mochajs.org/) directly and bypassing `meteor test`{:.language-javascript} for faster unit test turnarounds, but find the dependency injection technique I described to be too much work in practice. But without dependency injection, how do we get around Meteor’s “magic imports”?
 
 <pre class="language-javascript"><code class="language-javascript">Error: Cannot find module 'meteor/meteor'
 at Function.Module._resolveFilename (module.js:338:15)
@@ -63,12 +63,12 @@ If `thisMethodCallsForWithBar`{:.language-javascript} did not call the `"foo"`{:
 
 I’ve created an example Meteor application that demonstrates these ideas. Check it out [on Github](https://github.com/pcorey/unit-testing-with-testdouble). Be sure to take a look at the [module under test](https://github.com/pcorey/unit-testing-with-testdouble/blob/master/imports/hello-module.js) and the [tests themselves](https://github.com/pcorey/unit-testing-with-testdouble/blob/master/tests/example-module.test.js).
 
-You can run the mocha unit tests once:
+You can run the Mocha unit tests once:
 
 <pre class="language-bash"><code class="language-bash">npm test
 </code></pre>
 
-Or you can tell mocha to watch your project for changes and re-run your test suite on each change:
+Or you can tell Mocha to watch your project for changes and re-run your test suite on each change:
 
 <pre class="language-bash"><code class="language-bash">npm test -- -w
 </code></pre>
