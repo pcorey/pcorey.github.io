@@ -1,21 +1,20 @@
 .post-header {
     margin: 60px 0;
     text-align: center;
-    .bigtext {
-        font-family: proxima-nova,sans-serif;
-        font-weight: 900;
-        margin: 0 auto;
-        max-width: 75%;
-        text-transform: uppercase;
-        line-height: 1;
-        @media (max-width: 400px) {
-            max-width: 100%;
-        }
+    h1 {
+      font-family: proxima-nova, sans-serif;
+      font-weight: 100;
+      text-align: left;
+      font-size: 3em;
+      text-transform: uppercase;
     }
-    .meta {
-      font-size: 1.15em;
-      margin: 0 0 30px 0;
-      color: @color4;
+    p {
+      font-size: 0.3833em;
+      line-height: 1.6;
+      font-weight: 100;
+      text-align: left;
+      text-transform: none;
+      margin: 0;
     }
 }
 
@@ -29,16 +28,18 @@
 }
 
 .post-content {
+  b, optgroup, strong {
+    font-weight: 400;
+  }
   p, ol, ul {
     font-size: 1.15em;
     line-height: 1.6;
-    text-align: justify;
+    font-weight: 100;
   }
   h1, h2, h3, h4 {
     text-transform: uppercase;
     font-size: 2em;
     margin-top: 2em;
-    color: @color4;
-    border-bottom: 1px dashed @color4;
+    font-weight: 100;
   }
 }
