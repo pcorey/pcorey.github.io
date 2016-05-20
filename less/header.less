@@ -4,6 +4,9 @@ body > header {
     background-size: cover;
     background-position: 0 100%;
     display: flex;
+    @media (max-width: 750px) {
+      margin: 0;
+    }
     .filler {
       flex: 1;
       background-color: rgba(255,255,255,0.8);
@@ -14,6 +17,12 @@ body > header {
         flex: 0 0 700px;
         display: flex;
         justify-content: space-between;
+        a {
+          margin: 0 auto;
+        }
+        @media (max-width: 750px) {
+          flex: 1;
+        }
     }
     img {
         height: 60px;
@@ -24,6 +33,9 @@ body > header {
     .menu-wrapper {
         position: relative;
         display: flex;
+        @media (max-width: 750px) {
+          display: none;
+        }
     }
     .menu-opener {
         position: relative;
@@ -44,7 +56,7 @@ body > header {
                 margin-right: 0.5em;
             }
         }
-        @media (max-width: 500px) {
+        @media (max-width: 750px) {
             position: absolute;
             top: 60px;
             right: 0;
@@ -52,6 +64,32 @@ body > header {
             a {
                 margin: 0 1em;
             }
+        }
+    }
+}
+
+.mobile-menu {
+    display: none;
+    border-bottom: 1px solid #f9f9f9;
+    @media (max-width: 750px) {
+        display: block;
+    }
+    .menu {
+      text-align: center;
+      .content {
+        display: flex;
+      }
+    }
+    a {
+        flex: 1;
+        font-family: proxima-nova,serif;
+        font-size: 20px;
+        margin-left: 1em;
+        line-height: 60px;
+        text-transform: uppercase;
+        font-weight: 100;
+        &:last-of-type {
+            margin-right: 0.5em;
         }
     }
 }
