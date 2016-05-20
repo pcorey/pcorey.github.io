@@ -1,7 +1,4 @@
 body > footer {
-    background-image: url('/img/vectorized.png');
-    background-size: cover;
-    background-position: 0 100%;
     margin: 4em auto 0;
     display: table;
     width: 100%;
@@ -21,41 +18,51 @@ body > footer {
     }
 
     .footer-content {
-      background-color: rgba(255,255,255,0.5);
       display: table-cell;
       vertical-align: middle;
     }
 
     p {
-        min-height: 150px;
-        font-weight: 900;
-        font-size: 28px;
-        margin: 2em auto;
+        font-weight: 100;
+        padding: 2em 25px;
+        margin: 0 auto;
         max-width: 750px;
         width: 100%;
-        padding:0 25px;
         text-align: center;
         line-height: 1.6em;
     }
-    img {
-      float: right;
-      border-radius: 150px;
-      margin-left: 2em;
-      @media (max-width: 700px) {
-        float: none;
-        display: block;
-        margin: 0 auto 2em;
+
+    .services {
+      background-image: url('/img/vectorized.png');
+      background-size: cover;
+      background-position: 0 0%;
+      p {
+        font-size: 2em;
+        a {
+          color: white;
+        }
       }
     }
 
     .signup-form {
       background-color: white;
-      font-size: 28px;
-      margin: 2em auto 0;
-      padding: 2em 25px 4em;
+      margin: 0 auto;
+      padding: 6em 25px;
+      h2 {
+        margin: 0;
+        font-size: 2em;
+        font-weight: 100;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 1.15em;
+        text-align: left;
+        margin: 2em 0;
+        padding: 0;
+      }
       em {
-        font-style: italic;
-        font-weight: 900;
+        font-style: normal;
+        font-weight: 400;
       }
     }
     form {
@@ -64,7 +71,7 @@ body > footer {
       margin: 0 auto;
       text-align: left;
       p {
-        font-weight: 300;
+        font-weight: 100;
         padding: 0 0 2em 0;
         min-height: inherit;
         margin: 0 auto;
@@ -72,11 +79,12 @@ body > footer {
       }
       .email-wrapper {
         position: relative;
+        font-size: 1.15em;
       }
       input {
-        font-weight: 300;
-        background: transparent;
-        border: 2px solid #ddd;
+        font-weight: 100;
+        background: white;
+        border: 1px solid #ddd;
         padding: 0.5em 1em;
         outline: none;
         margin-left: 8px;
@@ -90,10 +98,11 @@ body > footer {
         // right: 0;
         padding: 0.5em 1em;
         width: 150px;
-        border: 2px solid #ddd;
+        border: 1px solid #ddd;
         background-color: white;
-        color: #3489ff;
-        font-weight: 900;
+        color: #457cc9;
+        font-weight: 100;
+        text-transform: uppercase;
       }
       input[name=FNAME] {
         width: ~"calc(30%)";
