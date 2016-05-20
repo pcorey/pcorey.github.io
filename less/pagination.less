@@ -1,0 +1,42 @@
+.pagination {
+    margin: 60px 0 20px;
+    background-image: url('/img/vectorized.png');
+    background-size: cover;
+    background-position: 0 20%;
+    font-family: proxima-nova, serif;
+    display: flex;
+    .filler {
+      flex: 1;
+      background-color: rgba(255,255,255,0.8);
+    }
+    p {
+      flex: 0 0 700px;
+      @media (max-width: 750px) {
+        flex: 3;
+      }
+      font-size: 20px;
+      line-height: 1.6;
+      font-weight: 100;
+      text-transform: none;
+      color: #444;
+      margin: 0;
+      overflow: hidden;
+      a {
+        display: inline-block;
+        height: 60px;
+        float: left;
+        color: white;
+        text-transform: uppercase;
+        line-height: 85px;
+        font-weight: 100;
+        padding: 0 0.5em;
+        @media (max-width: 750px) {
+          line-height: 60px;
+          float: none !important;
+        }
+      }
+      a:last-of-type {
+        float: right;
+      }
+    }
+}

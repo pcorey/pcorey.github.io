@@ -10,6 +10,21 @@
                 {{ content }}
             </div>
         </section>
+        
+        <div class="pagination">
+            <div class="filler"></div>
+            <p>
+                {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path }}">Previous page</a>
+                {% endif %}
+                &nbsp;
+                {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path }}">Next page</a>
+                {% endif %}
+            </p>
+            <div class="filler"></div>
+        </div>
+
         {% if page.hideFooter != true %}
           {% include footer.html %}
         {% endif %}
