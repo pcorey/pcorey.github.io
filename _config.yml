@@ -7,12 +7,20 @@ url: "http://blog.east5th.co"
 twitter_username: petecorey
 github_username:  pcorey
 
+paginate: 3
+paginate_path: "/:num/"
+
+featured_posts: [
+  ""
+]
+
 # Build settings
 markdown: kramdown
 permalink: pretty
 
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 
 exclude:
   - node_modules

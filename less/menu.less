@@ -1,3 +1,7 @@
+.menu-wrapper {
+  width: 100%;
+}
+
 .menu-opener, .menu-opener:hover, .menu-opener.active, .menu-opener-inner, .menu-opener-inner::before, .menu-opener-inner::after, .menu, .menu.active {
     -webkit-transition: 250ms all;
     transition: 250ms all;
@@ -12,6 +16,7 @@
     -ms-user-select: none;
     user-select: none;
     width: 64px;
+    display: none;
 }
 .menu-opener:hover, .menu-opener.active {
     background: rgba(255,255,255,0.8);
@@ -56,6 +61,8 @@
 }
 
 .menu {
+    text-align: right;
+    width: 100%;
     background: rgba(255,255,255,0.8);
     color: transparent;
     height: 64px;
@@ -121,5 +128,8 @@
         font-size: 1.2em;
     }
     .menu.active {
+    }
+    .menu-opener {
+      display: block;
     }
 }
