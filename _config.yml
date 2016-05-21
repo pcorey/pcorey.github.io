@@ -8,7 +8,7 @@ twitter_username: petecorey
 github_username:  pcorey
 
 paginate: 5
-paginate_path: "/:num/"
+paginate_path: "/blog/:num/"
 
 featured_posts: [
   ""
@@ -16,7 +16,7 @@ featured_posts: [
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: "/blog/:year/:month/:day/:title/"
 
 gems:
   - jekyll-sitemap
