@@ -14,7 +14,7 @@ Lambda is an [Amazon Web Service](https://aws.amazon.com/about-aws/) designed to
 
 To make things a little more concrete, let’s talk about my first baby-steps into working with Lambda.
 
-I have a script-based tool that automates [Bitcoin](https://bitcoin.org/en/) lending on the [Polonium exchange](https://www.poloniex.com/lending). Pre-Lambda, I implemented this tool as a [Node.js](https://nodejs.org/en/) script that spun up a local server, and executed a job every 15 minutes to “do stuff” (💸 💸 💸).
+I have a script-based tool that automates [Bitcoin](https://bitcoin.org/en/) lending on the [Poloniex exchange](https://www.poloniex.com/lending). Pre-Lambda, I implemented this tool as a [Node.js](https://nodejs.org/en/) script that spun up a local server, and executed a job every 15 minutes to “do stuff” (💸 💸 💸).
 
 I wanted to move this script off of my local machine (mostly so I could close my laptop at night), so I began investigating my hosting and pricing options. On the low end of things, I could spin up a small [DigitalOcean](https://www.digitalocean.com/) droplet for [five dollars per month](https://www.digitalocean.com/pricing/). Not bad, but I knew I’d be unnecessarily paying for quite a bit of idle server time.
 
