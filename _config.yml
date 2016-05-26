@@ -10,10 +10,6 @@ github_username:  pcorey
 paginate: 3
 paginate_path: "/blog/:num/"
 
-featured_posts: [
-  ""
-]
-
 # Build settings
 markdown: kramdown
 permalink: "/blog/:year/:month/:day/:title/"
