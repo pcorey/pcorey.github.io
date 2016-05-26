@@ -7,7 +7,7 @@ url: "http://blog.east5th.co"
 twitter_username: petecorey
 github_username:  pcorey
 
-paginate: 5
+paginate: 3
 paginate_path: "/blog/:num/"
 
 featured_posts: [
