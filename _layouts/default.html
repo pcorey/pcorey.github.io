@@ -15,14 +15,9 @@
             <div class="pagination">
                 <div class="filler"></div>
                 <p>
-                    {% if paginator.previous_page %}
-                        <a href="{{ paginator.previous_page_path }}">Previous page</a>
-                    {% endif %}
-                    &nbsp;
-                    <!-- <a class="all-posts" href="/blog/all/">All Posts</a> -->
-                    {% if paginator.next_page %}
-                        <a href="{{ paginator.next_page_path }}">Next page</a>
-                    {% endif %}
+                    <a class="{%unless paginator.previous_page %}invisible{% endunless %}" href="{{ paginator.previous_page_path }}">Previous page</a>
+                    <a class="all-posts" href="/blog/all/">All Posts</a>
+                    <a class="{%unless paginator.next_page %}invisible{% endunless %}" href="{{ paginator.next_page_path }}">Next page</a>
                 </p>
                 <div class="filler"></div>
             </div>

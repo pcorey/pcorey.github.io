@@ -10,9 +10,11 @@
       background-color: rgba(255,255,255,0.8);
     }
     p {
+      display: flex;
       flex: 0 0 700px;
       @media (max-width: 750px) {
         flex: 3;
+        flex-direction: column;
       }
       font-size: 20px;
       line-height: 1.6;
@@ -23,16 +25,24 @@
       overflow: hidden;
       align-items: center;
       justify-content: center;
+      .invisible {
+        visibility: hidden;
+        @media (max-width: 750px) {
+          display: none;
+        }
+      }
       a {
+        flex: 1;
         display: inline-block;
         height: 80px;
         float: left;
         color: white;
         text-transform: uppercase;
-        line-height: 90px;
+        line-height: 85px;
         font-weight: 100;
         padding: 0 30px;
         white-space: nowrap;
+        text-align: left;
         @media (max-width: 750px) {
           line-height: 80px;
           float: none !important;
@@ -40,10 +50,12 @@
       }
       a:last-of-type {
         float: right;
+        text-align: right;
       }
       .all-posts {
         float: none;
         flex: 1; 
+        text-align: center;
       }
     }
 }

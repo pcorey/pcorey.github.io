@@ -1,0 +1,19 @@
+---
+layout: default
+hideFooter: true
+---
+
+<div class="blog-all">
+
+    {% for post in site.posts %}
+      <div class="post">
+        <header class="post-header">
+          <h1>
+            <a href="{{post.url}}">{{post.title}}</a>
+            <p>On {{ post.date | date: "%b %-d, %Y" }}</p>
+          </h1>
+        </header>
+      </div>
+    {% endfor %}
+
+</div>
