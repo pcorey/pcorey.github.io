@@ -5,11 +5,8 @@
 
     <body>
         {% include header.html %}
-        <section>
-            <div class="content">
-                {{ content }}
-            </div>
-        </section>
+
+        {{ content }}
         
         {% if paginator %}
             <div class="pagination">

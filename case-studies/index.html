@@ -7,61 +7,64 @@ hideNewsletter: true
 <div class="page-portfolio">
 
 
+  <div class="margin">
 
-  <!-- <h1>Our Technologies</h1> -->
-  <!-- <p>When it comes to technologies, we've been around the block. We’ve put products into production using everything from Flex and Java, to Angular and PHP. Over the years, we’ve come to appreciate some stacks over others.</p> -->
-  <!-- <\!-- <div class="tech-images"> -\-> -->
-  <!-- <\!-- <a href=""><img src="/img/tech/meteor.svg"></a> -\-> -->
-  <!-- <\!-- <a href=""><img src="/img/tech/nodejs.svg"></a> -\-> -->
-  <!-- <\!-- <a href=""><img src="/img/tech/mongodb.jpeg"></a> -\-> -->
-  <!-- <\!-- </div> -\-> -->
-  <!-- <p>Our current preference for building production ready software is Meteor coupled with Node.js micro-services, where applicable.</p> -->
+    <p>Since our doors first opened, we’ve had the pleasure of working on a host of fantastic projects with an amazing group of clients:</p>
+    <div class="client-logos">
+      <a href="http://www.methodisthealth.org/"><img src="/img/clients/methodist.png"></a>
+      <a href="https://www.qualia.io/"><img src="/img/clients/qualia.png"></a>
+      <a href="https://www.admithub.com/"><img src="/img/clients/admithub.png"></a>
+      <a href="https://qeaql.com/"><img src="/img/clients/qeaql.png"></a>
+      <a href="http://ironlatch.com/"><img style="padding: 0.5em" src="/img/clients/ironlatch.png"></a>
+    </div>
 
-  <!-- <h1>Our Clients</h1> -->
-  <p>Since our doors first opened, we’ve had the pleasure of working on a host of fantastic projects with an amazing group of clients:</p>
-  <div class="client-logos">
-    <a href="http://www.methodisthealth.org/"><img src="/img/clients/methodist.png"></a>
-    <a href="https://www.qualia.io/"><img src="/img/clients/qualia.png"></a>
-    <a href="https://www.admithub.com/"><img src="/img/clients/admithub.png"></a>
-    <a href="https://qeaql.com/"><img src="/img/clients/qeaql.png"></a>
-    <a href="http://ironlatch.com/"><img style="padding: 0.5em" src="/img/clients/ironlatch.png"></a>
-  </div>
+    <p>While all of the projects we've worked on hold a special place in our heart, we've curated a selection of our favorites to share with the world. We feel these projects are notable because they emphasize tenets we hold dear, and showcase our skills and abilities as software development professionals.</p>
 
-  <!-- <h1 id="projects">Our Projects</h1> -->
-  <p>While all of the projects we've worked on hold a special place in our heart, we've curated a selection of our favorites to share with the world. We feel these projects are notable because they emphasize tenets we hold dear, and showcase our skills and abilities as software development professionals.</p>
+  <!-- </div> -->
 
-  <div class="scalable-real-time-messaging">
-    <h1 class="portfolio-header" id="scalable-real-time-messaging">Scalable Messaging</h1>
-    <p>The heart and soul of <a href="https://www.admithub.com/">AdmitHub</a>, one of our long-term clients, is real-time messaging. AdmitHub builds messaging products targeted at graduating high school seniors looking for guidance in the college application process.</p>
-    <p>During our time working together, we’ve helped AdmitHub overcome many engineering obstacles related to their real-time messaging platform.</p>
-    <h1>Twilio</h1>
-    <p>AdmitHub’s primary medium of interaction with its users is via text message. We use a host of <a href="https://www.twilio.com/">Twilio</a> products to manage SMS communications. While Twilio is a fantastic product, it doesn’t come without its rough edges.</p>
-    <img class="phone-mockup" src="/img/projects/phone-mockup.png">
-    <p style="text-align: justify;">In order to ensure that inbound text messages were never lost, we helped build out a “front-end” micro-service that sits between Twilio and AdmitHub’s application servers. The purpose of this additional layer was to store all incoming messages from Twilio and forward them along to the heavy-weight application server. By keeping the micro-service small, it could be quickly scaled up and down to meet rapidly changing load demands, while never missing a message.</p>
-    <p>The system has held up in both testing and real-world high-load situations (college fairs, demonstrations, etc…). With minimal hardware, <b><i>the system has been shown to handle over one thousand concurrent connections while never missing a message</i></b>.</p>
-    <h1>Facebook and Web</h1>
-    <p>While text messaging was AdmitHub’s initial bread and butter, they quickly realized that students use a variety of messaging platforms.</p>
-    <p>In light of this, we helped AdmitHub unbraid their messaging system’s internal logic from the Twilio-specific transport code. By correctly architecting this abstraction, we were able to add additional messaging transports, such as a web messaging client, and an integration with <a href="https://www.messenger.com/t/1736529336578069">Facebook Messenger</a>.</p>
-    <p>By expanding to new messaging mediums, AdmitHub was able to reduce the friction of communicating with students who were reluctant to provide their phone number.</p>
-  </div>
+  <!-- <div class="recommendation"> -->
+  <!--   <div class="margin"> -->
+  <!--     <img src="http://www.east5th.co/img/josh.jpg"> -->
+  <!--     <p>Pete is an outstanding developer and a pleasure to work with. Clients really appreciate his ability to communicate and present information. He knows his code and dedicates himself to understanding the project inside and out.</p> -->
+  <!--   </div> -->
+  <!-- </div> -->
 
-  <div class="in-house-bedcontrol">
-    <h1 class="portfolio-header" id="in-house-bedcontrol">Methodist Bedcontrol</h1>
-    <p>We recently had the pleasure of working on an amazing project with <a href="http://www.methodisthealth.org/">Methodist Le Bonheur Healthcare</a>.</p>
-    <p>Methodist Healthcare is a multi-facility hospital system based out of Memphis, Tennessee. Prior to our engagement, the primary facility in the Methodist system was using a proprietary “Bedcontrol” system designed to track and manage the state of beds within the hospital facility.</p>
-    <p>The cost of purchasing additional licenses of the existing Bedcontrol system for use in the other facilities was estimated to exceed one million dollars.</p>
-    <p>Working with a small team of Methodist developers, we began building an in-house, Meteor-based Bedcontrol solution. After overcoming some <a href="/blog/2016/04/18/blaze-meets-clusterizejs/">interesting technological obstacles</a>, we delivered our real-time, fully auditable, HIPAA compliant Bedcontrol application to great acclaim.</p>
-    <p>At the end of the day, <b><i>our solution was able to effectively save the company hundreds of thousands of dollars</i></b> in licensing costs.</p>
-  </div>
+  <!-- <div class="margin"> -->
 
-  <div class="admithub">
-    <h1 class="portfolio-header" id="admithub">AdmitHub.com</h1>
-    <p>Our first engagement with <a href="https://www.admithub.com">AdmitHub</a> was a security assessment of their Meteor web application.</p>
-    <img src="/img/projects/profile.png">
-    <p>Our assessment process is an in-depth, hands-on dive into a Meteor application. The goal of each assessment is to tease out any weak points that may leave the application susceptible to malicious users and outside attackers.</p>
-    <p>At the end of our assessment, we were able to remediate several undiscovered vulnerabilities and leave the AdmitHub team with the knowledge required to continue building their platform in a secure, robust way.</p>
-    <p>In the months following our assessment, we worked with AdmitHub and several third-party designers to securely build out many front-end features including a real-time chat component, a robust admin backend, and a comprehensive and aesthetically pleasing student profile system.</p>
-    <p>These additional features led to greater user engagement, and the additional administrator tools empowered the non-technical AdmitHub team members to carry out complex actions without the technical and financial burden of new development.</p>
+    <div class="scalable-real-time-messaging">
+      <h1 class="portfolio-header" id="scalable-real-time-messaging">Scalable Messaging</h1>
+      <p>The heart and soul of <a href="https://www.admithub.com/">AdmitHub</a>, one of our long-term clients, is real-time messaging. AdmitHub builds messaging products targeted at graduating high school seniors looking for guidance in the college application process.</p>
+      <p>During our time working together, we’ve helped AdmitHub overcome many engineering obstacles related to their real-time messaging platform.</p>
+      <h1>Twilio</h1>
+      <p>AdmitHub’s primary medium of interaction with its users is via text message. We use a host of <a href="https://www.twilio.com/">Twilio</a> products to manage SMS communications. While Twilio is a fantastic product, it doesn’t come without its rough edges.</p>
+      <img class="phone-mockup" src="/img/projects/phone-mockup.png">
+      <p style="text-align: justify;">In order to ensure that inbound text messages were never lost, we helped build out a “front-end” micro-service that sits between Twilio and AdmitHub’s application servers. The purpose of this additional layer was to store all incoming messages from Twilio and forward them along to the heavy-weight application server. By keeping the micro-service small, it could be quickly scaled up and down to meet rapidly changing load demands, while never missing a message.</p>
+      <p>The system has held up in both testing and real-world high-load situations (college fairs, demonstrations, etc…). With minimal hardware, <b><i>the system has been shown to handle over one thousand concurrent connections while never missing a message</i></b>.</p>
+      <h1>Facebook and Web</h1>
+      <p>While text messaging was AdmitHub’s initial bread and butter, they quickly realized that students use a variety of messaging platforms.</p>
+      <p>In light of this, we helped AdmitHub unbraid their messaging system’s internal logic from the Twilio-specific transport code. By correctly architecting this abstraction, we were able to add additional messaging transports, such as a web messaging client, and an integration with <a href="https://www.messenger.com/t/1736529336578069">Facebook Messenger</a>.</p>
+      <p>By expanding to new messaging mediums, AdmitHub was able to reduce the friction of communicating with students who were reluctant to provide their phone number.</p>
+    </div>
+
+    <div class="in-house-bedcontrol">
+      <h1 class="portfolio-header" id="in-house-bedcontrol">Methodist Bedcontrol</h1>
+      <p>We recently had the pleasure of working on an amazing project with <a href="http://www.methodisthealth.org/">Methodist Le Bonheur Healthcare</a>.</p>
+      <p>Methodist Healthcare is a multi-facility hospital system based out of Memphis, Tennessee. Prior to our engagement, the primary facility in the Methodist system was using a proprietary “Bedcontrol” system designed to track and manage the state of beds within the hospital facility.</p>
+      <p>The cost of purchasing additional licenses of the existing Bedcontrol system for use in the other facilities was estimated to exceed one million dollars.</p>
+      <p>Working with a small team of Methodist developers, we began building an in-house, Meteor-based Bedcontrol solution. After overcoming some <a href="/blog/2016/04/18/blaze-meets-clusterizejs/">interesting technological obstacles</a>, we delivered our real-time, fully auditable, HIPAA compliant Bedcontrol application to great acclaim.</p>
+      <p>At the end of the day, <b><i>our solution was able to effectively save the company hundreds of thousands of dollars</i></b> in licensing costs.</p>
+    </div>
+
+    <div class="admithub">
+      <h1 class="portfolio-header" id="admithub">AdmitHub.com</h1>
+      <p>Our first engagement with <a href="https://www.admithub.com">AdmitHub</a> was a security assessment of their Meteor web application.</p>
+      <img src="/img/projects/profile.png">
+      <p>Our assessment process is an in-depth, hands-on dive into a Meteor application. The goal of each assessment is to tease out any weak points that may leave the application susceptible to malicious users and outside attackers.</p>
+      <p>At the end of our assessment, we were able to remediate several undiscovered vulnerabilities and leave the AdmitHub team with the knowledge required to continue building their platform in a secure, robust way.</p>
+      <p>In the months following our assessment, we worked with AdmitHub and several third-party designers to securely build out many front-end features including a real-time chat component, a robust admin backend, and a comprehensive and aesthetically pleasing student profile system.</p>
+      <p>These additional features led to greater user engagement, and the additional administrator tools empowered the non-technical AdmitHub team members to carry out complex actions without the technical and financial burden of new development.</p>
+    </div>
+
   </div>
 
 </div>

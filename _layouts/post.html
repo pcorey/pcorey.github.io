@@ -1,17 +1,21 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="post content">
 
-  <header class="post-header">
-    <h1>
-      {{page.title}}
-      <p>On {{ page.date | date: "%b %-d, %Y" }} by <a href="https://twitter.com/petecorey">Pete Corey</a></p>
-    </h1>
-  </header>
+  <div class="margin">
 
-  <article class="post-content">
-  {{ content }}
-  </article>
+    <header class="post-header">
+      <h1>
+        {{page.title}}
+        <p>On {{ page.date | date: "%b %-d, %Y" }} by <a href="https://twitter.com/petecorey">Pete Corey</a></p>
+      </h1>
+    </header>
+
+    <article class="post-content">
+      {{ content }}
+    </article>
+
+  </div>
 
 </div>

@@ -3,8 +3,9 @@ layout: default
 hideFooter: true
 ---
 
-<div class="blog">
+<div class="blog content">
 
+  <div class="margin">
     {% for post in paginator.posts %}
       <div class="post">
         <header class="post-header">
@@ -18,5 +19,6 @@ hideFooter: true
         </article>
       </div>
     {% endfor %}
+  </div>
 
 </div>
