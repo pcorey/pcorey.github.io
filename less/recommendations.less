@@ -2,6 +2,7 @@
   margin: 3em 0;
   background-image: url("/img/vectorized.png");
   background-size: cover;
+  background-position: 0 70%;
 
   .margin {
     display: flex;
@@ -16,8 +17,23 @@
     margin: 0 25px 0 0;
   }
 
+  img:last-child {
+    margin: 0 0 0 25px;
+  }
+
   p {
     flex: 0 0 575px;
     color: white;
+    text-align: right;
+  }
+
+  p:last-child {
+    text-align: left;
+  }
+
+  span {
+    display: block;
+    font-size: 0.75em;
+    color: #457cc9;
   }
 }
