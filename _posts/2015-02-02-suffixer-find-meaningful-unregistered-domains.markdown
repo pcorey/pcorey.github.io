@@ -18,7 +18,7 @@ None of these packages are currently published. If you would like to use any of 
 
 ## Searching and Checking
 
-Searching through the database is fairly straight forward thanks to [MongoDB's text search functionality](/2015/01/26/mongo-text-search-with-meteor/) and the power of Meteor's [Publish & Subscribe](http://docs.meteor.com/#/full/meteor_publish). Searching on the client is initiated through a [debounced](/2015/01/19/the-dangers-of-debouncing-meteor-subscriptions/) [subscription](https://github.com/pcorey/suffixer/blob/master/client/main.js#L15-L23). The server has a matching [publish method](https://github.com/pcorey/suffixer/blob/master/server/namecheap.js#L117-L124) that takes the search term as an argument (among other things):
+Searching through the database is fairly straight forward thanks to [MongoDB's text search functionality](/blog/2015/01/26/mongo-text-search-with-meteor/) and the power of Meteor's [Publish & Subscribe](http://docs.meteor.com/#/full/meteor_publish). Searching on the client is initiated through a [debounced](/blog/2015/01/19/the-dangers-of-debouncing-meteor-subscriptions/) [subscription](https://github.com/pcorey/suffixer/blob/master/client/main.js#L15-L23). The server has a matching [publish method](https://github.com/pcorey/suffixer/blob/master/server/namecheap.js#L117-L124) that takes the search term as an argument (among other things):
 
 <pre class="language-javascript"><code class="language-javascript">Meteor.publish('wiktionary-namecheap', function(suffix, definition, limit, hideRegistered, favorites) {
     var results = Wiktionary.find(

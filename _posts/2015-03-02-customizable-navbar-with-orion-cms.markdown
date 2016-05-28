@@ -6,7 +6,7 @@ date:   2015-03-02
 categories:
 ---
 
-[Last week](/2015/02/23/custom-categories-with-meteors-orion-cms/) I talked about building a dictionary driven category system for articles using the fantastic [Orion](http://orion.meteor.com/) CMS. This week I’m going to continue in that same vein by building a fully customizable navbar!
+[Last week](/blog/2015/02/23/custom-categories-with-meteors-orion-cms/) I talked about building a dictionary driven category system for articles using the fantastic [Orion](http://orion.meteor.com/) CMS. This week I’m going to continue in that same vein by building a fully customizable navbar!
 
 So what’s the plan of attack? In Orion, we’ll define an [entity](http://orion.meteor.com/docs/entities) called <code class="language-javascript">pages</code>. This entity will hold the title and content for a variety of pages that will exist on our site. We want to be able to choose a selection of these pages to appear on our navbar in a specified order. We’ll keep that list of pages in an Orion [dictionary](http://orion.meteor.com/docs/dictionary).
 
@@ -85,7 +85,7 @@ The first thing to notice is that our page order dictionary entry actually consi
 
 In order to build the navbar, we need to be able to select which pages will appear from the set of all pages in the system. This means that we need to have the options of our <code class="language-javascript">pages.$</code> attribute driven by the <code class="language-javascript">pages</code> entity collection. How do we do this?
 
-Just like [last time](/2015/02/23/custom-categories-with-meteors-orion-cms/), the answer is to provide a custom <code class="language-javascript">options</code> function. Our <code class="language-javascript">options</code> function will fetch all of the documents in the <code class="language-javascript">pages</code> entity collection and transform them into select options:
+Just like [last time](/blog/2015/02/23/custom-categories-with-meteors-orion-cms/), the answer is to provide a custom <code class="language-javascript">options</code> function. Our <code class="language-javascript">options</code> function will fetch all of the documents in the <code class="language-javascript">pages</code> entity collection and transform them into select options:
 
 <pre class="language-javascript"><code class="language-javascript">options: function() {
     return orion.entities.pages.collection.find().fetch().map(function(page) {

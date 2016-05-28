@@ -21,7 +21,7 @@ To get a better idea of the construction I’m describing, try inspecting the DO
 
 ## Meteor Implementation
 
-I started by experimenting with recursive [custom block helpers](/2015/01/13/custom-block-helpers-and-meteor-composability/) in Meteor. After some trial and error, I came up with a <code class="language-javascript">cantor</code> template that renders the <code class="language-javascript">Template.contentBlock</code> for the set pieces, and <code class="language-javascript">Template.elseBlock</code> for the empty pieces. Take a look at the template and the template’s helpers:
+I started by experimenting with recursive [custom block helpers](/blog/2015/01/13/custom-block-helpers-and-meteor-composability/) in Meteor. After some trial and error, I came up with a <code class="language-javascript">cantor</code> template that renders the <code class="language-javascript">Template.contentBlock</code> for the set pieces, and <code class="language-javascript">Template.elseBlock</code> for the empty pieces. Take a look at the template and the template’s helpers:
 
 <pre class="language-markup"><code class="language-markup">&lt;template name="cantor"&gt;
     &lt;div class="row"&gt;

@@ -38,7 +38,7 @@ Unfortunately, in this scenario, our secret key is __not__ being kept a secret. 
 
 Our fundamental error here is assuming that our <code class="language-javascript">Meteor.isServer</code> guard prevents code from being shipped to the client. This isn't always true! When a method is defined in a location that is visible to both the client and the server, it's entire handler function is passed to the client, server-only code and all.
 
-Check out my post on [black box auditing Meteor methods](/2015/04/15/black-box-meteor-method-auditing/) to get a better understanding of what code is made visible to the client.
+Check out my post on [black box auditing Meteor methods](/blog/2015/04/15/black-box-meteor-method-auditing/) to get a better understanding of what code is made visible to the client.
 
 ## The Solution
 
