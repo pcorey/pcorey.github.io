@@ -28,9 +28,9 @@ Fast forward past a couple hours of fiddling and my script was working!
 
 After monitoring my script for several days, I noticed that it took between one to two seconds to execute, on average. I added an execution hard-stop duration of three seconds to my Lambda function. With that, I knew that I would be charged for, at most, three seconds of up-time every fifteen minutes.
 
-Using that data and [Lambda’s pricing sheet](https://aws.amazon.com/lambda/pricing/), I calculated that at three seconds per execution with an execution every fifteen minutes, ___the yearly cost for running my script was, at most, at just under twenty two cents___.
+Using that data and [Lambda’s pricing sheet](https://aws.amazon.com/lambda/pricing/), I calculated that at three seconds per execution with an execution every fifteen minutes, ___the yearly cost for running my script was___<s>, at most, at just under twenty two cents</s> ___zero dollars___.
 
-I was shocked. ___$0.22/year!___ Comparing that to DigitalOcean’s $60/year, or a Raspberry PI’s upfront cost of $40+ dollars, I had a clear winner.
+I was shocked. <s>$0.22/year!</s> Thanks to Lambda's free tier, ___hosting my script was free!___ Comparing that to DigitalOcean’s $60/year, or a Raspberry PI’s upfront cost of $40+ dollars, I had a clear winner.
 
 ## Looking Forward
 
