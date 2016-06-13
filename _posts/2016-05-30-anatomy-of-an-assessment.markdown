@@ -3,7 +3,7 @@ layout: post
 title:  "Anatomy of an Assessment"
 titleParts: ["Anatomy of an", "Assessment"]
 date:   2016-05-30
-tags: []
+tags: ["security"]
 ---
 
 I’ve been quitely offering Meteor security assessments as a service for nearly a year now. In that time, I’ve worked with some amazing teams to analyze and assess the state of security in their Meteor applications.
