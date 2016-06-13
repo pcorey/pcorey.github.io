@@ -128,4 +128,6 @@ However, GraphQL is becoming a very real possibility in the Meteor ecosystem. If
 
 Additionally, the Meteor team has been taking strides with the [Apollo stack](http://www.apollostack.com/). Apollo is “an incrementally-adoptable data stack that manages the flow of data between clients and backends.” Because Apollo is built on top of GraphQL, it inherently comes with all of the baked in security features we’ve discussed.
 
+Another thing to remember is that everything we've talked about here relates to type-level checking in order to prevent a very specific type of NoSQL injection attack. It's still you're responsibility to ensure that all user provided input is properly sanitized before using it within your application.
+
 No matter which data stack you land on, be sure to check all user provided inputs!
