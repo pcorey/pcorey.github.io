@@ -18,7 +18,7 @@ Rather than writing, deploying and managing my Lambda functions on my own, I dec
 
 Serverless offers several abstractions and seamless integrations with other AWS tools like [CloudFormation](https://aws.amazon.com/cloudformation/), [CloudWatch](https://aws.amazon.com/cloudwatch/) and [API Gateway](https://aws.amazon.com/api-gateway/) that help make the micro-service creation process very simple (once you wrap your head around the massive configuration files).
 
-Using the tools Serverless provides, I was able to quickly whip up a Lambda function that was triggered by a web form submission to an endpoint. The script would take the contents of that form submission and store them in a MongoDB collection called `"events"`{:.language-javascript}{:.language-javascript}:
+Using the tools Serverless provides, I was able to quickly whip up a Lambda function that was triggered by a web form submission to an endpoint. The script would take the contents of that form submission and store them in a MongoDB collection called `"events"`{:.language-javascript}:
 
 <pre class="language-javascript"><code class="language-javascript">"use strict";
 
