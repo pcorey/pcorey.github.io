@@ -1,0 +1,115 @@
+.page-scan {
+    .drop-target .prompt p,
+    .go-again a,
+    .results p {
+        font-weight: 100;
+        font-size: 1.5em
+    }
+    .result-title {
+        margin-bottom: 1em!important;
+    }
+    .content {
+        opacity: 0;
+        -webkit-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out
+    }
+    .drop-target {
+        width: calc(75% + 4em);
+        margin: 4em auto;
+        border: 2px dashed #ddd;
+    }
+    .drop-target p {
+        -webkit-transition: none;
+        transition: none
+    }
+    .drop-target .prompt p {
+        text-align: center;
+        margin: .5em;
+        color: #ddd;
+        cursor: pointer
+    }
+    .drop-target .prompt #file-select {
+        position: absolute;
+        left: -99999px
+    }
+    .go-again {
+        margin: 3em 0;
+        text-align: center!important
+    }
+    .results {
+        width: 75%;
+        margin: 4em auto;
+        padding: 2em
+    }
+    .results p {
+        text-align: center;
+        margin: 0 auto
+    }
+    .results p.info {
+        font-weight: 100;
+        font-size: 1.15em;
+        color: #444
+    }
+    .results.good {
+        border: 2px dashed #4ed45f;
+        color: #4ed45f
+    }
+    .results.good p.info {
+        max-width: 50%
+    }
+    .results.bad {
+        border: 2px dashed #ff495c;
+        color: #ff495c
+    }
+    .results .result {
+        color: #444;
+        margin-top: 2em
+    }
+    .results .result p {
+        font-size: 1.15em;
+        text-align: left
+    }
+    .results .result .package {
+        color: #ff495c
+    }
+    .results .result .versions {
+        float: right;
+        color: #ff495c
+    }
+    .results .result .alert {
+        width: 90%;
+        font-weight: 100;
+        margin: .5em auto
+    }
+    .results .result .links {
+        width: 90%
+    }
+    .results .result ul {
+        margin: 0 0 0 5%;
+        font-size: 1.15em
+    }
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        margin: 0;
+        text-align: center;
+        color: #444;
+        background-color: #fff
+    }
+    p {
+        line-height: 23px
+    }
+    hr {
+        border: 1px solid #eee;
+        margin: 3em auto;
+        width: 50%
+    }
+    :not(pre)>code[class*=language-],
+    pre[class*=language-] {
+        background-color: transparent!important
+    }
+    pre[class*=language-] {
+        background-color: #f9f9f9!important
+    }
+}

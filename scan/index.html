@@ -1,0 +1,59 @@
+---
+layout: page
+hideFooter: false
+---
+
+<div class="page-scan">
+
+  <div class="margin">
+
+    <header class="post-header">
+      <h1 class="">Package Scan</h1>
+    </header>
+
+    <div class="drop-target results">
+      <div class="prompt">
+        <input type="file" id="file-select" name="file-select">
+        <p><label for="file-select">versions file goes here</label></p>
+      </div>
+      <div class="good" style="display:none;">
+        <p class="result-title">Good news!</p>
+        <p class="info">Your application isn't using any packages with known security issues.</p>
+      </div>
+      <div class="bad" style="display:none;">
+        <p class="result-title">Uh oh!</p>
+        <p class="info">Your application is using packages that have known security issues. Take a look at the reported alerts and consider upgrading or switching packages:</p>
+        <div class="result-list">
+          <div class="result">
+            <p>
+              <code class="language-javascript package" title="Installed package">babrahams:editable-json@0.5.0</code>
+              <code class="language-javascript versions" title="Vulnerable versions"><=0.5.1</code>
+                                                                    </p>
+            <p class="alert">Allows updates to any Mongo collection and is not meant for production use</p>
+          </div>
+          <div class="result">
+            <p>
+              <code class="language-javascript package" title="Installed package">telescope:core@0.20.0</code>
+              <code class="language-javascript versions" title="Vulnerable versions">>=0.2.0 || <=0.21.1</code>
+                                                                               </p>
+            <p class="alert">This version of Telescope is vulnerable to a privilege escalation attack.</p>
+            <p class="links">More info:</p>
+            <ul>
+              <li><a href="https://github.com/TelescopeJS/Telescope/blob/master/History.md#v0211-slugscope" target="_blank">Github Issue</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="go-again" style="display:none;"><a href="#">Want to scan another app?</a></p>
+    <p>Drag and drop your <code class="language-javascript">.meteor/versions</code> file into the box above to find out if your application is using any packages with known vulnerabilities.</p>
+    <p>This tool is powered by <a href="https://github.com/East5th/package-scan">east5th:package-scan</a> and runs entirely within your browser. We don't send, save, sleuth, sniff or store your <code class="language-javascript">versions</code> file in any way. If you're still feeling nervous, check out a set of <a class="show-sample" href="#">sample output</a> first.</p>
+    <p>Know about a vulnerable package that we're not reporting? Please help out the community <a href="https://github.com/East5th/package-scan#contributing">and contribute</a>!</p>
+    <p>Include this tool in your build process:</p>
+    <p><code class="language-*">meteor add east5th:package-scan</code></p>
+  </div>
+
+  <script src="/js/semver.js"></script>
+  <script src="/js/scan.js"></script>
+
+</div>
