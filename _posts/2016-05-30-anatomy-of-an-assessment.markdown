@@ -57,11 +57,16 @@ Take a look at an [___example assessment report___](https://docs.google.com/docu
 
 If you value the security of your Meteor application, I’d love to hear from you. Enter your email address below and I’ll send you a short questionnaire about your application. From there, I’ll reach out and start a discussion.
 
-<form style="display: flex; font-size: 28px; font-weight: 300; font-family: proxima-nova, sans-serif; margin: 1.5em 0;" action="http://formspree.io/hello@east5th.co" method="POST">
-  <input style="flex: 0 0 550px; padding: 0.5em 1em; margin-right: 8px; border: 2px solid #ddd;" type="email" name="_replyto" placeholder="Email Address">
-  <button style="flex: 1; padding: 0.5em 1em; border: 2px solid #ddd; background-color: white; font-weight: 900; color: #3489ff;" type="submit">Begin</button> 
-  <input type="hidden" name="type" value="assess"> 
-  <input type="hidden" name="_next" value="http://assess.east5th.co/begin.html"> 
-</form>
+<div class="signup-form" style="margin: 3em 0">
+  <form action="http://formspree.io/hello@east5th.co" method="POST">
+    <div class="email-wrapper">
+      <input type="text" placeholder="First Name" value="" name="FNAME" class="" id="mce-FNAME" tabindex="1"><!--
+      --><input type="email" name="_replyto" placeholder="Email Address"><!--
+      --><input type="submit" value="Begin"><!--
+      --><input type="hidden" name="type" value="assess"> 
+      <input type="hidden" name="_next" value="/begin/"> 
+    </div>
+  </form>
+</div>
 
 I’m looking forward to hearing from you!
