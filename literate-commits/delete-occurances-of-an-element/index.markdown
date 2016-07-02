@@ -25,34 +25,23 @@ a simple [Node.js](https://nodejs.org/en/) project that uses
 [Babel](http://babeljs.io/) for ES6 support and
 [Mocha](https://mochajs.org/)/[Chai](http://chaijs.com/) for testing.
 
-<pre class="language-javascript"><code class="language-javascript">
-diff --git a/.babelrc b/.babelrc
-new file mode 100644
-index 0000000..af0f0c3
---- /dev/null
-+++ b/.babelrc
-@@ -0,0 +1,3 @@
+
+<pre class='language-javascriptDiff'><p class='information'>.babelrc</p><code class='language-javascriptDiff'>
 +{
 +  "presets": ["es2015"]
 +}
 \ No newline at end of file
-diff --git a/.gitignore b/.gitignore
-new file mode 100644
-index 0000000..40b878d
---- /dev/null
-+++ b/.gitignore
-@@ -0,0 +1 @@
+</code></pre>
+
+<pre class='language-javascriptDiff'><p class='information'>.gitignore</p><code class='language-javascriptDiff'>
 +node_modules/
 \ No newline at end of file
 diff --git a/index.js b/index.js
 new file mode 100644
 index 0000000..e69de29
-diff --git a/package.json b/package.json
-new file mode 100644
-index 0000000..3a828c3
---- /dev/null
-+++ b/package.json
-@@ -0,0 +1,26 @@
+</code></pre>
+
+<pre class='language-javascriptDiff'><p class='information'>package.json</p><code class='language-javascriptDiff'>
 +{
 +  "name": "base",
 +  "version": "1.0.0",
@@ -79,12 +68,9 @@ index 0000000..3a828c3
 +    "mocha": "^2.4.5"
 +  }
 +}
-diff --git a/test/index.js b/test/index.js
-new file mode 100644
-index 0000000..4b7304f
---- /dev/null
-+++ b/test/index.js
-@@ -0,0 +1,7 @@
+</code></pre>
+
+<pre class='language-javascriptDiff'><p class='information'>test/index.js</p><code class='language-javascriptDiff'>
 +import { expect } from "chai";
 +
 +describe("index", function() {
@@ -108,12 +94,7 @@ In this case, we know that we need to implement a function called
 Eventually, `deleteNth`{:.language-javascript} will return an array of numbers, but we need to
 take this one step at a time.
 
-<pre class="language-javascript"><code class="language-javascript">
-diff --git a/index.js b/index.js
-index e69de29..e0a8f9d 100644
---- a/index.js
-+++ b/index.js
-@@ -0,0 +1,3 @@
+<pre class='language-javascriptDiff'><p class='information'>index.js</p><code class='language-javascriptDiff'>
 +function deleteNth(arr,x){
 +    // ...
 +}
@@ -132,7 +113,7 @@ results in failure. We expect `deleteNth([], 0)`{:.language-javascript} to retur
 array. After writing this test and running our test suite, the test
 fails:
 
-<pre class="language-javascript"><code class="language-javascript">
+<pre class='language-javascript'><code class='language-javascript'>
 deleteNth is not defined
 </code></pre>
 
@@ -140,7 +121,7 @@ We need to export `deleteNth`{:.language-javascript} from our module under test 
 into our test file. After making those changes, the test suite is still
 failing:
 
-<pre class="language-javascript"><code class="language-javascript">
+<pre class='language-javascript'><code class='language-javascript'>
 expected undefined to deeply equal []
 </code></pre>
 
@@ -148,26 +129,16 @@ Because our `deleteNth`{:.language-javascript} method isn't returning anything o
 that it should return `[]`{:.language-javascript} is failing. A quick way to bring our test
 suite into a passing state is to have `deleteNth`{:.language-javascript} return `[]`{:.language-javascript}.
 
-<pre class="language-javascript"><code class="language-javascript">
-diff --git a/index.js b/index.js
-index e0a8f9d..9668231 100644
---- a/index.js
-+++ b/index.js
-@@ -1,2 +1,2 @@
+<pre class='language-javascriptDiff'><p class='information'>index.js</p><code class='language-javascriptDiff'>
 -function deleteNth(arr,x){
 -    // ...
 +export function deleteNth(arr,x){
-+    return [];
-diff --git a/test/index.js b/test/index.js
-index 4b7304f..bbe0cb0 100644
---- a/test/index.js
-+++ b/test/index.js
-@@ -0,0 +1 @@
+</code></pre>
+
+<pre class='language-javascriptDiff'><p class='information'>test/index.js</p><code class='language-javascriptDiff'>
 +import { deleteNth } from "../";
-@@ -3 +4 @@ import { expect } from "chai";
 -describe("index", function() {
 +describe("deleteNth", function() {
-@@ -5 +6,3 @@ describe("index", function() {
 -  it("works");
 +    it("deletes occurrences of an element if it occurs more than n times", function () {
 +        expect(deleteNth([], 0)).to.deep.equal([]);
@@ -181,12 +152,7 @@ solution for `deleteNth`{:.language-javascript} holds up under additional base c
 calls to `deleteNth`{:.language-javascript} with a zero value for `N`{:.language-javascript} will result in an empty
 array.
 
-<pre class="language-javascript"><code class="language-javascript">
-diff --git a/test/index.js b/test/index.js
-index bbe0cb0..1ed63fa 100644
---- a/test/index.js
-+++ b/test/index.js
-@@ -7,0 +8 @@ describe("deleteNth", function() {
+<pre class='language-javascriptDiff'><p class='information'>test/index.js</p><code class='language-javascriptDiff'>
 +        expect(deleteNth([1, 2], 0)).to.deep.equal([]);
 </code></pre>
 
@@ -197,7 +163,7 @@ next test we assert that `deleteNth([1, 2], 1)`{:.language-javascript} should eq
 Unfortunately, our initial solution of always returning an empty array
 failed in this case.
 
-<pre class="language-javascript"><code class="language-javascript">
+<pre class='language-javascript'><code class='language-javascript'>
 expected [] to deeply equal [ 1, 2 ]
 </code></pre>
 
@@ -208,22 +174,14 @@ If `x`{:.language-javascript} is not zero, we know that our test expects us to r
 which is being passed in through `arr`{:.language-javascript}. Knowing that, we can bring our
 tests back into a green state by just returning `arr`{:.language-javascript}.
 
-<pre class="language-javascript"><code class="language-javascript">
-diff --git a/index.js b/index.js
-index 9668231..3ad804f 100644
---- a/index.js
-+++ b/index.js
-@@ -2 +2,4 @@ export function deleteNth(arr,x){
+<pre class='language-javascriptDiff'><p class='information'>index.js</p><code class='language-javascriptDiff'>
 -    return [];
 +    if (x == 0) {
 +        return [];
 +    }
-+    return arr;
-diff --git a/test/index.js b/test/index.js
-index 1ed63fa..c365a2b 100644
---- a/test/index.js
-+++ b/test/index.js
-@@ -8,0 +9,2 @@ describe("deleteNth", function() {
+</code></pre>
+
+<pre class='language-javascriptDiff'><p class='information'>test/index.js</p><code class='language-javascriptDiff'>
 +
 +        expect(deleteNth([1, 2], 1)).to.deep.equal([1, 2]);
 </code></pre>
@@ -245,7 +203,7 @@ initially gravitates to using
 We replace our final `return`{:.language-javascript} statement with a block that looks like
 this:
 
-<pre class="language-javascript"><code class="language-javascript">
+<pre class='language-javascript'><code class='language-javascript'>
 return arr.filter((num) => {
   return seenNum <= x;
 });
@@ -261,38 +219,30 @@ each number we see as we move through `arr`{:.language-javascript}. My first ins
 this with a simple object acting as a map from the number we seen to the
 number of times we’ve seen it:
 
-<pre class="language-javascript"><code class="language-javascript">
+<pre class='language-javascript'><code class='language-javascript'>
 let seen = {};
 </code></pre>
 
 Because `seen[num]`{:.language-javascript} will initially be `undefined`{:.language-javascript} we need to give it a
 default value of `0`{:.language-javascript}:
 
-<pre class="language-javascript"><code class="language-javascript">
+<pre class='language-javascript'><code class='language-javascript'>
 seen[num] = (seen[num] || 0) + 1;
 </code></pre>
 
 Our test suite seems happy with this solution and flips back into a
 green state.
 
-<pre class="language-javascript"><code class="language-javascript">
-diff --git a/index.js b/index.js
-index 3ad804f..fbdffd9 100644
---- a/index.js
-+++ b/index.js
-@@ -5 +5,6 @@ export function deleteNth(arr,x){
+<pre class='language-javascriptDiff'><p class='information'>index.js</p><code class='language-javascriptDiff'>
 -    return arr;
 +    let seen = {};
 +    return arr.filter((num) => {
 +        seen[num] = (seen[num] || 0) + 1;
 +        let seenNum = seen[num];
 +        return seenNum <= x;
-+    });
-diff --git a/test/index.js b/test/index.js
-index c365a2b..9e27a5d 100644
---- a/test/index.js
-+++ b/test/index.js
-@@ -10,0 +11 @@ describe("deleteNth", function() {
+</code></pre>
+
+<pre class='language-javascriptDiff'><p class='information'>test/index.js</p><code class='language-javascriptDiff'>
 +        expect(deleteNth([1, 1, 2], 1)).to.deep.equal([1, 2]);
 </code></pre>
 
@@ -305,12 +255,7 @@ The `seenNum`{:.language-javascript} variable is unnecessary at this point. Its 
 helped us think through our filter solution, but it can easily be
 replaced with `seen[num]`{:.language-javascript}.
 
-<pre class="language-javascript"><code class="language-javascript">
-diff --git a/index.js b/index.js
-index fbdffd9..3358558 100644
---- a/index.js
-+++ b/index.js
-@@ -8,2 +8 @@ export function deleteNth(arr,x){
+<pre class='language-javascriptDiff'><p class='information'>index.js</p><code class='language-javascriptDiff'>
 -        let seenNum = seen[num];
 -        return seenNum <= x;
 +        return seen[num] <= x;
@@ -326,12 +271,7 @@ array.
 We can remove the entire `if`{:.language-javascript} block at the head of our `deleteNth`{:.language-javascript}
 function.
 
-<pre class="language-javascript"><code class="language-javascript">
-diff --git a/index.js b/index.js
-index 3358558..bde8e76 100644
---- a/index.js
-+++ b/index.js
-@@ -2,3 +1,0 @@ export function deleteNth(arr,x){
+<pre class='language-javascriptDiff'><p class='information'>index.js</p><code class='language-javascriptDiff'>
 -    if (x == 0) {
 -        return [];
 -    }
@@ -345,12 +285,7 @@ kata description.
 
 Both of these tests pass. Victory!
 
-<pre class="language-javascript"><code class="language-javascript">
-diff --git a/test/index.js b/test/index.js
-index 9e27a5d..74dde8e 100644
---- a/test/index.js
-+++ b/test/index.js
-@@ -11,0 +12,3 @@ describe("deleteNth", function() {
+<pre class='language-javascriptDiff'><p class='information'>test/index.js</p><code class='language-javascriptDiff'>
 +
 +        expect(deleteNth([20, 37, 20, 21], 1)).to.deep.equal([20, 37, 21]);
 +        expect(deleteNth([1, 1, 3, 3, 7, 2, 2, 2, 2], 3)).to.deep.equal([1, 1, 3, 3, 7, 2, 2, 2]);
@@ -367,16 +302,10 @@ operator](http://stackoverflow.com/a/5971668), we can simplify our
 against `x`{:.language-javascript}. Next, we can leverage some ES6 syntax sugar to consolidate
 our `filter`{:.language-javascript} lambda onto a single line.
 
-<pre class="language-javascript"><code class="language-javascript">
-diff --git a/index.js b/index.js
-index bde8e76..b7dc88c 100644
---- a/index.js
-+++ b/index.js
-@@ -3,4 +3 @@ export function deleteNth(arr,x){
+<pre class='language-javascriptDiff'><p class='information'>index.js</p><code class='language-javascriptDiff'>
 -    return arr.filter((num) => {
 -        seen[num] = (seen[num] || 0) + 1;
 -        return seen[num] <= x;
 -    });
-+    return arr.filter((num) => (seen[num] = ~~seen[num] + 1) <= x);
 </code></pre>
-
++    return arr.filter((num) => (seen[num] = ~~seen[num] + 1) <= x);

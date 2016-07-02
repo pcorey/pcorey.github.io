@@ -1,0 +1,29 @@
+.language-javascriptDiff {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  .deleted {
+    background-color: #F9F5F0 !important;
+    display: inline-block;
+    width: ~"calc(100% + 2em)";
+    margin-left: -1em;
+    padding-left: 1em;
+  }
+  .inserted {
+    background-color: #F0F9F5 !important;
+    display: inline-block;
+    width: ~"calc(100% + 2em)";
+    margin-left: -1em;
+    padding-left: 1em;
+  }
+  .token.inserted, .token.deleted {
+    color: inherit !important;
+  }
+  span.token.deleted:last-of-type,
+  span.token.inserted:last-of-type {
+    padding-bottom: 1em;
+  }
+  span.token.deleted:first-of-type,
+  span.token.inserted:first-of-type {
+    padding-top: 1em;
+  }
+}
