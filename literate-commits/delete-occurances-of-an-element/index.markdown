@@ -294,3 +294,10 @@ our `filter`{:.language-javascript} lambda onto a single line.
 
 # Wrap-up
 
+This was an excellent demonstration of how following test-driven development ideas can give you supreme confidence when refactoring your code. We were able to gut entire sections out of our solution and then completely transform it with zero trepidation.
+
+Overall, our solution looks very similar to [the other submitted solutions](https://www.codewars.com/kata/delete-occurrences-of-an-element-if-it-occurs-more-than-n-times/solutions/javascript) for this kata.
+
+My one regret with this solution is using the double tilde operator (`~~`{:.language-javascript}). While it does make our final solution quite a bit shorter, it adds confusion to the solution if you’re not familiar with how `~~`{:.language-javascript} works.
+
+Be sure to check out the [final project on Github](https://github.com/pcorey/delete-occurrences-of-an-element-if-it-occurs-more-than-n-times)!
