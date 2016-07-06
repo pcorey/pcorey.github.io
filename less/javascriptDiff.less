@@ -18,12 +18,12 @@
   .token.inserted, .token.deleted {
     color: inherit !important;
   }
-  span.token.deleted:last-of-type,
-  span.token.inserted:last-of-type {
+  > span:last-of-type {
+    display: inline-block;
     padding-bottom: 1em;
   }
-  span.token.deleted:first-of-type,
-  span.token.inserted:first-of-type {
+  > span:first-of-type {
+    display: inline-block;
     padding-top: 1em;
   }
 }
