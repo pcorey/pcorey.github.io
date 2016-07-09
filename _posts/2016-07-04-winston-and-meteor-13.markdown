@@ -107,7 +107,7 @@ Collection.helpers({
 });
 </code></pre>
 
-This is far from an idea situation. Ideally, we'd like to be able to use `logger`{:.language-javascript} across the board, regardless of if we're on the client or server.
+This is far from an ideal situation. Ideally, we'd like to be able to use `logger`{:.language-javascript} across the board, regardless of if we're on the client or server.
 
 ## Creating a Faux-Logger
 
