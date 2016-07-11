@@ -12,6 +12,19 @@ layout: default
       </h1>
     </header>
 
+    {% if page.tags contains "literate-commits" %}
+  </div>
+  <div class="literate-introduction">
+    <div class="margin">
+      <div class="post-content">
+        <p>This post is written as a set of <a href="/blog/2016/07/11/literate-commits/">Literate Commits</a>. The goal of this style is to show you how this program came together from beginning to end.</p>
+        <p>Each commit in the project is represented by a section of the article. Click each section's header to see the commit on Github, or <a href="{{page.repo}}">check out the repository</a> and follow along.</p>
+      </div>
+    </div>
+  </div>
+  <div class="margin">
+    {% endif %}
+
     <article class="post-content">
       {{ content }}
     </article>
