@@ -39,23 +39,10 @@ a simple [Node.js](https://nodejs.org/en/) project that uses
 
 <pre class='language-javascriptDiff'><p class='information'>package.json</p><code class='language-javascriptDiff'>
 +{
-+  "name": "base",
-+  "version": "1.0.0",
-+  "description": "",
 +  "main": "index.js",
 +  "scripts": {
 +    "test": "mocha ./test --compilers js:babel-register"
 +  },
-+  "repository": {
-+    "type": "git",
-+    "url": "git+https://github.com/pcorey/base.git"
-+  },
-+  "author": "",
-+  "license": "ISC",
-+  "bugs": {
-+    "url": "https://github.com/pcorey/base/issues"
-+  },
-+  "homepage": "https://github.com/pcorey/base#readme",
 +  "dependencies": {
 +    "babel-preset-es2015": "^6.9.0",
 +    "babel-register": "^6.9.0",
