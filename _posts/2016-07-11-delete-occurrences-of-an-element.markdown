@@ -6,7 +6,7 @@ repo: "https://github.com/pcorey/delete-occurrences-of-an-element-if-it-occurs-m
 tags: ["literate-commits"]
 ---
 
-# [Commit 93e7085: Laying the Groundwork]({{page.repo}}/commit/93e70856fc1a14685ea86f215cf20218f4466daa)
+# [Laying the Groundwork]({{page.repo}}/commit/93e70856fc1a14685ea86f215cf20218f4466daa)
 
 Today we'll be tackling a [code kata](https://www.codewars.com/) called
 [“Delete occurrences of an element if it occurs more than n
