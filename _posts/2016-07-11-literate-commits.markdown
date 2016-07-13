@@ -61,7 +61,7 @@ This kind of historical context is invaluable when writing software. By observin
 
 ## Example Project
 
-For a very simple, introductory example to this style of programming and writing, [take a look at how I solved a simple code kata in literary commit style](/blog/2016/07/11/delete-occurances-of-an-element/).
+For a very simple, introductory example to this style of programming and writing, [take a look at how I solved a simple code kata in literary commit style](/blog/2016/07/11/delete-occurrences-of-an-element/).
 
 This is a very basic example, but I hope it serves as a clear introduction to the style. I plan on continuing to release literal commit posts over the coming months. Hopefully this intentional style of programming can be as helpful to other as it has been to me.
 
