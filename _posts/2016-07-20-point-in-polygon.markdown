@@ -646,7 +646,7 @@ Success!
 
 # Wrap-up
 
-When you compare [our solution] with [other submitted solutions], you’ll notice that ours is longer. Our solution probably took much longer to write as well. However, our solution was a fantastic exercise in deliberate practice.
+When you compare [our solution](https://github.com/pcorey/point-in-polygon) with [other submitted solutions](https://www.codewars.com/kata/530265044b7e23379d00076a/solutions/javascript), you’ll notice that ours is longer. Our solution probably took much longer to write as well. However, our solution was a fantastic exercise in deliberate practice.
 
 By consciously focusing on writing robust and maintainable code, we had a few introspective moments about our process and our technique.
 
