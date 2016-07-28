@@ -96,7 +96,7 @@ that, our tests are green.
 
 # [Introducing Our Abstractions]({{page.repo}}/commit/cde856ec5e72c71e4776723ce783a7b1671fa85f)
 
-Know this solution is going to get complex fairly quickly, we'd
+Knowing this solution is going to get complex fairly quickly, we'd
 like to leverage some abstractions to make it more testable and
 maintainable.
 
