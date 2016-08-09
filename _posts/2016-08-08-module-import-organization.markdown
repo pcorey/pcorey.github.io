@@ -85,7 +85,7 @@ This breaks the clean modularity of our system. Our `main.js`{:.language-bash} f
 
 Thankfully, index files can lead us out of this increasingly hairy situation.
 
-When an `index.js`{:.language-bash} file is present in a directly, attempting to import that directly will cause the `index.js`{:.language-bash} file to be imported on its behalf. For example, consider this folder structure:
+When an `index.js`{:.language-bash} file is present in a directory, attempting to import that directory will cause the `index.js`{:.language-bash} file to be imported on its behalf. For example, consider this folder structure:
 
 <pre class='language-bash'><code class='language-bash'>
 .
