@@ -5,7 +5,7 @@ date:   2016-08-15
 tags: []
 ---
 
-If you [follow me on Twitter](https://twitter.com/petecorey), it’s probably not surprise that I’ve been interested in [Elixir](%20http://elixir-lang.org/) and the [Phoenix Framework](http://www.phoenixframework.org/) for quite a while now. Coming from a [Node.js](https://nodejs.org/en/) and [Meteor](https://www.meteor.com/) background, the promises of out-of-the-box reliability and scalability are incredibly attractive.
+If you [follow me on Twitter](https://twitter.com/petecorey), it’s probably not surprise that I’ve been interested in [Elixir](http://elixir-lang.org/) and the [Phoenix Framework](http://www.phoenixframework.org/) for quite a while now. Coming from a [Node.js](https://nodejs.org/en/) and [Meteor](https://www.meteor.com/) background, the promises of out-of-the-box reliability and scalability are incredibly attractive.
 
 To get my feet wet, I decided to use Phoenix to build out a back-end for a simple Meteor example app.
 
