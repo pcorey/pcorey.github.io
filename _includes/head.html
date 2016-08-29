@@ -1,7 +1,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>East5th</title>
+    {% if page.title %}
+        <title>East5th - {{page.title}}</title>
+    {% else %}
+        <title>East5th</title>
+    {% endif  %}
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
     <meta name="robots" content="index,follow">
