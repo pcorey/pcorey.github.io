@@ -2,7 +2,7 @@
 layout: post
 title:  "Phoenix Todos - Part 1"
 date:   2016-08-31
-repo: "https://github.com/pcorey/advent_of_code_01"
+repo: "https://github.com/pcorey/phoenix_todos"
 tags: ["literate-commits"]
 ---
 
