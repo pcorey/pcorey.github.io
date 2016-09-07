@@ -24,7 +24,7 @@ Meteor.publish("documents", function() {
 });
 </code></pre>
 
-When an authenticated user subscribes to this publication, their `userId`{:.language-javascript} would be `undefined`{:.language-javascript}, or `null`{:.language-javascript} when it’s translated into a [MongoDB](https://www.mongodb.com) query.
+When an unauthenticated user subscribes to this publication, their `userId`{:.language-javascript} would be `undefined`{:.language-javascript}, or `null`{:.language-javascript} when it’s translated into a [MongoDB](https://www.mongodb.com) query.
 
 This means that the query passed into `Documents.find`{:.language-javascript} would look something like this:
 
