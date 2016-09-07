@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Phoenix Todos - Part 1"
+title:  "Phoenix Todos - Static Assets"
 date:   2016-08-31
 repo: "https://github.com/pcorey/phoenix_todos"
 tags: ["literate-commits"]
