@@ -9,7 +9,7 @@ If you’ve been following our blog, you’ll notice that we’ve been writing l
 
 The goal of a literate commit style post is to break down each [Git](https://git-scm.com/) commit into a readable, clear explanation of the code change. The idea is that this chronological narrative helps tell the story of how a piece of software came into being.
 
-Combined with tools like [`git blame`{:.language-javascript}](https://git-scm.com/docs/git-blame) and [`git log`{:.language-javascript}](https://git-scm.com/docs/git-log) you can even generate detailed histories for small, focused sections of the codebase.
+Combined with tools like [`git blame`{:.language-bash}](https://git-scm.com/docs/git-blame) and [`git log`{:.language-bash}](https://git-scm.com/docs/git-log) you can even generate detailed histories for small, focused sections of the codebase.
 
 But sometimes generating repositories with this level of historical narrative requires something that most Git users warn against: rewriting history.
 
@@ -29,7 +29,7 @@ Imagine that we have some [boilerplate](https://github.com/pcorey/base) that we 
 
 Starting a new project with this base might look something like this:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-bash'><code class='language-bash'>
 mkdir my_project
 cd my_project
 git clone https://github.com/pcorey/base .
@@ -37,28 +37,28 @@ git remote remove origin
 git remote add origin https://github.com/pcorey/my_project
 </code></pre>
 
-We’ve cloned `base`{:.language-javascript} into the `my_project`{:.language-javascript} directory, removed it’s `origin`{:.language-javascript} pointer to the `base`{:.language-javascript} repository, and replaced it with a pointer to a new `my_project`{:.language-javascript} repository.
+We’ve cloned `base`{:.language-bash} into the `my_project`{:.language-bash} directory, removed it’s `origin`{:.language-bash} pointer to the `base`{:.language-bash} repository, and replaced it with a pointer to a new `my_project`{:.language-bash} repository.
 
-Great, but we’re still stuck with whatever commits existed in the `base`{:.language-javascript} project before we cloned it into `my_project`{:.language-javascript}. Those commits most likely don’t contribute to the narrative of this specific project and should be changed.
+Great, but we’re still stuck with whatever commits existed in the `base`{:.language-bash} project before we cloned it into `my_project`{:.language-bash}. Those commits most likely don’t contribute to the narrative of this specific project and should be changed.
 
-One solution to this problem is to clobber the Git history by removing the `.git`{:.language-javascript} folder, but this is the nuclear option. There are easier ways of accomplishing our goal.
+One solution to this problem is to clobber the Git history by removing the `.git`{:.language-bash} folder, but this is the nuclear option. There are easier ways of accomplishing our goal.
 
-The `--root`{:.language-javascript} flag of the [`git rebase`{:.language-javascript}](https://git-scm.com/docs/git-rebase) command lets us revise _every_ commit in our project, including the root commit. This means that we can interactively rebase and `reword`{:.language-javascript} the root commits created in the `base`{:.language-javascript} project:
+The `--root`{:.language-bash} flag of the [`git rebase`{:.language-bash}](https://git-scm.com/docs/git-rebase) command lets us revise _every_ commit in our project, including the root commit. This means that we can interactively rebase and `reword`{:.language-bash} the root commits created in the `base`{:.language-bash} project:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-bash'><code class='language-bash'>
 git rebase -i --root master
 
 reword f784c6a First commit
 # Rebase f784c6a onto 5d85358 (1 command(s))
 </code></pre>
 
-Using `reword`{:.language-javascript} tells Git that we’d like to use the commit, but we want to modify its commit message. In our case, we might want to explain the project we’re starting and discuss the base set of files we pulled into the repository.
+Using `reword`{:.language-bash} tells Git that we’d like to use the commit, but we want to modify its commit message. In our case, we might want to explain the project we’re starting and discuss the base set of files we pulled into the repository.
 
 ## Splicing in a Commit
 
-Next, let’s imaging that our project has three commits. The first commit sets up our project’s boilerplate. The second commit adds a file called `foo.js`{:.language-javascript}, and the third commit updates that file:
+Next, let’s imaging that our project has three commits. The first commit sets up our project’s boilerplate. The second commit adds a file called `foo.js`{:.language-bash}, and the third commit updates that file:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-bash'><code class='language-bash'>
 git log --online
 
 1d5f372 Updated foo.js
@@ -66,11 +66,11 @@ git log --online
 b3065c9 Project setup
 </code></pre>
 
-What if we forgot to create a file called `bar.js`{:.language-javascript} after we created `foo.js`{:.language-javascript}. For maximum clarity, we want this file to be created in a new commit following `873641e`{:.language-javascript}. How would we do it?
+What if we forgot to create a file called `bar.js`{:.language-bash} after we created `foo.js`{:.language-bash}. For maximum clarity, we want this file to be created in a new commit following `873641e`{:.language-bash}. How would we do it?
 
-Once again, interactive rebase comes to the rescue. While doing a root rebase, we can mark `873641e`{:.language-javascript} as needing editing:
+Once again, interactive rebase comes to the rescue. While doing a root rebase, we can mark `873641e`{:.language-bash} as needing editing:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-bash'><code class='language-bash'>
 git rebase -i --root master
 
 pick b3065c9 Project setup
@@ -78,26 +78,26 @@ edit 873641e Added foo.js
 pick 1d5f372 Updated foo.js
 </code></pre>
 
-After rebasing, our Git `HEAD`{:.language-javascript} will point to `873641e`{:.language-javascript}. Our git log looks like this:
+After rebasing, our Git `HEAD`{:.language-bash} will point to `873641e`{:.language-bash}. Our git log looks like this:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-bash'><code class='language-bash'>
 git log --online
 
 1d5f372 Updated foo.js
 873641e Added foo.js
 </code></pre>
 
-We can now add `bar.js`{:.language-javascript} and commit the change:
+We can now add `bar.js`{:.language-bash} and commit the change:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-bash'><code class='language-bash'>
 touch bar.js
 git add bar.js
 git commit -am "Added bar.js"
 </code></pre>
 
-Reviewing our log, we’ll see a new commit following `873641e`{:.language-javascript}:
+Reviewing our log, we’ll see a new commit following `873641e`{:.language-bash}:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-bash'><code class='language-bash'>
 git log --online
 
 58f31fd Added bar.js
@@ -107,7 +107,7 @@ git log --online
 
 Everything looks good. Now we can continue our rebase and check out our final revision history:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-bash'><code class='language-bash'>
 git rebase --continue
 git log --oneline
 
@@ -125,7 +125,7 @@ What if we notice a typo in our project that was introduced by our boilerplate? 
 
 Once again, we’ll harness the power of our interactive root rebase!
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-bash'><code class='language-bash'>
 git rebase -i --root master
 
 edit b3065c9 Project setup
@@ -133,19 +133,19 @@ pick 873641e Added foo.js
 pick 1d5f372 Updated foo.js
 </code></pre>
 
-After starting the rebase, our `HEAD`{:.language-javascript} will point to the first commit, `b3065c9`{:.language-javascript}. From there, we can fix our typo, and then amend the commit:
+After starting the rebase, our `HEAD`{:.language-bash} will point to the first commit, `b3065c9`{:.language-bash}. From there, we can fix our typo, and then amend the commit:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-bash'><code class='language-bash'>
 vim README.md
 git add README.md
 git commit --amend
 </code></pre>
 
-Our `HEAD`{:.language-javascript} is still pointing to the first commit, but now our fixed typo is included in the set of changes!
+Our `HEAD`{:.language-bash} is still pointing to the first commit, but now our fixed typo is included in the set of changes!
 
 We can continue our rebase and go about our business, pretending that the typo never existed.
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-bash'><code class='language-bash'>
 git rebase --continue
 </code></pre>
 
@@ -153,9 +153,9 @@ git rebase --continue
 
 Remember young Time Lord, with great power comes great responsibility.
 
-Tampering with revision history can lead to serious losses for your project if done incorrectly. It’s recommended that you practice any changes you plan to make in another branch before attempting them in `master`{:.language-javascript}. Another fallback is to reset hard to `origin/master`{:.language-javascript} if all goes wrong:
+Tampering with revision history can lead to serious losses for your project if done incorrectly. It’s recommended that you practice any changes you plan to make in another branch before attempting them in `master`{:.language-bash}. Another fallback is to reset hard to `origin/master`{:.language-bash} if all goes wrong:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-bash'><code class='language-bash'>
 git reset --hard origin/master
 </code></pre>
 
