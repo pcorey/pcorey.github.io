@@ -189,7 +189,7 @@ rest of our authentication system!
 
 # [Sign-Up Route and Controller]({{page.repo}}/commit/c118f81324c5aa7392f1c998df279df7e36510d6)
 
-The first step to implementing authorization in our application is creating a back-end sign-up route that creates a new user in our system.
+The first step to implementing authentication in our application is creating a back-end sign-up route that creates a new user in our system.
 
 To do this, we'll create an `"/api/users"`{:.language-elixir} route that sends `POST`{:.language-elixir}
 requests to the `UserController.create`{:.language-elixir} function:
