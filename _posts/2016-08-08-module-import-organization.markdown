@@ -5,7 +5,7 @@ date:   2016-08-08
 tags: []
 ---
 
-In [our last post](#) discussing the benefits of moving your methods, publications, and templates into modules, we mentioned that all of this [Meteor](https://www.meteor.com/)-specific functionality relied on modifying global state.
+In [our last post](/blog/2016/08/01/method-imports-and-exports/) discussing the benefits of moving your methods, publications, and templates into modules, we mentioned that all of this [Meteor](https://www.meteor.com/)-specific functionality relied on modifying global state.
 
 This means that our modules didn’t need to export anything. However, they do need to be imported at least once by your main Meteor application.
 
