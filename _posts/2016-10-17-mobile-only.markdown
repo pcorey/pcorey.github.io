@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mobile Only"
+title:  "Can Meteor Applications be \"Mobile Only?\""
 date:   2016-10-17
 tags: []
 ---
@@ -26,7 +26,7 @@ Wrapping your application in a `Meteor.isCordova`{:.language-javascript} guard w
 
 They can still inspect client-side methods, interact with Minimongo, call server-side methods, make subscriptions, etc…
 
-<video width="60%" style="margin: 1em 1em 1em 0em; float: left;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/isCordova+%3D+true.webm" autoplay loop controls></video>
+<video width="40%" style="margin: 0em 0em 1em 1em; float: right;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/isCordova+%3D+true.webm" autoplay loop controls></video>
 
 
 Not only that, but a curious user could also view your application’s source and dive into your Javascript bundle. From there, they can peruse through all of the code used to render your user interface, paying special attention to method calls, subscriptions, etc…
