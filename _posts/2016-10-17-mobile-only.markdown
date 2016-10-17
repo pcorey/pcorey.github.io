@@ -42,7 +42,7 @@ Ultimately, there is no way to prevent a motivated user from interacting with yo
 
 ## Final Thoughts
 
-The battle for Meteor security (and all web application security) is fought on the server. Any client-side guards of precautions introduced into an application can easily be bypassed by a motivated user.
+The battle for Meteor security (and all web application security) is fought on the server. Any client-side guards or precautions introduced into an application can easily be bypassed by a motivated user.
 
 It’s important to remember that a user has complete control over their computer. This means that they have complete control over the portion of your application that runs on their computer. If the user tells your application to jump, it will ask how high. If the user says that `Meteor.isCordova`{:.language-javascript} is true, then it’s true.
 
