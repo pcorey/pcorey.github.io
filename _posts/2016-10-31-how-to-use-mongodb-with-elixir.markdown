@@ -21,7 +21,7 @@ Ecto acts as a repository layer around your database. It lets you write queries 
 
 The [Mongo.Ecto](https://github.com/michalmuskala/mongodb_ecto) package is the Ecto adapter for MongoDB. Unfortunately, Mongo.Ecto is currently in a state of flux.
 
-Mongo.Ecto is currently [incompatible with Ecto 1.1](https://github.com/michalmuskala/mongodb_ecto/issues/60#issuecomment-173518054), which is the version of Ecto currently used out of the box by the Phoenix framework. On top of that, work to support Ecto 2.0 is very much a [work](https://github.com/michalmuskala/mongodb_ecto/pull/91) in [progress](https://github.com/michalmuskala/mongodb_ecto/pull/84).
+Mongo.Ecto is currently [incompatible with Ecto 1.1](https://github.com/michalmuskala/mongodb_ecto/issues/60#issuecomment-173518054). On top of that, work to support Ecto 2.0 is very much a [work](https://github.com/michalmuskala/mongodb_ecto/pull/91) in [progress](https://github.com/michalmuskala/mongodb_ecto/pull/84).
 
 All of this is to say that integrating with MongoDB through Ecto is not currently an option if you’re looking for a low-friction, fully supported solution.
 
