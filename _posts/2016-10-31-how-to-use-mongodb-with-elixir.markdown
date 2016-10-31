@@ -9,7 +9,7 @@ Many of the application’s I’ve developed for myself and for clients over the
 
 [Elixir](http://elixir-lang.org/) is no exception to this rule.
 
-Thankfully, Elixir and the [Phoenix framework](http://www.phoenixframework.org/) are database agnostic. They don’t require you to be tied to a single database, and even offer options for interfacing with a wide variety of database options.
+Thankfully, Elixir and the [Phoenix framework](http://www.phoenixframework.org/) are database agnostic. They don’t require you to be tied to a single database, and even offer options for interfacing with a wide variety of databases.
 
 Let’s dig into how we can use [MongoDB](https://www.mongodb.com/) in an Elixir application.
 
