@@ -39,7 +39,7 @@ Setting up the MongoDB driver in your Elixir application is a simple process. Ge
 {:ok, _} = MongoPool.start_link(database: "test")
 
 MongoPool
-|> Mongo.find(%{ "foo" => "bar" })
+|> Mongo.find("collection", %{ "foo" => "bar" })
 |> Enum.to_list
 </code></pre>
 
