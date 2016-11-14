@@ -120,7 +120,7 @@ end
 
 
 <p style="border: 1px dashed #690; padding: 1em; background-color: #F0F9F0">
-Notice how we’re using pattern matching to destructure a complex user document and grab only the fields we care about. It’s Elixir awesome?
+Notice how we’re using pattern matching to destructure a complex user document and grab only the fields we care about. Isn't Elixir awesome?
 </p>
 
 Before [Bcrypt hashing](https://en.wikipedia.org/wiki/Bcrypt) a password string, [Meteor expects](https://github.com/meteor/meteor/blob/5f0303699a847416d087dd2660a75f286094bb06/packages/accounts-password/password_server.js#L32-L43) it to be [SHA256 hashed](https://github.com/meteor/meteor/blob/87681c8f166641c6c3e34958032a5a070aa2d11a/packages/sha/sha256.js#L136-L137) and converted into a lowercased base16 (hexadecimal) string. This is fairly painless thanks to Erlang’s `:crypto`{:.language-elixir} library:
