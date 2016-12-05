@@ -13,6 +13,10 @@ Thankfully, Elixir and the [Phoenix framework](http://www.phoenixframework.org/)
 
 Let’s dig into how we can use [MongoDB](https://www.mongodb.com/) in an Elixir application.
 
+<p style="border: 1px dashed #690; padding: 1em; background-color: #F0F9F0">
+This article was written with version <code class="language-elixir">~0.1</code> of the MongoDB driver in mind. For instructions on using version <code class="language-elixir">0.2</code> of the MongoDB driver, see <a href="/blog/2016/12/05/how-to-use-mongodb-with-elixir-revisited/">How to Use MongoDB with Elixir - Revisited</a>.
+</p>
+
 ## Ecto Adapter
 
 A very common way of interacting with a database in an Elixir application is to use the [Ecto package](https://github.com/elixir-ecto/ecto).
