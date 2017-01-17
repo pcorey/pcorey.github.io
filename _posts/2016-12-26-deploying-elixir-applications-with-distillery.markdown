@@ -102,7 +102,7 @@ The `mix release`{:.language-elixir} task builds our release and places it in th
 <pre class='language-*'><code class='language-*'>PORT=8080 ./_build/prod/rel/hello_distillery/bin/hello_distillery foreground
 </code></pre>
 
-If the release was successful, we should see our application’s server logs in the console, and we should bey able to access your application at `http://localhost:8080`{:.language-elixir}.
+If the release was successful, we should see our application’s server logs in the console, and we should be able to access your application at `http://localhost:8080`{:.language-elixir}.
 
 
 ## Deploying Our Release
