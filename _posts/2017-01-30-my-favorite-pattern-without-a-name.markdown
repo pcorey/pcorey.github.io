@@ -11,6 +11,10 @@ As my style of programming changes, I find myself re-using patterns and ideas ac
 
 This article is about one of the patterns I use most often; interestingly, a pattern without a clear name.
 
+<p style="border: 1px dashed #690; padding: 1em; background-color: #F0F9F0">
+As my friend <a href="https://twitter.com/deaniusaur/status/826127630328004608">Dean Radcliffe pointed out</a>, I'm probably describing a <a href="https://en.wikipedia.org/wiki/Fluent_interface">fluent interface</a> as described by <a href="https://www.martinfowler.com/bliki/FluentInterface.html">Martin Fowler</a>. Today I learned.
+</p>
+
 ## An Example
 
 I often find myself wanting to chain together many function calls, passing in the results of previous calls into the next function in the chain.
