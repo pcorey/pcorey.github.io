@@ -15,7 +15,7 @@ In this article, we’ll use [Elixir processes](http://elixir-lang.org/getting-s
 
 Most basic implementations of the Game of Life represent the universe as a large two-dimensional grid. Each spot in the grid is either “alive”, or “dead”.
 
-<img class="pull-left" style="width: 21%; margin: 0 1em 0em 0;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/gol-grid.png">
+<img class="pull-left" style="width: 21%; margin: 0 1em 0em 0;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/gol-grid.png" title="A typical Game of Life representation.">
 
 Once every “tick”, the simulation will loop over each cell in the universe. If the cell is dead and has exactly three living neighbors, it will be born into the next generation. If the cell is living and has two or three neighbors, it will live on during the next generation. Otherwise, the cell will die or remain dead.
 
@@ -66,7 +66,7 @@ children = [
 supervise(children, strategy: :simple_one_for_one, restart: :transient)
 </code></pre>
 
-<img class="pull-right" style="width: 40%; margin: 1em 0 1em 1em;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/gol-structure.png">
+<img class="pull-right" style="width: 40%; margin: 1em 0 1em 1em;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/gol-structure.png" title="A high level view of our application's structure.">
 
 The [`:simple_one_for_one`{:.language-elixir} strategy](https://hexdocs.pm/elixir/Supervisor.html#module-simple-one-for-one) informs the system that we’ll be dynamically adding and removing children from this supervision tree. Those children will be `Cell`{:.language-elixir} worker processes.
 
@@ -307,7 +307,7 @@ Now let’s fire up [Erlang’s observer](http://erlang.org/doc/apps/observer/ob
 
 We can see the three cells we just added to the universe below the `Cell.Supervisor`{:.language-elixir} supervision tree. Also notice that those processes are linked to the `Cell.Registry`{:.language-elixir} process.
 
-<img style="display: block; width: 100%; margin: 2em auto;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/gol-observer-structure.png">
+<img style="display: block; width: 100%; margin: 2em auto;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/gol-observer-structure.png" title="Our application structure as it exists in the Erlang observer.">
 
 To test out our `Cell.Supervisor`{:.language-elixir}, let’s manually kill one of our cell processes. Send a `kill`{:.language-elixir} exit message to one of the cells, and notice that after the process dies, another process immediately takes its place.
 
@@ -336,7 +336,7 @@ We can tick our universe as many times as we want:
 
 After all of the ticks are processed, we can switch back to our observer and see that we still have three living cells, as expected.
 
-<img class="pull-right" style="width: 20%; margin: 0 0 0em 1em;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/gol-observer-cells.png">
+<img class="pull-right" style="width: 20%; margin: 0 0 0em 1em;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/gol-observer-cells.png" title="Cells living as processes in the Erlang observer.">
 
 Let’s restart our universe and try again with a more interesting pattern. Let’s try a [“diehard” pattern](http://conwaylife.appspot.com/pattern/diehard), which is a [methuselah](https://en.wikipedia.org/wiki/Methuselah_(cellular_automaton)) that dies after 130 generations:
 
@@ -370,6 +370,8 @@ At the end of the day it was an excellent experience. I learned quite a few impo
 While this Game of Life implementation isn’t the fastest or most efficient, it does come with its interesting benefits.
 
 It’s incredibly resilient. Every cell process, and the universe process can fail and restart seamlessly. Catastrophic failure can only take place if either the `Universe.Supervisor`{:.language-elixir}, or the `Cell.Supervisor`{:.language-elixir} fail, which is unlikely to happen.
+
+<img style="display: block; width: 100%; margin: 2em auto;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/gol-utilization.png" title="Four Erlang schedulers running our Game of Life simulation on a quad-core processor.">
 
 It’s concurrent and parallel out of the box. Our asynchronous calls to `Cell.tick`{:.language-elixir} are distributed across every CPU on our node. The Erlang VM automatically takes full advantage of its environment and orchestrates the running of these parallel processes.
 
