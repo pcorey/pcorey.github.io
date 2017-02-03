@@ -353,7 +353,7 @@ Letâ€™s restart our universe and try again with a more interesting pattern. Letâ
 1..130
 |> Enum.map(fn
               n -> Universe.tick
-              :timer.sleep(500)
+                   :timer.sleep(500)
             end)
 </code></pre>
 
