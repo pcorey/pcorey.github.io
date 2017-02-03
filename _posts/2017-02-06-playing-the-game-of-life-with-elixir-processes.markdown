@@ -240,7 +240,7 @@ We can send our reply back to the universe, being sure to preserve `position`{:.
 
 Take a look at the entire [`Cell`{:.language-elixir} module on Github](https://github.com/pcorey/life/blob/master/lib/cell.ex).
 
-## Finding Up Neighbors with Registry
+## Finding Neighbors with Registry
 
 When generating both the `to_reap`{:.language-elixir} and `to_sow`{:.language-elixir} lists, cells were required to determine if neighboring cells were living or dead.
 
