@@ -31,8 +31,7 @@ We’ll need some way of finding a cell’s neighbors, which means we’ll need 
 
 Our cells will be fairly independent; they’ll manage their own position, and determine when it’s time to die or give birth to another cell. However, we’ll need some additional outside process to tell each cell in the universe when to “tick”. We’ll call this controller process the “Universe”.
 
-> “Life calls the tune, we dance.”<br/>
-> *- John Galsworthy*
+> “Life calls the tune, we dance.”
 
 Given those basic components, we can draw up a basic dependency tree of our application. We’ll need a top level supervisor managing our universe and cell registry, along with a supervisor to dynamically manage each cell process.
 
