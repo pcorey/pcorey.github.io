@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rendering Life on a Canvas with Phoenix Sockets"
+title:  "Rendering Life on a Canvas with Phoenix Channels"
 date:   2017-02-20
 tags: []
 ---
