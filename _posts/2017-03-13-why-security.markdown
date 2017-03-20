@@ -5,7 +5,7 @@ date:   2017-03-13
 tags: []
 ---
 
-I’m a software developer, but I spent a lot of time thinking and worrying about software security. In fact, I’ve even recently started working on a software security service called [Inject Detect](http://www.injectdetect.com/)!
+I’m a software developer, but I spend a lot of time thinking and worrying about software security. In fact, I’ve even recently started working on a software security service called [Inject Detect](http://www.injectdetect.com/)!
 
 Sometimes my friends and coworkers ask why I, as a software developer, spend so much time writing about security. Why don’t I give up on development and focus on security full-time?
 
