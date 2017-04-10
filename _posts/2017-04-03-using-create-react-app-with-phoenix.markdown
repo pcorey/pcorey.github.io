@@ -91,7 +91,7 @@ Because our front-end application exists completely independently from our Phoen
 
 Running `npm run build`{:.language-bash} in our `priv/hello_create_react_app`{:.language-bash} folder will build our application into a static bundle in the `priv/hello_create_react_app/build`{:.language-bash} folder.
 
-This static bundle can be deployed anywhere you could choose to deploy a static of bundle, such as S3, or event GitHub Pages!
+This static bundle can be deployed anywhere you choose to deploy static assets, such as S3 or even GitHub Pages!
 
 Because your front-end content is served elsewhere, your back-end Phoenix application will only be accessed to resolve queries or perform mutations, rather than to fetch every static asset requested by every user.
 
