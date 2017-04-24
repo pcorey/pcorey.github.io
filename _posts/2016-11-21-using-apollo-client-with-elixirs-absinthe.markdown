@@ -35,13 +35,21 @@ object :author do
   field :id, :id
   field :first_name, :string
   field :last_name, :string
-  field :posts, list_of(:post)
+  field :posts, list_of(:post) do
+    resolve fn author, _, _ ->
+      {:ok, HelloAbsinthe.Schema.find_posts(author.id)}
+    end
+  end
 end
 
 object :post do
   field :id, :id
   field :title, :string
-  field :author, :author
+  field :author, :author do
+    resolve fn post, _, _ ->
+      {:ok, HelloAbsinthe.Schema.find_author(post.author.id)}
+    end
+  end
   field :votes, :integer
 end
 </code></pre>
@@ -64,17 +72,34 @@ end
 To cut down on the number of moving parts in this example, we’ll write our two resolver functions to return a set of hard-coded posts and authors, rather than pulling them from some external data source:
 
 <pre class='language-elixir'><code class='language-elixir'>
+@posts [
+  %{id: 1, title: "GraphQL Rocks",           votes: 3, author: %{id: 1}},
+  %{id: 2, title: "Introduction to GraphQL", votes: 2, author: %{id: 2}},
+  %{id: 3, title: "Advanced GraphQL",        votes: 1, author: %{id: 1}}
+]
+
+@authors [
+  %{id: 1, first_name: "Sashko", last_name: "Stubailo"},
+  %{id: 2, first_name: "Tom",    last_name: "Coleman"},
+]
+
+...
+
 def get_all_posts(_args, _info) do
-  {:ok, [
-      %{id: 1, title: "GraphQL Rocks",           votes: 3, author: %{id: 1}},
-      %{id: 2, title: "Introduction to GraphQL", votes: 2, author: %{id: 2}},
-      %{id: 3, title: "Advanced GraphQL",        votes: 1, author: %{id: 1}}]}
+  {:ok, @posts}
 end
 
-def get_author(%{id: 1}, _info), do:
-  {:ok, %{id: 1, first_name: "Sashko", last_name: "Stubailo"}}
-def get_author(%{id: 2}, _info), do:
-  {:ok, %{id: 2, first_name: "Tom",    last_name: "Coleman"}}
+def get_author(%{id: id}, _info) do
+  {:ok, find_author(id)}
+end
+
+def find_author(id) do
+  Enum.find(@authors, fn author -> author.id == id end)
+end
+
+def find_posts(author_id) do
+  Enum.find(@posts, fn post -> post.author.id == author_id end)
+end
 </code></pre>
 
 Now all we need to do is tell Absinthe that we want our GraphQL endpoint to listen on the `"/graphql"`{:.language-elixir} route and that we want it to use our newly defined schemas and queries:
