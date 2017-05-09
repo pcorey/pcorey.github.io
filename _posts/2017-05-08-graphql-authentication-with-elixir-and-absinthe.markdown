@@ -25,7 +25,7 @@ Every GraphQL request that’s made against our system will come with an optiona
 
 On each request we’ll look up the user associated with the given `auth_token`{:.language-elixir} and attach them to [the context of our GraphQL resolvers](http://graphql.org/learn/execution/#root-fields-resolvers).
 
-If we can’t find a user associated with a given `auth_token`{:.language-elixir}, we’ll return an authorization error (`403`{:.language-elixir}) at the HTTP level. Otherwise, if no `auth_token`{:.language-elixir} was provided, we’ll set the `user_id`{:.language-elixir} in our GraphQL context to `nil`{:.language-elixir} and move onto processing our query and mutation resolvers.
+If we can’t find a user associated with a given `auth_token`{:.language-elixir}, we’ll return an authorization error (`403`{:.language-elixir}) at the HTTP level. Otherwise, if no `auth_token`{:.language-elixir} was provided, we simply won’t set the `user_id`{:.language-elixir} in our GraphQL context and we’ll move onto processing our query and mutation resolvers.
 
 The key to our authentication (and authorization) system is that the currently signed in user can be pulled from the GraphQL context. This context can be accessed by all of our resolvers and can be used to make decisions about what data to return, which mutations to allow, etc…
 
@@ -43,11 +43,8 @@ defmodule InjectDetect.Web.Context do
 
   import Plug.Conn
 
-  def init(opts), do: opts
-
-  def call(conn, _) do
-    ...
-  end
+  def init(opts)
+  def call(conn, _)
 
 end
 </code></pre>
@@ -88,19 +85,19 @@ def build_context(conn) do
   do
     {:ok, %{user_id: user_id}}
   else
-    []    -> {:ok, %{user_id: nil}}
+    []    -> {:ok, %{}}
     error -> error
   end
 end
 </code></pre>
 
-`build_context`{:.language-elixir} pulls the `auth_token`{:.language-elixir} our of the `authorization`{:.language-elixir} header of the request, and passes it into an `authorize`{:.language-elixir} function. `authorize`{:.language-elixir} either returns an `:ok`{:.language-elixir} tuple with the current `user_id`{:.language-elixir}, or an `:error`{:.language-elixir}.
+`build_context`{:.language-elixir} pulls the `auth_token`{:.language-elixir} our of the `authorization`{:.language-elixir} header of the request and passes it into an `authorize`{:.language-elixir} function. `authorize`{:.language-elixir} either returns an `:ok`{:.language-elixir} tuple with the current `user_id`{:.language-elixir}, or an `:error`{:.language-elixir}.
 
 If `authorize`{:.language-elixir} returns an error, we’ll pass that back up to our `call`{:.language-elixir} function, which returns a `403`{:.language-elixir} for us.
 
-Otherwise, if the `authorization`{:.language-elixir} header on the request is empty, we return a `nil`{:.language-elixir} `user_id`{:.language-elixir}. This will be stuffed into our GraphQL context and will allow unauthenticated users to access public queries and mutations.
+Otherwise, if the `authorization`{:.language-elixir} header on the request is empty, we'll return an empty map in the place of our GraphQL context. This empty context will allow our resolvers to let unauthenticated users access public queries and mutations.
 
-Lastly, let’s take a look at the `authorize`{:.language-elixir} function:
+Lastly, let’s take a look at `authorize`{:.language-elixir}:
 
 <pre class='language-elixir'><code class='language-elixir'>
 def authorize(auth_token) do
@@ -115,6 +112,8 @@ end
 `authorize`{:.language-elixir} is a relatively simple function.
 
 It takes in an `auth_token`{:.language-elixir}, looks up the user associated with that token, and either returns that user’s `id`{:.language-elixir}, or an `:error`{:.language-elixir} tuple if no associated user was found.
+
+----
 
 Armed with our new `InjectDetect.Web.Context`{:.language-elixir} Plug, we can build a new `:graphql`{:.language-elixir} pipeline in our router:
 
@@ -156,16 +155,15 @@ end
 The `user`{:.language-elixir} query takes no parameters, and it directly calls a function called `resolve_user`{:.language-elixir}:
 
 <pre class='language-elixir'><code class='language-elixir'>
-  def resolve_user(_args, %{context: %{user_id: user_id}}) do
-    {:ok, User.find(user_id)}
-  end
+def resolve_user(_args, %{context: %{user_id: user_id}}) do
+  {:ok, User.find(user_id)}
+end
+def resolve_user(_args, _context), do: {:ok, nil}
 </code></pre>
 
-We use pattern matching the pull the current `user_id`{:.language-elixir} (or `nil`{:.language-elixir}) out of our GraphQL context, and then return the user with that `user_id`{:.language-elixir} (or `nil`{:.language-elixir}) back to our client.
+We use pattern matching the pull the current `user_id`{:.language-elixir} out of our GraphQL context, and then return the user with that `user_id`{:.language-elixir} back to our client. If our context is empty, the current user is unauthenticated, so we’ll return `nil`{:.language-elixir} back to our client.
 
-Great, that makes sense.
-
-There are no obvious checks or assertions about whether or not the current user is signed in, so any user (signed in or not) can access this query.
+Great, that makes sense. The query is returning data to both authenticated and unauthenticated users. It’s completely public and accessible by anyone with access to the GraphQL API.
 
 But what about a private queries?
 
@@ -191,17 +189,20 @@ def resolve_application(%{id: id}, %{context: %{user_id: user_id}}) do
                                        message: "Not found"}}
   end
 end
+
+def resolve_application(_args, _context), do:
+  {:error, %{code: :not_found,
+             error: "Not found",
+             message: "Not found"}}
 </code></pre>
 
-In this case, we’re once again pattern matching on our GraphQL context to grab the current `user_id`{:.language-elixir}. Next, we look up the specified application.
+In this case, we’re once again pattern matching on our GraphQL context to grab the current `user_id`{:.language-elixir}. Next, we look up the specified application. If the `user_id`{:.language-elixir} set on the application matches the current user’s `user_id`{:.language-elixir}, we return the application.
 
-If the `user_id`{:.language-elixir} set on the application matches the current user’s `user_id`{:.language-elixir}, we return the application.
+Otherwise, we return a `:not_found`{:.language-elixir} error. We’ll also return a `:not_found`{:.language-elixir} error if no `user_id`{:.language-elixir} is found in our GraphQL context.
 
-Otherwise, we return a `:not_found`{:.language-elixir} error.
+By making these checks, an authenticated user can only access their own applications. Anyone else trying to query against their application will receive a `:not_found`{:.language-elixir} authorization error.
 
-By doing this, an authenticated user can only access their own applications. Anyone else trying to query against their application will receive a `:not_found`{:.language-elixir} authorization error.
-
-### A Private Mutation with Decorators
+### A Private Mutation with Absinthe Middleware
 
 Let’s take a look at another way of enforcing authentication at the query level.
 
@@ -209,38 +210,44 @@ We have a `sign_in`{:.language-elixir} mutation that should only be callable by 
 
 <pre class='language-elixir'><code class='language-elixir'>
 field :sign_out, type: :user do
+  middleware InjectDetect.Middleware.Auth
   resolve auth &handle_sign_out/2
 end
 </code></pre>
 
-You’ll notice that we’re decorating our `&handle_sign_out/2`{:.language-elixir} resolver with a new `auth`{:.language-elixir} function. As you might have guessed, the `auth`{:.language-elixir} function is where we’re enforcing an authentication check.
+You’ll notice that we’ve added a call to an [Absinthe `middleware`{:.language-elixir} module](https://hexdocs.pm/absinthe/Absinthe.Middleware.html) before the call to our `&handle_sign_out/2`{:.language-elixir} resolver. As you might have guessed, the `InjectDetect.Middleware.Auth`{:.language-elixir} module is where we’re enforcing an authentication check.
 
 <pre class='language-elixir'><code class='language-elixir'>
-def auth(resolver) do
-  error = {:error, %{code: :not_authenticated,
-                     error: "Not authenticated",
-                     message: "Not authenticated"}}
-  fn
-    (_args, %{context: %{user_id: nil}})     -> error
-    (args, info = %{context: %{user_id: _}}) -> resolver.(args, info)
-    (_args, _info)                           -> error
+defmodule InjectDetect.Middleware.Auth do
+  @behavior Absinthe.Middleware
+
+  def call(resolution = %{context: %{user_id: _}}, _config) do
+    resolution
   end
+
+  def call(resolution, _config) do
+    resolution
+    |> Absinthe.Resolution.put_result({:error, %{code: :not_authenticated,
+                                                 error: "Not authenticated",
+                                                 message: "Not authenticated"}})
+  end
+
 end
 </code></pre>
 
-The `auth`{:.language-elixir} function actually takes in our resolver function (`&handle_sign_out/2`{:.language-elixir}) as an argument, and returns a new resolver in its place.
+The `call`{:.language-elixir} function is our entry-point into our middleware module. It takes an `Absinthe.Resolution`{:.language-elixir} struct as an argument, which contains the current GraphQL context.
 
-The newly returned resolver function pattern matches on the GraphQL context, looking for a non-`nil`{:.language-elixir} `user_id`{:.language-elixir}. If it finds one, it calls the passed in `resolver`{:.language-elixir} function and returns the result.
+If the context contains a `user_id`{:.language-elixir}, we know that the user making the request is authorized. We can return the unmodified `resolution`{:.language-elixir} from our middleware function, which lets it continue on to the `&handle_sign_out/2`{:.language-elixir} resolver function.
 
-Otherwise, if no user is signed in, it returns a `:not_authenticated`{:.language-elixir} error back to the client.
+Otherwise, if no `user_id`{:.language-elixir} is found in the context, we use `Absinthe.Resolution.put_result`{:.language-elixir} to modify the `resolution`{:.language-elixir} struct before returning it from our middleware. Giving the `resolution`{:.language-elixir} a result, in this case a `:not_authenticated`{:.language-elixir} `:error`{:.language-elixir} tuple, will short circuit the query or mutation’s resolution and immediately return that result to the client.
 
-That’s a long way of saying that only signed in users can execute the `sign_out`{:.language-elixir} mutation.
+This piece of middleware effectively prevents unauthenticated users from accessing the `sign_out`{:.language-elixir} mutation.
 
 Beautiful.
 
-This decorator pattern is extremely powerful. It can easily be extended to check for specific user roles or other criteria and easily added to an existing query or mutation.
+This middleware pattern is extremely powerful. It can easily be extended to check for specific user roles or other criteria, and can be easily added to an existing query or mutation.
 
-Additionally, multiple decorator functions can be chained together to create a very readable, declarative authentication and authorization scheme around your GraphQL API.
+Additionally, multiple middleware modules or functions can be chained together to create a very readable, declarative authentication and authorization scheme around your GraphQL API.
 
 ## Final Thoughts
 
