@@ -211,7 +211,7 @@ We have a `sign_in`{:.language-elixir} mutation that should only be callable by 
 <pre class='language-elixir'><code class='language-elixir'>
 field :sign_out, type: :user do
   middleware InjectDetect.Middleware.Auth
-  resolve auth &handle_sign_out/2
+  resolve &handle_sign_out/2
 end
 </code></pre>
 
