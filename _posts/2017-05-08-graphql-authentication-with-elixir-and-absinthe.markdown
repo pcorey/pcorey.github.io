@@ -255,6 +255,6 @@ At first, all of the moving parts related to handling authentication and authori
 
 Thankfully, once you wrap your head around the basic strategies and building blocks involved, the end solution easily falls into place. Authorization and authentication in a GraphQL-based system isn’t much different than in any other system.
 
-Next week, we’ll move on to answering the second set of question raised in the beginning of this article. How do we manage user sessions on the front-end of our application?
+Next week, we’ll move on to answering the second set of questions raised in the beginning of this article. How do we manage user sessions on the front-end of our application?
 
 Stay tuned!
