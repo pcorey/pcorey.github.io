@@ -91,7 +91,7 @@ def build_context(conn) do
 end
 </code></pre>
 
-`build_context`{:.language-elixir} pulls the `auth_token`{:.language-elixir} our of the `authorization`{:.language-elixir} header of the request and passes it into an `authorize`{:.language-elixir} function. `authorize`{:.language-elixir} either returns an `:ok`{:.language-elixir} tuple with the current `user_id`{:.language-elixir}, or an `:error`{:.language-elixir}.
+`build_context`{:.language-elixir} pulls the `auth_token`{:.language-elixir} out of the `authorization`{:.language-elixir} header of the request and passes it into an `authorize`{:.language-elixir} function. `authorize`{:.language-elixir} either returns an `:ok`{:.language-elixir} tuple with the current `user_id`{:.language-elixir}, or an `:error`{:.language-elixir}.
 
 If `authorize`{:.language-elixir} returns an error, we’ll pass that back up to our `call`{:.language-elixir} function, which returns a `403`{:.language-elixir} for us.
 
