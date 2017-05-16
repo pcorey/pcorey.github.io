@@ -161,7 +161,7 @@ end
 def resolve_user(_args, _context), do: {:ok, nil}
 </code></pre>
 
-We use pattern matching the pull the current `user_id`{:.language-elixir} out of our GraphQL context, and then return the user with that `user_id`{:.language-elixir} back to our client. If our context is empty, the current user is unauthenticated, so we’ll return `nil`{:.language-elixir} back to our client.
+We use pattern matching to pull the current `user_id`{:.language-elixir} out of our GraphQL context, and then return the user with that `user_id`{:.language-elixir} back to our client. If our context is empty, the current user is unauthenticated, so we’ll return `nil`{:.language-elixir} back to our client.
 
 Great, that makes sense. The query is returning data to both authenticated and unauthenticated users. It’s completely public and accessible by anyone with access to the GraphQL API.
 
