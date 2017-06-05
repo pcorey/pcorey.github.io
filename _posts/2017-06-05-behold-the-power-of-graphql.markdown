@@ -44,10 +44,9 @@ object :user do
   field :charges, list_of(:stripe_charge) do
     resolve fn
       (user, _, _) ->
-        with {:ok, charges} <- Stripe.get_charges(user.customer_id) do
-          {:ok, charges}
-        else
-          InjectDetect.error("Unable to resolve charges.")
+        case Stripe.get_charges(user.customer_id) do
+          {:ok, charges} -> {:ok, charges}
+          _ -> InjectDetect.error("Unable to resolve charges.")
         end
     end
   end
