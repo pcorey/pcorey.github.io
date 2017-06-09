@@ -37,7 +37,7 @@ We’re not storing any charges in our application.
 
 If we take a look at our [Elixir](https://elixir-lang.org/)-powered [Absinthe](http://absinthe-graphql.org/) schema definition for the `user`{:.language-javascript} type, we’ll see what’s going on:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-elixir'><code class='language-elixir'>
 object :user do
   field :id, :id
   field :email, :string
