@@ -15,7 +15,7 @@ I claimed that because GraphQL forces you to flesh out the entirety of your sche
 
 I was wrong.
 
-NoSQL Injection is entirely possible when using GraphQL, and can creep into your application through the use of [“partial scalar types”](http://dev.apollodata.com/tools/graphql-tools/scalars.html).
+NoSQL Injection is entirely possible when using GraphQL, and can creep into your application through the use of [“custom scalar types”](http://dev.apollodata.com/tools/graphql-tools/scalars.html).
 
 In this article, we’ll walk through how the relatively popular [`GraphQLJSON`{:.language-javascript} scalar type](https://github.com/taion/graphql-type-json) can open the door to NoSQL Injection in applications using [MongoDB](https://www.mongodb.com/).
 
