@@ -28,7 +28,7 @@ I’ll defer an explanation of the pros, cons, and my experiences with Memory Im
 
 ## Backed By an Event Log
 
-The notion that a Memory Image architecture don’t use a database at all isn’t entirely true. In Inject Detect, I use a database to persist a log of events that describe all changes that have happened to the system since the beginning of time.
+The notion that a Memory Image architecture doesn’t use a database at all isn’t entirely true. In Inject Detect, I use a database to persist a log of events that describe all changes that have happened to the system since the beginning of time.
 
 This event log isn’t particularly useful in its raw format. It can’t be queried in any meaningful way, and it can’t be used to make decisions about the current state of the system.
 
