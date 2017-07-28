@@ -151,7 +151,7 @@ export default (state = false, action) => {
 };
 </code></pre>
 
-Now let’s add our new reducer to our store, and tell Redux Offline to trigger our action when it finishes rehydrating the store:
+Now let’s add our new reducer to our store and tell Redux Offline to trigger our action when it finishes rehydrating the store:
 
 <pre class='language-javascript'><code class='language-javascript'>
 export const store = createStore(
