@@ -119,7 +119,7 @@ Awesome!
 
 Redux Offline is now automatically saving snapshots of our Redux store to `localStorage`{:.language-javascript}. Any time you reload your application, this state will be automatically pulled out of `localStorage`{:.language-javascript} and rehydrated into your Redux store.
 
-Any queries that have resolutions living in this store data will return that data, even if the application is currently disconnected from the server.
+Any queries that have resolutions living in this store will return that data, even if the application is currently disconnected from the server.
 
 ### Rehydration Race Conditions
 
