@@ -255,4 +255,4 @@ In hindsight, this was a long article explaining a relatively simple idea. The B
 
 I’m incredibly excited about Bitcoin development, and I’m planning on spending more time diving deeper into this world in the future.
 
-If you’re interested in the technical ideas behind Bitcoin, or are interested in Bitcoin development, I highly recommend you read [Mastering Bitcoin](https://www.amazon.com/gp/product/1449374042/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=east5th-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1449374042&linkId=23b0becd76b444f25a75a3143f5d253f).
+If you’re interested in the technical ideas behind Bitcoin, or are interested in Bitcoin development, I highly recommend you read [Mastering Bitcoin](https://www.amazon.com/gp/product/1449374042/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=east5th-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1449374042&linkId=23b0becd76b444f25a75a3143f5d253f) (affiliate link).
