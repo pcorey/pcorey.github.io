@@ -5,7 +5,7 @@ date:   2017-09-04
 tags: []
 ---
 
-I’ve been bit by the [Bitcoin](https://bitcoin.org/en/) bug, and I’ve been bit hard. To satiate my thirst for knowledge, I’ve been reading the fantastic [Mastering Bitcoin](https://www.amazon.com/gp/product/1449374042/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=east5th-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1449374042&linkId=23b0becd76b444f25a75a3143f5d253f) book by Andreas Antonopoulos, and diving into the brave new world of Bitcoin development.
+I’ve been bit by the [Bitcoin](https://bitcoin.org/en/) bug, and I’ve been bit hard. To satiate my thirst for knowledge, I’ve been reading the fantastic [Mastering Bitcoin](https://www.amazon.com/gp/product/1449374042/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=east5th-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1449374042&linkId=23b0becd76b444f25a75a3143f5d253f) (affiliate link) book by Andreas Antonopoulos, and diving into the brave new world of Bitcoin development.
 
 Mastering Bitcoin does a fantastic job of outlining the technical underpinnings of Bitcoin, but I wanted to solidify my understanding with some hands-on experience.
 
