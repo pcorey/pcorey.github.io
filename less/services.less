@@ -12,10 +12,10 @@
 
   form {
     position: relative;
-    max-width: 750px;
+    max-width: @width;
     text-align: left;
     p {
-      font-weight: 100;
+      font-weight: 300;
       padding: 0 0 2em 0;
       min-height: inherit;
       margin: 0 auto;
@@ -26,7 +26,7 @@
       font-size: 1.15em;
     }
     input {
-      font-weight: 100;
+      font-weight: 300;
       background: white;
       border: 1px solid #ddd;
       padding: 0.5em 1em;
@@ -41,8 +41,8 @@
       width: 150px;
       border: 1px solid #ddd;
       background-color: white;
-      color: #457cc9;
-      font-weight: 100;
+      color: @primary;
+      font-weight: 300;
       text-transform: uppercase;
     }
     input[name=FNAME] {

@@ -11,7 +11,7 @@ Let’s expand on that idea a bit.
 
 In this article we’re going to use the [Phoenix framework](http://phoenixframework.org/) to build a bare-bones blockchain viewer. Let’s get to it!
 
-## Mix Phx.New
+## Project Scaffolding
 
 First things first, let’s create our new Phoenix project. We’ll be using [Phoenix 1.3](http://phoenixframework.org/blog/phoenix-1-3-0-released) and the new `phx`{:.language-elixir} generators that shipped with it:
 

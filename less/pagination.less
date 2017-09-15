@@ -12,13 +12,13 @@
     p {
       display: flex;
       flex: 0 0 700px;
-      @media (max-width: 750px) {
+      @media (max-width: @width) {
         flex: 3;
         flex-direction: column;
       }
       font-size: 20px;
       line-height: 1.6;
-      font-weight: 100;
+      font-weight: 300;
       text-transform: none;
       color: #111;
       margin: 0;
@@ -27,7 +27,7 @@
       justify-content: center;
       .invisible {
         visibility: hidden;
-        @media (max-width: 750px) {
+        @media (max-width: @width) {
           display: none;
         }
       }
@@ -39,11 +39,11 @@
         color: white;
         text-transform: uppercase;
         line-height: 85px;
-        font-weight: 100;
+        font-weight: 300;
         padding: 0 30px;
         white-space: nowrap;
         text-align: left;
-        @media (max-width: 750px) {
+        @media (max-width: @width) {
           line-height: 80px;
           float: none !important;
         }

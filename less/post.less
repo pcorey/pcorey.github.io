@@ -14,19 +14,19 @@
   p, ol, ul {
     font-size: 1.15em;
     line-height: 1.6;
-    font-weight: 100;
+    font-weight: 300;
   }
   h1, h2, h3, h4 {
     text-transform: uppercase;
     font-size: 2em;
     margin-top: 2em;
-    font-weight: 100;
+    font-weight: 300;
   }
   h3 {
       font-size: 1.75em;
   }
   a {
-    background-color: rgba(69, 124, 201, 0.05);
+    background-color: rgba(0, 106, 255, 0.05);
   }
 
 }
@@ -46,26 +46,26 @@
       font-family: proxima-nova, sans-serif;
       font-weight: 300;
       font-size: 3em;
-      color: rgb(69, 124, 201);
+      color: @primary;
       text-transform: uppercase;
-      @media (max-width: 750px) {
+      @media (max-width: @width) {
         font-size: 2em;
       }
     }
     h2 {
       font-family: proxima-nova, sans-serif;
-      font-weight: 100;
+      font-weight: 300;
       font-size: 1.5em;
-      color: rgb(69, 124, 201);
+      color: @primary;
       text-transform: uppercase;
-      @media (max-width: 750px) {
+      @media (max-width: @width) {
         font-size: 2em;
       }
     }
     p {
       font-size: 0.3833em;
       line-height: 1.6;
-      font-weight: 100;
+      font-weight: 300;
       text-transform: none;
       color: #111;
       margin: 0;
@@ -87,12 +87,12 @@
 
 .side-block {
     float: right;
-    margin: 0 0 1em 1em;
-    border: 1px solid #ddd;
+    margin: 0 0 2em 2em;
+    // border: 1px solid #ddd;
     background-color: white;
     max-width: ~"calc(130px + 2em + 2px)";
 
-    @media (max-width: 750px) {
+    @media (max-width: @width) {
         width: 100%;
         max-width: none;
     }
@@ -100,22 +100,22 @@
     .author {
         display: flex;
         flex-direction: column;
-        background-color: #f9f9f9;
+        // background-color: #f9f9f9;
         padding: 1em 1em;
-        @media (max-width: 750px) {
+        @media (max-width: @width) {
             flex-direction: row;
         }
         .author-info {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            @media (max-width: 750px) {
+            @media (max-width: @width) {
                 flex: 2;
                 margin-left: 1em;
             }
         }
         .author-image {
-            @media (max-width: 750px) {
+            @media (max-width: @width) {
                 flex: 1;
             }
         }
@@ -125,7 +125,7 @@
             border-radius: 120px;
             display: block;
             margin: 0 auto;
-            @media (max-width: 750px) {
+            @media (max-width: @width) {
                 max-width: 100px;
                 width: 100%;
                 height: auto;
@@ -148,7 +148,7 @@
             border-radius: 4px;
             color: #444;
             line-height: 1.6;
-            font-weight: 100;
+            font-weight: 300;
         }
     }
 
