@@ -1,16 +1,25 @@
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
   color: #666;
-  font-size: 0.8em;
-  background-color: #f9f9f9 !important;
+  font-size: 0.9em;
+  background-color: #f8f8f8 !important;
 }
 
 pre[class*="language-"] {
-  font-size: 0.9em;
+  font-size: 1em;
+  line-height: 1.6;
   margin: 2em 0;
-  background-color: #f9f9f9 !important;
+  background-color: #f8f8f8 !important;
+  padding: 1em 1.5em;
+  border-radius: 4px;
 }
 
 code[class*="language-"], pre[class*="language-"] {
   color: #666;
+  font-family: @font-mono;
+  font-weight: 500;
+  text-shadow: none !important;
 }
-  
+
+code[class*="language-"] {
+  border-radius: 0 !important;
+}
