@@ -182,7 +182,7 @@ code {
 
 Beautiful. 
 
-<a href="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/blockchain-viewer-01.png" style="display: block; background-color: transparent; color: #ccc; text-align: center; line-height: 1; font-size: 0.8; margin: 2em auto;"><img style="display:block; width: 100%; margin: 0 auto 1em;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/blockchain-viewer-01.png"/>A basic block header.</a>
+<a href="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/blockchain-viewer-01.png" style="display: block; background-color: transparent; color: #ccc; text-align: center; line-height: 1; font-size: 0.8; margin: 2em auto;"><img style="display:block; width: 75%; margin: 0 auto 1em;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/blockchain-viewer-01.png"/>A basic block header.</a>
 
 A bit minimal, but beautiful none-the-less.
 
@@ -219,7 +219,7 @@ Notice that we’re wrapping `mark_up_block`{:.language-elixir} with `raw`{:.lan
 
 After carrying out the same changes in our `BlockView`{:.language-elixir} and our block HTMl template, cleaning up our layout template, and adding a few final styling touches, we have our result.
 
-<a href="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/blockchain-viewer-02.png" style="display: block; background-color: transparent; color: #ccc; text-align: center; line-height: 1; font-size: 0.8; margin: 2em auto;"><img style="display:block; width: 100%; margin: 0 auto 1em;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/blockchain-viewer-02.png"/>A decorated full block.</a>
+<a href="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/blockchain-viewer-02.png" style="display: block; background-color: transparent; color: #ccc; text-align: center; line-height: 1; font-size: 0.8; margin: 2em auto;"><img style="display:block; width: 75%; margin: 0 auto 1em;" src="https://s3-us-west-1.amazonaws.com/www.east5th.co/img/blockchain-viewer-02.png"/>A decorated full block.</a>
 
 Behold, the most basic of blockchain explorers!
 
