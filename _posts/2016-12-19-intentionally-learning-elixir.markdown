@@ -25,7 +25,7 @@ At the end of the day, I can happily say that the time investment is paying off.
 
 ---- 
 
-Next, I plan on reading [Elixir in Action](https://www.manning.com/books/elixir-in-action) by Sasa Juric to get a better handle on OTP and “thinking in processes”.
+Next, I plan on reading [Elixir in Action](https://www.amazon.com/gp/product/161729201X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=161729201X&linkCode=as2&tag=east5th-20&linkId=dd2daa7abd7f7563c5334d2be95ba335) (affiliate link) by Sasa Juric to get a better handle on OTP and “thinking in processes”.
 
 This experience has shown me that books are an invaluable tool for learning programming concepts. The curated, focused approach of following a single author’s train of thought through a topic really does give the reader a solid understanding of the topic.
 
