@@ -15,7 +15,7 @@ Wanting to fast-track learning Elixir, I decided to try something I’d always s
 
 ---- 
 
-I’ve spent the past two weeks reading [Programming Elixir](https://pragprog.com/book/elixir/programming-elixir) by Dave Thomas.
+I’ve spent the past two weeks reading [Programming Elixir](https://www.amazon.com/gp/product/168050200X/ref=as_li_tl?ie=UTF8&tag=east5th-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=168050200X&linkId=bd25aac110b20a11b82607f1f0e48f65) (affiliate link) by Dave Thomas.
 
 I picked Programming Elixir over the other multitude of books on Elixir because it’s often touted as the best introductory book to the language. After reading it, I’d have to agree that’s it’s a fantastic entry point.
 
