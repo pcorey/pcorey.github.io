@@ -29,4 +29,4 @@ Next, I plan on reading [Elixir in Action](https://www.amazon.com/gp/product/161
 
 This experience has shown me that books are an invaluable tool for learning programming concepts. The curated, focused approach of following a single author’s train of thought through a topic really does give the reader a solid understanding of the topic.
 
-If you’re looking for a book on Elixir, I highly recommend starting with [Programming Elixir](https://pragprog.com/book/elixir/programming-elixir).
+If you’re looking for a book on Elixir, I highly recommend starting with [Programming Elixir](https://www.amazon.com/gp/product/168050200X/ref=as_li_tl?ie=UTF8&tag=east5th-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=168050200X&linkId=bd25aac110b20a11b82607f1f0e48f65) (affiliate link).
