@@ -195,7 +195,7 @@ The blocks and block headers we receive from our Bitcoin full node come with `pr
 The first thing we’ll do is write a function in the corresponding view file that converts hashes into links. In our `HeaderView`{:.language-elixir} module, our `hash_link`{:.language-elixir} function would look like this:
 
 <pre class='language-elixir'><code class='language-elixir'>
-defp hash_link(hash), do: "<a href='/headers/#{hash}'>#{hash}</a>"
+defp hash_link(hash), do: "&lt;a href='/headers/#{hash}'>#{hash}&lt;/a>"
 </code></pre>
 
 Using this function, we can write a function that modifies our block header. It replaces the hashes in `previousblockhash`{:.language-elixir} and `nextblockhash`{:.language-elixir} with links to those blocks, and JSON encodes the resulting object:
