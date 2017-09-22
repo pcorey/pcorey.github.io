@@ -227,6 +227,6 @@ Behold, the most basic of blockchain explorers!
 
 Obviously, this is just the tip of the iceberg when it comes to building a Bitcoin blockchain explorer.
 
-I’m super excited about Bitcoin and development projects related to Bitcoin. If you’ve made it this far, I assume you are as well! If you’re looking for a deep dive into Bitcoin development, I recommend you check out the fantastic [Mastering Bitcoin](https://www.amazon.com/gp/product/1449374042/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=east5th-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1449374042&linkId=23b0becd76b444f25a75a3143f5d253f) (affiliate link) book by Andreas Antonopoulos.
+I’m super excited about Bitcoin and development projects related to Bitcoin. If you’ve made it this far, I assume you are as well! If you’re looking for a deep dive into Bitcoin development, I recommend you check out the fantastic [Mastering Bitcoin](https://www.amazon.com/gp/product/1491954388/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=east5th-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1491954388&linkId=c1ff439b422b447867a247fee90e76d0) (affiliate link) book by Andreas Antonopoulos.
 
 Expect more updates to this blockchain explorer in the future, and more Bitcoin focused projects. In the meantime, check out this project [on Github](https://github.com/pcorey/hello_blockchain).
