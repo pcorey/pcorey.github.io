@@ -308,4 +308,4 @@ It’s been a process, but we’ve managed to get our simple web crawler up and 
 
 While we accomplished everything we set out to do, our final result is still very much a bare bones web crawler. A more mature crawler would come equipped with more sophisticated scraping logic, rate limiting, caching, and more efficient optimizations.
 
-That being said, I’m proud of what we’ve accomplished. Be sure to check out [the entire `HelloCrawler`{:.language-elixir} project on Github](https://github.com/pcorey/hello_crawler/blob/master/lib/hello_crawler.ex).
+That being said, I’m proud of what we’ve accomplished. Be sure to check out [the entire `HelloCrawler`{:.language-elixir} project on Github](https://github.com/pcorey/hello_crawler/).
