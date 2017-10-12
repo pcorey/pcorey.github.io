@@ -23,7 +23,7 @@ Once the crawler has traversed all pages on the given domain up to the specified
 
 To keep things efficient, let’s try to parallelize the crawling process as much as possible.
 
-## Crawling a Page
+## Hello, Crawler
 
 Let’s start off our crawler project by creating a new Elixir project:
 
@@ -31,7 +31,30 @@ Let’s start off our crawler project by creating a new Elixir project:
 mix new hello_crawler
 </code></pre>
 
-Based on the description given above, we know that we’ll need some function (or set of functions) that takes in a starting URL, fetches the page, and looks for links.
+While we’re at it, let’s pull in two dependencies we’ll be using in this project: [HTTPoison](https://hex.pm/packages/httpoison), a fantastic HTTP client for Elixir, and [Floki](https://hex.pm/packages/floki), a simple HTML parser.
+
+We’ll add them to our `mix.exs`{:.language-bash} file:
+
+<pre class='language-elixir'><code class='language-elixir'>
+defp deps do
+  [
+    {:httpoison, "~> 0.13"},
+    {:floki, "~> 0.18.0"}
+  ]
+end
+</code></pre>
+
+And pull them into our project by running a [Mix command](https://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html) from our shell:
+
+<pre class='language-bash'><code class='language-bash'>
+mix deps.get
+</code></pre>
+
+Now that we’ve set up the laid out the basic structure of our project, let’s start writing code!
+
+## Crawling a Page
+
+Based on [the description given above](#lets-think-about-what-we-want), we know that we’ll need some function (or set of functions) that takes in a starting URL, fetches the page, and looks for links.
 
 Let’s start sketching out that function:
 
@@ -41,7 +64,7 @@ def get_links(url) do
 end
 </code></pre>
 
-So far our function just returns a list holding URL that was passed into it. That’s a start, I guess…
+So far our function just returns a list holding URL that was passed into it. That’s a start.
 
 We’ll use [`HTTPoison`{:.language-elixir}](https://hex.pm/packages/httpoison) to fetch the page at that URL (being sure to specify that we want to follow `301`{:.language-elixir} redirects), and pull the resulting HTML out of the `body`{:.language-elixir} field of the response:
 
@@ -61,31 +84,31 @@ Now we can use [`Floki`{:.language-elixir}](https://hex.pm/packages/floki) to se
 with {:ok, %{body: body}} <- HTTPoison.get(url, [], [follow_redirect: true]),
      tags                 <- Floki.find(body, "a"),
      hrefs                <- Floki.attribute(tags, "href") do
-  [url | body
-         |> Floki.find("a")
-         |> Floki.attribute("href")]
+  [url | hrefs]
 else
   _ -> [url]
 end
 </code></pre>
 
-Lastly, let’s clean up our code by replacing our `with`{:.language-elixir} block with a new `handle_response`{:.language-elixir} function with multiple function heads:
+Lastly, let’s clean up our code by replacing our `with`{:.language-elixir} block with a new `handle_response`{:.language-elixir} function with multiple function heads to handle success and failure:
 
 <pre class='language-elixir'><code class='language-elixir'>
-def handle_response(url, {:ok, %{body: body}}) do
+def handle_response({:ok, %{body: body}}, url) do
   [url | body
          |> Floki.find("a")
          |> Floki.attribute("href")]
 end
 
-def handle_response(url, _response) do
+def handle_response(_response, url) do
   [url]
 end
 
 def get_links(url) do
   headers = []
   options = [follow_redirect: true]
-  handle_response(url, base_uri, HTTPoison.get(url, headers, options))
+  url
+  |> HTTPoison.get(headers, options)
+  |> handle_response(url)
 end
 </code></pre>
 
@@ -94,7 +117,7 @@ end
   <p style="text-align: center; color: #ccc; margin: 0;">Hello, Crawler.</p>
 </div>
 
-This step is purely a stylistic choice. I find `with`{:.language-elixir} blocks helpful for sketching out solutions, but prefer the readability of branching through multiple function heads.
+This step is purely a stylistic choice. I find `with`{:.language-elixir} blocks helpful for sketching out solutions, but prefer the readability of branching through pattern matching.
 
 Running our `get_links`{:.language-elixir} function against a familiar site should return a handful of internal and external links:
 
@@ -136,25 +159,25 @@ Let’s address each of these issues.
 
 Many links within a page are relative; they don’t specify all of the necessary information to form a full URL.
 
-For example, on `http://www.east5th.co/`{:.language-bash}, there’s a link to `/blog/`{:.language-bash}. Passing `"/blog/"`{:.language-elixir} into `HTTPoison.get`{:.language-elixir} will return an error, as `HTTPoison`{:.language-elixir} doesn’t know the context for this relative address.
+For example, on `http://www.east5th.co/`{:.language-bash}, there’s a link to `/blog/`{:.language-elixir}. Passing `"/blog/"`{:.language-elixir} into `HTTPoison.get`{:.language-elixir} will return an error, as `HTTPoison`{:.language-elixir} doesn’t know the context for this relative address.
 
-We need some way of transforming these relative links into full-blown URLs given the context of the page we’re currently crawling. Thankful, Elixir’s standard library ships with [the fantastic `URI`{:.language-elixir} module](https://hexdocs.pm/elixir/URI.html) that can help us do just that!
+We need some way of transforming these relative links into full-blown URLs given the context of the page we’re currently crawling. Thankfully, Elixir’s standard library ships with [the fantastic `URI`{:.language-elixir} module](https://hexdocs.pm/elixir/URI.html) that can help us do just that!
 
 Let’s use `URI.merge`{:.language-elixir} and `to_string`{:.language-elixir} to transform all of the links scraped by our crawler into well-formed URLs that can be understood by `HTTPoison.get`{:.language-elixir}:
 
 <pre class='language-elixir'><code class='language-elixir'>
-def handle_response(url, {:ok, %{body: body}}) do
+def handle_response({:ok, %{body: body}}, url) do
   [url | body
          |> Floki.find("a")
          |> Floki.attribute("href")
          |> Enum.map(&URI.merge(url, &1)) # Merge our URLs
-         |> Enum.map(&to_string/1) # Convert the merged URL to a string
+         |> Enum.map(&to_string/1)        # Convert the merged URL to a string
          |> Enum.map(&get_links/1)
          |> List.flatten]
 end
 </code></pre>
 
-Now our link to `/blog/`{:.language-bash} is transformed into `http://www.east5th.co/blog/`{:.language-bash} before being passed into `get_links`{:.language-elixir} and subsequently `HTTPoison.get`{:.language-elixir}.
+Now our link to `/blog/`{:.language-elixir} is transformed into `http://www.east5th.co/blog/`{:.language-bash} before being passed into `get_links`{:.language-elixir} and subsequently `HTTPoison.get`{:.language-elixir}.
 
 Perfect.
 
@@ -166,15 +189,64 @@ The first link on `http://www.east5th.co/`{:.language-bash} is to `/`{:.language
 
 To prevent looping in our crawler, we’ll need to maintain a list of all of the pages we’ve already crawled. Before we recursively crawl a new link, we need to verify that it hasn’t been crawled previously.
 
-We’ll start by adding a new argument to `get_links`{:.language-elixir} called `path`{:.language-elixir}. The `path`{:.language-elixir} argument holds all of the URLs we’ve visited on our way to the current URL. It defaults to `[]`{:.language-elixir}:
+We’ll start by adding a new, private, function head for `get_links`{:.language-elixir} that accepts a `path`{:.language-elixir} argument. The `path`{:.language-elixir} argument holds all of the URLs we’ve visited on our way to the current URL.
 
 <pre class='language-elixir'><code class='language-elixir'>
-def get_links(url, path \\ []) do # Our path starts out empty
+defp get_links(url, path) do
   headers = []
   options = [follow_redirect: true]
-  handle_response(url, path, HTTPoison.get(url, headers, options))
+  url
+  |> HTTPoison.get(headers, options)
+  |> handle_response(url, path)
 end
 </code></pre>
+
+We’ll call our new private `get_links`{:.language-elixir} function from our public function head:
+
+<pre class='language-elixir'><code class='language-elixir'>
+def get_links(url) do
+  get_links(url, []) # path starts out empty
+end
+</code></pre>
+
+Notice that our `path`{:.language-elixir} starts out as an empty list.
+
+---- 
+
+While we’re refactoring `get_links`{:.language-elixir}, let’s take a detour and add a third argument called `context`{:.language-elixir}:
+
+<pre class='language-elixir'><code class='language-elixir'>
+defp get_links(url, path, context) do
+  url
+  |> HTTPoison.get(context.headers, context.options)
+  |> handle_response(url, path, context)
+end
+</code></pre>
+
+The `context`{:.language-elixir} argument is a map that lets us cleanly pass around configuration values without having to drastically increase the size of our function signatures. In this case, we’re passing in the `headers`{:.language-elixir} and `options`{:.language-elixir} used by `HTTPoison.get`{:.language-elixir}.
+
+To populate `context`{:.language-elixir}, let’s change our public `get_links`{:.language-elixir} function to build up the map by merging user-provided options with defaults provided by the module:
+
+<pre class='language-elixir'><code class='language-elixir'>
+def get_links(url, opts \\ []) do
+  context = %{
+    headers: Keyword.get(opts, :headers, @default_headers),
+    options: Keyword.get(opts, :options, @default_options)
+  }
+  get_links(url, [], context)
+end
+</code></pre>
+
+If the user doesn’t provide a value for `headers`{:.language-elixir}, or `options`{:.language-elixir}, we’ll use the defaults specified in the `@default_headers`{:.language-elixir} and `@default_options`{:.language-elixir} module attributes:
+
+<pre class='language-elixir'><code class='language-elixir'>
+@default_headers []
+@default_options [follow_redirect: true]
+</code></pre>
+
+This quick refactor will help keep things clean going down the road.
+
+---- 
 
 Whenever we crawl a URL, we’ll add that URL to our `path`{:.language-elixir}, like a breadcrumb marking where we’ve been.
 
@@ -193,7 +265,7 @@ path = [url | path] # Add a breadcrumb
        |> Enum.map(&URI.merge(url, &1))
        |> Enum.map(&to_string/1)
        |> Enum.reject(&Enum.member?(path, &1)) # Avoid loops
-       |> Enum.map(&get_links(&1, [&1 | path]))
+       |> Enum.map(&get_links(&1, [&1 | path], context))
        |> List.flatten]
 </code></pre>
 
@@ -205,55 +277,73 @@ We won’t worry about this problem in this article, but caching our calls to `H
 
 ## Restricting Crawling to a Host
 
-If we try and run our new and improved `WebCrawler.get_links`{:.language-elixir} function, we’ll notice that it takes a long time to run. __In fact in most cases, it'll never return!__
+If we try and run our new and improved `WebCrawler.get_links`{:.language-elixir} function, we’ll notice that it takes a long time to run. __In fact in most cases, it’ll never return!__
 
 The problem is that we’re not limiting our crawler to crawl only pages within our starting point’s domain. If we crawl `http://www.east5th.co/`{:.language-bash}, we’ll eventually get linked to Google and Amazon, and from there, the crawling never ends.
 
 We need to detect the host of the starting page we’re given, and restrict crawling to only that host.
 
-Thankful, the `URI`{:.language-elixir} module comes to our rescue again.
+Thankful, the `URI`{:.language-elixir} module once again comes to the rescue.
 
-We can use `URI.parse`{:.language-elixir} to pull out the `host`{:.language-elixir} of our starting URL, and pass it into each call to `get_links`{:.language-elixir} and `handle_response`{:.language-elixir}:
+We can use `URI.parse`{:.language-elixir} to pull out the `host`{:.language-elixir} of our starting URL, and pass it into each call to `get_links`{:.language-elixir} and `handle_response`{:.language-elixir} via our `context`{:.language-elixir} map:
 
 <pre class='language-elixir'><code class='language-elixir'>
-def get_links(url) do
+def get_links(url, opts \\ []) do
   url = URI.parse(url)
-  get_links(url, url.host, [])
+  context = %{
+    ...
+    host: url.host # Add our initial host to our context
+  }
+  get_links(url, [], context)
 end
 </code></pre>
 
-We’ll update the three argument function head of `get_links`{:.language-elixir} to enforce that we’re crawling on our original domain through pattern matching:
+Using the parsed `host`{:.language-elixir}, we can check if the `url`{:.language-elixir} passed into `get_links`{:.language-elixir} is a crawlable URL:
 
 <pre class='language-elixir'><code class='language-elixir'>
-def get_links(url = %{host: host}, host, path) do
+defp get_links(url, path, context) do
+  if crawlable_url?(url, context) do # check before we crawl
+    ...
+  else
+    [url]
+  end
+end
 </code></pre>
 
-Along with another function head that catches any domain mismatches:
+The `crawlable_url?`{:.language-elixir} function simply verifies that the host of the URL we’re attempting to crawl matches the host of our initial URL, passed in through our `context`{:.language-elixir}:
 
 <pre class='language-elixir'><code class='language-elixir'>
-def get_links(url, _host, _path) do
+defp crawlable_url?(%{host: host}, %{host: initial}) when host == initial, do: true
+defp crawlable_url?(_, _), do: false
+</code></pre>
+
+This guard prevents us from crawling external URLs.
+
+---- 
+
+Because we passed in the result of `URI.parse`{:.language-elixir} into `get_links`{:.language-elixir}, our `url`{:.language-elixir} is now a `URI`{:.language-elixir} struct, rather than a string. We need to convert it back into a string before passing it into `HTTPoison.get`{:.language-elixir} and `handle_response`{:.language-elixir}:
+
+<pre class='language-elixir'><code class='language-elixir'>
+if crawlable_url?(url, context) do
+  url
+  |> to_string # convert our %URI to a string
+  |> HTTPoison.get(context.headers, context.options)
+  |> handle_response(path, url, context)
+else
   [url]
 end
 </code></pre>
 
-At this point, our `url`{:.language-elixir} is actually a `URI`{:.language-elixir} struct. We need to convert it back into a string before passing it into `HTTPoison.get`{:.language-elixir} and `handle_response`{:.language-elixir}, along with our expected `host`{:.language-elixir}:
+Additionally, you’ve probably noticed that our collected list of links is no longer a list of URL strings. Instead, it’s a list of `URI`{:.language-elixir} structs.
+
+After we finish crawling through our target site, let’s convert all of the resulting structs back into strings, and remove any duplicates:
 
 <pre class='language-elixir'><code class='language-elixir'>
-url = to_string(url)
-response = HTTPoison.get(url, headers, options)
-handle_response(url, host, path, response)
-</code></pre>
-
-You’ve probably noticed that our collected list of links is no longer a list of URL strings. Instead, it’s a list of `URI`{:.language-elixir} structs.
-
-After we finish crawling through our target site, let’s convert all of those structs back into strings, and remove any duplicates:
-
-<pre class='language-elixir'><code class='language-elixir'>
-def get_links(url) do
-  url = URI.parse(url)
-  get_links(url, url.host, [])
-  |> Enum.map(&to_string/1)
-  |> Enum.uniq
+def get_links(url, opts \\ []) do
+  ...
+  get_links(url, [], context)
+  |> Enum.map(&to_string/1) # convert URI structs to strings
+  |> Enum.uniq # remove any duplicate urls
 end
 </code></pre>
 
@@ -263,25 +353,43 @@ We’re crawling deep now!
 
 Once again, if we let our crawler loose on the world, it’ll most likely take a long time to get back to us.
 
-Because we’re not limiting how deep our crawler can travel into our site, it’ll explore all possible paths [that don’t involve retracing its steps](#preventing-loops). We need a way of telling it not to continue crawling once it’s already followed a certain number of links and reached a specified depth.
+Because we’re not limiting how deep our crawler can traverse into our site, it’ll explore all possible paths [that don’t involve retracing its steps](#preventing-loops). We need a way of telling it not to continue crawling once it’s already followed a certain number of links and reached a specified depth.
 
 Due to the way we structured out solution, __this is incredibly easy to implement!__
 
-All we need to do is add another `get_links`{:.language-elixir} function head that has a `when`{:.language-elixir} clause preventing the length of `path`{:.language-elixir} from exceeding our desired depth:
+All we need to do is add another guard in our `get_links`{:.language-elixir} function that makes sure that the length of `path`{:.language-elixir} hasn’t exceeded our desired depth:
 
 <pre class='language-elixir'><code class='language-elixir'>
-def get_links(url, _host, path) when length(path) > @max_depth do
-  [url]
-end
+if continue_crawl?(path, context) and crawlable_url?(url, context) do
 </code></pre>
 
-Here we’re specifying our maximum allowed depth as a module attribute:
+The `continue_crawl?`{:.language-elixir} function verifies that the length of `path`{:.language-elixir} hasn’t grown past the `max_depth`{:.language-elixir} value in our `context`{:.language-elixir} map:
 
 <pre class='language-elixir'><code class='language-elixir'>
-@max_depth 3
+defp continue_crawl?(path, %{max_depth: max}) when length(path) > max, do: false
+defp continue_crawl?(_, _), do: true
 </code></pre>
 
-If our crawler tries to crawl deeper than the maximum allowed depth, this function head will simply return the `url`{:.language-elixir} being crawled, and prevent further recursion.
+In our public `get_links`{:.language-elixir} function we can add `max_depth`{:.language-elixir} to our `context`{:.language-elixir} map, pulling the value from the user-provided `opts`{:.language-elixir} or falling back to the `@default_max_depth`{:.language-elixir} module attribute:
+
+<pre class='language-elixir'><code class='language-elixir'>
+@default_max_depth 3
+</code></pre>
+
+<pre class='language-elixir'><code class='language-elixir'>
+context = %{
+  ...
+  max_depth: Keyword.get(opts, :max_depth, @default_max_depth)
+}
+</code></pre>
+
+As with our other `opts`{:.language-elixir}, the default `max_depth`{:.language-elixir} can be overridden by passing a custom `max_depth`{:.language-elixir} value into `get_links`{:.language-elixir}:
+
+<pre class='language-elixir'><code class='language-elixir'>
+HelloCrawler.get_links("http://www.east5th.co/", max_depth: 5)
+</code></pre>
+
+If our crawler tries to crawl deeper than the maximum allowed depth, `continue_crawl?`{:.language-elixir} returns `false`{:.language-elixir} and `get_links`{:.language-elixir} returns the `url`{:.language-elixir} being crawled, preventing further recursion.
 
 Simple and effective.
 
@@ -292,7 +400,7 @@ While our crawler is fully functional at this point, it would be nice to improve
 Amazingly, parallelizing our web crawler is as simple as swapping our  map over the links we find on a page with a [parallelized map](http://elixir-recipes.github.io/concurrency/parallel-map/):
 
 <pre class='language-elixir'><code class='language-elixir'>
-|> Enum.map(&(Task.async(fn -> get_links(URI.parse(&1), host, [&1 | path]) end)))
+|> Enum.map(&(Task.async(fn -> get_links(URI.parse(&1), [&1 | path], context) end)))
 |> Enum.map(&Task.await/1)
 </code></pre>
 
@@ -308,4 +416,6 @@ It’s been a process, but we’ve managed to get our simple web crawler up and 
 
 While we accomplished everything we set out to do, our final result is still very much a bare bones web crawler. A more mature crawler would come equipped with more sophisticated scraping logic, rate limiting, caching, and more efficient optimizations.
 
-That being said, I’m proud of what we’ve accomplished. Be sure to check out [the entire `HelloCrawler`{:.language-elixir} project on Github](https://github.com/pcorey/hello_crawler/).
+That being said, I’m proud of what we’ve accomplished. Be sure to check out [the entire `HelloCrawler`{:.language-elixir} project on Github](https://github.com/pcorey/hello_crawler/blob/master/lib/hello_crawler.ex).
+
+I’d like to thank [Mischov](https://github.com/mischov) for his incredibly helpful suggestions for improving [this article](https://github.com/pcorey/pcorey.github.io/issues/31) and [the underlying codebase](https://github.com/pcorey/hello_crawler/issues/1). If you have any other suggestions, let me know!
