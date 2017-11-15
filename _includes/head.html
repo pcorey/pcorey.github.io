@@ -7,6 +7,8 @@
         <title>East5th</title>
     {% endif  %}
 
+    {% seo %}
+
     {% feed_meta %}
 
     <meta name="viewport" content="width=device-width">
@@ -14,8 +16,6 @@
     <meta name="robots" content="index,follow">
     <meta name="google-site-verification" content="ut-g0UTIu8DWrEtUvWSXrVlCq1exF4YD54ANC-c9rsk" />
     <link rel="icon" type="image/png" href="{{ "/img/favicon.png" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/prism.css" | prepend: site.baseurl }}">
