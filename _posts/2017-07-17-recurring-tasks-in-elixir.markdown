@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Recurring Tasks in Elixir"
+description: "Today we're digging into the details of how to program recurring tasks in Elixir using GenServers. Behold the Fruit Printer 🍉."
+author: "Pete Corey"
 date:   2017-07-17
-tags: []
+tags: ["Elixir"]
 ---
 
 Running periodic, or recurring tasks is a common undertaking for any web application. The stacks I’ve used in the past have all relied heavily on external databases and job queues to accomplish this task.

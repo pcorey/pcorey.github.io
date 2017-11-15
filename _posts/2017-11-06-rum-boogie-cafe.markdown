@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Rum Boogie Café"
+description: "Character encodings have long been the bane of software developers. Read about the lengths I recently went to in order to debug a character encoding issue."
+author: "Pete Corey"
 date:   2017-11-06
-tags: []
+tags: ["Javascript", "Node.js", "Debugging"]
 ---
 
 Recently I ran into an interesting problem while working on a project with a [Memphis-based](https://www.google.com/maps/place/Memphis,+TN/@35.1294252,-90.2509759,10z/data=!3m1!4b1!4m5!3m4!1s0x87d57e1eea439745:0xd193f315601ab6fe!8m2!3d35.1495343!4d-90.0489801) client. This interesting problem led to several hours of sleuthing through HTTP headers, combing over hex dumps, and pouring through the source of several packages.

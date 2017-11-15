@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Offline GraphQL Mutations with Redux Offline and Apollo"
+description: "Use Redux Offline and Redux Persist to add support for offline mutations to your Apollo and GraphQL-based front-end application."
+author: "Pete Corey"
 date:   2017-07-31
-tags: []
+tags: ["Javascript", "GraphQL", "Apollo", "Offline"]
 ---
 
 Last week we started a deep dive into adding offline support to a [React](https://facebook.github.io/react/) application using a [GraphQL data layer](http://graphql.org/) powered by [Apollo](http://www.apollodata.com/).

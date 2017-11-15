@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Grokking the Y Combinator with Elixir"
+description: "The Y combinator is something to be marveled over. Dive into this amazing contraption with me as we build it from the ground up with simple Elixir anonymous functions."
+author: "Pete Corey"
 date:   2017-10-30
-tags: []
+tags: ["Elixir", "Books", "Computer Science"]
 ---
 
 I’ve been re-reading one of my favorite programming books, [The Little Schemer](http://amzn.to/2y4nsWS), and I had an epiphany in one of the final chapters.

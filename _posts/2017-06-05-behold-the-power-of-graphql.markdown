@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Behold the Power of GraphQL"
+description: "The ability to seamlessly spread your data across many different data stores is a game-changing and under-explored feature of GraphQL."
+author: "Pete Corey"
 date:   2017-06-05
-tags: []
+tags: ["Inject Detect", "Javascript", "Node.js", "GraphQL", "Stripe"]
 ---
 
 Imagine you’re build out a billing history page. You’ll want to show the current user’s basic account information along with the most recent charges made against their account.

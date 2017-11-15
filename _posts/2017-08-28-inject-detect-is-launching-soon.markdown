@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Inject Detect is Launching Soon"
+description: "It's been a long, tumultuous road building Inject Detect, but the end is in sight; Inject Detect is launching soon!"
+author: "Pete Corey"
 date:   2017-08-28
-tags: []
+tags: ["Inject Detect", "NoSQL Injection", "Meteor", "Security", "MongoDB"]
 ---
 
 It’s been a long and winding road, but development and testing on the initial release of my latest project, [Inject Detect](http://www.injectdetect.com/), is done.

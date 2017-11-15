@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "GraphQL Authentication with Apollo and React"
+description: "Let's build out the front-end authentication functionality of a React, and Apollo, and Absinthe-powered Elixir application."
+author: "Pete Corey"
 date:   2017-05-15
-tags: []
+tags: ["Elixir", "Phoenix", "Absinthe", "GraphQL", "Apollo", "Authentication"]
 ---
 
 [Continuing on from last week](http://www.east5th.co/blog/2017/05/08/graphql-authentication-with-elixir-and-absinthe/), we have our authentication and authorization workflow ironed out in our [Elixir](http://elixir-lang.org/)/[Absinthe](http://absinthe-graphql.org/) powered back-end. Fantastic!

@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "User Authentication Kata with Elixir and Phoenix"
+description: "Practical code katas are a tool to practice valuable web development skills in an applicable way. Start practicing with this user authentication kata."
+author: "Pete Corey"
 date:   2017-10-02
-tags: []
+tags: ["Elixir", "Katas", "Phoenix", "Authentication"]
 ---
 
 It’s no secret that’s I’m a fan of code katas. Over the years I've spent quite a bit of time on [CodeWars](https://www.codewars.com/users/pcorey) and other kata platforms, and I’ve written a large handful of [Literate Commit](http://www.east5th.co/blog/2016/07/11/literate-commits/) style articles outlining kata solutions:

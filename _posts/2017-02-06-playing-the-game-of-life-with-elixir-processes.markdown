@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Playing the Game of Life with Elixir Processes"
+description: "Explore the concept of life and death with Elixir processes by implementing Conway's Game of Life where each cell is a living Elixir process."
+author: "Pete Corey"
 date:   2017-02-06
-tags: []
+tags: ["Elixir", "Game of Life", "Experiments"]
 ---
 
 I’ve always been fascinated with [Conway’s Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life), and I’ve always wondered what the Game of Life is like from an individual cell’s perspective.

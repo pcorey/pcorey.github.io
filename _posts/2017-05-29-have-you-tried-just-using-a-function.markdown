@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Have You Tried Just Using a Function?"
+description: "This articles how refacting a complex set of GenServers and Supervisors into simple functions saved me quite a bit of frustration and opened the doors to new functionality."
+author: "Pete Corey"
 date:   2017-05-29
-tags: []
+tags: ["Elixir", "Event Sourcing"]
 ---
 
 Last month I read Sasa Juric’s [To Spawn, or Not to Spawn](http://theerlangelist.com/article/spawn_or_not) article and its been lurking in my subconscious ever since.

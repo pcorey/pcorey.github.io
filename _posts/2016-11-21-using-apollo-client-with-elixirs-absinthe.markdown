@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Using Apollo Client with Elixir's Absinthe"
+description: "Explore how Elixir's Absinthe GraphQL library can be used to fuel a front-end application built around Apollo Client."
+author: "Pete Corey"
 date:   2016-11-21
-tags: []
+tags: ["Elixir", "Absinthe", "GraphQL", "Apollo"]
 ---
 
 There’s no doubt that [GraphQL](http://graphql.org/) has been making waves in the web development community since it was announced, and for good reason! GraphQL helps decouple an application’s front-end from its back-end in amazingly flexible ways.

@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Who Needs Lodash When You Have Elixir?"
+description: "Watch how Elixir's standard library outclasses Javascript's Lodash in day-to-day tasks."
+author: "Pete Corey"
 date:   2017-04-17
-tags: []
+tags: ["Elixir", "Javascript"]
 ---
 
 Before adventuring into the land of [Elixir](http://elixir-lang.org/), I used Javascript day in and day out for both front-end and back-end development. Javascript’s (lack of) standard libraries forced me to rely heavily on third-party tools and libraries such as [Underscore](http://underscorejs.org/) and [Lodash](https://lodash.com/).

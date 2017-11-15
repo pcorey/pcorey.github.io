@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Offline GraphQL Queries with Redux Offline and Apollo"
+description: "Use Redux Offline and Redux Persist to add support for offline queries to your Apollo and GraphQL-based front-end application."
+author: "Pete Corey"
 date:   2017-07-24
-tags: []
+tags: ["Javascript", "GraphQL", "Apollo", "Offline"]
 ---
 
 Ironically, in our ever more connected world, demands for offline capabilities of web applications are growing. Our users (and clients) expect to use rich internet applications while online, offline, and in areas of questionable connectivity.

@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "GenServers and Memory Images: A Match Made in Heaven"
+description: "Elixir's GenServers are the perfect tool for implementing Memory Images — a powerful replacement for storing state in conventional databases."
+author: "Pete Corey"
 date:   2017-06-19
-tags: []
+tags: ["Elixir", "Inject Detect", "Event Sourcing"]
 ---
 
 My current project, [Inject Detect](http://www.injectdetect.com/), is being built with [Elixir](https://elixir-lang.org/) and makes heavy use of Martin Fowler-style [Memory Images](https://martinfowler.com/bliki/MemoryImage.html). After working with this setup for several months, I’ve come to realize that Elixir [GenServers](https://elixir-lang.org/getting-started/mix-otp/genserver.html) and a Memory Image architecture are a match made in heaven.

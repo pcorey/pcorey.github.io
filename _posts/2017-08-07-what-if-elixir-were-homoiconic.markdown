@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "What if Elixir were Homoiconic?"
+description: "Despite what some people say, Elixir is not a homoiconic language. This articles explores what the language would look like if it were."
+author: "Pete Corey"
 date:   2017-08-07
-tags: []
+tags: ["Elixir", "Computer Science"]
 ---
 
 Because of it’s fantastically powerful macro system, Elixir is sometimes [mistakenly referred to as a homoiconic programming language](https://news.ycombinator.com/item?id=7623991).

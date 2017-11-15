@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "My Favorite Pattern Without a Name"
+description: "I've been notice a recurring pattern in modern open source projects and even my own Elixir code, but strangely, this pattern doesn't seem to have a name."
+author: "Pete Corey"
 date:   2017-01-30
-tags: []
+tags: ["Elixir"]
 ---
 
 My recent dives into [Elixir](http://elixir-lang.org/) have been changing how I write software. More and more I find myself writing in a functional style, even in languages where its not the norm.

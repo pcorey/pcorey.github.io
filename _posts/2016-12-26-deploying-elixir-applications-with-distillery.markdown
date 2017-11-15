@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Deploying Elixir Applications with Distillery"
+description: "Use Distillery to build and deploy your Elixir and Phoenix applications."
+author: "Pete Corey"
 date:   2016-12-26
-tags: []
+tags: ["Elixir", "Phoenix", "Deployment"]
 ---
 
 While [churning through the exercises](http://www.east5th.co/blog/2016/12/19/intentionally-learning-elixir/) in [Programming Elixir](https://www.amazon.com/gp/product/168050200X/ref=as_li_tl?ie=UTF8&tag=east5th-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=168050200X&linkId=bd25aac110b20a11b82607f1f0e48f65) (affiliate link), I came across a section dedicated to deploying Elixir applications using the [Elixir Release Manager](https://github.com/bitwalker/exrm) (`exrm`{:.language-elixir}).

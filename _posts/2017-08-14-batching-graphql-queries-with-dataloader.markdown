@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Batching GraphQL Queries with DataLoader"
+description: "Learn how to avoid the dreaded N+1 problem and optimize your GraphQL queries with DataLoader and MongoDB."
+author: "Pete Corey"
 date:   2017-08-14
-tags: []
+tags: ["Javascript", "Node.js", "GraphQL", "Apollo", "MongoDB"]
 ---
 
 One of the biggest drawbacks of an out-of-the-box [GraphQL](http://graphql.org/) solution is its tendency to make ridiculous numbers of [`N+1`{:.language-*} queries](https://stackoverflow.com/questions/97197/what-is-n1-select-query-issue). For example, consider the following GraphQL query:

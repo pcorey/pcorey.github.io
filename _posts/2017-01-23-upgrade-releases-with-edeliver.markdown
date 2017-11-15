@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Upgrade Releases With Edeliver"
+description: "Edeliver simplifies the process of building and deploying upgrade releases for your Elixir and Phoenix applications."
+author: "Pete Corey"
 date:   2017-01-23
-tags: []
+tags: ["Elixir", "Phoenix", "Deployment"]
 ---
 
 

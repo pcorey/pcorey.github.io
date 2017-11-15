@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Simplifying Elixir Releases With Edeliver"
+description: "Edeliver simplifies the process of building and deploying standard releases for your Elixir and Phoenix applications."
+author: "Pete Corey"
 date:   2017-01-16
-tags: []
+tags: ["Elixir", "Phoenix", "Deployment"]
 ---
 
 In our previous two posts, we’ve [built releases manually with Distillery](http://www.east5th.co/blog/2016/12/26/deploying-elixir-applications-with-distillery/), and [deployed an upgrade release](http://www.east5th.co/blog/2017/01/09/upgrade-releases-with-distillery/) to an existing Elixir application. As we've seen, this was a very hands-on process.

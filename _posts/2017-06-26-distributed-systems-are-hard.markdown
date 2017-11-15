@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Distributed Systems Are Hard"
+description: "Distributed systems are incredibly difficult to build and even more difficult to build correctly. Let's explore some common pitfalls of common scaling practices."
+author: "Pete Corey"
 date:   2017-06-26
-tags: []
+tags: ["Elixir", "Javascript", "Node.js", "Computer Science"]
 ---
 
 As I dive deeper and deeper into the world of [Elixir](https://elixir-lang.org/) and distributed systems in general, I’ve been falling deeper and deeper into a personal crisis.

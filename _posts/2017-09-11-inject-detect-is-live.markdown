@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Inject Detect is Live!"
+description: "Inject Detect, a tool designed to detect NoSQL Injection attacks as they happen, has been released!"
+author: "Pete Corey"
 date:   2017-09-11
-tags: []
+tags: ["NoSQL Injection", "Inject Detect", "Javascript", "Meteor", "Security", "MongoDB", "Announcement"]
 ---
 
 My latest project, [Inject Detect](http://www.injectdetect.com/) is officially live and open to the public! If you have a Meteor application and you’re concerned about the threat of NoSQL Injection, I made this for you!

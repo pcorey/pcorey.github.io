@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Formatting with Vim Scripts"
+description: "Vim has become the cornerstone of my day-to-day work as a software developer. Check out how I use Vim scripts to format articles and posts."
+author: "Pete Corey"
 date:   2017-10-16
-tags: []
+tags: ["Vim", "Markdown", "Literate Commits"]
 ---
 
 Over the years my brain has become wired to [think in Vim](https://stackoverflow.com/a/1220118/96048) when it comes to editing text. For example, when I want to change an `if`{:.language-vim} guard, I don’t want to *`click`{:.language-vim}*, `<Del><Del><Del><Del><Del><Del>`{:.language-vim}. Instead I simply _change_ (`c`{:.language-vim}) _inside_ (`i`{:.language-vim}) _parentheses_ `(`{:.language-vim}.

@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Intentionally Learning Elixir"
+description: "How I've fast-tracked my absorption of Elixir through intentional learning."
+author: "Pete Corey"
 date:   2016-12-19
-tags: []
+tags: ["Elixir", "Books"]
 ---
 
 I’ve been programing computers in one way or another since I was ten years old. This means that I’ve had to teach myself quite a bit over the years.

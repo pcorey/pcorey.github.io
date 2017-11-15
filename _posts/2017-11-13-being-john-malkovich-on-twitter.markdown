@@ -2,7 +2,9 @@
 layout: post
 title:  "Being John Malkovich on Twitter"
 date:   2017-11-13
-tags: []
+description: "I've created a script that injects a healthy dose of empathy injected into your Twitter experience. Experience what it's like being John Malkovich on Twitter."
+author: "Pete Corey"
+tags: ["Javascript", "Experiments"]
 ---
 
 Twitter is a weird place. 

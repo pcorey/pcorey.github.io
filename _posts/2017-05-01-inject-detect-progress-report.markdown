@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Inject Detect Progress Report"
+description: "Peek into the inner workings of Inject Detect, an Elixir and React-powered security SaaS application, in this progress report."
+author: "Pete Corey"
 date:   2017-05-01
-tags: []
+tags: ["Elixir", "Inject Detect", "Event Sourcing"]
 ---
 
 It’s been [almost two months](http://www.east5th.co/blog/2017/03/06/inject-detect-coming-soon/) since I announced I was working on a security focused SaaS application called [Inject Detect](http://www.injectdetect.com/).

@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Using Create React App with Phoenix"
+description: "Skip brunch today and use Create React App to lay the foundation for the front-end of your next Elixir and Phoenix project."
+author: "Pete Corey"
 date:   2017-04-03
-tags: []
+tags: ["Elixir", "Phoenix", "React"]
 ---
 
 Contrary to [what I said a couple weeks ago](http://www.east5th.co/blog/2017/03/20/how-am-i-building-inject-detect/), I’ve decided to build the front-end of [Inject Detect](http://www.injectdetect.com/), as a React application.

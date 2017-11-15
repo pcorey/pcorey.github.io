@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "How am I Building Inject Detect?"
+description: "Here's a high-level architectural and technilogical outline for how I plan to build out the Inject Detect application."
+author: "Pete Corey"
 date:   2017-03-20
-tags: []
+tags: ["Inject Detect", "Elixir", "MongoDB"]
 ---
 
 I [recently announced](http://www.east5th.co/blog/2017/03/06/inject-detect-coming-soon/) that I’m working on a new project called [Inject Detect](http://www.injectdetect.com/). It’s an understatement to say that I’m incredibly excited about this project!

@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "NoSQL Injection in Kadira"
+description: "I discovered and disclosed a NoSQL Injection vulnerability in the open-sourced Kadira project. Let's disect it and see how it could have been prevented."
+author: "Pete Corey"
 date:   2017-05-22
-tags: []
+tags: ["Inject Detect", "NoSQL Injection", "Meteor", "MongoDB", "Security"]
 ---
 
 Not long ago, the Meteor Development Group purchased [Kadira](https://kadira.io/) after the Kadira team announced it would be shutting down. Shortly after, MDG open sourced the entire project [on Github](https://github.com/kadira-open/kadira-server). 🎉

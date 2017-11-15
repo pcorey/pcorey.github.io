@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Exploring the Bitcoin Blockchain with Elixir and Phoenix"
+description: "Let's use the Phoenix framework and our Bitcoin node interface to build a basic Bitcoin blockchain explorer!"
+author: "Pete Corey"
 date:   2017-09-18
-tags: []
+tags: ["Bitcoin", "Blockchain", "Elixir", "Phoenix"]
 ---
 
 Earlier this month [we dove into the brave new world of Bitcoin development](http://www.east5th.co/blog/2017/09/04/controlling-a-bitcoin-node-with-elixir/) by writing [an Elixir module](https://github.com/pcorey/hello_bitcoin/blob/master/lib/hello_bitcoin.ex) that could communicate with a [Bitcoin full node](https://bitcoin.org/en/full-node). At this end of the day, we had a small handful of Elixir functions that could retrieve some basic information about the Bitcoin blockchain.

@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "GraphQL Authentication with Elixir and Absinthe"
+description: "Let's build out the back-end authentication functionality of an Absinthe-powered Elixir and Phoenix application."
+author: "Pete Corey"
 date:   2017-05-08
-tags: []
+tags: ["Elixir", "Phoenix", "Absinthe", "GraphQL", "Authentication"]
 ---
 
 You’ve assembled your superhero stack. [Your React front-end](http://www.east5th.co/blog/2017/04/03/using-create-react-app-with-phoenix/) is communicating with an [Elixir](http://elixir-lang.org/)/[Phoenix](http://www.phoenixframework.org/) back-end [through an Apollo/Absinthe GraphQL data layer](http://www.east5th.co/blog/2017/04/10/using-apollo-client-with-elixirs-absinthe/).

@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Using Apollo Client with Elixir's Absinthe"
+description: "Apollo client seamlessly integrates with Elixir's Absinthe framework to create an unbelievable powerful GraphQL stack with minimal fuss."
+author: "Pete Corey"
 date:   2017-04-10
-tags: []
+tags: ["Elixir", "Phoenix", "Absinthe", "Apollo", "GraphQL"]
 ---
 
 Last week I wrote about [how I’m using Create React App in conjunction with the Phoenix framework](http://www.east5th.co/blog/2017/04/03/using-create-react-app-with-phoenix/) to get off the ground incredibly quickly when building single page applications.
