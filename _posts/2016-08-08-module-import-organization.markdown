@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Module Import Organization"
+description: "Now that Meteor supports native modules, imports, and exports... Where do we put everything?"
+author: "Pete Corey"
 date:   2016-08-08
-tags: []
+tags: ["Javascript", "Meteor"]
 ---
 
 In [our last post](/blog/2016/08/01/method-imports-and-exports/) discussing the benefits of moving your methods, publications, and templates into modules, we mentioned that all of this [Meteor](https://www.meteor.com/)-specific functionality relied on modifying global state.

@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Method Imports and Exports"
+description: "When we define Meteor methods and publication in modules, what do we export? This articles dives into that question and more."
+author: "Pete Corey"
 date:   2016-08-01
-tags: []
+tags: ["Javascript", "Meteor", "Testing"]
 ---
 
 Organizing our [Meteor](https://www.meteor.com/) code into [modules](http://www.2ality.com/2014/09/es6-modules-final.html) can be a powerful improvement over the old globals-everywhere approach that many of us are used to.

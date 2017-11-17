@@ -2,8 +2,10 @@
 layout: post
 title:  "NoSQL Injection and GraphQL"
 titleParts: ["NoSQL Injection and", "GraphQL"]
+description: "Are GraphQL applications vulnerable to NoSQL Injection attacks? Check out how a fully fleshed out schema can protect you and your data!"
+author: "Pete Corey"
 date:   2016-06-13
-tags: ["security"]
+tags: ["Javascript", "Meteor", "NoSQL Injection", "Security", "GraphQL"]
 ---
 
 It’s no secret that [GraphQL](http://graphql.org/) has been making some serious waves in the developer community lately, and for good reason. It acts as an abstraction around your application’s data and seemingly gives any consumers of that data super powers. In my opinion, GraphQL is one of the most exciting pieces of technology to come out of the “Facebook stack”.

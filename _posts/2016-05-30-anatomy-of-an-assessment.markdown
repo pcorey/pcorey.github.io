@@ -2,8 +2,10 @@
 layout: post
 title:  "Anatomy of an Assessment"
 titleParts: ["Anatomy of an", "Assessment"]
+description: "What are Meteor security assessments? How do they work and what can I expect?"
+author: "Pete Corey"
 date:   2016-05-30
-tags: ["security"]
+tags: ["Meteor", "Security"]
 ---
 
 I’ve been quitely offering Meteor security assessments as a service for nearly a year now. In that time, I’ve worked with some amazing teams to analyze and assess the state of security in their Meteor applications.

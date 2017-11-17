@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Accounts is Everything Meteor Does Right"
+description: "Meteor's Accounts system is one of Meteor's most killer features, and one of the reasons I find it difficult to leave the framework."
+author: "Pete Corey"
 date:   2016-10-03
-tags: []
+tags: ["Javascript", "Meteor", "Authentication"]
 ---
 
 When I first came to [Meteor](https://www.meteor.com/), I was [immediately amazed](/blog/2014/12/02/meteor-first-impressions/) by full-stack reactivity. After the novelty of being able to instantly see changes in my database on the client wore off, I started building applications.

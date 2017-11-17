@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Assessing Mobile Meteor Applications"
+description: "How do I carry out security assessments against mobile-only Meteor applications? The same way I carry out any other security assessment!"
+author: "Pete Corey"
 date:   2016-08-29
-tags: []
+tags: ["Javascript", "Meteor", "Security", "Mobile"]
 ---
 
 Some [Meteor](https://www.meteor.com/) applications are released solely as mobile applications. They’re intended to be experienced natively as a [Cordova](https://cordova.apache.org/)-powered application, rather than on the web through a browser.

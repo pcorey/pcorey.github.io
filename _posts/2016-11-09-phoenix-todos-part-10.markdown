@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Phoenix Todos - Authorized Sockets"
+description: "Part ten of our 'Phoenix Todos' Literate Commits series. Implementing authorization over Phoenix sockets."
+author: "Pete Corey"
 date:   2016-11-09
 repo: "https://github.com/pcorey/phoenix_todos"
-tags: ["literate-commits"]
+literate: true
+tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
 # [Authenticated Sockets]({{page.repo}}/commit/a366d906d856c2db754f6528626e5c04d6ef9934)

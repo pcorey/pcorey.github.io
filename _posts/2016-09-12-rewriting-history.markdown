@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Rewriting History"
+description: "Is your Git-foo strong enough to change the past? Let's explore some advanced techniques for modifying the commit history of a Git repository."
+author: "Pete Corey"
 date:   2016-09-12
-tags: []
+tags: ["Literate Commits"]
 ---
 
 If you’ve been following our blog, you’ll notice that we’ve been writing lots of  what we’re calling [“literate commit”](http://www.east5th.co/blog/2016/07/11/literate-commits/) posts.

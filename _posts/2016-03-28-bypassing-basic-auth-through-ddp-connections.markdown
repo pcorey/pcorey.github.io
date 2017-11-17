@@ -2,8 +2,10 @@
 layout: post
 title:  "Bypassing Package-Based Basic Auth"
 titleParts: ["Bypassing Package-Based", "Basic Auth"]
+description: "Are you using Basic Auth to protect your Meteor application? You're probably not protecting your DDP endpoint. Find out how to fix it."
+author: "Pete Corey"
 date:   2016-03-28
-tags: ["security"]
+tags: ["Javascript", "Meteor", "Security"]
 ---
 
 In a previous post, I talked about using [Basic Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basic_access_authentication) to [hide your Meteor application from prying eyes](http://blog.east5th.co/2015/07/06/basic-auth-for-hiding-your-application/). Unfortunately, the most straight-forward way of implementing this kind of protection has its flaws.

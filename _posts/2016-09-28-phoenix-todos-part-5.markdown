@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Phoenix Todos - Finishing Authentication"
+description: "Part five of our 'Phoenix Todos' Literate Commits series. Finishing up authentication."
+author: "Pete Corey"
 date:   2016-09-28
 repo: "https://github.com/pcorey/phoenix_todos"
-tags: ["literate-commits"]
+literate: true
+tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos", "Authentication"]
 ---
 
 # [Client-side Validation Bug]({{page.repo}}/commit/7168aa4b3b1d1ed7d6c1a57e4654961c2b6da16f)

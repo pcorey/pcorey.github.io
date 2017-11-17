@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "How to Safely Store Application Links"
+description: "Does your application give users the ability to link to arbitray external URLs? You may be exposing your users to an unnecessary vulnerability."
+author: "Pete Corey"
 date:   2016-10-10
-tags: []
+tags: ["Javascript", "Meteor", "Security"]
 ---
 
 Sometimes your Meteor application will need to store internal application links.

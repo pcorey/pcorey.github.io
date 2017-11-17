@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Phoenix Todos - Preloading Todos"
+description: "Part seven of our 'Phoenix Todos' Literate Commits series. Populating our todo lists with Ecto's preload feature."
+author: "Pete Corey"
 date:   2016-10-12
 repo: "https://github.com/pcorey/phoenix_todos"
-tags: ["literate-commits"]
+literate: true
+tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
 # [Redux Channel Actions]({{page.repo}}/commit/c26ec4c5937743e012929eb3fdb66b0bc5fda310)

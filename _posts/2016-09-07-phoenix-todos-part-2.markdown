@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Phoenix Todos - The User Model"
+description: "Part two of our 'Phoenix Todos' Literate Commits series. Building out our user model."
+author: "Pete Corey"
 date:   2016-09-07
 repo: "https://github.com/pcorey/phoenix_todos"
-tags: ["literate-commits"]
+literate: true
+tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
 

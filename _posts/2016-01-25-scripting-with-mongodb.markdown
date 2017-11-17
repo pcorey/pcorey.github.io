@@ -2,8 +2,10 @@
 layout: post
 title:  "Scripting With MongoDB"
 titleParts: ["Scripting With", "MongoDB"]
+description: "Scripting with Javascript is an often overlooked, but incredibly powerful feature of MongoDB. Take advantage of it!"
+author: "Pete Corey"
 date:   2016-01-25
-tags: []
+tags: ["Javascript", "MongoDB"]
 ---
 
 An often overlooked, but extremely powerful feature of [MongoDB](https://www.mongodb.com/) is the ability to execute Javascript directly within your database instance.

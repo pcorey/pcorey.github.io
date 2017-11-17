@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "NoSQL Injection in Phoenix Applications"
+description: "Phoenix applications using MongoDB as a data store are susceptible to NoSQL Injection attacks. Learn what they are and how to preven them."
+author: "Pete Corey"
 date:   2016-11-07
-tags: []
+tags: ["Elixir", "Phoenix", "NoSQL Injection", "Security", "MongoDB"]
 ---
 
 NoSQL injection is a class of application vulnerability where a malicious user can inject control structures into a query against a NoSQL database. [MongoDB](https://www.mongodb.com/) is the usual victim in these types of attacks, for reasons we’ll discuss towards the end of the article.

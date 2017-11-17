@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Querying Non-Existent MongoDB Fields"
+description: "In MongoDB, documents without set values for fields will match queries looking for a null value. Check out how this quirk exposes subtle vulnerabilities in Meteor applications."
+author: "Pete Corey"
 date:   2016-09-05
-tags: []
+tags: ["Javascript", "Meteor", "MongoDB", "Security"]
 ---
 
 We were recently contacted by one of our readers asking about a security vulnerability in one of their Meteor applications.

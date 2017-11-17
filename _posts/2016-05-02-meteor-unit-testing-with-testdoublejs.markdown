@@ -2,8 +2,10 @@
 layout: post
 title:  "Meteor Unit Testing With Testdouble.js"
 titleParts: ["Meteor Unit Testing With", "Testdouble.js"]
+description: "Smooth out your Meteor testing experience with Testdouble.js."
+author: "Pete Corey"
 date:   2016-05-02
-tags: []
+tags: ["Javascript", "Meteor", "Testing"]
 ---
 
 It’s been several months since my [first post on unit testing with Meteor 1.3](http://blog.east5th.co/2015/12/21/unit-testing-with-meteor-1.3/), and Meteor 1.3 has [finally been officially released](http://info.meteor.com/blog/announcing-meteor-1.3)!

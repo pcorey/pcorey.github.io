@@ -2,8 +2,10 @@
 layout: post
 title:  "MongoDB With Serverless"
 titleParts: ["MongoDB", "with Serverless"]
+description: "Using MongoDB from an AWS Lambda function is more difficult than you may expect. Here's one possible solution."
+author: "Pete Corey"
 date:   2016-06-06
-tags: []
+tags: ["Javascript", "Serverless", "MongoDB"]
 ---
 
 Last week I wrote about how excited I was about [AWS Lambda’s pricing model](http://blog.east5th.co/2016/05/24/aws-lambda-first-impressions/). Fueled by that excitement, I spent some time this week experimenting on how I could incorporate [Lambda functions](https://aws.amazon.com/lambda/) into my software development toolbox.

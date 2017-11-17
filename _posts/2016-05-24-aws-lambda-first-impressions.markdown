@@ -2,8 +2,10 @@
 layout: post
 title:  "AWS Lambda First Impressions"
 titleParts: ["AWS Lambda", "First Impressions"]
+description: "In which we build a Bitcoin-generating money bot and deploy it to AWS Lambda for free!"
+author: "Pete Corey"
 date:   2016-05-24
-tags: []
+tags: ["Javascript", "Node.js", "Serverless", "Bitcoin"]
 ---
 
 Lately, I’ve been paying quite a bit of attention to [AWS Lambda](https://aws.amazon.com/lambda/).

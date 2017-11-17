@@ -2,8 +2,10 @@
 layout: post
 title:  "Stored XSS and Unexpected Unsafe-Eval"
 titleParts: ["Stored XSS", "and Unexpected Unsafe-Eval"]
+description: "Event your Content Security Policy can't save you from stored Cross Site Scripting attacks."
+author: "Pete Corey"
 date:   2016-03-14
-tags: ["security"]
+tags: ["Javascript", "Meteor", "Security"]
 ---
 
 In a [previous post](http://blog.east5th.co/2016/03/07/cross-site-scripting-through-jquery-components/), I discussed the possibility of exposing [Cross Site Scripting](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) (XSS) vulnerabilities in your [Meteor](https://www.meteor.com/) application through the use of [jQuery](https://jquery.com/) components.

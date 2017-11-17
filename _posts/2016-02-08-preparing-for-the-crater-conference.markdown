@@ -2,8 +2,10 @@
 layout: post
 title:  "Preparing for the Crater Conference"
 titleParts: ["Preparing for the crater", "Conference"]
+description: "Be sure to buy your tickets to the 2016 Crater Remote Conference to hear my talk on NoSQL Injection in Modern Web Applications!"
+author: "Pete Corey"
 date:   2016-02-08
-tags: []
+tags: ["Meteor", "Security", "NoSQL Injection", "MongoDB"]
 ---
 
 Are you as pumped about the [Crater Remote Conference](http://conf.crater.io/) as I am? There's an [amazing lineup of speakers scheduled](http://conf.crater.io/#schedule), and I can't wait to hear from each of them.

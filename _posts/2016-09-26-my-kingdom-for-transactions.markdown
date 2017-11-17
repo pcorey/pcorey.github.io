@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "My Kingdom for Transactions"
+description: "Transactions are an incredibly undervalued tool in a developer's toolbox. They're often not missed until they're desperately needed. By then, it may be too late."
+author: "Pete Corey"
 date:   2016-09-26
-tags: []
+tags: ["Javascript", "MongoDB"]
 ---
 
 Recently, while reviewing a system I built for a client, I realized how strongly the “decision” to use [MongoDB](https://www.mongodb.com/) effected the architecture and structure of the system.

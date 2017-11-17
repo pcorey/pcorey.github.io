@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Mocha's Grep Flag"
+description: "Today I learned about Mocha's grep flag; an insanely useful tool for quickly isolating individual tests of groups of tests."
+author: "Pete Corey"
 date:   2016-07-25
-tags: []
+tags: ["Javascript", "Testing"]
 ---
 
 Mocha’s [grep flag (`-g`{:.language-javascript}, or `--grep`{:.language-javascript})](https://mochajs.org/#g---grep-pattern) is amazing. I very recently learned about this helpful tool, and it’s significantly improved my testing workflow.

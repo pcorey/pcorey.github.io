@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Meteor in Front, Phoenix in Back - Part 1"
+description: "Part one of our Meteor in Front, Phoenix in Back series. Let's put our mad scientist hats on and transplant a Meteor front-end into a Phoenix application!"
+author: "Pete Corey"
 date:   2016-08-15
-tags: []
+tags: ["Elixir", "Phoenix", "Meteor"]
 ---
 
 If you [follow me on Twitter](https://twitter.com/petecorey), it’s probably not surprise that I’ve been interested in [Elixir](http://elixir-lang.org/) and the [Phoenix Framework](http://www.phoenixframework.org/) for quite a while now. Coming from a [Node.js](https://nodejs.org/en/) and [Meteor](https://www.meteor.com/) background, the promises of out-of-the-box reliability and scalability are incredibly attractive.

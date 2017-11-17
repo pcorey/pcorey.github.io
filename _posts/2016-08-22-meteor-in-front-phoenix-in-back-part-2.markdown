@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Meteor in Front, Phoenix in Back - Part 2"
+description: "Part two of our Meteor in Front, Phoenix in Back series. Today we finish up our Franken-stack by wiring our front-end up to an actual database with Phoenix Channels."
+author: "Pete Corey"
 date:   2016-08-22
-tags: []
+tags: ["Elixir", "Phoenix", "Meteor", "Channels"]
 ---
 
 In our [last article](/blog/2016/08/15/meteor-in-front-phoenix-in-back-part-1/), we transplanted the front-end of a simple [Meteor](https://www.meteor.com/) [example application](https://github.com/meteor/leaderboard) into a [Phoenix](http://www.phoenixframework.org/) project and wired up a Blaze template to use Phoenix Channels rather than DDP.

@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Phoenix Todos - Adding Lists and Tasks"
+description: "Part eight of our 'Phoenix Todos' Literate Commits series. Building out support for adding todo lists and tasks to those lists."
+author: "Pete Corey"
 date:   2016-10-19
 repo: "https://github.com/pcorey/phoenix_todos"
-tags: ["literate-commits"]
+literate: true
+tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
 

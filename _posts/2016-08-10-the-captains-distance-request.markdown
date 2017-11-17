@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "The Captain's Distance Request"
+description: "This Literate Commits post solves a code kata related to finding the distance between two points on earth using the heversine formula. Here be dragons!"
+author: "Pete Corey"
 date:   2016-08-10
 repo: "https://github.com/pcorey/the-captains-distance-request"
-tags: ["literate-commits"]
+literate: true
+tags: ["Javascript", "Codewars", "Literate Commits"]
 ---
 
 

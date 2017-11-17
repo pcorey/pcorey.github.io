@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Delete Occurrences of an Element"
+description: "Let's build up our Test Driven Development chops with this simple Javascript code kata written in the Literate Commits style."
+author: "Pete Corey"
 date:   2016-07-11
 repo: "https://github.com/pcorey/delete-occurrences-of-an-element-if-it-occurs-more-than-n-times"
-tags: ["literate-commits"]
+literate: true
+tags: ["Javascript", "Codewars", "Literate Commits"]
 ---
 
 # [Laying the Groundwork]({{page.repo}}/commit/93e70856fc1a14685ea86f215cf20218f4466daa)

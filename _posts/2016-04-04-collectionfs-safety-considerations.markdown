@@ -2,8 +2,10 @@
 layout: post
 title:  "CollectionFS Safety Considerations"
 titleParts: ["CollectionFS", "Safety Considerations"]
+description: "Allowing file uploads to your applications opens you up to a world of potential vulnerabilities. Make sure you're protected."
+author: "Pete Corey"
 date:   2016-04-04
-tags: ["security"]
+tags: ["Javascript", "Meteor", "Security"]
 ---
 
 The ability to upload files is a core piece of functionality in many web applications. Because of this, many libraries have sprung up around the topic of managing and facilitating file uploads. Arguably the most popular [Meteor](https://www.meteor.com/) file upload package is [CollectionFS](https://github.com/CollectionFS/Meteor-CollectionFS).

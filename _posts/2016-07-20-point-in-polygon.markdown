@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Point in Polygon"
+description: "Is this point in this polygon? This Literate Commits articles explores one possible solution to this code kata."
+author: "Pete Corey"
 date:   2016-07-20
 repo: "https://github.com/pcorey/point-in-polygon"
-tags: ["literate-commits"]
+literate: true
+tags: ["Javascript", "Codewars", "Literate Commits"]
 ---
 
 # [Project Setup]({{page.repo}}/commit/740d5a8dd73a1d77b1de6d37c24f8108cdc1cb60)

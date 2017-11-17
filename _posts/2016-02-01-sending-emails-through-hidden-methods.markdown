@@ -2,8 +2,10 @@
 layout: post
 title:  "Sending Emails Through Hidden Methods"
 titleParts: ["Sending Emails Through", "Hidden Methods"]
+description: "Even if your methods aren't published to the client, they can still be called by malicious users to send emails or do other nefarious things."
+author: "Pete Corey"
 date:   2016-02-01
-tags: ["security"]
+tags: ["Meteor", "Security"]
 ---
 
 I was recently asked to take a look at a friend's Meteor application. I was particularly interested in the security of the system, so I started snooping.

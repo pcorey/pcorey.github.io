@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Phoenix Todos - Updating and Deleting"
+description: "Part nine of our 'Phoenix Todos' Literate Commits series. Updating and deleting items in our todo list."
+author: "Pete Corey"
 date:   2016-10-26
 repo: "https://github.com/pcorey/phoenix_todos"
-tags: ["literate-commits"]
+literate: true
+tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
 

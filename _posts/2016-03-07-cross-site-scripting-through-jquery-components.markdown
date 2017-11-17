@@ -2,8 +2,10 @@
 layout: post
 title:  "Cross Site Scripting Through jQuery Components"
 titleParts: ["Cross Site Scripting Through", "jQuery Components"]
+description: "Your application may be correctly sanitizing user-provided input, but are your jQuery components? Watch out for Cross Site Scripting attacks!"
+author: "Pete Corey"
 date:   2016-03-07
-tags: ["security"]
+tags: ["Javascript", "Meteor", "Security"]
 ---
 
 In the past, I’ve talked about tracking down [Cross Site Scripting (XSS)](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) vulnerabilities within your [Meteor](https://www.meteor.com/) application by [hunting for triple-brace injections](/blog/2015/04/03/black-box-meteor-triple-brace-xss/). I argued that XSS was relatively uncommon because you needed to explicitly use this special injection syntax to inject raw HTML into the DOM. 

@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Nesting Structure Comparison"
+description: "How do we determine if two array share the same nested structure? This Literate Commits code kata dives deep into the solution."
+author: "Pete Corey"
 date:   2016-08-03
 repo: "https://github.com/pcorey/nesting-structure-comparison"
-tags: ["literate-commits"]
+literate: true
+tags: ["Javascript", "Codewars", "Literate Commits"]
 ---
 
 

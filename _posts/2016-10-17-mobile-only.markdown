@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Can Meteor Applications be \"Mobile Only?\""
+description: "What does it mean to be \"mobile only\", and can a Meteor application ever be restricted to a mobile-only build?"
+author: "Pete Corey"
 date:   2016-10-17
-tags: []
+tags: ["Javascript", "Meteor", "Mobile"]
 ---
 I recently finished up a [security assessment](http://www.east5th.co/blog/2016/05/30/anatomy-of-an-assessment/) with a team building a mobile-only application using Meteor.
 

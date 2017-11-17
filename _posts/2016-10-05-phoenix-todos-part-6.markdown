@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "Phoenix Todos - Public Lists"
+description: "Part six of our 'Phoenix Todos' Literate Commits series. Sending public lists down to the client."
+author: "Pete Corey"
 date:   2016-10-05
 repo: "https://github.com/pcorey/phoenix_todos"
-tags: ["literate-commits"]
+literate: true
+tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
 

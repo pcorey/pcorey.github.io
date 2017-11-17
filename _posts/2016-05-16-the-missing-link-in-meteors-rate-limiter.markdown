@@ -2,8 +2,10 @@
 layout: post
 title:  "The Missing Link In Meteor's Rate Limiter"
 titleParts: ["The Missing Link In Meteor's", "Rate Limiter"]
+description: "It's possible to carry out a Denial of Service attack against a Meteor application by flooding it with subscriptions. Check out how you can protect yourself."
+author: "Pete Corey"
 date:   2016-05-16
-tags: ["security"]
+tags: ["Javascript", "Meteor", "Security"]
 ---
 
 Meteor’s [`DDPRateLimiter`{:.language-javascript}](http://docs.meteor.com/#/full/ddpratelimiter) was released into Meteor in version 1.2 with surprisingly little fanfare. I say this is surprising because `DDPRateLimiter`{:.language-javascript} helps minimize one of the most prevalent risks found in nearly all Meteor applications: [Denial of Service attacks](https://www.owasp.org/index.php/Denial_of_Service).

@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "A Five Minute Introduction to NoSQL Injection"
+description: "What is NoSQL Injection? How does it affect my application? How can I prevent it? This five minute guide will tell you everything you need to know."
+author: "Pete Corey"
 date:   2016-10-24
-tags: []
+tags: ["NoSQL Injection", "Security", "MongoDB"]
 ---
 
 NoSQL injection is one of the most common vulnerabilities I find in Meteor applications.

@@ -2,8 +2,10 @@
 layout: post
 title:  "Method Auditing Revisited"
 titleParts: ["Method Auditing", "Revisited"]
+description: "How would a malicious user find vulnerabilities in your Meteor methods? Put on your black hat and find out."
+author: "Pete Corey"
 date:   2016-02-15
-tags: ["security"]
+tags: ["Meteor", "Security", "NoSQL Injection"]
 ---
 
 In the past I've written about how a potentially malicious user can [view all of the isometrically defined methods](http://blog.east5th.co/2015/04/15/black-box-meteor-method-auditing/) in your [Meteor](https://www.meteor.com/) application. By inspecting the `Meteor.connection._methodHandlers`{:.language-javascript} object on the client, they can see all client-side executable instances of your methods, which in most cases are identical to your server-side executable methods. This lets an attacker identify weaknesses in your application security that may lead to an attack.

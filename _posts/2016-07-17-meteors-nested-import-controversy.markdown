@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Meteor's Nested Import Controversy"
+description: "Meteor has introduced Reify that allows the importing of modules within a nested code block. Are we still writing Javascript?"
+author: "Pete Corey"
 date:   2016-07-17
-tags: []
+tags: ["Javascript", "Meteor"]
 ---
 
 In my [last post](/blog/2016/07/04/winston-and-meteor-13/) you might have noticed an interesting piece of ES6-flavored syntax sugar. We imported a module within a nested block:

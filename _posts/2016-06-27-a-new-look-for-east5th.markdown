@@ -2,8 +2,10 @@
 layout: post
 title:  "A New Look For East5th"
 titleParts: ["A New Look", "For East5th"]
+description: "The East5th page has been given a face lift! Same old content, fresh new look."
+author: "Pete Corey"
 date:   2016-06-27
-tags: []
+tags: ["Meta"]
 ---
 
 Things may look a bit different around here. I’m excited and relieved to finally release a design overhaul that I’ve been working on for the past several weeks.

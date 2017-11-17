@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Basic Meteor Authentication in Phoenix"
+description: "Learn how to use the front-end portion of Meteor's accounts and authentication system with an Elixir and Phoenix backend."
+author: "Pete Corey"
 date:   2016-11-14
-tags: []
+tags: ["Elixir", "Phoenix", "Meteor", "Authentication"]
 ---
 
 A question that often comes up when I’m talking to [Meteor](https://www.meteor.com/) developers about transitioning to [Phoenix](http://www.phoenixframework.org/) is how to handle authentication.
