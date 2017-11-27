@@ -2,8 +2,10 @@
 layout: post
 title:  "Git Bisect and Commit History"
 titleParts: ["Git Bisect", "and Commit History"]
+description: "Git's bisect tool is a powerhouse of a tool that often doesn't get the love it deserves."
+author: "Pete Corey"
 date:   2014-09-16
-categories:
+tags: ["Git"]
 ---
 
 Every time I use [git bisect](http://git-scm.com/docs/git-bisect) I find myself giddy with excitement.  The tool is absolutely amazing at tracking down where a bug crept its way into your code. Being able to find the offending commit in minutes leaves me with an unhealthy sense of power over my code base. Sometimes git bisect can lead to an obvious fix if the bad commit is small, but sometimes a large commit can lead to hours of investigation.

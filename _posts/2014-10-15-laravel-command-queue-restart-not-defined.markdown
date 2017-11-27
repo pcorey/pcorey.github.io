@@ -2,8 +2,10 @@
 layout: post
 title:  "Laravel 4.2 Command \"Queue:Restart\" is Not Defined"
 titleParts:  ["Laravel 4.2 Command", "\"Queue:Restart\"", "is Not Defined"]
+description: "A sudden anomalous skipe in CPU usage led me down the rabbit hole of debugging an issue with my Laravel configuration. Follow along in this article."
+author: "Pete Corey"
 date:   2014-10-15
-categories:
+tags: ["PHP", "Laravel"]
 ---
 
 I'm currently working a client project using [Laravel 4.2](http://laravel.com/docs/4.2/). The project uses 4 separate queues for a variety of tasks. Today I noticed that the queues were eating up an unhealthy amount of resources. After reading through the [docs](http://laravel.com/docs/4.2/queues), I noticed that this CPU consumption was most likely being caused by spinning up the laraval framework for every job processed. By using the <code class="language-*">--daemon</code> flag, introduced in 4.2, you can keep the framework loaded in memory and prevent unncessary work by bringing it up and down for each job. **Awesome!**

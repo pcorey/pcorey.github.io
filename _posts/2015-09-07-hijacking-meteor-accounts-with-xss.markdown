@@ -2,8 +2,10 @@
 layout: post
 title:  "Hijacking Meteor Accounts With XSS"
 titleParts: ["Hijacking Meteor Accounts", "With XSS"]
+description: "Cross Site Scripting attacks are especially dangerous in Meteor applications. Watch how an XSS vulnerability can lead to privilege escalation."
+author: "Pete Corey"
 date:   2015-09-07
-tags: ['security']
+tags: ["Javascript", "Meteor", "Security", "XSS"]
 ---
 
 You've probably heard the term "XSS", or [cross-site scripting](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting), floating around the Meteor community. You've probably also heard that the <code class="language-*">browser-policy</code> package prevents XSS. Great! But... What is XSS?

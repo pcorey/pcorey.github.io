@@ -2,8 +2,10 @@
 layout: post
 title:  "Scanning Meteor Projects for Node Vulnerabilities"
 titleParts: ["Scanning Meteor Projects for", "Node Vulnerabilities"]
+description: "Meteor applications can make use of Node.js packages, which opens them up to a world of vulnerabilities. Protect yourself by learning how to scan those packages for known vulnerabilities."
+author: "Pete Corey"
 date:   2015-12-07
-tags: ["security"]
+tags: ["Meteor", "Security"]
 ---
 
 Meteor does not exist in a bubble. All of [Meteor](https://www.meteor.com/) is built on top of [Node.js](https://nodejs.org/en/). This means that while security projects like [`east5th:package-scan`{:.language-*}](https://github.com/East5th/package-scan) can help us find Meteor specific security problems in our projects, we may still be vulnerable to an entire world of vulnerabilities that exist within the Node ecosystem.

@@ -2,8 +2,10 @@
 layout: post
 title:  "Meteor Velocity: Down the Debugging Rabbit Hole"
 titleParts:  ["Meteor Velocity", "Down the Debugging", "Rabbit Hole"]
+description: "Dive down a debugging rabbit hole with me as we identify and fix a bug in the Velocity test framework."
+author: "Pete Corey"
 date:   2015-02-09
-categories:
+tags: ["Javascript", "Meteor", "Testing", "Debugging"]
 ---
 
 ## Meteor Requires Node v0.10.33 or Later

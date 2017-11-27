@@ -2,9 +2,11 @@
 layout: post
 title:  "Black Box Meteor - Package Scanning"
 titleParts:  ["Black Box Meteor", "Package Scanning"]
+description: "A malicious user can view a list of package being used by your Meteor application from the client."
+author: "Pete Corey"
 date:   2015-04-24
 categories:
-tags: ["security"]
+tags: ["Javascript", "Meteor", "Security", "Black Box Meteor"]
 ---
 
 An interesting side effect of [Meteor’s](http://www.meteor.com/) packing system is that all packages used in a project are visible to the client. Open up a browser and take a look at the global <code class="language-javascript">Package</code> object:

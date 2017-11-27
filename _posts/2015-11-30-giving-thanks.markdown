@@ -2,8 +2,10 @@
 layout: post
 title:  "Giving Thanks"
 titleParts: ["Giving Thanks"]
+description: "It's been a little over a year since I started experimenting with Meteor. In that time it has given me the confidence to start successfully working for myself. Thanks Meteor!"
+author: "Pete Corey"
 date:   2015-11-30
-tags: []
+tags: ["Meteor", "Meta"]
 ---
 
 Maybe it's the pumpkin pie talking, but the spirit of thankfulness is flowing through me today. I want to take a minute to stop and reflect on the past year and give thanks where thanks is due.

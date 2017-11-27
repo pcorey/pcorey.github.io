@@ -2,8 +2,10 @@
 layout: post
 title:  "Discover Meteor - Mentoring Session"
 titleParts: ["Discover Meteor", "Mentoring Session"]
+description: "I'll be hosting a Discover Meteor mentor section. Stop by and ask questions!"
+author: "Pete Corey"
 date:   2015-04-20
-categories:
+tags: ["Meteor", "Appearance"]
 ---
 
 Last week I stumbled upon [Sacha Greif's](http://sachagreif.com/) [Crater post](https://crater.io/posts/c4aeY6evYZZoR9kWs) about becoming a [Discover Meteor](https://www.discovermeteor.com/) tutor. I decided that this would be a great opportunity to flex my teaching muscles and help others learn about [Meteor](https://www.meteor.com/)!

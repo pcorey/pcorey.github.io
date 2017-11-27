@@ -2,8 +2,10 @@
 layout: post
 title:  "Materialize Highs and Lows"
 titleParts: ["Materialize", "Highs and Lows"]
+description: "Materialize is a CSS frameworks with its ups and downs. Here are my experiences."
+author: "Pete Corey"
 date:   2015-03-25
-categories:
+tags: ["Javascript"]
 ---
 
 After reading [Nick Wientge's](http://exygen.io/) [great post](http://blog.differential.com/the-easy-way-to-add-material-design-to-your-meteor-app/) on using the [Materialize](http://materializecss.com/) framework to add [Material Design](http://www.google.com/design/spec/material-design/introduction.html) ideals to your [Meteor](https://www.meteor.com/) project, I was eager to jump on board.

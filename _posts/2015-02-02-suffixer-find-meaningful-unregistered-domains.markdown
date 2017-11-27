@@ -2,8 +2,10 @@
 layout: post
 title:  "Suffixer! Find Meaningful Unregistered Domains"
 titleParts: ["Suffixer!", "Find Meaningful Unregistered Domains"]
+description: "Suffixer is a tool designed to find meaningful unregistered domains for your latest project."
+author: "Pete Corey"
 date:   2015-02-02
-categories:
+tags: ["Javascript", "Meteor", "Announcement"]
 ---
 
 Early last week I released a small web app, [Suffixer](http://www.suffixer.com)! The idea behind [Suffixer](http://www.suffixer.com) is to compile a database of all words that can be created with registerable Top Level Domains as their suffixes. You can then search through that database and quickly determine if any of the resulting domains are available for registration.

@@ -2,8 +2,10 @@
 layout: post
 title:  "Keep It Secret, Keep It Safe"
 titleParts: ["Keep It Secret", "Keep It Safe"]
+description: "Are you accidentally leaking your application's secrets to the client? It's more likely than you may think."
+author: "Pete Corey"
 date:   2015-05-25
-tags: ["security"]
+tags: ["Javascript", "Meteor", "Security"]
 ---
 
 It's fairly well established that you shouldn't be storing your application's deployment-specific configuration options directly in your source code. Keeping secrets in your code [unnecessarily expands your application's circle of trust](http://joshowens.me/environment-settings-and-security-with-meteor-js/). But did you know that by keeping secrets in your code you may inadvertently be leaking them to your clients?

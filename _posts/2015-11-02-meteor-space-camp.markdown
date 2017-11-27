@@ -2,8 +2,10 @@
 layout: post
 title:  "Meteor Space Camp"
 titleParts: ["Meteor", "Space Camp"]
+description: "Last month I had the opportunity to go to Space Camp! No, not that kind of space camp..."
+author: "Pete Corey"
 date:   2015-11-02
-tags: []
+tags: ["Meteor"]
 ---
 
 Late last month I had the chance to fulfill a childhood dream; I went to Space Camp! No, not [that kind of space camp](http://www.air-space.com/SCChin1.jpg)… I went to [Meteor Space Camp](http://meteorspace.camp/)!

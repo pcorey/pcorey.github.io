@@ -2,8 +2,10 @@
 layout: post
 title:  "Allow & Deny Challenge - Check Yourself"
 titleParts: ["Allow & Deny Challenge", "Check Yourself", "Before You Wreck Yourself"]
+description: "Can you write an air-tight set of allow & deny rules? Take a look at Sacha Greif's challange, try it for yourself, and take a look at my solution."
+author: "Pete Corey"
 date:   2015-06-15
-tags: ["security"]
+tags: ["Javscript", "Meteor", "Security"]
 ---
 
 If you read [Crater](https://crater.io/), or follow the [Discover Meteor blog](https://www.discovermeteor.com/blog), you probably saw [Sacha Greif’s](https://twitter.com/SachaGreif) recent [Allow & Deny Security Challenge](https://www.discovermeteor.com/blog/allow-deny-security-challenge/). If you haven’t taken the challenge yet, go do it now! It’s a great way to flex your Meteor security muscles. Plus, it really opens your eyes about how careful you need to be when writing [allow](http://docs.meteor.com/#/full/allow) & [deny](http://docs.meteor.com/#/full/deny) rules for your Meteor collections.

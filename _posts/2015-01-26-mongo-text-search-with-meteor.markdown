@@ -2,8 +2,10 @@
 layout: post
 title:  "Mongo Text Search with Meteor"
 titleParts: ["Mongo Text Search", "with Meteor"]
+description: "MongoDB text searches can offer significant performance boosts over simple regular expression based queries."
+author: "Pete Corey"
 date:   2015-01-26
-categories:
+tags: ["Javascript", "MongoDB", "Meteor"]
 ---
 
 My most recent project, [Suffixer](http://www.suffixer.com/), involves doing a primarily text-based search over more than 80k documents. Initially, I was using [$regex](http://docs.mongodb.org/manual/reference/operator/query/regex/) to do all of my querying, but this approach was [unacceptably slow](https://www.youtube.com/watch?v=07So_lJQyqw). I decided to try out [MongoDB’s](http://www.mongodb.org/) [text search](http://docs.mongodb.org/manual/reference/operator/query/text/) functionality to see if I could get any performance gains.

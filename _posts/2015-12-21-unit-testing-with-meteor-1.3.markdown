@@ -2,8 +2,10 @@
 layout: post
 title:  "Unit Testing With Meteor 1.3"
 titleParts: ["Unit Testing", "With Meteor 1.3"]
+description: "Meteor's official testing solution, Velocity, is just too slow. Check out how to use ES6 modules and Mocha to write lightning fast unit tests!"
+author: "Pete Corey"
 date:   2015-12-21
-tags: []
+tags: ["Javascript", "Meteor", "Testing"]
 ---
 
 It's no secret that [I love testing](http://blog.east5th.co/2015/08/18/the-ecstasy-of-testing/). My ideal testing setup is a neatly mocked, blazingly fast unit test suite backed by a sprinkling of happy-path end-to-end tests as a last bastion against bugs. I want my [test pyramid](http://martinfowler.com/bliki/TestPyramid.html)!

@@ -2,8 +2,10 @@
 layout: post
 title:  "Check-Checker Checks Your Checks"
 titleParts: ["Check-Checker", "Checks Your Checks"]
+description: "Check-Checker is a package that looks for missing or incomplete calls to 'check' in your Meteor methods and publications. It's a powerful tool in the fight against NoSQL Injection."
+author: "Pete Corey"
 date:   2015-07-27
-tags: ["security"]
+tags: ["Javascript", "Meteor", "Security", "NoSQL Injection", "Announcement"]
 ---
 
 I’ve been shouting about why you should [check](http://docs.meteor.com/#/full/check) all of the user provided arguments in your [Meteor](https://www.meteor.com/) applications for months now. Working with unchecked arguments can lead to [a variety](http://blog.east5th.co/2015/07/21/exploiting-findone-to-aggregate-collection-data/) [of serious](http://blog.east5th.co/2015/06/15/allow-and-deny-challenge-check-yourself/) [security issues](http://blog.east5th.co/2015/04/06/nosql-injection-or-always-check-your-arguments/) in your application.

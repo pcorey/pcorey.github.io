@@ -2,8 +2,10 @@
 layout: post
 title:  "Responsive SVG Height Issue"
 titleParts: ["Responsive SVG", "Height Issue"]
+description: "I recently faced an issue with responsive SVGs not sizing correctly. Here's how I came up with a solution."
+author: "Pete Corey"
 date:   2014-09-09
-categories:
+tags: ["SVG"]
 ---
 
 You may have noticed, but I've been having some issues with the svg logo I'm using for this blog. I'm not specifiying explicit <code class="language-*">height</code> or <code class="language-*">width</code> attributes on the svg element, but I am setting a <code class="language-*">viewBox</code> attribute. This lets me specify the height and/or width of the element through my css. If only the <code class="language-*">width</code> or <code class="language-*">height</code> is specified, the other attribute will scale accordingly, preserving the aspect ratio of the svg. After some feedback and testing with [browserstack](http://www.browserstack.com/), I found out that this wasn't behaving as I thought it would on some browsers.

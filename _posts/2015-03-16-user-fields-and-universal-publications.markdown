@@ -2,8 +2,10 @@
 layout: post
 title:  "User Fields and Universal Publications"
 titleParts:  ["User Fields and", "Universal Publications"]
+description: "Universal publications are a piece of black magic that are often brushed under the rug of Meteor applications. Learn what they are and how they're used in this question and answer style article."
+author: "Pete Corey"
 date:   2015-03-16
-categories:
+tags: ["Javascript", "Meteor"]
 ---
 
 How do you specify which fields are published to the client's <code class="language-*">Meteor.users</code> collection? Using universal publications, obviously<span class="super reference">(1)</span>! Let's take a look at Meteor's universal, or unnamed, publications and see how they're used to accomplish this.

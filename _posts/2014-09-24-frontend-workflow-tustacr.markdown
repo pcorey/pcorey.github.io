@@ -2,8 +2,10 @@
 layout: post
 title:  "Frontend Workflow - T.U.S.T.A.C.R. Part 1"
 titleParts: ["Frontend Workflow", "T.U.S.T.A.C.R.", "Part 1"]
+description: "Follow along as I build out the front-end of a URL shortener built using Firebase!"
+author: "Pete Corey"
 date:   2014-09-24
-categories:
+tags: ["Javascript", "Firebase", "CSS", "Video"]
 ---
 
 I recently discovered [Firebase](https://www.firebase.com/), and I’m pumped about it. I wanted to make a small project to try it out, so I figured I’d make a URL shortener. Now, I’m pretty confident that this URL shortener is going to totally and completely rock, so I decided to name it [thisurlshortenertotallyandcompletely.rocks](http://www.thisurlshortenertotallyandcompletely.rocks/). So, with a new small project in the works, I figured that this would be a great time to document my usual front-end workflow. You can see an overdubbed timelapse of the process and read through some of my thoughts about it below.

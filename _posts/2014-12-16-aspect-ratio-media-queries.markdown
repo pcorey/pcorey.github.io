@@ -2,8 +2,10 @@
 layout: post
 title:  "Aspect Ratio Media Queries"
 titleParts: ["Aspect Ratio", "Media Queries"]
+description: "Aspect ratio media queries can be used to create interesting and incredibly useful layouts. Check out this example."
+author: "Pete Corey"
 date:   2014-12-16
-categories:
+tags: ["CSS"]
 ---
 
 The other day I was playing with a fullscreen CSS layout using viewport units. I had content that was a fixed [aspect-ratio](http://en.wikipedia.org/wiki/Aspect_ratio_%28image%29), and I wanted it to fill as much of the screen as possible without overflowing. At first, I was setting the element's width to <code class="language-*">100vw</code>, but of course, if the aspect ratio of the window was greater than the aspect ratio of the content, the content would overflow off the screen. In those cases, I wanted to bind the height of the content to <code class="language-*">100vh</code>, instead of binding the width to <code class="language-*">100vw</code>.

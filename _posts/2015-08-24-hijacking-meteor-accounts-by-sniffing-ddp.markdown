@@ -2,8 +2,10 @@
 layout: post
 title:  "Hijacking Meteor Accounts by Sniffing DDP"
 titleParts: ["Hijacking Meteor Accounts", "By Sniffing DDP"]
+description: "Meteor accounts can be hijacked by an attacker listening for your credentials as they fly across the wire. Find out how to protect your application."
+author: "Pete Corey"
 date:   2015-08-23
-tags: ['security']
+tags: ["Javascript", "Meteor", "Security"]
 ---
 
 You’re in your neighborhood Starbucks scarfing down an Everything With Cheese Bagel while browsing the web, and you decide to visit your favorite [Meteor](https://www.meteor.com/) application. You go to the website, type in your authentication credentials, and hit “Log In”, paying no mind that the application is running over <code class="language-*">http</code>, not <code class="language-*">https</code>.

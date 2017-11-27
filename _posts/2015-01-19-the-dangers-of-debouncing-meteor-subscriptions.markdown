@@ -2,8 +2,10 @@
 layout: post
 title:  "The Dangers of Debouncing Meteor Subscriptions"
 titleParts: ["The Dangers", "of Debouncing", "Meteor Subscriptions"]
+description: "Debouncing Meteor subscriptions can lead to subtle bugs. Let's explore those bugs and find out how to prevent them in your application."
+author: "Pete Corey"
 date:   2015-01-19
-categories:
+tags: ["Javascript", "Meteor"]
 ---
 
 I've been working on a [Meteor](https://www.meteor.com/) app with [instant search](http://www.google.com/insidesearch/features/instant/about.html) functionality. When users to type data into an input box, the system updates a session value which kicks off a <code class="language-*">Meteor.subscribe</code>.

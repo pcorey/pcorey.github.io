@@ -2,8 +2,10 @@
 layout: post
 title:  "Thinking Out Loud About Screencasting Platforms"
 titleParts: ["Thinking Out Loud About", "Screencasting Platforms"]
+description: "I've been thinking out loud lately about building a screen-casting platform designed for software developers."
+author: "Pete Corey"
 date:   2014-11-21
-categories:
+tags: []
 ---
 
 One of my goals over the past few months has been to start live streaming/screencasting my development sessions. I’ve been watching [Izac Filmalter’s Twitch stream](http://www.twitch.tv/izakfilmalter) for the past few days and I think it’s fantastic! Streaming can benefit both the streamer (me) and the community at large (you). Developing to an audience would force me to polish not only the products I create, but also the process I go through to create them. Explaining what I’m doing to you would reinforce my understanding of the topic, and hopefully provide you with some value as well. Plus, in a pinch I can use you as a [rubber ducky](http://en.wikipedia.org/wiki/Rubber_duck_debugging).

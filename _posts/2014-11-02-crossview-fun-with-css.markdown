@@ -2,8 +2,10 @@
 layout: post
 title:  "CrossView Fun With CSS"
 titleParts: ["CrossView Fun", "With CSS"]
+description: "CrossView illusions are an interesting way of hiding information in plain sight."
+author: "Pete Corey"
 date:   2014-11-02
-categories:
+tags: ["CSS", "Experiments"]
 ---
 
 I while ago I stumbled across the [CrossView subreddit](http://www.reddit.com/r/crossview). I thought the text CrossView images that contained hidden messages were especially cool. So, I decided to try to create one using simple HTML/CSS.  The process was really simple. Check out the codepen below, or view it in fullscreen to better see the effect:

@@ -2,8 +2,10 @@
 layout: post
 title:  "Meteor Composability"
 titleParts:  ["Meteor Composability"]
+description: "It can be difficult to build a truly composable application using Meteor's out-of-the-box front-end framework. Here are a few tips and tricks."
+author: "Pete Corey"
 date:   2015-03-09
-categories:
+tags: ["Javascript", "Meteor", "Appearance"]
 ---
 
 Last week I had the chance to give a talk at the [Meteor San Diego Meetup](http://www.meetup.com/Meteor-San-Diego/events/220311939/). My goal was to give some techniques and ideas for building component based [Meteor](https://www.meteor.com/) applications. You can check out the slides [here](http://www.1pxsolidtomato.com/meteor-composability/#/) and read my write-up below!

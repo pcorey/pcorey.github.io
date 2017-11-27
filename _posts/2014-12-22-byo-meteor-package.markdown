@@ -2,8 +2,10 @@
 layout: post
 title:  "BYO Meteor Package"
 titleParts:  ["BYO Meteor", "Package"]
+description: "Follow along as I build and publish my first Meteor package!"
+author: "Pete Corey"
 date:   2014-12-22
-categories:
+tags: ["Javascript", "Meteor"]
 ---
 
 This morning I started working on a quick project called Suffixer, which is a tool to help you find interesting domain names. For this project I needed a searchable english dictionary accessible from within a [Meteor](https://www.meteor.com/) app. After some sleuthing, I decided that [adambom's dictionary JSON](https://github.com/adambom/dictionary) would be my best bet. The next step was importing that JSON data into Meteor in the most "Meteor way".

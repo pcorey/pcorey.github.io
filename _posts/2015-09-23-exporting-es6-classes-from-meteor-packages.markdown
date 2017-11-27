@@ -2,8 +2,10 @@
 layout: post
 title:  "Exporting ES6 Classes From Meteor Packages"
 titleParts: ["Exporting ES6 Classes From", "Meteor Packages"]
+description: "How do you export ES6 classes from Meteor packages? This articles dives into the topic."
+author: "Pete Corey"
 date:   2015-09-23
-tags: [""]
+tags: ["Javascript", "Meteor"]
 ---
 
 To celebrate the release of [Meteor 1.2](http://info.meteor.com/blog/announcing-meteor-1.2) and built-in support for [ES6 syntax](https://babeljs.io/), I've been playing with implementing some of my favorite Object Oriented design patterns in JavaScript. While doing this, I quickly ran into an interesting quirk of the Meteor package system. I began by writing creating a class in a Meteor package:

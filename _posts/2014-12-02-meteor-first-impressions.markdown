@@ -2,8 +2,10 @@
 layout: post
 title:  "Meteor First Impressions"
 titleParts:  ["Meteor", "First Impressions"]
+description: "This video summarizes my first impressions of the Meteor framework. Wow!"
+author: "Pete Corey"
 date:   2014-12-02
-categories:
+tags: ["Meteor"]
 ---
 
 Recently I've been trying out the [Meteor](https://www.meteor.com/) platform. Needless to say, I'm pretty pumped about it:

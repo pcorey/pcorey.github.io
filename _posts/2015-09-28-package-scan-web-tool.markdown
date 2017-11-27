@@ -2,8 +2,10 @@
 layout: post
 title:  "Package Scan Web Tool"
 titleParts: ["Package Scan", "Web Tool"]
+description: "Package Scan is now available as an easy-to-use web tool. Drag and drop your versions file to see if your application is vulnerable."
+author: "Pete Corey"
 date:   2015-09-28
-tags: [""]
+tags: ["Javascript", "Meteor", "Security", "Announcement"]
 ---
 
 This past week I've decided to put a little more love into my [`east5th:package-scan`{:.language-*}](https://github.com/East5th/package-scan) project. In an attempt to lower the barrier of entry for using the tool, I've given it a super-simple web interface. Check it out at [scan.east5th.co](http://scan.east5th.co/)!

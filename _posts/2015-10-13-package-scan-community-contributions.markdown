@@ -2,8 +2,10 @@
 layout: post
 title:  "Package Scan Community Contributions"
 titleParts: ["Package Scan", "Community Contributions"]
+description: "Package Scan is getting some love from the community!"
+author: "Pete Corey"
 date:   2015-10-13
-tags: ["security"]
+tags: ["Meteor", "Security"]
 ---
 
 This past month was a good month for [Package Scan](https://github.com/East5th/package-scan).

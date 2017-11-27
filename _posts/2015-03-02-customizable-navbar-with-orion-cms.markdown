@@ -2,8 +2,10 @@
 layout: post
 title:  "Customizable Meteor Navbar with Orion CMS"
 titleParts:  ["Customizable Meteor Navbar", "with Orion CMS"]
+description: "Let's extend the Meteor-based Orion CMS with our own customizable navbar."
+author: "Pete Corey"
 date:   2015-03-02
-categories:
+tags: ["Javascript", "Meteor"]
 ---
 
 [Last week](/blog/2015/02/23/custom-categories-with-meteors-orion-cms/) I talked about building a dictionary driven category system for articles using the fantastic [Orion](http://orion.meteor.com/) CMS. This week I’m going to continue in that same vein by building a fully customizable navbar!

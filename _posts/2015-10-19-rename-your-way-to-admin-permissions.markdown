@@ -2,8 +2,10 @@
 layout: post
 title:  "Rename Your Way To Admin Rights"
 titleParts: ["Rename Your Way To", "Admin Rights"]
+description: "MongoDB's rename operator can be used for great evil is left unchecked. Dive into this vulnerability exploration for a detailed example and remediation."
+author: "Pete Corey"
 date:   2015-10-19
-tags: ["security"]
+tags: ["Javascript", "Meteor", "Security", "NoSQL Injection"]
 ---
 
 MongoDB [modifier objects](http://docs.meteor.com/#/full/modifiers) are hard. ___Incredibly hard.___ When you're dealing with almost two dozen different [update operators](https://docs.mongodb.org/manual/reference/operator/update/), it's difficult to imagine all the ways in which a piece of data can be changed.

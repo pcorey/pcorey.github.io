@@ -2,8 +2,10 @@
 layout: post
 title:  "Incomplete Argument Checks"
 titleParts: ["Incomplete", "Argument Checks"]
+description: "Incomplete argument checks are one of the primary causes of NoSQL Injection attacks in Meteor applications."
+author: "Pete Corey"
 date:   2015-08-31
-tags: ['security']
+tags: ["Javascript", "Meteor", "Security", "NoSQL Injection"]
 ---
 
 I’ve been [shouting](http://blog.east5th.co/2015/08/10/dos-your-meteor-application-with-where/) for [months](http://blog.east5th.co/2015/07/14/why-is-rename-disallowed/) about [the importance](http://blog.east5th.co/2015/07/21/exploiting-findone-to-aggregate-collection-data/) of [checking your method](http://blog.east5th.co/2015/06/15/allow-and-deny-challenge-check-yourself/) and [publication arguments](http://blog.east5th.co/2015/05/05/meteor-security-in-the-wild/). But what do I mean when I say that? Is checking your arguments as simple as throwing in a <code class="language-javascript">check(argument, Match.Any);</code> statement and moving on with your life? Absolutely not!

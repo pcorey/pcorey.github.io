@@ -2,8 +2,10 @@
 layout: post
 title:  "Counting Fields With Mongo Aggregations"
 titleParts: ["Counting Fields", "With Mongo Aggregations"]
+description: "How would you write a MongoDB query to cound the number of fields in a set of documents? Let's dive into a solution!"
+author: "Pete Corey"
 date:   2015-09-14
-tags: [""]
+tags: ["Javascript", "MongoDB"]
 ---
 
 This past week I spent time wrestling with a particularly difficult [MongoDB aggregation](http://docs.mongodb.org/manual/aggregation/). For my own sake, I figured I should document what I learned.

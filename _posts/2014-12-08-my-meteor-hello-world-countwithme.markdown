@@ -2,8 +2,10 @@
 layout: post
 title:  "My Meteor Hello World - countwith.me"
 titleParts: ["My Meteor Hello World", "countwith.me"]
+description: "My first application made with Meteor, countwith.me, is a simple distributed counting application. How high can the internet count?"
+author: "Pete Corey"
 date:   2014-12-08
-categories:
+tags: ["Javascript", "Meteor", "Announcement"]
 ---
 
 I decided to make a very simple webapp to get my feet wet with the [Meteor](https://www.meteor.com/) framework. The result is [countwith.me](http://countwith.me)! The site is basically just a real-time, anonymous counter. Users can submit the next number in the sequence. If their number is incorrect, the count resets to 1. Even though it’s a mind-numbingly simple app, I learned quite a bit from it.

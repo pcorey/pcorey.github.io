@@ -2,8 +2,10 @@
 layout: post
 title:  "My Concurrent Jekyll Gruntfile"
 titleParts: ["My Concurrent", "Jekyll Gruntfile"]
+description: "Use concurrency to simultaneously run multiple Grunt commands."
+author: "Pete Corey"
 date:   2014-08-28
-categories:
+tags: ["Grunt", "Jekyll"]
 ---
 
 I wanted to have a single default grunt command kick off my Jekyll server (<code class="language-*">jekyll serve --watch</code>), and my grunt watch task. After sleuthing around [StackOverflow](http://stackoverflow.com/questions/17849018/grunt-watch-command-never-runs-when-including-other-tasks-in-registertask-metho/17855350#17855350), I found a solution using [grunt-jekyll](https://github.com/dannygarcia/grunt-jekyll) and [grunt-concurrent](https://github.com/sindresorhus/grunt-concurrent). Concurrency is needed to prevent the jekyll server from blocking.

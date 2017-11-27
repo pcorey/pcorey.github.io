@@ -2,8 +2,10 @@
 layout: post
 title:  "Announcing East5th!"
 titleParts:  ["Announcing", "East5th!"]
+description: "I've decided to start working for myself under the name of 'East5th'!"
+author: "Pete Corey"
 date:   2015-02-04
-categories:
+tags: ["Meta", "Announcement"]
 ---
 
 I’ve decided to take an enormous step in my career. At the end of 2014 I left my job working as a contact software developer, and decided to forge my own path by starting a small web consultancy and development shop. After going through the hoops of incorporation, I can happily say that my company, [East5th](http://www.east5th.co/), is now alive, well and accepting clients!

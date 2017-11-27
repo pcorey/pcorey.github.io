@@ -2,8 +2,10 @@
 layout: post
 title:  "Zapier Named Variables - Scheduling Posts Part 2"
 titleParts: ["Zapier Named Variables", "Scheduling Posts", "Part 2"]
+description: "Zapier named variables can help you schedule posts to a Jekyll based blog. Find out how!"
+author: "Pete Corey"
 date:   2015-01-05
-categories:
+tags: ["Jekyll", "Zapier"]
 ---
 
 [Last time](http://1pxsolidtomato.com/2014/12/29/scheduling-posts-with-jekyll-github-pages-and-zapier/), I talked about using [Zapier](https://zapier.com/app/dashboard) to schedule [Jekyll](http://jekyllrb.com/) blog posts with [Github Pages](https://pages.github.com/). I briefly touched on how I wished that Zapier had some kind of string manipulation functionality to help pull a schedule date out of the git commit message. Not long after the post went live, [@zapier](https://twitter.com/zapier) sent me a link that helped me accomplish exactly that.

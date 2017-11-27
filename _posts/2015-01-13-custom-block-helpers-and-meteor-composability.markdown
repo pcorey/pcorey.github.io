@@ -2,8 +2,10 @@
 layout: post
 title:  "Custom Block Helpers and Meteor Composability"
 titleParts: ["Custom Block", "Helpers and", "Meteor Composability"]
+description: "Custom block helpers can help you build more composable Meteor front-ends. This article can help you master them."
+author: "Pete Corey"
 date:   2015-01-13
-categories:
+tags: ["Javascript", "Meteor"]
 ---
 
 I'll admit it; working with [AngularJS](https://angularjs.org/) has left me with a certain sense of entitlement. I expect my front-end framework to be able to let me build distinct elements that can be composed together and [placed within each other](https://docs.angularjs.org/api/ng/directive/ngTransclude). After [reading](https://www.discovermeteor.com/) about [Meteor's](https://www.meteor.com/) [templating](http://docs.meteor.com/#/full/templates_api) system, I was under the impression that content could not be transcluded into a template. After all, where would it go?

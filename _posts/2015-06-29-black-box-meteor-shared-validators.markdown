@@ -2,8 +2,10 @@
 layout: post
 title:  "Black Box Meteor - Shared Validators"
 titleParts: ["Black Box Meteor", "Shared Validators"]
+description: "Validator functions for Meteor collections belong on the server. Find out why from a hands-on perspective."
+author: "Pete Corey"
 date:   2015-06-29
-tags: ["security"]
+tags: ["Javascript", "Meteor", "Security", "Black Box Meteor"]
 ---
 
 [Discover Meteor’s](https://www.discovermeteor.com/) recent blog series about allow and deny security has done a great job at raising awareness around the security concerns that surround collection validators. Check out their [Allow & Deny: A Security Primer](https://www.discovermeteor.com/blog/allow-deny-a-security-primer/) post for a rundown on validator security.

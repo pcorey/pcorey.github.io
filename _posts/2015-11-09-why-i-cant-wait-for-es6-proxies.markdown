@@ -2,8 +2,10 @@
 layout: post
 title:  "Why I Can't Wait For ES6 Proxies"
 titleParts: ["Why I Can't Wait For", "ES6 Proxies"]
+description: "Proxies will open the door for new advances in Javascript security. To say I'm excited is an understatement."
+author: "Pete Corey"
 date:   2015-11-09
-tags: ["security"]
+tags: ["Javascript", "Meteor", "Security", "NoSQL Injection"]
 ---
 
 Full [ES6](https://nodejs.org/en/docs/es6/) support is just around the corner. In fact, _nearly all_ of ES6 is available to us through [compilers like Babel](http://babeljs.io/docs/learn-es2015/#proxies) that [transpile ES6 syntax into ES5 code](http://babeljs.io/repl/). Unfortunately, one of the ES6 features I'm most excited about can't be implemented in ES5. What feature is that? [Proxies, of course](http://babeljs.io/docs/learn-es2015/#proxies)!

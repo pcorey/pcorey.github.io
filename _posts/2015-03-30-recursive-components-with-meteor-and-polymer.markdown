@@ -2,8 +2,10 @@
 layout: post
 title:  "Recursive Components with Meteor and Polymer"
 titleParts:  ["Recursive Components", "with Meteor", "and Polymer"]
+description: "Let's put on our mad scientist hats and build a Cantor set using recursive components in both Meteor and Polymer."
+author: "Pete Corey"
 date:   2015-03-30
-categories:
+tags: ["Meteor", "Polymer", "Experiments"]
 ---
 
 I spent some time last week playing with [Meteor’s](http://www.meteor.com/) Blaze templates and [Polymer](https://www.polymer-project.org/) elements to build recursive components. The final result is a neat DOM based [Cantor set](http://en.wikipedia.org/wiki/Cantor_set). Before we dig into the source, take a look at a polished version of the Polymer implementation on [Codepen](http://codepen.io/pcorey/pen/bNzXmg/):

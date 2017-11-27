@@ -2,8 +2,10 @@
 layout: post
 title:  "Hide Menu: My First Sublime Text Plugin"
 titleParts: ["Hide Menu", "My First Sublime Text Plugin"]
+description: "I've created a Sublime Text plugin to scratch an itch, and I documented the whole process."
+author: "Pete Corey"
 date:   2014-12-24
-categories:
+tags: ["Python"]
 ---
 
 My new [bspwm setup](http://1pxsolidtomato.com/2014/12/15/joining-the-tiling-wm-master-race/) currently doesn’t have a pretty [GTK](http://www.gtk.org/) theme installed, so the menu in [Sublime Text](http://www.sublimetext.com/3) looks fairly unattractive. With my workflow, whenever I open Sublime Text (<code class="language-*">subl .</code>), the menu is always shown, regardless of if I hid it during my last session. So what’s the solution to hiding the menu at startup? <span style="text-decoration: line-through">Find a plugin, of course! Oh, there are no plugins that do this?</span> Write a plugin, of course!

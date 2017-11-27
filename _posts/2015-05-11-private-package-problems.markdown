@@ -2,8 +2,10 @@
 layout: post
 title:  "Private Package Problems"
 titleParts:  ["Private Package", "Problems"]
+description: "What's the best way to manage private Meteor packages? Let's compare the pros and cons of a few different potential solutions."
+author: "Pete Corey"
 date:   2015-05-11
-categories:
+tags: ["Meteor", "Git"]
 ---
 
 Recently I've been experiencing some pain points when trying to share private package between my [Meteor](https://www.meteor.com/) projects.

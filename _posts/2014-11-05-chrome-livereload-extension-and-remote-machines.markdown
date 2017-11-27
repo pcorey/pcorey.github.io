@@ -2,8 +2,10 @@
 layout: post
 title:  "Chrome LiveReload Extension and Remote Machines"
 titleParts: ["Chrome LiveReload Extension", "and Remote Machines"]
+description: "The Chrome LiveReload plugin doesn't work well with remote development servers. Here's a workaround."
+author: "Pete Corey"
 date:   2014-11-05
-categories:
+tags: ["Javascript", "Grunt"]
 ---
 
 Last night I decided it would be a good idea to join the 21st century and incorporate [LiveReload](http://livereload.com/) into my frontend workflow. Since I’m already using [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch) to watch my [LESS](http://lesscss.org/)/[SASS](http://sass-lang.com/) files, I figured this would be a breeze. grunt-contrib-watch supports LiveReload out of the box! All that was needed was an options block inside of my watch config:

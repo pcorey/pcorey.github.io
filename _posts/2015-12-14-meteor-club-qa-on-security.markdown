@@ -2,8 +2,10 @@
 layout: post
 title:  "Meteor Club Q&A on Security"
 titleParts: ["Meteor Club Q&A", "on Security"]
+description: "I had a great time on Josh Owens' Meteor Club Q&A talking about Meteor security. Be sure to checkout the Youtube recording."
+author: "Pete Corey"
 date:   2015-12-14
-tags: ["security"]
+tags: ["Meteor", "Security"]
 ---
 
 A few weeks ago, I had the chance to do a [Meteor Club Q&A](https://meteorjs.club/) with [Josh Owens](http://joshowens.me/). We spent an hour or so talking about various topics revolving around [Meteor](https://www.meteor.com/) and Meteor security and answering questions submitted by the community. The whole process was a lot of fun. You should [check out the whole Q&A on Youtube](https://www.youtube.com/watch?v=oaKOqcutkdc), or take a look below:

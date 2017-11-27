@@ -2,8 +2,10 @@
 layout: post
 title:  "Prism.js and Github Pages"
 titleParts: ["Prism.js", "and Github Pages"]
+description: "This blog is build using Jekyll and hosted on Github Pages. This presents certain difficulties when paired with the Prism.js syntax highlighter."
+author: "Pete Corey"
 date:   2014-08-27 15:19:00
-categories:
+tags: ["Jekyll"]
 ---
 
 In a previous post I mentioned that I would be using [Prism.js](http://prismjs.com/) as my syntax highlighter. Originally, I tried adding <code class="language-*">prism.rb</code> to my <code class="language-*">_plugins</code> directory. That let me use the prism liquid tag locally:

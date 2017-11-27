@@ -2,8 +2,10 @@
 layout: post
 title:  "Building Ms. Estelle Marie"
 titleParts:  ["Building Ms.", "Estelle Marie"]
+description: "Recently I spent some time customizing a Wordpress template for a client. Here's a quick rundown of my process and impressions."
+author: "Pete Corey"
 date:   2014-11-12
-categories:
+tags: ["PHP", "Wordpress", "Grunt"]
 ---
 
 I firmly believe that design and development are inseparable. One cannot be done without a thorough understanding of the other. As a developer, I feel that more experience with all kinds of design (visual, interaction, product, etc...) will only do good things for me. Because of this, I’ve spent the past few months trying to work out my design muscle. My most recent design-heavy project was to build a custom [WordPress](https://wordpress.com/) theme for the [Ms. Estelle Marie](http://www.msestellemarie.com/) beauty blog. Here’s a quick rundown:

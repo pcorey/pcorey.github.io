@@ -2,8 +2,10 @@
 layout: post
 title:  "Basic Auth For Hiding Your Application"
 titleParts: ["Basic Auth", "For Hiding Your Application"]
+description: "Basic authentication is a great way to quickly lock down an application from prying eyes. Learn the ins and outs."
+author: "Pete Corey"
 date:   2015-07-06
-tags: [""]
+tags: ["Javascript", "Meteor", "Security"]
 ---
 
 <p style="border: 1px dashed tomato; padding: 1em; background-color: rgba(255, 99, 71, 0.125);">The package-based Basic Auth solution presented in this post <b>leaves DDP endpoints exposed to unauthorized users</b>. For more information, read my follow-up post on <a href="/2016/03/28/bypassing-basic-auth-through-ddp-connections/">Bypassing Package-Based Basic Auth</a>.</p>

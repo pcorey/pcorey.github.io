@@ -2,8 +2,10 @@
 layout: post
 title:  "Never Forget Where Your Code Runs"
 titleParts: ["Never Forget", "Where Your Code Runs"]
+description: "Part of designing a secure software solution is being aware of your client and server boundaries. This is especially important with working with isometric systems."
+author: "Pete Corey"
 date:   2015-09-21
-tags: ["security"]
+tags: ["Javascript","Meteor", "Security"]
 ---
 
 I often warn about the dangers of blindly trusting user provided data. There are times, though, when it’s easy to forget where your data comes from. [Sir Charles Watson](https://github.com/sircharleswatson) brought up a good example of this when he found a security issue revolving around an insecure <code class="language-javascript">onCreateUser</code> hook.

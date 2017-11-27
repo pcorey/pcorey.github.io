@@ -2,8 +2,10 @@
 layout: post
 title:  "Firebase! - T.U.S.T.A.C.R. Part 2"
 titleParts: ["Firebase!", "T.U.S.T.A.C.R. Part 2"]
+description: "Follow along as I build out the back-end of a URL shortener built using Firebase!"
+author: "Pete Corey"
 date:   2014-10-1
-categories:
+tags: ["Javascript", "Firebase", "Video"]
 ---
 
 After building out the frontend for [thisurlshortenertotallyandcompletely.rocks](http://www.thisurlshortenertotallyandcompletely.rocks/), I was in need of a backend. I recently heard about [Firebase](https://www.firebase.com/), and figured it would be a perfect fit for this project. Check out a quick video overview and my rundown below:

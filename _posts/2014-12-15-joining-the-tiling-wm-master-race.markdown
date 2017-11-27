@@ -2,8 +2,10 @@
 layout: post
 title:  "Joining the Tiling WM Master Race"
 titleParts: ["Joining the", "Tiling WM", "Master Race"]
+description: "Tiling window managers aren't well-known outside of the Linux ricing community, but they're an incredibly powerful tool for a developer looking to improve their efficiency."
+author: "Pete Corey"
 date:   2014-12-15
-categories:
+tags: ["Development Environment"]
 ---
 
 Recently I decided to elevate my [Linux Mint 17.1](http://www.linuxmint.com/) development environment from its plebeian out-of-the-box [Cinnamon](http://cinnamon.linuxmint.com/) origins to its rightful place among the glorious [#TilingWMMasterRace](https://twitter.com/#TilingWMMasterRace). I thought I’d document the process of installing and configuring [bspwm](https://github.com/baskerville/bspwm) to help others looking to do something similar.

@@ -2,8 +2,10 @@
 layout: post
 title:  "Custom Categories with Meteor's Orion CMS"
 titleParts: ["Custom Categories", "with Meteor's Orion CMS"]
+description: "Let's extend the Meteor-based Orion CMS with our own custom categories."
+author: "Pete Corey"
 date:   2015-02-23
-categories:
+tags: ["Javascript", "Meteor"]
 ---
 
 Lately I've been playing with [Orion](http://orion.meteor.com/), the fantastic [Meteor](https://www.meteor.com/) based [CMS](http://en.wikipedia.org/wiki/Content_management_system). The way Orion builds on top of [aldeed:collection2](https://github.com/aldeed/meteor-collection2) and [aldeed:autoform](https://github.com/aldeed/meteor-autoform) to create an incredibly flexible and powerful CMS is inspiring.

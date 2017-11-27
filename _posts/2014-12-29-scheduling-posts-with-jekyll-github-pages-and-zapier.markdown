@@ -2,8 +2,10 @@
 layout: post
 title:  "Scheduling Posts with Jekyll, Github Pages & Zapier"
 titleParts: ["Scheduling Posts with", "Jekyll, Github", "Pages & Zapier"]
+description: "Find out how I'm using Zapier to schedule posts to my Jekyll-powered blog hosted on Github Pages!"
+author: "Pete Corey"
 date:   2014-12-29
-categories:
+tags: ["Jekyll", "Zapier"]
 ---
 
 I’ve written a [few](http://1pxsolidtomato.com/2014/08/27/prismjs-on-github-pages/) [times](http://1pxsolidtomato.com/2014/08/28/jekyll-less-gruntfile/) about using [Jekyll](http://jekyllrb.com/) and [Github Pages](https://pages.github.com/) as my blogging stack. So far, I’ve been very satisfied with this setup except for one pain point. I’m unable to easily write posts and schedule them to go live at a later date… Until now! While I could have written and hosted a script or two to accomplish what I was after, I wanted to take a different approach. I ended up using [Zapier](https://zapier.com/app/dashboard) to automate the publishing of posts at future dates.

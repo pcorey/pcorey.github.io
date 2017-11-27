@@ -2,8 +2,10 @@
 layout: post
 title:  "Authentication with localStorage"
 titleParts: ["Authentication With", "localStorage"]
+description: "Authentication through localStorage has the handy property of being CSRF-proof. Find out what that means and why it matters in this article!"
+author: "Pete Corey"
 date:   2015-06-08
-tags: ["security"]
+tags: ["Javascript", "Meteor", "Security"]
 ---
 
 Unlike most modern web frameworks, [Meteor](https://www.meteor.com/) doesn’t make use of [cookies](https://developer.mozilla.org/en-US/Add-ons/Code_snippets/Cookies). Instead, it uses the relatively new [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage) functionality found in modern browsers. This design decision essentially makes Meteor immune to [Cross Site Request Forgery (CSRF)](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29) attacks, and opens the door to exciting new authentication features not previously possible with cookies.

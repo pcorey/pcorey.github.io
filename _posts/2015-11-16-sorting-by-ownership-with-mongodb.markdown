@@ -2,8 +2,10 @@
 layout: post
 title:  "Sorting By Ownership With MongoDB"
 titleParts: ["Sorting By Ownership With", "MongoDB"]
+description: "This post explores the problem of crafting a difficult query in MongoDB. Use your tools; don't let your tools use you."
+author: "Pete Corey"
 date:   2015-11-16
-tags: []
+tags: ["Javascript", "MongoDB"]
 ---
 
 I sometimes find myself coming up against constraints or limitations imposed upon my software either through the tools that I'm using, or by a limited understanding of how to use those tools. In these situations we're always given two options:

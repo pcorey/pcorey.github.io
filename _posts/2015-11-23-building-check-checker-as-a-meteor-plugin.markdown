@@ -2,8 +2,10 @@
 layout: post
 title:  "Building Check-Checker as a Meteor Plugin"
 titleParts: ["Building check-checker as a", "Meteor Plugin"]
+description: "Let's use Meteor's Build Plugin API to refactor our Check Checker package into a plugin."
+author: "Pete Corey"
 date:   2015-11-23
-tags: []
+tags: ["Javascript", "Meteor", "Security"]
 ---
 
 I recently decided to switch my [`east5th:check-checker`{:.language-bash}](https://github.com/East5th/check-checker) package to use the new [Build Plugin API](https://forums.meteor.com/t/try-out-a-preview-of-batch-build-plugins-and-other-1-2-features/7374).

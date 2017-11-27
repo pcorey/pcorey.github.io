@@ -2,8 +2,10 @@
 layout: post
 title:  "Transitioning to Modules With Global Imports"
 titleParts: ["Transitioning to Modules With", "Global Imports"]
+description: "Transitioning your entire Meteor application towards using imports is a time-consuming and error-prone process. Thankfully, there's a middle way."
+author: "Pete Corey"
 date:   2016-05-09
-tags: []
+tags: ["Javascript", "Meteor"]
 ---
 
 [Meteor 1.3 is upon us](http://info.meteor.com/blog/announcing-meteor-1.3)! It brings with it promises of better testability, reusability and debugability all thanks to the [ES6 module system](http://www.2ality.com/2014/09/es6-modules-final.html).

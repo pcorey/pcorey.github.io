@@ -2,8 +2,10 @@
 layout: post
 title:  "Meteor and Mongod.lock"
 titleParts:  ["Meteor and", "Mongod.lock"]
+description: "Crashing Meteor applications can sometimes wreak havok on your MongoDB lock file. Learn how to fix that problem in this article."
+author: "Pete Corey"
 date:   2015-02-16
-categories:
+tags: ["Meteor", "MongoDB"]
 ---
 
 When [Mongo](http://www.mongodb.com/) closes incorrectly, (due to things like crashes, hard reboots, etc...), it leaves behind a non-zero byte <code class="language-bash">mongod.lock</code> file. The presence of this file indicates that Mongo wasn’t cleaned up correctly and will prevent Mongo from starting normally.

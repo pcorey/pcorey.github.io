@@ -2,8 +2,10 @@
 layout: post
 title:  "Returning Promises Synchronously"
 titleParts: ["Returning Promises", "Synchronously"]
+description: "I often find myself tasked with returning promises synchronously from Meteor fibers. I've written a Meteor package that helps with the task."
+author: "Pete Corey"
 date:   2015-08-03
-tags: []
+tags: ["Javascript", "Meteor"]
 ---
 
 This past week I was working on a [Meteor](https://www.meteor.com/) project that made use of a Node.js package that used promises; specifically [es6-promises](https://www.npmjs.com/package/es6-promise). I often found myself wanting to return results from this package in my Meteor method calls. This meant I had to use some form of Fibers/Futures to transform my asynchronous promises into "synchronous" code.
