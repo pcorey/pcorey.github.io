@@ -5,7 +5,7 @@ titleParts: ["Namecheap", "+ Amazon S3"]
 description: "Namecheap and Amazon's S3 are a match made in heaven. Follow these steps to get both working together seamlessly."
 author: "Pete Corey"
 date:   2014-09-23
-tags: []
+tags: ["Infrastructure"]
 ---
 
 I recently wanted to point a domain I had registered on [Namecheap](https://www.namecheap.com/) ([www.thisurlshortenertotallyandcompletely.rocks](http://www.thisurlshortenertotallyandcompletely.rocks/)) to a static site I was hosting on [Amazon S3](http://aws.amazon.com/s3). The whole process was fairly painless. Check it out:
