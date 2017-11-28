@@ -27,6 +27,39 @@ layout: default
     <article class="post-content">
         {% include side-block.html date=page.date %}
         {{ content }}
+        <hr/>
+        <div class="post-footer" >
+            <p class="post-tags" >
+                <i data-feather="tag"></i>
+                {% for tag in page.tags | sort %}
+                <!-- <a href="#">{{tag}}</a>{% if forloop.last == false %},{% endif %} -->
+                    {{tag}}{% if forloop.last == false %},{% endif %}
+                {% endfor %}
+            </p>
+            {% for post in site.posts %}
+                {% if page.related contains post.url %}
+                    <p class="post-related">
+                        <i data-feather="link"></i>
+                        <a href="{{post.url}}" >{{post.title}}</a>
+                        – {{post.description}}
+                    </p>
+                {% endif %}
+            {% endfor %}
+            {% if page.previous.url %}
+                <p class="post-next" >
+                    <i data-feather="arrow-right"></i>
+                    <a href="{{page.previous.url}}" class="previous">{{page.previous.title}}</a>
+                    – {{page.previous.description}}
+                </p>
+            {% endif %}
+            {% if page.next.url %}
+                <p class="post-next" >
+                    <i data-feather="arrow-left"></i>
+                    <a href="{{page.next.url}}" class="next">{{page.next.title}}</a>
+                    – {{page.next.description}}
+                </p>
+            {% endif %}
+        </div>
     </article>
 
   </div>
