@@ -5,7 +5,7 @@ description: "Roll up your sleaves and get ready to build a fully function (but 
 author: "Pete Corey"
 date:   2017-10-09
 tags: ["Elixir", "Web Crawling", "Affiliate Crawler"]
-related: ["/blog/2017/11/20/crawling-for-cash-with-affiliate-crawler/"]
+related: ["/blog/2017/11/20/crawling-for-cash-with-affiliate-crawler/",  "/blog/2017/11/20/fleshing-out-urls-with-elixir/"]
 ---
 
 I’ve been cooking up a side project recently that involves crawling through a domain, searching for links to specific websites.

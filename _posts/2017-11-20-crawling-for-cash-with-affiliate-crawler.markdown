@@ -5,7 +5,7 @@ description: "I've created a new tool called Affiliate Crawler that's designed t
 author: "Pete Corey"
 date:   2017-11-20
 tags: ["Elixir", "Affiliate Crawler", "Announcement", "Tools", "Web Crawling"]
-related: ["/blog/2017/10/09/learning-to-crawl-building-a-bare-bones-web-crawler-with-elixir/"]
+related: ["/blog/2017/10/09/learning-to-crawl-building-a-bare-bones-web-crawler-with-elixir/", "/blog/2017/11/20/fleshing-out-urls-with-elixir/"]
 ---
 
 Several weeks ago, I released a monster of an article titled [Learning to Crawl - Building a Bare Bones Web Crawler with Elixir](http://www.east5th.co/blog/2017/10/09/learning-to-crawl-building-a-bare-bones-web-crawler-with-elixir/). I mentioned early on in that post that I was working on a small side-project that involved web crawling.
