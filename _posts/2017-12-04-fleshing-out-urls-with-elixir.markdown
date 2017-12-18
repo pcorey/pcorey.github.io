@@ -3,7 +3,7 @@ layout: post
 title:  "Fleshing out URLs with Elixir"
 description: "Step one of crawling a web page is getting a fully fleshed out URL pointing to that page. Unfortunately, people usually think of URLs in fuzzy, incomplete terms. Thankfully, fleshing out the missing details is simple with Elixir."
 author: "Pete Corey"
-date:   2017-11-20
+date:   2017-12-11
 tags: ["Elixir", "Affiliate Crawler", "Web Crawling"]
 related: ["/blog/2017/10/09/learning-to-crawl-building-a-bare-bones-web-crawler-with-elixir/", "/blog/2017/11/20/crawling-for-cash-with-affiliate-crawler/"]
 ---
