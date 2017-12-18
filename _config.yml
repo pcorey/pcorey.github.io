@@ -1,9 +1,8 @@
 # Site settings
-title: East5th
-email: hello@east5th.co
-description: "East5th provides consulting services and educational resources for building secure, robust, maintainable web applications. We’re constantly striving to deliver the highest quality articles, tools, services, and resources related to software development, software security, and consulting."
+title: Pete Corey
+description: "Pete Corey is an independent consultant, writer, and web developer based out of Chattanooga, Tennessee. He writes weekly articles on software development and his eternal quest to build Cool Stuff™."
 baseurl: ""
-url: "http://www.east5th.co"
+url: "http://www.petecorey.com"
 twitter_username: petecorey
 github_username:  pcorey
 
