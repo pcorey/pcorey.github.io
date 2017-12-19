@@ -1,0 +1,33 @@
+---
+layout: default
+hideFooter: true
+---
+
+{% capture tags %}{% for tag in site.tags %}{{ tag[0] }}|{% endfor %}{% endcapture %}
+{% assign sortedtags = tags | split:'|' | trim | filter | sort %}
+
+<div class="blog-all content">
+
+    <div class="margin">
+        <div class="post-content">
+            <header class="post-header">
+                <h1>Tags</h1>
+            </header>
+
+            {% for tag in sortedtags %}
+                <h2 id="{{tag | slugify}}">{{ tag }}</h2>
+                {% for post in site.tags[tag] %}
+                    <p>
+                        <a href="{{post.url}}" >{{post.title}}</a>
+                        – {{post.description}}
+                        <br/>
+                        <i data-feather="calendar"></i> {{post.date | date: "%b %-d, %Y" }}
+                    </p>
+                {% endfor %}
+
+            {% endfor %}
+
+        </div>
+    </div>
+
+</div>
