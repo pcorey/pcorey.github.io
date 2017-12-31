@@ -16,7 +16,7 @@ I thought I’d take a pause this Christmas and offer up my contribution to [an 
 <br/>
 > — Terry Pratchett, [Going Postal](http://amzn.to/2BgtcOT)
 
-The Clacks, as described in Going Postal, is a system of trans-contential semaphore towers used to send messages across great distances. Each packet of text sent through the Clacks is encoded using a set of standardized codes and encodings.
+The Clacks, as described in Going Postal, is a system of trans-continental semaphore towers used to send messages across great distances. Each packet of text sent through the Clacks is encoded using a set of standardized codes and encodings.
 
 Sounds familiar, doesn’t it?
 
