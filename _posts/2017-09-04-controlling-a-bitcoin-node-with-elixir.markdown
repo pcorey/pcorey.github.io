@@ -5,6 +5,7 @@ description: "Explore how to communicate with a Bitcoin full node through its JS
 author: "Pete Corey"
 date:   2017-09-04
 tags: ["Bitcoin", "Blockchain", "Elixir"]
+related: ["/blog/2017/09/18/exploring-the-bitcoin-blockchain-with-elixir-and-phoenix/", "/blog/2018/01/08/bitcoins-base58check-in-pure-elixir/"]
 ---
 
 I’ve been bit by the [Bitcoin](https://bitcoin.org/en/) bug, and I’ve been bit hard. To satiate my thirst for knowledge, I’ve been reading the fantastic [Mastering Bitcoin](https://www.amazon.com/gp/product/1491954388/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=east5th-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1491954388&linkId=c1ff439b422b447867a247fee90e76d0) (affiliate link) book by Andreas Antonopoulos, and diving into the brave new world of Bitcoin development.
