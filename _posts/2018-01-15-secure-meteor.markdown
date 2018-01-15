@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Secure Meteor"
-description: ""
+description: "I'm announcing a new project: Secure Meteor! Learn to how to secure your Meteor application from a Meteor security professional. This easy to understand and actionable guide will teach you the ins and outs of Meteor security."
 author: "Pete Corey"
 date:   2018-01-15
 tags: ["Meteor", "Security", "Announcement"]
