@@ -6,7 +6,8 @@ module.exports = function(grunt) {
                     serve: true,
                     watch: true,
                     host: '0.0.0.0',
-                    future: true
+                    future: true,
+                    incremental: true
                 }
             }
         },
