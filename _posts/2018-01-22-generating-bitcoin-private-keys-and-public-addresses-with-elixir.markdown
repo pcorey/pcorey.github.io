@@ -226,7 +226,7 @@ Victory!
 
 Elixir, thanks to its Erlang heritage, ships with a wealth of tools that make this kind of hashing, signing, and byte mashing a walk in the park.
 
-I encourage you to check our the `PrivateKey`{:.language-elixir} module on Github to get a better feel for the simplicity of the code we wrote today. Overall, I’m very happy with the result.
+I encourage you to check our [the `PrivateKey`{:.language-elixir} module on Github](https://github.com/pcorey/hello_bitcoin/blob/master/lib/private_key.ex) to get a better feel for the simplicity of the code we wrote today. Overall, I’m very happy with the result.
 
 If you enjoyed this article, I highly recommend you check out [the Mastering Bitcoin book](http://amzn.to/2D5ARfK). If you _really enjoyed_ this article, feel free to send a few Bitcoin to this address I generated using our new `PrivateKey`{:.language-elixir} module:
 
