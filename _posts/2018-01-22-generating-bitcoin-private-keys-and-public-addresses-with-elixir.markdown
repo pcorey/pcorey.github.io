@@ -10,7 +10,7 @@ related: ["/blog/2018/01/08/bitcoins-base58check-in-pure-elixir/"]
 
 Lately I’ve been working my way through [Mastering Bitcoin](http://amzn.to/2DAbVy0), implementing as many of the examples in the book in Elixir as I can.
 
-I’ve been amazed at how well Elixir has fared with implementing the algorithms involved in working with keys and addresses. Elixir ships with all the tools required to generate a cryptographically secure private key and transform it into a public address string.
+I’ve been amazed at how well Elixir has fared with implementing the algorithms involved in working with Bitcoin keys and addresses. Elixir ships with all the tools required to generate a cryptographically secure private key and transform it into a public address string.
 
 Let’s walk through the process step by step and build our our own Elixir module to generate private keys and public addresses.
 
