@@ -4,8 +4,8 @@ title:  "Bitcoin's Base58Check in Pure Elixir"
 description: "Elixir ships out of the box with nearly all of the tools required to generate Bitcoin private keys and transform them into public addresses. All except one. In this article we implement the missing piece of the puzzle: Base58Check encoding."
 author: "Pete Corey"
 date:   2018-01-08
-tags: ["Elixir", "Bitcoin"]
-related: ["/blog/2017/09/04/controlling-a-bitcoin-node-with-elixir/"]
+tags: ["Elixir", "Bitcoin", "Hello Bitcoin"]
+related: ["/blog/2017/09/04/controlling-a-bitcoin-node-with-elixir/", "/blog/2018/01/22/generating-bitcoin-private-keys-and-public-addresses-with-elixir/"]
 ---
 
 An important piece of the process of transforming a Bitcoin private key into a public address, as outlined in [the fantastic Mastering Bitcoin book](http://amzn.to/2E6gO0I), is the Base58Check encoding algorithm.
