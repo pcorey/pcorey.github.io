@@ -33,7 +33,7 @@ Meteor.call("sendEmail", this.getEmail(), "Welcome...");
 
 It looked as if this method took an email address and a message as arguments, and sent that message to the provided email address. Without access to the source of the method, I didn't know if the method was doing some kind of validation on the provided email address. The only way to find out was to test it out. In my browser console, I tried the following:
 
-<pre class="language-javascript"><code class="language-javascript">Meteor.call("sendEmail", "hello@east5th.co", "Hi Pete!");
+<pre class="language-javascript"><code class="language-javascript">Meteor.call("sendEmail", "hello@petecorey.com", "Hi Pete!");
 </code></pre>
 
 Sure enough, a few seconds later I received an email ___from the application owner___ with a message of `"Hi Pete!"`{:.language-javascript}. Uh oh.

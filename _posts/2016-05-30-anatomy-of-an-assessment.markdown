@@ -60,7 +60,7 @@ Take a look at an [___example assessment report___](https://docs.google.com/docu
 If you value the security of your Meteor application, I’d love to hear from you. Enter your email address below and I’ll send you a short questionnaire about your application. From there, I’ll reach out and start a discussion.
 
 <div class="signup-form" style="margin: 3em 0">
-  <form action="http://formspree.io/hello@east5th.co" method="POST">
+  <form action="http://formspree.io/hello@petecorey.com" method="POST">
     <div class="email-wrapper">
       <input type="text" placeholder="First Name" value="" name="FNAME" class="" id="mce-FNAME" tabindex="1"><!--
       --><input type="email" name="_replyto" placeholder="Email Address"><!--

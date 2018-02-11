@@ -28,6 +28,6 @@ Every Monday morning I push out some piece of content and eagerly wait for feedb
 
 I'm unimaginably excited about what the next few years will bring, and I hope I get to know a lot of you much better during that time!
 
-If you want to get in touch, [tweet me](https://twitter.com/petecorey), or [shoot me an email](mailto:hello@east5th.co).
+If you want to get in touch, [tweet me](https://twitter.com/petecorey), or [shoot me an email](mailto:hello@petecorey.com).
 
 ___Thanks for reading!___

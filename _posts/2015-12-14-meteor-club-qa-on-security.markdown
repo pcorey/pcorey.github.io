@@ -16,4 +16,4 @@ A few weeks ago, I had the chance to do a [Meteor Club Q&A](https://meteorjs.clu
 
 During the Q&A, we covered a variety of topics ranging from data-in-motion/data-at-rest security, to the positives and negatives of collection validators, all the way through to best practices for securing multi-tenant Meteor applications.
 
-Do you have any questions about Meteor security that we didn't discuss in the Q&A? If so, [shoot me a tweet](https://twitter.com/petecorey), or [send me an email](mailto:hello@east5th.co)!
+Do you have any questions about Meteor security that we didn't discuss in the Q&A? If so, [shoot me a tweet](https://twitter.com/petecorey), or [send me an email](mailto:hello@petecorey.com)!
