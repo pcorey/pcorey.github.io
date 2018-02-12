@@ -75,6 +75,8 @@ Finished in 0.06 seconds
 
 Thankfully, addition is associative, and our test passes!
 
+{% include newsletter.html %}
+
 ## Consulting the Oracle
 
 Now let’s take the training wheels off and write a property test for our Base58Check encoder against our external oracle.
