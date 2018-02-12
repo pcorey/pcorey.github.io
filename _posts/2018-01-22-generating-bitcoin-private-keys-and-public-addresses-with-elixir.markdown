@@ -96,6 +96,8 @@ end
 
 Now we can call `PrivateKey.generate`{:.language-elixir} to generate a new Bitcoin private key!
 
+{% include newsletter.html %}
+
 ## From Private Key to Public Key …
 
 The most basic process for turning a Bitcoin private key into a sharable public address involves three basic steps. The first step is to transform our private key into a public key with the help of [elliptic curve cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography).

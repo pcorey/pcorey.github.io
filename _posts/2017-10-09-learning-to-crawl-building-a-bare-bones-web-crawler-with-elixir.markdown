@@ -184,6 +184,8 @@ Now our link to `/blog/`{:.language-elixir} is transformed into `http://www.east
 
 Perfect.
 
+{% include newsletter.html %}
+
 ## Preventing Loops
 
 While our crawler is correctly resolving relative links, this leads directly to our next problem: our crawler can get trapped in loops.

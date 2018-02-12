@@ -69,6 +69,8 @@ iex(1)> Base58.encode("hello")
 "Cn8eVZg"
 </code></pre>
 
+{% include newsletter.html %}
+
 ## Encoding Leading Zeros
 
 However when we try to encode binaries with leading zero bytes, those bytes vanish from our resulting hash:

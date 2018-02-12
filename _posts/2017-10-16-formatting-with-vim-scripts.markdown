@@ -72,6 +72,8 @@ If this script is saved in a file called `clean-post.vim`{:.language-vim}, I can
 
 As an added benefit, I can review the results of the transformation in Vim before saving the changes.
 
+{% include newsletter.html %}
+
 ## Formatting Git Logs
 
 Similarly, I have a script dedicated to formatting my [literate commit](http://www.east5th.co/blog/2016/07/11/literate-commits/) posts. This script is different.

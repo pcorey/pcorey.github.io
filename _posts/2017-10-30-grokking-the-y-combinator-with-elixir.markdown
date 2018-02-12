@@ -131,6 +131,8 @@ Not only that, but we’ll always have an upper bound using this technique. At s
 
 We need to do better.
 
+{% include newsletter.html %}
+
 ## Don’t Repeat Yourself
 
 If you look at the code above, you’ll notice lots of repetition. At each level of “recursion” we define an anonymous function that looks very similar to our original `length`{:.language-elixir} function.

@@ -50,6 +50,8 @@ Always prepending `"http://"`{:.language-elixir} and appending `"/"`{:.language-
 
 There has to be some other way.
 
+{% include newsletter.html %}
+
 ## Pattern Matching and Recursion
 
 In turns out that [pattern matching](http://elixir-lang.github.io/getting-started/pattern-matching.html#pattern-matching-1) makes it incredibly easy to know wether we need to provide a default `path`{:.language-elixir} or `scheme`{:.language-elixir}. After our first pass through `URI.parse/1`{:.language-elixir}, we can look for `nil`{:.language-elixir} values in either `path`{:.language-elixir} or `scheme`{:.language-elixir}:

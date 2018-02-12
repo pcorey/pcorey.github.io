@@ -121,6 +121,8 @@ The right character! Victory!
 
 Well, not really; our application is still broken. At least we know that we’re dealing with `latin1`{:.language-text} encoded text, not utf-8.
 
+{% include newsletter.html %}
+
 ## Going Spelunking
 
 So now we know that the stream we’re passing into `JSONStream`{:.language-javascript}, and ultimately `jsonparse`{:.language-javascript} is `latin1`{:.language-javascript} encoded, not utf-8 encoded.

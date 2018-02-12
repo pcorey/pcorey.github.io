@@ -69,6 +69,8 @@ Taking the first `10`{:.language-elixir} elements of this stream gives us a fami
 
 For a more complex example of the power of `Stream.unfold/2`{:.language-elixir}, check out how I implemented a stream that generates [an integer spiral](https://github.com/pcorey/advent_of_code_2017/blob/master/03/03.exs#L36-L38) as part of an [Advent of Code challenge](https://adventofcode.com/2017/day/3).
 
+{% include newsletter.html %}
+
 ## Multiple Values per Accumulator
 
 Sometimes we’re faced with a true doozy of a sequence, and even an accumulator isn’t enough to accurately describe the next value. For example, what if we need to emit _multiple sequential values_ for each invocation of our `next_fun`{:.language-elixir}?

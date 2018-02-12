@@ -92,6 +92,8 @@ app.post('/restricted', function(req, res) {
 
 Let’s assume that the `getUser`{:.language-javascript} function returns a user object based on a session token provided through `req`{:.language-javascript}. Let’s also assume that the `isAdmin`{:.language-javascript} field is set to `true`{:.language-javascript} on administrator user objects, and unset on non-administrator user objects.
 
+{% include newsletter.html %}
+
 ## Hacking the Prototype
 
 Now that the scene is set, imagine that we’re a normal, non-administrator, user of this application, and we want access to the `/restricted`{:.language-javascript} endpoint.

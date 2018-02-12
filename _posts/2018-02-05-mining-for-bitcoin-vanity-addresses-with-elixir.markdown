@@ -81,6 +81,8 @@ VanityAddress.generate_private_key(~r/^1pete/)
 
 Congratulations; we’re miners!
 
+{% include newsletter.html %}
+
 ## Thinking in Parallel
 
 The problem with our simple implementation of `generate_private_key/2`{:.language-elixir} is that _it’s slow_.
