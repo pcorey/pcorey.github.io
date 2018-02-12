@@ -5,7 +5,7 @@ description: "Elixir ships out of the box with nearly all of the tools required 
 author: "Pete Corey"
 date:   2018-01-08
 tags: ["Elixir", "Bitcoin", "Mastering Bitcoin"]
-related: ["/blog/2017/09/04/controlling-a-bitcoin-node-with-elixir/", "/blog/2018/01/22/generating-bitcoin-private-keys-and-public-addresses-with-elixir/"]
+related: ["/blog/2018/01/22/generating-bitcoin-private-keys-and-public-addresses-with-elixir/", "/blog/2018/02/12/property-testing-our-base58check-encoder-with-an-external-oracle/"]
 ---
 
 An important piece of the process of transforming a Bitcoin private key into a public address, as outlined in [the fantastic Mastering Bitcoin book](http://amzn.to/2E6gO0I), is the Base58Check encoding algorithm.
