@@ -46,14 +46,14 @@ layout: default
             {% endfor %}
             {% if page.previous.url %}
                 <p class="post-next" >
-                    <i data-feather="arrow-right"></i>
+                    <i data-feather="arrow-left"></i>
                     <a href="{{page.previous.url}}" class="previous">{{page.previous.title}}</a>
                     – {{page.previous.description}}
                 </p>
             {% endif %}
             {% if page.next.url %}
                 <p class="post-next" >
-                    <i data-feather="arrow-left"></i>
+                    <i data-feather="arrow-right"></i>
                     <a href="{{page.next.url}}" class="next">{{page.next.title}}</a>
                     – {{page.next.description}}
                 </p>
