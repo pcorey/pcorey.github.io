@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "From Bytes to Menmonic using Elixir"
+title:  "From Bytes to Mnemonic using Elixir"
 description: "Bitcoin's BIP-39 is a clever algorithm for transforming random binaries into easy to remember mnemonics. Let's flex our programming muscles and implement it using Elixir!"
 author: "Pete Corey"
 date:   2018-02-19
