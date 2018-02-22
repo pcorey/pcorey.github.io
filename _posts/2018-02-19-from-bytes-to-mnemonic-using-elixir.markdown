@@ -77,6 +77,8 @@ end
 
 You'll notice that we're setting the upper range in our call to `:crypto.rand_uniform/2`{:.language-elixir} to `32 + 1`{:.language-elixir}. This is because the upper limit is non-inclusive, and we want to utilize the full range of sixteen to thirty two bytes.
 
+{% include newsletter.html %}
+
 ## Attaching our Checksum
 
 Once we've generated our source of entropy, we'll need to calculate its checksum and append a piece of the resulting checksum to the end of our binary. Once again, Elixir ships with all of the tools we need.

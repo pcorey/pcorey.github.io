@@ -104,6 +104,8 @@ We’ve extended our `users`{:.language-javascript} query to accept an `options`
 
 And we’ve extended our `users`{:.language-javascript} resolver to extend the list of fields we return with the `skip`{:.language-javascript} and `limit`{:.language-javascript} fields passed up from the client.
 
+{% include newsletter.html %}
+
 ## Exploiting the Search
 
 Now, for example, our client can make a query to search for users based on their username or their email address:
