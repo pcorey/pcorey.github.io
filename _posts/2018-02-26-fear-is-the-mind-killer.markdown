@@ -58,7 +58,7 @@ All this is to say that stress, panic, and fear are all very real and unavoidabl
 
 It always strikes me as interesting that such an inherently analytical field can foster such intense emotions in people. Maybe it has to do with always working at the edge of your skill and the limit of your knowledge. Once you walk off that edge, it can be terrifying.
 
-I don't have many tools for coping with stress. My main tactic is to simply put it out of my mind. I try to convince myself that the fear and panic are simply obstacles to be overcome. Sometimes that be easier said and done.
+I don't have many tools for coping with stress. My main tactic is to acknowledge it and put it out of my mind. Sometimes that be easier said than done.
 
 When I'm deep in the pit of fear, I try to remind myself that __the pit has never done anything for me__. Once you find yourself there, the first step is always to drag yourself out. It's only once you're out that you can assess your situation with a calm, rational mind, and begin the real work of fixing your situation.
 
