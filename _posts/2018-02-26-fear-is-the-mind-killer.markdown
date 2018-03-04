@@ -28,7 +28,7 @@ I breathe.
 
 I force myself to recognize that right now, my stress levels are the deterrent that is keeping me from solving this problem. Every question that rushed into my mind while I was in a pit of fear is intangible and irrelevant.
 
-I start to dig into what I've built with a new set of eyes. Seeing the forrest for the trees, I realize that the architecture of my solution just wouldn't work. Some rough, back of the napkin math revealed that it was approximately a `O(n^4)`{:.language-*} solution, with gargantuan values of `n`{:.language-*}.
+I start to dig into what I've built with a new set of eyes. Seeing the forest for the trees, I realize that the architecture of my solution just wouldn't work. Some rough, back of the napkin math revealed that it was approximately a `O(n^4)`{:.language-*} solution, with gargantuan values of `n`{:.language-*}.
 
 Rather than give into anguish, I start thinking about other ways to solve the problem. How can I structure the solution to process data in large swaths, rather than sequentially? I start to form a solution. After a day of thinking and sketching, I have a roughly working prototype. __Amazingly, the new prototype is orders of magnitude faster than my original solution.__ It's working!
 
@@ -58,7 +58,7 @@ All this is to say that stress, panic, and fear are all very real and unavoidabl
 
 It always strikes me as interesting that such an inherently analytical field can foster such intense emotions in people. Maybe it has to do with always working at the edge of your skill and the limit of your knowledge. Once you walk off that edge, it can be terrifying.
 
-I don't have many tools for coping with stress. My main tactic is to acknowledge it and put it out of my mind. Sometimes that be easier said than done.
+I don't have many tools for coping with stress. My main tactic is to acknowledge it and put it out of my mind. Sometimes that can be easier said than done.
 
 When I'm deep in the pit of fear, I try to remind myself that __the pit has never done anything for me__. Once you find yourself there, the first step is always to drag yourself out. It's only once you're out that you can assess your situation with a calm, rational mind, and begin the real work of fixing your situation.
 
