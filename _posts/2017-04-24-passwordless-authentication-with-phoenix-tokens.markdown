@@ -86,6 +86,8 @@ Once our new user has signed up, signing out is as simple as deleting their asso
 
 Once the `auth_token`{:.language-elixir} is removed, and cleared from their browser’s `localStorage`{:.language-javascript}, all subsequent requests they make will be unauthenticated until they sign back in.
 
+{% include newsletter.html %}
+
 ## Signing In
 
 Now we’re getting to the interesting part.

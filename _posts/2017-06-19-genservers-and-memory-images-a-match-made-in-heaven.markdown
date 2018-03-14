@@ -71,6 +71,8 @@ While this is a fairly simple concept, it’s obviously inefficient. Imagine hav
 
 There has to be a better way.
 
+{% include newsletter.html %}
+
 ## GenServer, Meet Memory Image
 
 Memory Image, meet [GenServer](https://elixir-lang.org/getting-started/mix-otp/genserver.html).

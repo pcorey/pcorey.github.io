@@ -160,6 +160,8 @@ With our routes properly configured, we can fetch data about any full block or b
 
 Let’s more on to the final piece of the puzzle: rendering that data.
 
+{% include newsletter.html %}
+
 ## Templates
 
 Our blockchain viewer now correctly routes the user to the appropriate `:show`{:.language-elixir} route for either the block or block header they’re trying to view, and passes all relevant data to the corresponding template to render.

@@ -85,6 +85,8 @@ return queries.map(query => {
 
 This works, but it seems difficult to manage, maintain, and test. Especially for more complex MongoDB queries. There has to be a better way!
 
+{% include newsletter.html %}
+
 ## Sift.js to the Rescue
 
 [Sift.js](https://github.com/crcn/sift.js/) is a library that lets you filter in-memory arrays using MongoDB query objects. This is exactly what we need! We can rewrite our loader function using sift:

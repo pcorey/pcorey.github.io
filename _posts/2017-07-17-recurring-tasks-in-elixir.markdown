@@ -114,6 +114,8 @@ Spinning up the application, you’ll notice a constant stream of fruit being pr
 
 Delicious victory.
 
+{% include newsletter.html %}
+
 ## Even When Things Go Wrong
 
 Astute readers may have noticed a bug in our initial `print_fruit`{:.language-elixir} function.

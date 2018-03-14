@@ -76,6 +76,8 @@ end)
 
 I wasn’t willing to go down this road due to testing difficulties and a general distrust of unsupervised children.
 
+{% include newsletter.html %}
+
 ## Command Handler as a Function
 
 After mulling over my deadlock problem, the solution slapped me in the face.

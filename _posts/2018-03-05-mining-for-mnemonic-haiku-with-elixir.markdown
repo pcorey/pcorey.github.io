@@ -150,6 +150,8 @@ end
 
 Otherwise, we return our truncated `wordlist`{:.language-elixir}, [dropping every word](https://hexdocs.pm/elixir/Enum.html#drop/2) through our found `index`{:.language-elixir}.
 
+{% include newsletter.html %}
+
 ## Attaching Syllables
 
 Let's turn our attention to the previously glossed over `attach_syllables/1`{:.language-elixir} function.

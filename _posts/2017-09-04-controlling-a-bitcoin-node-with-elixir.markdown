@@ -190,6 +190,8 @@ end
 
 Now our `getinfo`{:.language-elixir} function will return an `{:ok, result}`{:.language-elixir} tuple containing the result of our `getinfo`{:.language-elixir} RPC call if everything goes well. In the case of an error we’ll receive an `{:error, reason}`{:.language-elixir} tuple, explaining the failure.
 
+{% include newsletter.html %}
+
 ## Generalizing Commands
 
 We could implement another Bitcoin RPC command, like `getblockhash`{:.language-elixir}, in a nearly identical fashion:

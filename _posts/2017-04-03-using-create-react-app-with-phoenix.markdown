@@ -99,6 +99,8 @@ Because your front-end content is served elsewhere, your back-end Phoenix applic
 
 Out of the box, this inherent separation between the front-end and the back-end offers nice scaling opportunities for your application.
 
+{% include newsletter.html %}
+
 ## Serving React from Phoenix
 
 While serving your front-end separately from your back-end can be a powerful tool, it’s often more of a burden when you’re just getting out of the gate.

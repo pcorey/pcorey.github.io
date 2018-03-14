@@ -100,6 +100,8 @@ Unfortunately, `makeExecutableSchema`{:.language-javascript} immediately undoes 
 
 Oh well, at least it works.
 
+{% include newsletter.html %}
+
 ## Coming to Terms
 
 While the `createType`{:.language-javascript}/`printType`{:.language-javascript} conversion process works, I wasn’t happy with the solution.

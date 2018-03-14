@@ -80,6 +80,8 @@ We’ve detected NoSL Injection!
 
 By watching for queries that fall outside our set of expected queries, we can detect NoSQL Injection as it happens.
 
+{% include newsletter.html %}
+
 ## Similar Expected Queries
 
 Basing our NoSQL Injection detection strategy around expected and unexpected queries has an added bonus.

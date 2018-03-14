@@ -67,6 +67,8 @@ And I did it again. Now I was down to thirty minutes. I still found myself forge
 
 So I did it again, and again, and again…
 
+{% include newsletter.html %}
+
 ## The Benefits of Training
 
 As I continue intentionally practicing with this kata and others like it, I continue to find more and more benefits. Some benefits are obvious, while others are more subtle.

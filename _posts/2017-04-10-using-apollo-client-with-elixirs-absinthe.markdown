@@ -107,6 +107,8 @@ You’ll need to manually find the orphaned node process and kill it before once
 
 I believe this problem is related to [this issue on Github](https://github.com/facebookincubator/create-react-app/issues/932). Hopefully it will be fixed soon.
 
+{% include newsletter.html %}
+
 ## Integrating with our Release Manager
 
 We know that we can point our React front-end to different back-ends with our `REACT_APP_GRAPHQL_URI`{:.language-bash} environment variable, but how do we automate this?

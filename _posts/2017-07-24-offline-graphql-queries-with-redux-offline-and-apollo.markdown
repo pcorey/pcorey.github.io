@@ -123,6 +123,8 @@ Redux Offline is now automatically saving snapshots of our Redux store to `local
 
 Any queries that have resolutions living in this store will return that data, even if the application is currently disconnected from the server.
 
+{% include newsletter.html %}
+
 ### Rehydration Race Conditions
 
 Unfortunately, store rehydration isn’t instant. If our application tries to make queries while Redux Offline is rehydrating our store, Strange Things™ can happen.

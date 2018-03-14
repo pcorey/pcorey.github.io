@@ -13,8 +13,6 @@ This week I put the finishing touches on two new articles: [”What is NoSQL Inj
 
 For posterity, I’ve included both articles below.
 
----- 
-
 ## What is NoSQL Injection?
 
 NoSQL Injection is security vulnerability that lets attackers take control of database queries through the unsafe use of user input. It can be used by an attacker to:
@@ -56,7 +54,7 @@ This query will return the first document it finds with a `username`{:.language-
 
 Our clever user has successfully bypassed out authentication scheme by exploiting a NoSQL Injection vulnerability.
 
----- 
+{% include newsletter.html %}
 
 ## How do you prevent NoSQL Injection?
 

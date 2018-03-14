@@ -102,6 +102,8 @@ Because this query is made without an `authToken`{:.language-javascript}, no use
 
 Full disclosure - there are probably [better ways to update the store in this situation](http://dev.apollodata.com/react/cache-updates.html). If you have any suggestions, or are doing something similar, please let me know!
 
+{% include newsletter.html %}
+
 ## Handling GraphQL Authentication Errors
 
 You may remember that on top of throwing HTTP authentication errors, our GraphQL resolvers will also throw authorization errors if the current user doesn’t have permission to access a given query or mutation.

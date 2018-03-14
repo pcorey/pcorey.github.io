@@ -70,6 +70,8 @@ With a single query, we’ve taken down the entire application.
 
 Read more about [the dangers of the `$where`{:.language-javascript} query](http://www.east5th.co/blog/2015/08/10/dos-your-meteor-application-with-where/), and watch me exploit a similar vulnerability in my [“NoSQL Injection in Modern Web Applications”](http://www.east5th.co/blog/2016/03/21/nosql-injection-in-modern-web-applications/) talk given at CraterConf!
 
+{% include newsletter.html %}
+
 ## Fixing the Vulnerability
 
 The fix for this specific instance of NoSQL Injection is to more thoroughly check the `alertsInfo`{:.language-javascript} argument passed into the `"alerts.create"`{:.language-javascript} method.

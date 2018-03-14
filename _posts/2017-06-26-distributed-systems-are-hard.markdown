@@ -80,6 +80,8 @@ Check out the beginning of [Nathan Herald’s talk from this year’s ElixirConf
 <!--     <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/SDKiLO2XwIs" frameborder="0" allowfullscreen></iframe> -->
 <!-- </div> -->
 
+{% include newsletter.html %}
+
 ## Handling Conflicts
 
 While this specific problem is somewhat contrived and could be easily fixed by a database schema that more accurately reflects the problem we’re trying to solve (by keeping `teamId`{:.language-javascript} on the user document), it serves as a good platform to discuss the larger issue.

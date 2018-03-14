@@ -138,6 +138,8 @@ end
 
 Now all GraphQL requests made against our server will run through our authentication middleware, and the currently signed in user will be available to all of our GraphQL resolvers.
 
+{% include newsletter.html %}
+
 ## Contextual Authentication and Authorization
 
 Now that the currently signed in user can be accessed through our GraphQL context, we can start to perform authentication and authorization checks in our resolvers.

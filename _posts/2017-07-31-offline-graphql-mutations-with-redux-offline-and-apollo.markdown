@@ -154,6 +154,8 @@ Now that we’ve refactored our survey application to manage submissions through
 
 Now we need to indicate what’s happening to the user.
 
+{% include newsletter.html %}
+
 ## Managing Offline Data Locally
 
 In order to inform the user that their survey is in a “pending” state, we’ll need to store these updated surveys somewhere on the client until their status is reconciled with the server.

@@ -91,6 +91,8 @@ get_in(..., [:users, Access.all(), Access.key(:name, "Anonymous")])
 
 Let’s see Lodash’s `_.get`{:.language-javascript} do that!
 
+{% include newsletter.html %}
+
 ## Setting Nested Values
 
 All of these ideas apply to updating values as well. We can use `put_in`{:.language-elixir} to directly set a value in a nested data structure, or `update_in`{:.language-elixir} to update it with a function we provide.

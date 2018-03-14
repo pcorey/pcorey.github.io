@@ -40,6 +40,8 @@ So _somewhere in my codebase_, the `body`{:.language-javascript} field is trying
 
 ## Tools for Handling Rejection
 
+{% include newsletter.html %}
+
 Thankfully, Node.js ships with the tools required to remedy this situation. Much like the more well-known [`"uncaughtException"`{:.language-javascript} process event](https://nodejs.org/api/process.html#process_event_uncaughtexception), Node.js applications can listen for [`"unhandledRejection"`{:.language-javascript} events](https://nodejs.org/api/process.html#process_event_unhandledrejection) at the process level. These events are fired any time a rejection bubbles to the top of a promise chain without encountering [a `catch`{:.language-javascript} callback](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch).
 
 Let's add an `"unhandledRejection"`{:.language-javascript} listener to our application. We'll keep things simple and log the error reported by the process:
