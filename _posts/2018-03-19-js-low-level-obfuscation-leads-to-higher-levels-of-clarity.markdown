@@ -102,7 +102,7 @@ On first exposure, the application rules for hooks and forks struck me as confus
 
 > [Forks] help us read out our expressions like sentences. For instance, "the sum times the last" can be written as `+/`{:.language-*} `*`{:.language-*} `{:`{:.language-*}, and our argument is automatically passed to both sides as it needs to be.
 
-Let that sink in. I'll be the first to admit that the argument routing built into J's fork and hook constructs isn't immediately obvious or intuitive, but that low level obfuscation leads to a higher level of clarity. __We can read our forks like english sentences.__
+Let that sink in. I'll be the first to admit that the argument routing built into J's fork and hook constructs isn't immediately obvious or intuitive, but that low level obfuscation leads to a higher level of clarity. __We can read our forks like English sentences.__
 
 Let's try it out with our `mean`{:.language-*} verb:
 
