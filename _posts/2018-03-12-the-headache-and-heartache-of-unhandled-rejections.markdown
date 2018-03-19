@@ -38,9 +38,9 @@ Running our application results in the following incredibly unhelpful error mess
 
 So _somewhere in my codebase_, the `body`{:.language-javascript} field is trying to be accessed on `undefined`{:.language-javascript}. Where? Who knows. What's the context? No telling! How do we track it down? I don't know, maybe [a Ouija board](https://en.wikipedia.org/wiki/Ouija)?
 
-## Tools for Handling Rejection
-
 {% include newsletter.html %}
+
+## Tools for Handling Rejection
 
 Thankfully, Node.js ships with the tools required to remedy this situation. Much like the more well-known [`"uncaughtException"`{:.language-javascript} process event](https://nodejs.org/api/process.html#process_event_uncaughtexception), Node.js applications can listen for [`"unhandledRejection"`{:.language-javascript} events](https://nodejs.org/api/process.html#process_event_unhandledrejection) at the process level. These events are fired any time a rejection bubbles to the top of a promise chain without encountering [a `catch`{:.language-javascript} callback](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch).
 

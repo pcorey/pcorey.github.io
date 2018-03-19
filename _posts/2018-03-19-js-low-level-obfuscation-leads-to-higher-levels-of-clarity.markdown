@@ -94,6 +94,8 @@ All that is to say that `append_length`{:.language-*} is a hook that calculates 
 
 I highly recommend checking out the guide on [forks, hooks, and compound adverbs](http://www.jsoftware.com/help/jforc/forks_hooks_and_compound_adv.htm) for a more complete explaination and overview of all of the hook and fork forms available to you as a J programmer.
 
+{% include newsletter.html %}
+
 ## Speaking with Forks
 
 On first exposure, the application rules for hooks and forks struck me as confusing and disorienting. I found myself asking, "why can't they just stick to the right to left evaulation order?" My eyes were opened to the expressive power of forks when I stumbled across this gem of a quote in Jordan Scales' article on [computing the Fibonacci numbers in J](http://thatjdanisso.cool/j-fibonacci/):
