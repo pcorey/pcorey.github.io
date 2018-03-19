@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "J's Low-level Obfuscation Leads to Higher Levels of Clarity"
-description: ""
+description: "It's argued that J is a \"write-only"\" programming language because of its extreme terseness and complexity of syntax. I'm starting to warm up the the idea that it might be more readable than it first lets on."
 author: "Pete Corey"
 date:   2018-03-19
 tags: ["J", "Programming Languages"]
@@ -12,7 +12,7 @@ After reading recent articles by [Hillel Wayne](https://www.hillelwayne.com/post
 
 One of the things I find most interesting about J is its ties to natural language, and its corresponding use of code constructs called "hooks" and "forks".
 
-Many people argue that J is a "write-only" language because of its extreme terseness and complexity of syntax. As a beginner, I'd tend to agree, but I'm starting to warm up to the fact that it might be [more readable than it first lets on](https://www.youtube.com/watch?v=v7Mt0GYHU9A).
+Many people argue that J is a "write-only" language because of its extreme terseness and complexity of syntax. As a beginner, I'd tend to agree, but I'm starting to warm up to the idea that it might be [more readable than it first lets on](https://www.youtube.com/watch?v=v7Mt0GYHU9A).
 
 ## What is J?
 
