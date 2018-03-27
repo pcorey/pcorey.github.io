@@ -121,6 +121,6 @@ Beautiful.
 
 ## Final Thoughts
 
-I'm continually amazed by the quantity, diversity, and quality of the tooling that ships out of the box with Elixir and Elixir. Even when it comes to something as niche as low-level binary manipulation, Elixir's tools are top notch.
+I'm continually amazed by the quantity, diversity, and quality of the tooling that ships out of the box with Elixir and Erlang. Even when it comes to something as niche as low-level binary manipulation, Elixir's tools are top notch.
 
 If you want to see complete examples of the endian conversion code shown in this article, check out [the `BitcoinNetwork.Protocol.NetAddr`{:.language-elixir} module](https://github.com/pcorey/bitcoin_network/blob/master/lib/bitcoin_network/protocol/net_addr.ex) in my new `bitcoin_network`{:.language-elixir} project on Github.
