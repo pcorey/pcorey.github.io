@@ -64,7 +64,7 @@ This is a great chance to flex our Elixir muscles. Let's implement this in a `to
 <pre class='language-elixir'><code class='language-elixir'>
 defmodule Hexdump do
   def to_string(data) when is_binary(data) do
-    # TODO: Implement `to_string`{:.language-elixir}...
+    # TODO: Implement `to_string`...
   end
   def to_string(data), do: Kernel.inspect(data)
 end
