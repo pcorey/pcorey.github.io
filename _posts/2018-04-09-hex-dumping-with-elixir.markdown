@@ -53,6 +53,8 @@ Depending on the source of our `data`{:.language-elixir} binary, we're potential
 
 We need to find another solution.
 
+{% include newsletter.html %}
+
 ## Going the Safe Route
 
 Ultimately, I decided that the safest and fastest solution to my problem was to simply build my own hex dump utility in pure Elixir.

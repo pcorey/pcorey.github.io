@@ -52,7 +52,6 @@ Imagine we want to construct the [Mandelbrot set](https://en.wikipedia.org/wiki/
 </div>
 
 In terms of implementing this in J, it sounds like our best bet will be to store the result of each iteration in an array of complex numbers. The first element in the array will be the point under test (skipping `z₀`{:.language-*} for convenience), and the last element will be the result of the last application of our iteration function.
-
 With that in mind, we can write a verb that computes our next iteration, given our list of `z`{:.language-*} values.
 
 <pre class='language-*'><code class='language-*'>   next =: {. + *:@:{:
@@ -61,6 +60,8 @@ With that in mind, we can write a verb that computes our next iteration, given o
 This expression is saying that `next`{:.language-*} ["is"](http://www.jsoftware.com/help/dictionary/d001.htm) (`=:`{:.language-*}) the ["first element of the array"](http://www.jsoftware.com/help/dictionary/d521.htm) (`{.`{:.language-*}) ["plus"](http://www.jsoftware.com/help/dictionary/d100.htm) (`+`{:.language-*}) the "square of the last element of the array" (`*:@:{:`{:.language-*}). That last verb combines the ["square"](http://www.jsoftware.com/help/dictionary/d112.htm) (`*:`{:.language-*}) and ["last"](http://www.jsoftware.com/help/dictionary/d522.htm) (`{:`{:.language-*}) verbs together with the ["at"](http://www.jsoftware.com/help/dictionary/d622.htm) (`@:`{:.language-*}) adverb.
 
 You'll notice that `next`{:.language-*} is a fork. The argument application rules follow the structure we discussed above, but we're able to read and write the expression linearly from left to write.
+
+{% include newsletter.html %}
 
 While we're able to compute the next iteration of our Mandelbrot set equation, we still need to append the result back onto our list of `z`{:.language-*} values. In plain English, we want to "append" (`,`{:.language-*}) the "next" (`next`{:.language-*}) value:
 

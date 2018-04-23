@@ -145,6 +145,8 @@ In our `init/1`{:.language-elixir} callback, let's add a call to [`:gen_tcp.conn
 
 We're specifying a `:binary`{:.language-elixir} option on our connection, which means that we want any incoming packets to be delivered as binaries, rather than lists of bytes. We're also specifying that our connection is `active`{:.language-elixir}, which means that incoming messages will be sent to the current processes as messages which we'll need to handle in `handle_info/2`{:.language-elixir} callbacks.
 
+{% include newsletter.html %}
+
 As an aside, pattern matching on an `:ok`{:.langauge-elixir} tuple works fine for now, but a more robust solution would more gracefully handle connection failures. Failing to connect to a Bitcoin node is a fairly common occurance.
 
 Once connected to our node, we'll add the resulting `socket`{:.language-elixir} to our process' state and return from our `init/1`{:.language-elixir} callback:

@@ -67,6 +67,8 @@ Using our helper, we can create out final `net_addr`{:.language-elixir} binary:
 
 This works, but there's some room for improvement.
 
+{% include newsletter.html %}
+
 ## A Faster Second Attempt
 
 After doing some research, I discovered [this set of benchmarks](https://gist.github.com/evadne/33805e13f1d84eb2e32f0d1e1a376899) for several different techniques of reversing a binary in Elixir (thanks [Evadne Wu](https://twitter.com/evadne)!).
