@@ -225,7 +225,7 @@ If our `handle_call/3`{:.language-elixir}, `handle_cast/2`{:.language-elixir}, o
 
 We have several options for handling the disconnection in our `disconnect/2`{:.language-elixir} callback. We can return a `:connect`{:.language-elixir} tuple to attempt a reconnection immediately. Similarly, we can return a `:backoff`{:.language-elixir} tuple to delay the reconnection by the specified `timestamp`{:.language-elixir}. Alternatively, we can return a `:noconnect`{:.language-elixir} tuple to keep the current process alive, but not attempt to reconnect to our peer node. Lastly, our `disconnect/2`{:.language-elixir} callback can return a `:stop`{:.language-elixir} tuple to immediately terminate our Bitcoin node process.
 
-When we start connecting to more nodes in the future, the loss of a single node it's a big deal. Losing peers is just a part of life, unfortunately. With that in mind, if we detect a disconnect, we'll simply close our TCP connection return a `:stop`{:.language-elixir} tuple from our `disconnect/2`{:.language-elixir} callback:
+When we start connecting to more nodes in the future, the loss of a single node isn't a big deal. Losing peers is just a part of life, unfortunately. With that in mind, if we detect a disconnect, we'll simply close our TCP connection return a `:stop`{:.language-elixir} tuple from our `disconnect/2`{:.language-elixir} callback:
 
 <pre class='language-elixir'><code class='language-elixir'>
 def disconnect(_, state) do
