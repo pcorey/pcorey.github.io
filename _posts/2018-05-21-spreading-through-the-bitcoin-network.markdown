@@ -145,6 +145,8 @@ At this point, our Bitcoin node will happily spreading itself through the Bitcoi
 
 We need some way of limiting the number of active peer connections to some configurable value.
 
+{% include newsletter.html %}
+
 We'll start implementing this limit by adding a `max_peers`{:.language-elixir} configuration value to our `config.exs`{:.language-elixir}:
 
 <pre class='language-elixir'><code class='language-elixir'>
