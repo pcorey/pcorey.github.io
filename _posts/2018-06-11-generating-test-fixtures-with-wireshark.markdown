@@ -73,6 +73,8 @@ assert {:ok, packet} = File.read("test/fixtures/version.bin")
 
 We use Elixir's [`File.read/1`{:.language-elixir}](https://hexdocs.pm/elixir/File.html#read/1) to read the contents of our `version.bin`{:.language-elixir} file, and assert that we'll receive an `:ok`{:.language-elixir} tuple containing the binary contents of our file in our new `packet`{:.language-elixir} assignment.
 
+{% include newsletter.html %}
+
 Next, we'll parse the binary, just like we do within our `Node`{:.language-elixir} with a call to `Message.parse/1`{:.language-elixir}:
 
 <pre class='language-elixir'><code class='language-elixir'>
