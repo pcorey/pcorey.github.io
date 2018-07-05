@@ -6,6 +6,12 @@ url: "http://www.petecorey.com"
 twitter_username: petecorey
 github_username:  pcorey
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /img/portrait-150x150.png
+
 paginate: 3
 paginate_path: "/blog/:num/"
 
