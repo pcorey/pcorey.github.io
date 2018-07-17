@@ -10,7 +10,7 @@ related: []
 
 I recently came across [this riff on the FizzBuzz problem written in Clojure](https://gist.github.com/krisajenkins/3333741). While it's admittedly not terribly obvious what's going on, I thought it was a novel solution to [the FizzBuzz problem](https://en.wikipedia.org/wiki/Fizz_buzz).
 
-How could we recreate this solution using [Elixir](https://elixir-lang.org/)? There are some obvious similarities between Clojure's `cycle`{:.language-javascript} and [Elixir's `Stream.cycle/1`{:.language-javascript}](https://hexdocs.pm/elixir/Stream.html#cycle/1). As someone who's always been a fanboy of Lisp syntax, which solution would I prefer?
+How could we recreate this solution using [Elixir](https://elixir-lang.org/)? There are some obvious similarities between Clojure's `cycle`{:.language-elixir} and [Elixir's `Stream.cycle/1`{:.language-elixir}](https://hexdocs.pm/elixir/Stream.html#cycle/1). As someone who's always been a fanboy of Lisp syntax, which solution would I prefer?
 
 There's only one way to find out…
 
@@ -18,7 +18,7 @@ There's only one way to find out…
 
 Before we dive into our Elixir solution, we should work out what exactly this Clojure solution is doing:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-elixir'><code class='language-elixir'>
 (clojure.pprint/pprint
   (map vector
     (range 25)
@@ -26,24 +26,24 @@ Before we dive into our Elixir solution, we should work out what exactly this Cl
     (cycle [:buzz :_ :_ :_ :_])))
 </code></pre>
 
-Clojure's `clojure.pprint/pprint`{:.language-javascript} obviously just prints whatever's passed into it. In this case, we're printing the result of this expression:
+Clojure's `clojure.pprint/pprint`{:.language-elixir} obviously just prints whatever's passed into it. In this case, we're printing the result of this expression:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-elixir'><code class='language-elixir'>
 (map vector
   (range 25)
   (cycle [:fizz :_ :_])
   (cycle [:buzz :_ :_ :_ :_])))
 </code></pre>
 
-But what exactly's happening here? Clojure's [`map`{:.language-javascript}](https://clojuredocs.org/clojure.core/map) function is interesting. It let's you map a function over any number of collections. The result of the `map`{:.language-javascript}  expression is the result of applying the function to each of the first values of each collection, followed by the result of applying the mapped function to each of the second values, and so on.
+But what exactly's happening here? Clojure's [`map`{:.language-elixir}](https://clojuredocs.org/clojure.core/map) function is interesting. It let's you map a function over any number of collections. The result of the `map`{:.language-elixir}  expression is the result of applying the function to each of the first values of each collection, followed by the result of applying the mapped function to each of the second values, and so on.
 
-In this case, we're mapping the [`vector`{:.language-javascript}](https://clojuredocs.org/clojure.core/vector) function over three collections: the range of numbers from zero to twenty four (`(range 25)`{:.language-javascript}), [the infinite cycle](https://clojuredocs.org/clojure.core/cycle) of `:fizz`{:.language-javascript}, `:_`{:.language-javascript}, and `:_`{:.language-javascript} (`(cycle [:fizz :_ :_])`{:.language-javascript}), and the infinite cycle of `:buzz`{:.language-javascript}, `:_`{:.language-javascript}, `:_`{:.language-javascript}, `:_`{:.language-javascript}, `:_`{:.language-javascript} (`(cycle [:buzz :_ :_ :_ :_])`{:.language-javascript}).
+In this case, we're mapping the [`vector`{:.language-elixir}](https://clojuredocs.org/clojure.core/vector) function over three collections: the range of numbers from zero to twenty four (`(range 25)`{:.language-elixir}), [the infinite cycle](https://clojuredocs.org/clojure.core/cycle) of `:fizz`{:.language-elixir}, `:_`{:.language-elixir}, and `:_`{:.language-elixir} (`(cycle [:fizz :_ :_])`{:.language-elixir}), and the infinite cycle of `:buzz`{:.language-elixir}, `:_`{:.language-elixir}, `:_`{:.language-elixir}, `:_`{:.language-elixir}, `:_`{:.language-elixir} (`(cycle [:buzz :_ :_ :_ :_])`{:.language-elixir}).
 
-Mapping `vector`{:.language-javascript} over each of these collections creates a vector for each index, and whether it should display Fizz, Buzz, or FizzBuzz for that particular index.
+Mapping `vector`{:.language-elixir} over each of these collections creates a vector for each index, and whether it should display Fizz, Buzz, or FizzBuzz for that particular index.
 
 The result looks just like we'd expect:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-elixir'><code class='language-elixir'>
 ([0 :fizz :buzz]
  [1 :_ :_]
  [2 :_ :_]
@@ -56,26 +56,26 @@ The result looks just like we'd expect:
 
 ## An Elixir Solution
 
-So how would we implement this style of FizzBuzz solution using Elixir? As we mentioned earlier, Elixir's `Stream.cycle/1`{:.language-javascript} function is almost identical to Clojure's `cycle`{:.language-javascript}. Let's start there.
+So how would we implement this style of FizzBuzz solution using Elixir? As we mentioned earlier, Elixir's `Stream.cycle/1`{:.language-elixir} function is almost identical to Clojure's `cycle`{:.language-elixir}. Let's start there.
 
 We'll make two cycles of our Fizz and Buzz sequences:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-elixir'><code class='language-elixir'>
 Stream.cycle([:fizz, :_, :_])
 Stream.cycle([:buzz, :_, :_, :_, :_])
 </code></pre>
 
 On their own, these two cycles don't do much.
 
-Let's use [`Stream.zip/2`{:.language-javascript}](https://hexdocs.pm/elixir/Stream.html#zip/2) to effectively perform the same operation as Clojure's `map vector`{:.language-javascript}:
+Let's use [`Stream.zip/2`{:.language-elixir}](https://hexdocs.pm/elixir/Stream.html#zip/2) to effectively perform the same operation as Clojure's `map vector`{:.language-elixir}:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-elixir'><code class='language-elixir'>
 Stream.zip(Stream.cycle([:fizz, :_, :_]), Stream.cycle([:buzz, :_, :_, :_, :_])) 
 </code></pre>
 
-Now we can print the first twenty five pairs by piping our zipped streams into `Enum.take/2`{:.language-javascript} and printing the result with `IO.inspect/1`{:.language-javascript}:
+Now we can print the first twenty five pairs by piping our zipped streams into `Enum.take/2`{:.language-elixir} and printing the result with `IO.inspect/1`{:.language-elixir}:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-elixir'><code class='language-elixir'>
 Stream.zip(Stream.cycle([:fizz, :_, :_]), Stream.cycle([:buzz, :_, :_, :_, :_])) 
 |> Enum.take(25)
 |> IO.inspect
@@ -83,7 +83,7 @@ Stream.zip(Stream.cycle([:fizz, :_, :_]), Stream.cycle([:buzz, :_, :_, :_, :_]))
 
 Our result looks similar:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-elixir'><code class='language-elixir'>
 [
   fizz: :buzz,
   _: :_,
@@ -100,9 +100,9 @@ While our solution works, I'm not completely happy with it.
 
 ## Polishing Our Solution
 
-For purely aesthetic reasons, let's import the function's we're using from `Stream`{:.language-javascript}, `Enum`{:.language-javascript} and `IO`{:.language-javascript}:
+For purely aesthetic reasons, let's import the function's we're using from `Stream`{:.language-elixir}, `Enum`{:.language-elixir} and `IO`{:.language-elixir}:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-elixir'><code class='language-elixir'>
 import Stream, only: [cycle: 1, zip: 2]
 import Enum, only: [take: 2]
 import IO, only: [inspect: 1]
@@ -110,7 +110,7 @@ import IO, only: [inspect: 1]
 
 This simplifies the visual complexity of our solution:
 
-<pre class='language-javascript'><code class='language-javascript'>
+<pre class='language-elixir'><code class='language-elixir'>
 zip(cycle([:fizz, :_, :_]), cycle([:buzz, :_, :_, :_, :_]))
 |> take(25)
 |> inspect
@@ -118,9 +118,11 @@ zip(cycle([:fizz, :_, :_]), cycle([:buzz, :_, :_, :_, :_]))
 
 But we can take it one step further.
 
-Rather than using `Stream.zip/2`{:.language-javascript}, which expects a `left`{:.language-javascript} and `right`{:.language-javascript} argument, let's use [`Stream.zip/1`{:.language-javascript}](https://hexdocs.pm/elixir/Stream.html#zip/1), which expects to be passed an enumerable of streams:
+{% include newsletter.html %}
 
-<pre class='language-javascript'><code class='language-javascript'>
+Rather than using `Stream.zip/2`{:.language-elixir}, which expects a `left`{:.language-elixir} and `right`{:.language-elixir} argument, let's use [`Stream.zip/1`{:.language-elixir}](https://hexdocs.pm/elixir/Stream.html#zip/1), which expects to be passed an enumerable of streams:
+
+<pre class='language-elixir'><code class='language-elixir'>
 [
   cycle([:fizz, :_, :_]),
   cycle([:buzz, :_, :_, :_, :_])
@@ -138,6 +140,6 @@ To be honest, I've been having troubles lately coming to terms with some of Elix
 
 That being said, I hugely prefer the Elixir solution we came up with!
 
-The overall attack plan of the algorithm is much more apparent. It's immediately clear that we start with two cycles of `:fizz`{:.language-javascript}/`:buzz`{:.language-javascript} and some number of empty atoms. From there, we zip together the streams and take the first twenty five results. Lastly, we inspect the result.
+The overall attack plan of the algorithm is much more apparent. It's immediately clear that we start with two cycles of `:fizz`{:.language-elixir}/`:buzz`{:.language-elixir} and some number of empty atoms. From there, we zip together the streams and take the first twenty five results. Lastly, we inspect the result.
 
 Which solution do you prefer?
