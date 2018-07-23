@@ -4,7 +4,7 @@ title:  "Building a Better Receive Loop"
 description: "Taking advantage of structural decisions in the Bitcoin protocol can greatly simplify our receive loop. Check out how!"
 author: "Pete Corey"
 date:   2018-07-23
-tags: ["Elixir", "Bitcoin", "Erlang"]
+tags: ["Elixir", "Bitcoin"]
 related: []
 ---
 
