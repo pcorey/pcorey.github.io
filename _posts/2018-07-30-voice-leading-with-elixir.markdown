@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Voice Leading with Elixir"
-description: ""
+description: "Let's harness the power of Elixir to programatically generate optimal chord progressions and voice leading for guitar!"
 author: "Pete Corey"
 date:   2018-07-30
 tags: ["Elixir", "Music"]
@@ -330,6 +330,8 @@ end
 </code></pre>
 
 Otherwise, we replace the current note with `nil`{:.language-elixir}.
+
+{% include newsletter.html %}
 
 Next, we flatten our multidimensional fretboard representation and filter out all of the `nil`{:.language-elixir} values, leaving us with just the set of notes we're looking for, and where they can be found on the fretboard.
 

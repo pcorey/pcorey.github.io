@@ -59,6 +59,8 @@ Every message sent through the Bitcoin protocol [follows a specific format](http
 
 The first four bytes of every packet are reserved for the network's magic bytes. Next, twelve bytes are reserved for the name of the command being sent across the network. The next four bytes hold the length of the payload being sent, followed by a four byte partial checksum of that payload.
 
+{% include newsletter.html %}
+
 These twenty four bytes can be found at the head of every message sent across the Bitcoin peer-to-peer network, followed by the variable length binary payload representing the meat and potatoes of the command being carried out. Relying on this structure can greatly simplify our receive loop.
 
 By using `:gen_tcp`{:.language-elixir} in "passive mode" (setting `active: false`{:.language-elixir}), incoming TCP packets won't be delivered to our current process as messages. Instead, we can ask for packets using a blocking call to [`:gen_tcp.recv/2`{:.language-elixir}](http://erlang.org/doc/man/gen_tcp.html#recv-2). When requesting packets, we can even specify the number of bytes we want to receive from the incoming TCP stream.
