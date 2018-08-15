@@ -135,6 +135,8 @@ defp choose_and_sieve([{0, _possible_fingers} | chord], fingerings),
 
 In the case of actually needing to finger a note, the situation becomes more complicated. In that case, the next element of our `chord`{:.language-elixir} is a fret and some set of `possible_fingers`{:.language-elixir}.
 
+{% include newsletter.html %}
+
 We'll map over each of the `possible_fingers`{:.language-elixir}, appending each `finger`{:.language-elixir} and `fret`{:.language-elixir} to our list of `fingerings`{:.language-elixir}, sieving out any now-impossible `possible_fingerings`{:.language-elixir} from the remaining notes in our `chord`{:.language-elixir}, and then recursively calling our `choose_and_sieve/2`{:.language-elixir} function with our newly sieved `chord`{:.language-elixir} and `new_fingerings`{:.language-elixir}:
 
 <pre class='language-elixir'><code class='language-elixir'>
