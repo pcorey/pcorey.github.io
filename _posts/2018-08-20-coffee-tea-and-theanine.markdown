@@ -5,11 +5,11 @@ description: ""
 author: "Pete Corey"
 date:   2018-08-20
 tags: ["Caffeine", "Routine"]
-related: [],
+related: []
 image: "https://s3-us-west-1.amazonaws.com/www.east5th.co/img/coffee-tea-and-theanine/tea.png"
 ---
 
-I’ve always had a tumultuous relationship with caffeine. When I was younger I would drink gallons of diet soda a day (sometimes literally). As I grew older I discovered coffee and increased my caffeine consumption by orders of magnitude .
+I’ve always had a tumultuous relationship with caffeine. When I was younger I would drink gallons of diet soda a day (sometimes literally). As I grew older I discovered coffee and increased my caffeine consumption by orders of magnitude.
 
 It took me until I was nearly thirty years old to realize that my consumption of huge amounts of caffeine was probably related to a low-level background radiation of anxiety that I’d been experiencing nearly my entire life. In an effort to better myself, I tried cutting back on coffee and even quitting altogether. I always found it difficult to restrict myself to one or even two cups a day, and quitting was always unsuccessful for one reason or another.
 
