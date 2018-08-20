@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Coffee, Tea, and Theanine"
-description: ""
+description: "What's your relationship with caffeine, coffee, and tea like?"
 author: "Pete Corey"
 date:   2018-08-20
 tags: ["Caffeine", "Routine"]
