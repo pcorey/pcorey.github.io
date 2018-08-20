@@ -4,7 +4,7 @@ title:  "Coffee, Tea, and Theanine"
 description: ""
 author: "Pete Corey"
 date:   2018-08-20
-tags: ["Caffeine"]
+tags: ["Caffeine", "Routine"]
 related: [],
 image: "https://s3-us-west-1.amazonaws.com/www.east5th.co/img/coffee-tea-and-theanine/tea.png"
 ---
