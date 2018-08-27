@@ -96,6 +96,8 @@ Thank you, [Dr. Levenshtein](https://en.wikipedia.org/wiki/Vladimir_Levenshtein)
 
 As we've seen, both placing and lifting a finger have constant unit costs. The real magic of our fingering distance algorithm happens in the `note_distance/2`{:.language-elixir} helper function, where we calculating the cost of moving fingers between frets ands strings.
 
+{% include newsletter.html %}
+
 We'll start with some trivial base cases. If the two notes we're comparing are the same, the distance between them is `0`{:.language-elixir}:
 
 <pre class='language-elixir'><code class='language-elixir'>
