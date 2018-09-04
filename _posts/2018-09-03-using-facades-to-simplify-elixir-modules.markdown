@@ -65,6 +65,24 @@ end
 
 Beautiful.
 
+## Enter Delegates
+
+Using the above pattern, we might make a mistake when passing the arguments from our first function head into the function in our implementation module (I’ve done it before).
+
+Thankfully, Elixir gives us a way to prevent this mistake:
+
+<pre class='language-elixir'><code class='language-elixir'>
+defmodule Chord do
+  defdelegate voicings(notes, notes_in_chord \\ nil), to: Chord.Voicing
+  defdelegate to_string(chord, chord_name \\ nil), to: Chord.Renderer
+  defdelegate fingerings(chord), to: Chord.Fingering
+end
+</code></pre>
+
+Using [the `defdelegate`{:.language-elixir} macro](https://hexdocs.pm/elixir/Kernel.html#defdelegate/2), we can define the interface for each of our `voicings/2`{:.language-elixir}, `to_string/2`{:.language-elixir}, and `fingerings/1`{:.language-elixir} functions in our `Chord`{:.language-elixir} module, and point each of these function heads to their implementation module.
+
+Elixir automatically wires each of the delegated functions together, preventing any mindless developer mistakes from creeping into our codebase.
+
 ## What's in a name?
 
 In the previous example, the `Chord`{:.language-elixir} module is essentially acting as a ["facade"](https://en.wikipedia.org/wiki/Facade_pattern) that wraps and hides the complexity of our `Chord.Voicing`{:.language-elixir}, `Chord.Fingering`{:.language-elixir}, and `Chord.Renderer`{:.language-elixir} modules.
