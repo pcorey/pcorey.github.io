@@ -39,6 +39,8 @@ end
 
 Now our `Chord.Voicing`{:.language-elixir} module is entirely concerned with the act of generating chord voicings for a given set of notes.
 
+{% include newsletter.html %}
+
 However, we still want this functionality available through our `Chord`{:.language-elixir} module. To accomplish this, we simply need to write a `Chord.voicings/1`{:.language-elixir} function that matches the signature of our `Chord.Voicing.voicings/1`{:.language-elixir} module and passes the call straight through to [our `Chord.Voicing`{:.language-elixir} module](https://github.com/pcorey/chord/blob/55ec2d6069366e0d78a6cf4a9bde59c589171c08/lib/chord.ex):
 
 <pre class='language-elixir'><code class='language-elixir'>
@@ -48,7 +50,7 @@ defmodule Chord do
 end
 </code></pre>
 
-We can continue on with this pattern by creating a new module to implement each of our features: `Chord.Fingering`{:.language-elixir}, `Chord.Renderer`{:.language-elixir}. From there we can flesh our our `Chord`{:.language-elixir} module to wire our convince functions up to their actual implementations:
+We can continue on with this pattern by creating a new module to implement each of our features: `Chord.Fingering`{:.language-elixir}, `Chord.Renderer`{:.language-elixir}. From there we can flesh our our `Chord`{:.language-elixir} module to wire our convenience functions up to their actual implementations:
 
 <pre class='language-elixir'><code class='language-elixir'>
 defmodule Chord do
@@ -89,6 +91,6 @@ In the previous example, the `Chord`{:.language-elixir} module is essentially ac
 
 I use the term "facade" loosely, and in real-life, I don't use it at all. The "facade pattern", and honestly all classic [Gang of Four design patterns](https://amzn.to/2BVHHIo), carry  baggage that I like to think I've let go of in my transition into the world of functional programming.
 
-Another less weighty way to thing of `Chord`{:.language-elixir} is as an "API module". It's sole purpose is to act as an "application programming interface" within our application.
+Another less weighty way to think of `Chord`{:.language-elixir} is as an "API module". It's sole purpose is to act as an "application programming interface" within our application.
 
 What would you call this kind of pattern?
