@@ -6,6 +6,7 @@ author: "Pete Corey"
 date:   2018-09-10
 tags: ["Emacs"]
 related: []
+image: "https://s3-us-west-1.amazonaws.com/www.east5th.co/img/minimal-coding-with-spacemacs-and-olivetti/spacemacs.png"
 ---
 
 As I mentioned [on Twitter](https://twitter.com/petecorey/status/1034631777795493888), I've been experimenting lately with using a visually minimal [Spacemacs](http://spacemacs.org/) setup. I've been using this new setup every day for several weeks, and I'm absolutely in love with it.
