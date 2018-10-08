@@ -37,6 +37,8 @@ All's well and good here.
 
 However, things start to get more complex when the result of our query increases in complexity. We very quickly have to start flexing our Jest muscles and writing all kinds of complex matchers to verify the contents of our result.
 
+{% include newsletter.html %}
+
 What's more, by testing our resolver function directly, we're only testing half of our GraphQL endpoint. We're not verifying that our schema actually contains the edge we're trying to test, or the fields we're trying to fetch off our our result type.
 
 Thankfully, there's a better way to test these queries. Using [Jest snapshots](https://jestjs.io/docs/en/snapshot-testing) we can refactor our original test into something like this:

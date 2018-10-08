@@ -63,6 +63,8 @@ Daunted with the task of implementing [a `parse/1`{:.language-elixir}](https://g
 
 As I mentioned up above, many Bitcoin messages share common sub-structures. Instead of dooming me to tedious repetition, I realized that these repeated structures were actually a blessing from the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) gods.
 
+{% include newsletter.html %}
+
 If we could architect our `parse/1`{:.language-elixir} and `serialize/1`{:.language-elixir} implementations in a way that offloads the responsibility of parsing and serializing these shared sub-structures, the parsing and serialization implementations of our top-level messages could be substantially simplified.
 
 Not only that, but we could take the notion of "sub-structures" even further. In many ways, the _types_ of the primitives that compose together to build the protocol's messages and sub-structures are sub-structures in and of themselves. For example, a `uint32_t`{:.language-elixir}, [which is a C type](https://www.gnu.org/software/libc/manual/html_node/Integers.html) commonly used to define unsigned integers throughout the protocol's various messages, is actually a sub-structure that has a single field and specific parsing and serialization rules.

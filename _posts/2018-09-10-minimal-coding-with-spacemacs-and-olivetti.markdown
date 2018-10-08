@@ -37,6 +37,8 @@ I've configured Olivetti to only activate when in `prog-mode`{:.language-lisp}, 
 
 To get Olivetti working with Spacemacs, I needed an Olivetti [layer](https://github.com/syl20bnr/spacemacs/blob/master/doc/LAYERS.org). Unfortunately, an out-of-the-box Spacemacs layer doesn't exist for Olivetti. Thankfully, the process of creating a custom, private layer isn't a difficult one.
 
+{% include newsletter.html %}
+
 We can create a new private layer from within Spacemacs by running the `configuration-layer/create-layer`{:.language-lisp} command with `M-x`{:.language-lisp} (or `SPC`{:.language-lisp} + `:`{:.language-lisp}). Let's call our layer `olivetti`{:.language-lisp}. This creates a new `~/.emacs.d/private/olivetti`{:.language-lisp} folder and populates a `packages.el`{:.language-lisp} file with some boilerplate.
 
 We'll replace the contents of `packages.el`{:.language-lisp} with the following:
