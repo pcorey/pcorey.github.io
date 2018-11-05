@@ -4,7 +4,7 @@ title:  "Snapshot Testing GraphQL Queries"
 description: "Snapshot testing is a breath of fresh air, especially when combined with testing GraphQL endpoints."
 author: "Pete Corey"
 date:   2018-10-01
-tags: ["Javascript", "GraphQL"]
+tags: ["Javascript", "GraphQL", "Testing"]
 related: []
 ---
 
