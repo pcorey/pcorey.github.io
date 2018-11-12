@@ -65,6 +65,8 @@ end)
 
 At this point, the result of our `with_repetitions/2`{:.language-elixir} function is a list of a list of permutations. For every `head`{:.language-elixir}, we're returning a list of all `k`{:.language-elixir}-length permutations starting with that `head`{:.language-elixir}. What we really want is a singly nested list of all permutations we've found.
 
+{% include newsletter.html %}
+
 To reduce our list of lists of permutations, we need to append each list of permutations for every value of `head`{:.language-elixir} together:
 
 <pre class='language-elixir'><code class='language-elixir'>

@@ -46,6 +46,8 @@ module.exports.connection = connection;
 
 Normally, due to [how Node.js' `require`{:.language-javascript} and `require.cache`{:.language-javascript} work](https://nodejs.org/api/modules.html#modules_require), the first time this shared module is required anywhere in our project, this code would be executed and our database connection would be established. Any subsequent `require`{:.language-javascript}s of our module would return the previously cached value of `module.exports`{:.language-javascript}. The module's code would not re-run, and additional database connections would not be opened.
 
+{% include newsletter.html %}
+
 Unfortunately, [Jest doesn't honor `require.cache`{:.language-javascript}](https://github.com/facebook/jest/issues/4940#issuecomment-346557115). This means that every test file blows away any previously cached modules, and any `require`{:.language-javascript} calls that test file makes will re-evaluate the required module's source. In our case, this re-evaulation creates a new database connection, which is the root of our problem.
 
 ## Mocking a Module with the Real Thing
