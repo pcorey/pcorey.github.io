@@ -38,7 +38,7 @@ Finally, we can repeatedly apply `pass`{:.language-j} until the result is stable
 
 And that's it!
 
-## Part 2
+## Part Two
 
 Part two tells us that one of the unit pairs is causing trouble with our polymer reduction. It wants us to remove each possible unit pair from the input string, count the length of the resulting reduction, and return the lowest final polymer string length.
 

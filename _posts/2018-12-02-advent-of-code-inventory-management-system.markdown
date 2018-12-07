@@ -26,7 +26,7 @@ The `e.y`{:.language-j} verb iterates over every element of `y`{:.language-j}, b
 
 I've been trying to make more use of forks, hooks, and verb trains after reading through [Forks, Hooks, and Compound Adverbs](http://www.jsoftware.com/help/jforc/forks_hooks_and_compound_adv.htm) and [Trains](http://www.jsoftware.com/help/dictionary/dictf.htm) on the J website.
 
-## Part 2
+## Part Two
 
 
 Part two asks us the find two IDs that differ by only a single letter. Once we've found those two IDs, we're to return the set of letters they have in common.

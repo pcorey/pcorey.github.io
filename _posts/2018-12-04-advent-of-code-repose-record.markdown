@@ -66,7 +66,7 @@ Finally I could box up the needed statistics for each guard and sleep matrix, so
     result =. (2&{:: * 1&{::) {. \:~ stats"1 group parse log
 </code></pre>
 
-## Part 2
+## Part Two
 
 Part two just wants us to find the guard that is asleep most frequently on the same minute of the night. We're to return that guard's ID multiplied by the minute they're usually asleep.
 

@@ -63,7 +63,7 @@ This gives us a visual depiction of where our rectangles overlaps where each pos
 4
 </code></pre>
 
-## Part 2
+## Part Two
 
 [This tweet reply from Raul Miller](https://twitter.com/raudelmil/status/1069659834977521664) sent me down a rabbit hole related to improving my string-parsing-fu. After coming out the other side I had learned that the `inv`{:.language-g} adverb, or `^:_1`{:.language-j}, when paired with `#`{:.language-j} can be used to preserve the gaps on a filtered list, or string:
 

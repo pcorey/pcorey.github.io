@@ -75,7 +75,7 @@ Here's my first working solution:
     +/ numbers
 </code></pre>
 
-## Part 2
+## Part Two
 
 My first instinct for solving this problem is to do it recursively. I might be able to define a dyadic verb that accepts my current list of frequencies and a list of changes. If the last frequency in my array exists earlier in the array, I'll return that frequency. Otherwise, I'll append the last frequency plus the first change to my frequencies array, rotate my changes array, and recurse.
 
