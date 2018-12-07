@@ -9,7 +9,7 @@ related: []
 image: "https://s3-us-west-1.amazonaws.com/www.east5th.co/img/advent-of-code-chronal-coordinates/Screen+Shot+2018-12-06+at+7.53.45+PM.png"
 ---
 
-Today's [Advent of Code](https://adventofcode.com/) challenge asked us to plot a [Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry) [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagram) of a collection of points, and to find the area of the largest, but finite, cell within our diagram.
+Today's [Advent of Code challenge](https://adventofcode.com/2018/day/6) asked us to plot a [Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry) [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagram) of a collection of points, and to find the area of the largest, but finite, cell within our diagram.
 
 I'll be honest. This was a difficult problem for me to solve with my current level of [J-fu](http://www.jsoftware.com/).
 
