@@ -6,6 +6,7 @@ author: "Pete Corey"
 date:   2018-12-13
 tags: ["J", "Advent of Code"]
 related: []
+image: "https://s3-us-west-1.amazonaws.com/www.east5th.co/img/advent-of-code-the-stars-align/the-stars-align.png"
 ---
 
 The [day ten Advent of Code challenge](https://adventofcode.com/2018/day/10) gives us a list of points and velocity pairs. Each point is updated by its corresponding velocity every second. At some point in time, these points will converge and spell out a message. Our task is to find that message using [the J programming language](http://jsoftware.com/)!
