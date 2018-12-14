@@ -6,7 +6,7 @@ author: "Pete Corey"
 date:   2018-12-14
 tags: ["J", "Advent of Code"]
 related: []
-image: ""
+image: "https://s3-us-west-1.amazonaws.com/www.east5th.co/img/advent-of-code-chronal-charge/fuel-cells.png"
 ---
 
 [Advent of Code's day eleven puzzle](https://adventofcode.com/2018/day/11) asks us to compute a three hundred square grid of values and to find the three by three sub-grid that contains the highest sum of values. In my heart of hearts I knew that this would be a problem well suited to [the J programming language](http://jsoftware.com/).
