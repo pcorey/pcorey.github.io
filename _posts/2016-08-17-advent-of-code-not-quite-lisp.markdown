@@ -6,7 +6,7 @@ author: "Pete Corey"
 date:   2016-08-17
 repo: "https://github.com/pcorey/advent_of_code_01"
 literate: true
-tags: ["Elixir", "Advent of Code", "Literate Commits"]
+tags: ["Elixir", "Advent of Code 2017", "Literate Commits"]
 ---
 
 

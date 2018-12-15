@@ -4,7 +4,7 @@ title:  "Generating Sequences with Elixir Streams"
 description: "Elixir streams can be amazingly useful tools for generating potentially infinite sequences of data. Learn about three useful stream functions that can be used to generate complex enumerable sequences."
 author: "Pete Corey"
 date:   2017-12-11
-tags: ["Elixir", "Advent of Code"]
+tags: ["Elixir", "Advent of Code 2017"]
 related: []
 ---
 

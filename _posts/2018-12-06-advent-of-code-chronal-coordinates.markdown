@@ -4,7 +4,7 @@ title:  "Advent of Code: Chronal Coordinates"
 description: "Day six of 2018's Advent of Code challenge. Let's use J to build a Manhattan distance-based Voronoi diagram!"
 author: "Pete Corey"
 date:   2018-12-06
-tags: ["J", "Advent of Code"]
+tags: ["J", "Advent of Code 2018"]
 related: []
 image: "https://s3-us-west-1.amazonaws.com/www.east5th.co/img/advent-of-code-chronal-coordinates/Screen+Shot+2018-12-06+at+7.53.45+PM.png"
 ---

@@ -4,7 +4,7 @@ title:  "Advent of Code: Chronal Calibration"
 description: "Day one of 2018's Advent of Code challenge. Let's use J to process a repeating sequence of changes."
 author: "Pete Corey"
 date:   2018-12-01
-tags: ["J", "Advent of Code"]
+tags: ["J", "Advent of Code 2018"]
 related: []
 ---
 

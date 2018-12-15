@@ -4,7 +4,7 @@ title:  "Advent of Code: Inventory Management System"
 description: "Day two of 2018's Advent of Code challenge. Let's use J to count occurances of letters in a string."
 author: "Pete Corey"
 date:   2018-12-02
-tags: ["J", "Advent of Code"]
+tags: ["J", "Advent of Code 2018"]
 related: []
 ---
 

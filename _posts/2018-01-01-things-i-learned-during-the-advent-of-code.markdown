@@ -4,7 +4,7 @@ title:  "Things I Learned During the Advent of Code"
 description: "This year's Advent of Code has come and gone. I had a lot of fun solving each of this year's challenges with Elixir."
 author: "Pete Corey"
 date:   2018-01-01
-tags: ["Elixir", "Advent of Code"]
+tags: ["Elixir", "Advent of Code 2017"]
 related: []
 ---
 
