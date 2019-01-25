@@ -18,7 +18,7 @@ Security is fundamental to everything we do as software creators. It is an under
 
 Imagine your company is doing well. Your application is a pleasure to use, and your user base is rapidly growing. You’ve attracted investors and you’ve built yourself an amazing team.
 
-But suddenly, everything changes. A malicious user has managed to find and exploit a severe vulnerability within your application. Their attack has negatively impacted hundreds users.
+But suddenly, everything changes. A malicious user has managed to find and exploit a severe vulnerability within your application. Their attack has negatively impacted hundreds of users.
 
 The hard earned trust between those affected users and your company vanishes instantly. Other users, when they learn of the attack, quickly begin to lose trust as well. Now, one of the first results when people google your product is a scathing TechCrunch article outlining the gory details of the attack. Soon, investors lose interest. With their lack of support and a rapidly dwindling user base, you realize that you won’t be able to make payroll this month.
 
