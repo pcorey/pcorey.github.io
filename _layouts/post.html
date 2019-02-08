@@ -31,7 +31,8 @@ layout: default
         <div class="post-footer" >
             <p class="post-tags" >
                 <i data-feather="tag"></i>
-                {% for tag in page.tags | sort %}
+                {% assign sorted = page.tags | sort %}
+                {% for tag in sorted %}
                 <a href="/blog/tags#{{tag | slugify}}">{{tag}}</a>{% if forloop.last == false %},{% endif %}
                 {% endfor %}
             </p>

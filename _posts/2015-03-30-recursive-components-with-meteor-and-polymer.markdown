@@ -60,7 +60,7 @@ I started by experimenting with recursive [custom block helpers](/blog/2015/01/1
 
 There are a few key take-aways from this layout. The <code class="language-javascript">row</code> element defaults to <code class="language-javascript">display:block</code>, which forces its content onto a new line. The <code class="language-javascript">flex</code> element is set to <code class="language-javascript">display:flex</code>. All of its children have their widths set to 100%, which effectively evenly distributes them within the flex element.
 
-The recursion is where the magic happens. You can see what we’re including the cantor custom block helper inside of itself! We’re passing in an incremented value of <code class="language-javascript">i</code> to the next iteration of the component. The component guards itself against infinite repetition with the <code class="language-javascript">{{#if more}}</code> check before recursing.
+The recursion is where the magic happens. You can see what we’re including the cantor custom block helper inside of itself! We’re passing in an incremented value of <code class="language-javascript">i</code> to the next iteration of the component. The component guards itself against infinite repetition with the <code class="language-javascript">&#123;&#123;#if more}}</code> check before recursing.
 
 The Meteor implementation can be used like this:
 

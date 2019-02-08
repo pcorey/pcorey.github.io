@@ -62,7 +62,7 @@ Where `getCardDocuments`{:.language-javascript} was a helper that returned a cur
 
 ## Basic Rendering
 
-The most straight forward way of using Clusterize.js is to render our cards in the DOM using a Blaze `{{#each}}`{:.language-javascript} tag, and then initialize the plugin:
+The most straight forward way of using Clusterize.js is to render our cards in the DOM using a Blaze `&#123;&#123;#each}}`{:.language-javascript} tag, and then initialize the plugin:
 
 <pre class="language-markup"><code class="language-markup">&lt;div id="contentArea" class="clusterize-content">
   &#123;&#123;#each document in cursor}}
