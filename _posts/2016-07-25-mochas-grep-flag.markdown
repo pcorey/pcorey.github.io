@@ -13,7 +13,7 @@ The grep flag gives you the ability to focus on specific tests with zero code ch
 
 I recently found myself in a situation where an ugly, manual process of zeroing in on tests was drastically simplified with the grep flag.
 
-# The Situation
+## The Situation
 
 One of my client projects has a very large, very complicated [Mocha](https://mochajs.org/) test suite. Many of the tests in this suite are generated programmatically (whether or not this is a good idea is a topic for another day…).
 
@@ -71,7 +71,7 @@ This is not a good solution.
 
 This kind of code juggling opens the doors for bugs to be introduced into my test suite and makes it impossible to watch all three transport tests at once.
 
-# Mocha Grep
+## Mocha Grep
 
 It turns out that Mocha already has a solution to my problem.
 
@@ -99,7 +99,7 @@ We can even use the [watch flag](https://mochajs.org/#w---watch) (`-w`{:.languag
 mocha -w -g "Scenarios for twilio|Scenarios for web"
 </code></pre>
 
-# Final Thoughts
+## Final Thoughts
 
 It’s always a good idea to thoroughly read the documentation of all of the tools you use on a regular basis.
 

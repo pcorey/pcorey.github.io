@@ -12,7 +12,7 @@ I’ve been quitely offering Meteor security assessments as a service for nearly
 
 An assessment is an in-depth, hands-on dive into your Meteor application. The goal of each assessment is to tease out any weak points that may leave your application susceptible to malicious users and outside attackers.
 
-# Why Security?
+## Why Security?
 
 Security is fundamental to everything we do as software creators. It is an underlying assumption that makes everything we do possible. We spend countless hours building an effective team, developing amazing software and nurturing trust with our users, but all of that falls to the floor without security.
 
@@ -24,7 +24,7 @@ The hard earned trust between those affected users and your company vanishes ins
 
 The question of “why security?” is answered simply: ___Because everything we do depends on it___.
 
-# How Do Assessments Work?
+## How Do Assessments Work?
 
 Before an assessment begins, I like to have a high-level discussion about your business, your application, and your users. This conversation lends insight into what you need and expect from an assessment. I also like to end this discussion with a quick architectural overview and a walkthrough of your application. This sets me up to get moving quickly once the assessment begins.
 
@@ -43,7 +43,7 @@ Next, attention shifts to the front-end of the application. I review the applica
 
 Lastly, I run the project's Meteor and Node.js dependencies through several automated scanners ([Package Scan](http://scan.east5th.co/), [NSP](https://nodesecurity.io/), and [Snyk](https://snyk.io/)) looking for known vulnerabilities. As the results of these scans are sometimes only applicable in specific circumstances, I review the results and determine if they pose a threat to your application.
 
-# What Can I Expect From an Assessment?
+## What Can I Expect From an Assessment?
 
 While the most apparent goal of an assessment is to find vulnerabilities within your Meteor application, my real motivation is to help you build confidence around the security process.
 
@@ -55,7 +55,7 @@ I like to present this final report in either a screen-sharing session, or an in
 
 Take a look at an [___example assessment report___](https://docs.google.com/document/d/1g2JmVBay1t9boHDEmdvwQh_nbWlGteK0Uc7hXoX4DlQ/edit?usp=sharing) to get a clearer picture of what to expect.
 
-# Interested in an Assessment?
+## Interested in an Assessment?
 
 If you value the security of your Meteor application, I’d love to hear from you. Enter your email address below and I’ll send you a short questionnaire about your application. From there, I’ll reach out and start a discussion.
 

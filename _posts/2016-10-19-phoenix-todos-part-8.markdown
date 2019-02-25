@@ -10,7 +10,7 @@ tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
 
-# [Creating Public Lists]({{page.repo}}/commit/47ab3b920db799b8099ea1ada73895cde83b274a)
+## [Creating Public Lists]({{page.repo}}/commit/47ab3b920db799b8099ea1ada73895cde83b274a)
 
 Now that we're loading and displaying all public lists, we'll want to be
 able to create new lists.
@@ -240,7 +240,7 @@ the `"create_list"`{:.language-javascript} message up to the server, and handles
 
 
 
-# [List Ordering]({{page.repo}}/commit/c9f4fccb73766a333fe0996163d083041f709147)
+## [List Ordering]({{page.repo}}/commit/c9f4fccb73766a333fe0996163d083041f709147)
 
 Our last commit had a small issue. When lists were added, they appeared
 at the end of the list, as expected. However, when we reloaded the
@@ -268,7 +268,7 @@ Now our lists will be consistently ordered, even through refreshes.
 
 
 
-# [Adding Tasks]({{page.repo}}/commit/48d3eb99077f0a418a6e16140505b8e7d45c4058)
+## [Adding Tasks]({{page.repo}}/commit/48d3eb99077f0a418a6e16140505b8e7d45c4058)
 
 Now that we can add lists, we should be able to add tasks to our
 lists.
@@ -470,7 +470,7 @@ Now we can add new tasks to each of our todos!
 
 
 
-# [Checking Tasks]({{page.repo}}/commit/51a6364bf738fd763d3ef0ea2d274957c1fed893)
+## [Checking Tasks]({{page.repo}}/commit/51a6364bf738fd763d3ef0ea2d274957c1fed893)
 
 Next up on our feature list is giving users the ability to toggle tasks
 as completed or incomplete.
@@ -662,7 +662,7 @@ With that, our users can check and uncheck todos.
 
 
 
-# [Sorting Tasks]({{page.repo}}/commit/5a296240d5c91e10468da8478f51b44550f9da41)
+## [Sorting Tasks]({{page.repo}}/commit/5a296240d5c91e10468da8478f51b44550f9da41)
 
 Just like our lists, our tasks are having a sorting problem. Checking
 and unchecking a task will randomize its position in the list.
@@ -727,7 +727,7 @@ With those changes, our tasks order themselves correctly in each list.
 </code></pre>
 
 
-# Final Thoughts
+## Final Thoughts
 
 As we implement more and more functionality, we’re falling into a pattern. Phoenix channel events can be used just like we’d use Meteor methods, and we can manually broadcast events that act like Meteor publication messages.
 

@@ -10,7 +10,7 @@ tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos", "Authentication
 ---
 
 
-# [Enter Guardian]({{page.repo}}/commit/a165dc982f029e2299d96a65ac9e3afa7981e648)
+## [Enter Guardian]({{page.repo}}/commit/a165dc982f029e2299d96a65ac9e3afa7981e648)
 
 Now we're getting to the meat of our authentication system. We have our
 `User`{:.language-elixir} model set up, but we need to associate users with active
@@ -190,7 +190,7 @@ rest of our authentication system!
 
 
 
-# [Sign-Up Route and Controller]({{page.repo}}/commit/c118f81324c5aa7392f1c998df279df7e36510d6)
+## [Sign-Up Route and Controller]({{page.repo}}/commit/c118f81324c5aa7392f1c998df279df7e36510d6)
 
 The first step to implementing authentication in our application is creating a back-end sign-up route that creates a new user in our system.
 
@@ -354,7 +354,7 @@ requests to verify their identity.
 
 
 
-# [Sign-In Route and Controller]({{page.repo}}/commit/ce4631f35e1e4e43dd47d9f0445ed77250d2fb05)
+## [Sign-In Route and Controller]({{page.repo}}/commit/ce4631f35e1e4e43dd47d9f0445ed77250d2fb05)
 
 Now that users have the ability to join our application, how will they
 sign into their accounts?
@@ -497,7 +497,7 @@ tested our sign-up functionality.
 
 
 
-# [Sign-Out Route and Controller]({{page.repo}}/commit/ccdb3c6de0f6550e4833570a58e9b5fbd69a1cbd)
+## [Sign-Out Route and Controller]({{page.repo}}/commit/ccdb3c6de0f6550e4833570a58e9b5fbd69a1cbd)
 
 The final piece of our authorization trifecta is the ability for users
 to sign out once they've successfully joined or signed into the

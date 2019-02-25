@@ -10,7 +10,7 @@ tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
 
-# [Mix Phoenix.New]({{page.repo}}/commit/8ee386eba1915ced0430be1a25f62fc0d1c83332)
+## [Mix Phoenix.New]({{page.repo}}/commit/8ee386eba1915ced0430be1a25f62fc0d1c83332)
 
 For this project we'll be recreating Meteor's
 [Todos](https://github.com/meteor/todos/tree/react/) application using a
@@ -28,7 +28,7 @@ over the upcoming weeks. Be sure to stay tuned for future posts!
 This first commit creates a new Phoenix project called `phoenix_todos`{:.language-javascript}.
 
 
-# [Adding mix_test_watch]({{page.repo}}/commit/e3a4d8aca5b6299aeef7a2b7130012522624f27f)
+## [Adding mix_test_watch]({{page.repo}}/commit/e3a4d8aca5b6299aeef7a2b7130012522624f27f)
 
 Moving forward, we'll be writing tests for the Elixir code we create.
 Being the good developers that we are, we should test this code.
@@ -55,7 +55,7 @@ to continuously watch our project for changes and re-run our test suite.
 
 
 
-# [Hello React]({{page.repo}}/commit/115384f2fe63dabd9d758a29e75262633216af22)
+## [Hello React]({{page.repo}}/commit/115384f2fe63dabd9d758a29e75262633216af22)
 
 Laying the groundwork for using React in a Phoenix project is fairly
 straight-forward.
@@ -182,7 +182,7 @@ by Brandon Richey that walks you throw the process step by step.
 
 
 
-# [Static Assets]({{page.repo}}/commit/fcb8f9e138b1e6ce670231a7d843fb5af02979e0)
+## [Static Assets]({{page.repo}}/commit/fcb8f9e138b1e6ce670231a7d843fb5af02979e0)
 
 Now we can start working in broad strokes. Since this project is a
 direct clone of the Meteor Todos application, we're not planning on
@@ -209,7 +209,7 @@ access our static assets.
 </code></pre>
 
 
-# [Layouts and Containers]({{page.repo}}/commit/b174f08f0440047974dd312ddbae4c8e2f20a034)
+## [Layouts and Containers]({{page.repo}}/commit/b174f08f0440047974dd312ddbae4c8e2f20a034)
 
 Now that we have our basic React functionality set up and our static
 assets being served, it's time to start migrating the React components
@@ -663,7 +663,7 @@ loading screen when we refresh our application.
 </code></pre>
 
 
-# Final Thoughts
+## Final Thoughts
 
 This first installment of “Phoenix Todos” mostly consisted of [“coding by the numbers”](https://en.wiktionary.org/wiki/paint-by-numbers). Migrating over the styles, static assets, and front-end components of our Meteor application into our Phoenix application is tedious work to say the least.
 

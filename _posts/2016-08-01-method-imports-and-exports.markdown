@@ -15,7 +15,7 @@ Unfortunately, many of the core features of the Meteor framework still rely on m
 
 This dichotomy can be confusing to Meteor developers new to the module system. How do we define methods in modules? Should we be exporting methods from modules? How do we import those methods into our application?
 
-# Importing Methods
+## Importing Methods
 
 When you call `Meteor.methods(...)`{:.language-javascript}, you’re modifying your application’s global state. The methods you pass into `Meteor.methods`{:.language-javascript} are pushed onto the global list of callable methods within your application.
 
@@ -70,7 +70,7 @@ import "/imports/paymentMethods.js";
 
 Notice that we’re not importing anything from `paymentMethods.js`{:.language-javascript}. That’s because there is nothing to import. We just want this module to be executed.
 
-# Testing Methods
+## Testing Methods
 
 What if we wanted to unit test our `paymentMethods.js`{:.language-javascript} module?
 
@@ -117,7 +117,7 @@ While this works, it’s a very fragile solution. `Meteor.server.method_handlers
 
 There has to be an better way to test our methods!
 
-# Exporting Methods
+## Exporting Methods
 
 To solve this problem, let’s go back and revisit our `paymentMethods.js`{:.language-javascript} module:
 
@@ -167,7 +167,7 @@ We’re directly calling our `"createPayment"`{:.language-javascript} method wit
 
 We’re not relying on any Meteor infrastructure or internal structures to run our tests; they’re completely independent of the platform.
 
-# Beyond Methods
+## Beyond Methods
 
 What’s beautiful about this module-based approach is that it’s not limited to just Meteor methods. We could apply this same technique to creating and testing our publications and our [template helpers](http://docs.meteor.com/api/templates.html#Template-helpers), [lifecycle callbacks](http://docs.meteor.com/api/templates.html#Template-onCreated) and [event handlers](http://docs.meteor.com/api/templates.html#Template-events).
 
@@ -227,7 +227,7 @@ Our `onCreated`{:.language-javascript} test creates a custom version of `this.su
 
 The `helpers.foo`{:.language-javascript} test is less complex. It simply asserts that `helpers.foo()`{:.language-javascript} equals `"bar"`{:.language-javascript}.
 
-# Final Thoughts
+## Final Thoughts
 
 Hopefully I’ve given you a clear picture of how I approach defining and testing my methods, publications, and template helpers in a [post-1.3 world](http://info.meteor.com/blog/announcing-meteor-1.3).
 

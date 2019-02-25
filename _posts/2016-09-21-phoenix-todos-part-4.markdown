@@ -9,7 +9,7 @@ literate: true
 tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
-# [Front-end Join]({{page.repo}}/commit/49c4d2b33507d1397be968699f8cf4505be88eb8)
+## [Front-end Join]({{page.repo}}/commit/49c4d2b33507d1397be968699f8cf4505be88eb8)
 
 Now that our back-end is shored up, we can turn our attention to the
 front-end side of the sign-up functionality.
@@ -209,7 +209,7 @@ user's JWT and user object in the `json.jwt`{:.language-javascript} and `json.us
 
 
 
-# [Enter Redux]({{page.repo}}/commit/166cc7713a563707760c115ccf5ba43f4b76a292)
+## [Enter Redux]({{page.repo}}/commit/166cc7713a563707760c115ccf5ba43f4b76a292)
 
 Now that we're receiving the newly signed up user and JWT from the
 server, we'll need some way of updating our client-side application
@@ -395,7 +395,7 @@ Now our application state is passed from our store, into our
 
 
 
-# [Sign Up Actions]({{page.repo}}/commit/5211d73d1214a5e139138b48998ae344c73d93fb)
+## [Sign Up Actions]({{page.repo}}/commit/5211d73d1214a5e139138b48998ae344c73d93fb)
 
 Now that we're using Redux, we'll want to create actions that describe
 the sign-up process. Because sign-up is an [asynchronous process](http://redux.js.org/docs/advanced/AsyncActions.html), we'll need three actions: `SIGN_UP_REQUEST`{:.language-javascript},

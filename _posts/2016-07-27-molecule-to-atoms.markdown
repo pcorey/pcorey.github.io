@@ -9,7 +9,7 @@ literate: true
 tags: ["Javascript", "Codewars", "Literate Commits"]
 ---
 
-# [Project Setup]({{page.repo}}/commit/8af0141e8ad499efe086b299e5f7c9cb5f48a7e8)
+## [Project Setup]({{page.repo}}/commit/8af0141e8ad499efe086b299e5f7c9cb5f48a7e8)
 
 Today we're going to be tackling the [Molecule to Atom]({{page.repo}})
 kata. The goal of this kata is to parse a string representation of a molecule into
@@ -57,7 +57,7 @@ Mocha as our test runner and Babel for ES6 support.
 
 
 
-# [Laying the Groundwork]({{page.repo}}/commit/f22620d0449856af339e5ba34825bdeb7fe88a6e)
+## [Laying the Groundwork]({{page.repo}}/commit/f22620d0449856af339e5ba34825bdeb7fe88a6e)
 
 The best place to start is at the beginning. We'll begin solving this
 kata by writing the most basic test we can think of. We expect an empty
@@ -97,7 +97,7 @@ that, our tests are green.
 
 
 
-# [Introducing Our Abstractions]({{page.repo}}/commit/cde856ec5e72c71e4776723ce783a7b1671fa85f)
+## [Introducing Our Abstractions]({{page.repo}}/commit/cde856ec5e72c71e4776723ce783a7b1671fa85f)
 
 Knowing this solution is going to get complex fairly quickly, we'd
 like to leverage some abstractions to make it more testable and
@@ -130,7 +130,7 @@ way.
 
 
 
-# [Testing Hydrogen]({{page.repo}}/commit/746013a7d51ebfad523a4a781ee5fc1305894f89)
+## [Testing Hydrogen]({{page.repo}}/commit/746013a7d51ebfad523a4a781ee5fc1305894f89)
 
 Let's add a new test case:
 
@@ -183,7 +183,7 @@ And now we're back to green again.
 
 
 
-# [Multiple Elements]({{page.repo}}/commit/5da65e13c93c736c14e255b91b608cd0ccfcee4d)
+## [Multiple Elements]({{page.repo}}/commit/5da65e13c93c736c14e255b91b608cd0ccfcee4d)
 
 Next we'll move onto parsing a molecule with multiple types of elements.
 Let's try to parse `"HMg"`{:.language-javascript}:
@@ -255,7 +255,7 @@ molecule object, our tests flip back to green.
 
 
 
-# [Compiling Parts]({{page.repo}}/commit/7937320430dd466f718aa7df760194e51c044f99)
+## [Compiling Parts]({{page.repo}}/commit/7937320430dd466f718aa7df760194e51c044f99)
 
 Things are getting more complicated. Instead of just breaking apart our
 `formula`{:.language-javascript} and looking for elements, we need to look for pairs of
@@ -318,7 +318,7 @@ come in handy when we need to deal with nested expressions.
 
 
 
-# [Fixing an Edge Case]({{page.repo}}/commit/2c42b6ac79e66bab389b1447b6a419f3178e0139)
+## [Fixing an Edge Case]({{page.repo}}/commit/2c42b6ac79e66bab389b1447b6a419f3178e0139)
 
 One thing I noticed while looking over our solution is that it
 did not support multiple instances of the same element in a molecule.
@@ -355,7 +355,7 @@ converted to `0`{:.language-javascript}, preventing a `NaN`{:.language-javascrip
 
 
 
-# [Beginning Nested Expressions]({{page.repo}}/commit/b7beb6c1025a3336df58fefc61c6df39d8487898)
+## [Beginning Nested Expressions]({{page.repo}}/commit/b7beb6c1025a3336df58fefc61c6df39d8487898)
 
 Next up on our feature todo list is adding support for nested
 expressions. A simple nested expressions to get us going could be
@@ -420,7 +420,7 @@ With those changes, our tests flip back to green. Beautiful.
 
 
 
-# [Refactoring]({{page.repo}}/commit/91b6ba9114b8837f5b92c7fff6a250a5c3f6f224)
+## [Refactoring]({{page.repo}}/commit/91b6ba9114b8837f5b92c7fff6a250a5c3f6f224)
 
 Looking forward, the next feature we'll want to support is using ratios,
 or `count`{:.language-javascript} on nested expressions. This means that we'll need some notion
@@ -485,7 +485,7 @@ safe.
 
 
 
-# [Multiplying Nested Expressions]({{page.repo}}/commit/7c413bd145b0fa46226be75d97df26b9f1054aa6)
+## [Multiplying Nested Expressions]({{page.repo}}/commit/7c413bd145b0fa46226be75d97df26b9f1054aa6)
 
 With that refactor out of the way, we can easily implement `multiply`{:.language-javascript}.
 To give ourselves an explicit objective, let's write a test first:
@@ -559,7 +559,7 @@ results array.
 
 
 
-# [Regex Woes]({{page.repo}}/commit/31f05757dfafc05264d48c99fbe2292fa6fa3773)
+## [Regex Woes]({{page.repo}}/commit/31f05757dfafc05264d48c99fbe2292fa6fa3773)
 
 Unfortunately, there's a big problem with our solution. Our regex
 (`\[.*\]`{:.language-javascript}) is looking for opening and closing brackets and assuming that
@@ -666,7 +666,7 @@ green.
 
 
 
-# [Alternate Groupings and Bug Fixes]({{page.repo}}/commit/b4f9566b1f45b4faf762cd3dd39ea2990946b09d)
+## [Alternate Groupings and Bug Fixes]({{page.repo}}/commit/b4f9566b1f45b4faf762cd3dd39ea2990946b09d)
 
 Last up on our feature list is the ability to use parentheses and curly
 brackets in addition to square brackets as sub-expression dividers.
@@ -745,7 +745,7 @@ After making this change, all of our tests pass.
 </code></pre>
 
 
-# Final Thoughts
+## Final Thoughts
 
 This was a doozy of a kata. 
 

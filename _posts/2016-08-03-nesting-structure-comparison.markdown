@@ -11,7 +11,7 @@ tags: ["Javascript", "Codewars", "Literate Commits"]
 
 
 
-# [Project Setup]({{page.repo}}/commit/bb7751fd28cc3127bc312422e4f98d55850dd80c)
+## [Project Setup]({{page.repo}}/commit/bb7751fd28cc3127bc312422e4f98d55850dd80c)
 
 The goal of [this code kata]({{page.repo}}) is to implement a method on
 the `Array`{:.language-javascript} prototype that determines when the current array and another
@@ -74,7 +74,7 @@ We'll start by initializing our project with a basic
 
 
 
-# [Extending Array]({{page.repo}}/commit/11b0d862c0386f9f147b2dd89e36d29a4fbf3447)
+## [Extending Array]({{page.repo}}/commit/11b0d862c0386f9f147b2dd89e36d29a4fbf3447)
 
 The simplest test we can write to get going is to compare the structure
 of an empty array to another empty array:
@@ -111,7 +111,7 @@ get our suite back into the green is to define a very simple
 
 
 
-# [Comparing Types]({{page.repo}}/commit/9fc38c25ce8020430a26ea8acef2227a8f738b65)
+## [Comparing Types]({{page.repo}}/commit/9fc38c25ce8020430a26ea8acef2227a8f738b65)
 
 Next, we'll add our first real test.  We expect an array who's first
 element is a `Number`{:.language-javascript} to have a different structure than an array who's
@@ -150,7 +150,7 @@ are not arrays, we'll return `true`{:.language-javascript}. Otherwise, we'll ret
 
 
 
-# [Generalizing]({{page.repo}}/commit/af0f5df73713b5e57ccc325e98fd6e44f12cb251)
+## [Generalizing]({{page.repo}}/commit/af0f5df73713b5e57ccc325e98fd6e44f12cb251)
 
 Now that we have our base case figured out, it's time to generalize and
 check the structure of arrays of any length.
@@ -219,7 +219,7 @@ return bothArrays || bothNot;
 
 
 
-# [Getting Recursive]({{page.repo}}/commit/4046fc790c577614a273e6a851fca5651c507633)
+## [Getting Recursive]({{page.repo}}/commit/4046fc790c577614a273e6a851fca5651c507633)
 
 So far we've only handled a single layer of structure. However, the goal
 of `sameStructureAs`{:.language-javascript} is to compare the nested structures of our inputs.
@@ -261,7 +261,7 @@ that we can throw at it (as long as we don't blow our stack).
 
 
 
-# [Bug Fixes]({{page.repo}}/commit/6a37908c8384df08bdd426396d0090a4b8b0e7a7)
+## [Bug Fixes]({{page.repo}}/commit/6a37908c8384df08bdd426396d0090a4b8b0e7a7)
 
 Submitting our solution revealed a few bugs in our solution. The first
 bug can be pointed out with this failing test:
@@ -321,7 +321,7 @@ With those fixes, out suite flips back to green!
 
 
 
-# [Final Refactor]({{page.repo}}/commit/61704b61787a658bc0f8330a09eb03dba7c16585)
+## [Final Refactor]({{page.repo}}/commit/61704b61787a658bc0f8330a09eb03dba7c16585)
 
 To make things a little more readable, I decided to move the `undefined`{:.language-javascript}
 check into a guard, rather than including it withing the comparison
@@ -344,7 +344,7 @@ After implementing this refactor, our tests still pass.
 </code></pre>
 
 
-# Final Thoughts
+## Final Thoughts
 
 Looking at the [other submitted solutions](http://www.codewars.com/kata/nesting-structure-comparison/solutions/javascript) to this kata, I realize that it’s a fairly interesting problem with lots of possible solutions. There are shorter solutions out there, but I like ours for its readability.
 

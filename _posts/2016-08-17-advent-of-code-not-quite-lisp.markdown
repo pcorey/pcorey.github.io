@@ -10,7 +10,7 @@ tags: ["Elixir", "Advent of Code 2017", "Literate Commits"]
 ---
 
 
-# [Christmas in August]({{page.repo}}/commit/4cb1209115cdf91b386bec8b6f71ad7d81d84053)
+## [Christmas in August]({{page.repo}}/commit/4cb1209115cdf91b386bec8b6f71ad7d81d84053)
 
 Today's an exciting day! We'll be tackling an entirely new set of code
 katas using an entirely different language! We'll be working on the
@@ -75,7 +75,7 @@ Elixir project.
 
 
 
-# [Watching Tests]({{page.repo}}/commit/f6eea76d9978bcf21bc3e799876000d4381dbd53)
+## [Watching Tests]({{page.repo}}/commit/f6eea76d9978bcf21bc3e799876000d4381dbd53)
 
 Out of the box, Elixir comes with a fantastic [unit testing
 framework](http://elixir-lang.org/docs/stable/ex_unit/ExUnit.html).
@@ -113,7 +113,7 @@ Elixir provided for us.
 
 
 
-# [Our First Test]({{page.repo}}/commit/7091c1fbc1289e87a1d65b7ec5e1016e60136836)
+## [Our First Test]({{page.repo}}/commit/7091c1fbc1289e87a1d65b7ec5e1016e60136836)
 
 To get things going, let's write the simplest test we can think of.
 Amazingly, tests for Elixir functions can be written within the
@@ -161,7 +161,7 @@ And with that, our test suite flips back to green.
 
 
 
-# [Jumping Forward]({{page.repo}}/commit/18a843c728ef34c3ed62a4d3f5e9008bebb35a0c)
+## [Jumping Forward]({{page.repo}}/commit/18a843c728ef34c3ed62a4d3f5e9008bebb35a0c)
 
 Our next test is slightly more complicated:
 
@@ -215,7 +215,7 @@ With those changes, our suite returns to green.
 
 
 
-# [Handling All Matches]({{page.repo}}/commit/0dd1a75856122071aa542059f5676a47c2cd6332)
+## [Handling All Matches]({{page.repo}}/commit/0dd1a75856122071aa542059f5676a47c2cd6332)
 
 Let's add one last test that excercises the ability to process "down"
 directions:

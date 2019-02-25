@@ -10,7 +10,7 @@ tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
 
-# [Create Users Table]({{page.repo}}/commit/b17b60561114027a03b5595d99c3abd5d06dfd8d)
+## [Create Users Table]({{page.repo}}/commit/b17b60561114027a03b5595d99c3abd5d06dfd8d)
 
 Let's focus on adding users and authorization to our
 Todos application. The first thing we'll need is to create a database
@@ -63,7 +63,7 @@ command.
 
 
 
-# [Creating the Users Model]({{page.repo}}/commit/4ecb09f545f4dba356a51504bf96345bb5f88c45)
+## [Creating the Users Model]({{page.repo}}/commit/4ecb09f545f4dba356a51504bf96345bb5f88c45)
 
 Now that we're created our users table, we need to create a
 corresponding `User`{:.language-elixir} model. Phoenix actually did most of the heavy
@@ -158,7 +158,7 @@ And with that, our tests flip back to green!
 
 
 
-# [Additional Validation]({{page.repo}}/commit/1a1f1f24ab67fad477adb450faaa4b10e06abbbf)
+## [Additional Validation]({{page.repo}}/commit/1a1f1f24ab67fad477adb450faaa4b10e06abbbf)
 
 While the default required/optional field validation is a good start, we
 know that we'll need additional validations on our `User`{:.language-elixir} models.
@@ -242,7 +242,7 @@ like checking password length, and asserting email uniqueness.
 
 
 
-# [Hashing Our Password]({{page.repo}}/commit/b27ac6bdf035ed79d9339dee04bbce4cf93b38e3)
+## [Hashing Our Password]({{page.repo}}/commit/b27ac6bdf035ed79d9339dee04bbce4cf93b38e3)
 
 You might have noticed that we had to manually set values for the
 `encrypted_password`{:.language-elixir} field for our `"changeset with non-unique email"`{:.language-elixir}
@@ -348,7 +348,7 @@ Isn't that pretty? And with that, our tests are passing once again.
  end
 </code></pre>
 
-# Final Thoughts
+## Final Thoughts
 
 Things are starting to look very different from our [original Meteor application](https://github.com/meteor/todos/tree/react). While [Meteor](https://www.meteor.com/) tends to hide complexity from application developers by withholding code in the framework itself, [Phoenix](http://www.phoenixframework.org/) expects developers to write much of this boilerplate code themselves.
 

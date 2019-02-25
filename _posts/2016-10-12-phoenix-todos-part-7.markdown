@@ -9,7 +9,7 @@ literate: true
 tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
-# [Redux Channel Actions]({{page.repo}}/commit/c26ec4c5937743e012929eb3fdb66b0bc5fda310)
+## [Redux Channel Actions]({{page.repo}}/commit/c26ec4c5937743e012929eb3fdb66b0bc5fda310)
 
 Connecting to our socket and joining our channel in the base of our
 application doesn't feel like the React Way™.
@@ -167,7 +167,7 @@ application's state!
 
 
 
-# [List Page]({{page.repo}}/commit/efbd2220769ab797b982a240872c741df56bec49)
+## [List Page]({{page.repo}}/commit/efbd2220769ab797b982a240872c741df56bec49)
 
 Now that our lists are being populated in the sidebar of our
 application, we should pull in the components, layouts, and pages
@@ -285,7 +285,7 @@ panel. Success!
 
 
 
-# [Preloading Todos]({{page.repo}}/commit/5178ba07924f7d54cab9d68b0ce6d426b0241966)
+## [Preloading Todos]({{page.repo}}/commit/5178ba07924f7d54cab9d68b0ce6d426b0241966)
 
 One of the cool features of [Ecto](https://github.com/elixir-ecto/ecto) is that we can write queries that
 automatically load, or "preload", related objects.
@@ -406,7 +406,7 @@ each list page!
 </code></pre>
 
 
-# Final Thoughts
+## Final Thoughts
 
 Although it was briefly glossed over in the commits, representing the WebSocket connection process and state in terms of Redux actions led to quite a bit of internal conflict.
 

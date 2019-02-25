@@ -9,7 +9,7 @@ literate: true
 tags: ["Javascript", "Codewars", "Literate Commits"]
 ---
 
-# [Laying the Groundwork]({{page.repo}}/commit/93e70856fc1a14685ea86f215cf20218f4466daa)
+## [Laying the Groundwork]({{page.repo}}/commit/93e70856fc1a14685ea86f215cf20218f4466daa)
 
 Today we'll be tackling a [code kata](https://www.codewars.com/) called
 [“Delete occurrences of an element if it occurs more than n
@@ -68,7 +68,7 @@ a simple [Node.js](https://nodejs.org/en/) project that uses
 
 
 
-# [Take What We're Given]({{page.repo}}/commit/7b3878a114b097b9a93ece1384a62b7c8a0081a9)
+## [Take What We're Given]({{page.repo}}/commit/7b3878a114b097b9a93ece1384a62b7c8a0081a9)
 
 One of the challenges of real-world problems is teasing out the best
 interface for a given task. Code katas are different from real-world
@@ -91,7 +91,7 @@ take this one step at a time.
 
 
 
-# [Our First Test]({{page.repo}}/commit/167e5cff5477e092eb4262fbe70f2ebaad10039f)
+## [Our First Test]({{page.repo}}/commit/167e5cff5477e092eb4262fbe70f2ebaad10039f)
 
 Writing [self-testing
 code](http://www.martinfowler.com/bliki/SelfTestingCode.html) is a
@@ -142,7 +142,7 @@ suite into a passing state is to have `deleteNth`{:.language-javascript} return 
 
 
 
-# [Keep it Simple]({{page.repo}}/commit/63443b1805687b5f10b15e16bf2291b141e030d3)
+## [Keep it Simple]({{page.repo}}/commit/63443b1805687b5f10b15e16bf2291b141e030d3)
 
 Interestingly, our incredibly simple and incredibly incorrect initial
 solution for `deleteNth`{:.language-javascript} holds up under additional base case tests. Any
@@ -157,7 +157,7 @@ array.
 
 
 
-# [Forging Ahead]({{page.repo}}/commit/e39386a4c71d61da387b5c3abd4824482ee3c4a8)
+## [Forging Ahead]({{page.repo}}/commit/e39386a4c71d61da387b5c3abd4824482ee3c4a8)
 
 As we add more test cases, things begin to get more complicated. In our
 next test we assert that `deleteNth([1, 2], 1)`{:.language-javascript} should equal `[1, 2]`{:.language-javascript}.
@@ -193,7 +193,7 @@ tests back into a green state by just returning `arr`{:.language-javascript}.
 
 
 
-# [Getting Real]({{page.repo}}/commit/7655928ec63634ba7ccec63713f4ac57d63130f7)
+## [Getting Real]({{page.repo}}/commit/7655928ec63634ba7ccec63713f4ac57d63130f7)
 
 We added a new test case, and things suddenly became very real. Our new
 test expects `deleteNth([1, 1, 2], 1)`{:.language-javascript} to return `[1, 2]`{:.language-javascript}. This means
@@ -259,7 +259,7 @@ green state.
 
 
 
-# [Simplifying the Filter]({{page.repo}}/commit/487e45741805ebe3a2df05eaa80220efe8162f18)
+## [Simplifying the Filter]({{page.repo}}/commit/487e45741805ebe3a2df05eaa80220efe8162f18)
 
 After getting to a green state, we notice that we can refactor our
 filter and remove some duplication.
@@ -278,7 +278,7 @@ replaced with `seen[num]`{:.language-javascript}.
 
 
 
-# [Removing the Base Case]({{page.repo}}/commit/3c23b0f42a3b09b6282d30ca37dd392543873545)
+## [Removing the Base Case]({{page.repo}}/commit/3c23b0f42a3b09b6282d30ca37dd392543873545)
 
 While we're on a refactoring kick, we also notice that the entire zero
 base case is no longer necessary. If `N`{:.language-javascript} (`x`{:.language-javascript}) is zero, our filter
@@ -298,7 +298,7 @@ function.
 
 
 
-# [Final Tests]({{page.repo}}/commit/775ef33bee719579eb68d9b9333d7f7e3f38aa60)
+## [Final Tests]({{page.repo}}/commit/775ef33bee719579eb68d9b9333d7f7e3f38aa60)
 
 At this point, I think this solution solves the problem at hand for any
 given inputs. As a final test, I add the two test cases provided in the
@@ -316,7 +316,7 @@ Both of these tests pass. Victory!
 
 
 
-# [Final Refactoring]({{page.repo}}/commit/0a86271899af3b808f4116455aa37da8c40cd7b0)
+## [Final Refactoring]({{page.repo}}/commit/0a86271899af3b808f4116455aa37da8c40cd7b0)
 
 Now that our tests are green and we're satisfied with the overall shape
 of our final solution, we can do some final refactoring.
@@ -339,7 +339,7 @@ our `filter`{:.language-javascript} lambda onto a single line.
 
 
 
-# Wrap-up
+## Wrap-up
 
 This was an excellent demonstration of how following test-driven development ideas can give you supreme confidence when refactoring your code. We were able to gut entire sections out of our solution and then completely transform it with zero trepidation.
 

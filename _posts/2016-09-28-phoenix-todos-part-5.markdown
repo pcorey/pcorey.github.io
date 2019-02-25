@@ -9,7 +9,7 @@ literate: true
 tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos", "Authentication"]
 ---
 
-# [Client-side Validation Bug]({{page.repo}}/commit/7168aa4b3b1d1ed7d6c1a57e4654961c2b6da16f)
+## [Client-side Validation Bug]({{page.repo}}/commit/7168aa4b3b1d1ed7d6c1a57e4654961c2b6da16f)
 
 You may have noticed that with our previous solution, only server-side
 errors would show on the sign-up form. Client-side validation was taking
@@ -90,7 +90,7 @@ server-side errors and render correctly.
 
 
 
-# [Sign-out Actions]({{page.repo}}/commit/c399f07577f24c75d1fae93e39bee3f9ac6868a1)
+## [Sign-out Actions]({{page.repo}}/commit/c399f07577f24c75d1fae93e39bee3f9ac6868a1)
 
 Now that we've established the pattern our Redux actions and reducers
 will follow, we can start implementing our other authentication
@@ -269,7 +269,7 @@ With that, authenticated users have the ability to sign out of our application!
 
 
 
-# [Persisting Users]({{page.repo}}/commit/4a00803239a6c092716e2ce1f6a1c01b3ad731a8)
+## [Persisting Users]({{page.repo}}/commit/4a00803239a6c092716e2ce1f6a1c01b3ad731a8)
 
 Unfortunately, if a user refreshes the page after signing up, they'll
 lose their authenticated status. This means a user would have to sign-in
@@ -345,7 +345,7 @@ authenticated.
 
 
 
-# [Sign In Front-end]({{page.repo}}/commit/7995365aa443b01a80244255daa97f7c528fde0d)
+## [Sign In Front-end]({{page.repo}}/commit/7995365aa443b01a80244255daa97f7c528fde0d)
 
 Finally, we can continue the same pattern we've been following and
 implement our sign-in functionality.
@@ -578,7 +578,7 @@ our application!
 </code></pre>
 
 
-# Final Thoughts
+## Final Thoughts
 
 Now that we’re getting more comfortable with React, it’s becoming more and more enjoyable to use.
 

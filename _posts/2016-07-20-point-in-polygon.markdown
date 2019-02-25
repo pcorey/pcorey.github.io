@@ -9,7 +9,7 @@ literate: true
 tags: ["Javascript", "Codewars", "Literate Commits"]
 ---
 
-# [Project Setup]({{page.repo}}/commit/740d5a8dd73a1d77b1de6d37c24f8108cdc1cb60)
+## [Project Setup]({{page.repo}}/commit/740d5a8dd73a1d77b1de6d37c24f8108cdc1cb60)
 
 The goal of [today’s
 kata](https://www.codewars.com/kata/530265044b7e23379d00076a/train/javascript)
@@ -73,7 +73,7 @@ This initial commit sets up our initial project.
 
 
 
-# [The Simplest Test]({{page.repo}}/commit/66787cf8d27c98e4dfefd2a08051a732ff7a2b10)
+## [The Simplest Test]({{page.repo}}/commit/66787cf8d27c98e4dfefd2a08051a732ff7a2b10)
 
 The first thing we do when we're solving a problem like this is to write
 a test. Because we're implementing a function given to us, we already
@@ -115,7 +115,7 @@ change our new `pointInPoly`{:.language-javascript} function to return `true`{:.
 
 
 
-# [Fleshing Out a Strategy]({{page.repo}}/commit/12523964461d887ccb22458aafc4a560d562d443)
+## [Fleshing Out a Strategy]({{page.repo}}/commit/12523964461d887ccb22458aafc4a560d562d443)
 
 We knew that our initial `pointInPoly`{:.language-javascript} solution was incomplete.
 Returning `true`{:.language-javascript} for all cases obviously wasn't going to work.
@@ -162,7 +162,7 @@ it return `1`{:.language-javascript} to bring us back to green.
 
 
 
-# [Rethinking Our Interfaces]({{page.repo}}/commit/2a385c1318b2aa90cdcfa9332487adceef561e0b)
+## [Rethinking Our Interfaces]({{page.repo}}/commit/2a385c1318b2aa90cdcfa9332487adceef561e0b)
 
 After some soul-searching, I decided I wasn't happy with where we were
 going with our previous solution. `countIntersections`{:.language-javascript} was really an
@@ -226,7 +226,7 @@ Our dummy implementation of `polygon.surrounds`{:.language-javascript} simply re
 
 
 
-# [Restating Point-in-Polygon]({{page.repo}}/commit/013bb64526e2d35dc8683de50abb84cbe1cccaea)
+## [Restating Point-in-Polygon]({{page.repo}}/commit/013bb64526e2d35dc8683de50abb84cbe1cccaea)
 
 Now that we've defined our `polygon`{:.language-javascript}, we can restate our
 implementation of `surrounds`{:.language-javascript}. We want to `translate`{:.language-javascript} our polygon so
@@ -277,7 +277,7 @@ new `polygon`{:.language-javascript}, and have `intersections`{:.language-javasc
 
 
 
-# [Translate Base Case]({{page.repo}}/commit/c559c9c36cec7abe5f18d1e64e3482381fbc97d1)
+## [Translate Base Case]({{page.repo}}/commit/c559c9c36cec7abe5f18d1e64e3482381fbc97d1)
 
 Now we can start testing the component pieces of our `surrounds`{:.language-javascript}
 function.
@@ -323,7 +323,7 @@ where `x`{:.language-javascript} and `y`{:.language-javascript} are zero.
 
 
 
-# [Finishing Translate]({{page.repo}}/commit/6d1ebb1f6becfc7ee420b6643d919895553fe272)
+## [Finishing Translate]({{page.repo}}/commit/6d1ebb1f6becfc7ee420b6643d919895553fe272)
 
 Adding a more complicated test of `translate`{:.language-javascript} shows that we need a
 better solution. Thankfully, it isn’t a huge leap to come up with the
@@ -354,7 +354,7 @@ the polygon has been incremented by the provided `x`{:.language-javascript} and 
 
 
 
-# [Line Abstraction]({{page.repo}}/commit/43391336426f1a214c6c48fb32a2691d8b07fda4)
+## [Line Abstraction]({{page.repo}}/commit/43391336426f1a214c6c48fb32a2691d8b07fda4)
 
 Now we turn out attention to the `intersections`{:.language-javascript} function. This still
 seems like a daunting piece of functionality, and we should break it
@@ -401,7 +401,7 @@ of tests for our new `line`{:.language-javascript} abstraction and a dummy imple
 
 
 
-# [Finishing Line]({{page.repo}}/commit/39ba0e8b751d1d7cd08daba1a434750974083607)
+## [Finishing Line]({{page.repo}}/commit/39ba0e8b751d1d7cd08daba1a434750974083607)
 
 Adding another test against `line.intersects`{:.language-javascript} shows that we need a
 better solution.
@@ -447,7 +447,7 @@ details on the math being used here.
 
 
 
-# [Finishing Intersections]({{page.repo}}/commit/0167aaca5933a5ce5365ff861e83fd15df034a43)
+## [Finishing Intersections]({{page.repo}}/commit/0167aaca5933a5ce5365ff861e83fd15df034a43)
 
 Now that `line`{:.language-javascript} and `line.intersects`{:.language-javascript} exist, we can implement our
 `polygon.intersections`{:.language-javascript} method.
@@ -498,7 +498,7 @@ we make our test suite happy by importing `line`{:.language-javascript}, and cre
 
 
 
-# [Constructing Lines]({{page.repo}}/commit/a62b20c1cced16e8974a9eeacf8fa6afea867d83)
+## [Constructing Lines]({{page.repo}}/commit/a62b20c1cced16e8974a9eeacf8fa6afea867d83)
 
 Finally, all we need to do to complete our solution is to build our
 `polygon.lines`{:.language-javascript} function. This function should transform the set of
@@ -561,7 +561,7 @@ polygon must connect back to the first!
 
 
 
-# [Pull it all Together]({{page.repo}}/commit/bb0fc20b81758f7940ef8b2ef306083dd180df0d)
+## [Pull it all Together]({{page.repo}}/commit/bb0fc20b81758f7940ef8b2ef306083dd180df0d)
 
 Now that all of our building blocks are finalized, we can come back to
 our original `pointInPoly`{:.language-javascript} method and rewrite it exactly how we had
@@ -590,7 +590,7 @@ working as expected.
 
 
 
-# [Final Test & Bug Fix]({{page.repo}}/commit/aa6ca4d145d3535cf9ceac14430f52730697513c)
+## [Final Test & Bug Fix]({{page.repo}}/commit/aa6ca4d145d3535cf9ceac14430f52730697513c)
 
 At this point, our solution should be finished. However, when we feed in
 the tests provided by the kata, we notice a failure.
@@ -647,7 +647,7 @@ Success!
 </code></pre>
 
 
-# Wrap-up
+## Wrap-up
 
 When you compare [our solution](https://github.com/pcorey/point-in-polygon) with [other submitted solutions](https://www.codewars.com/kata/530265044b7e23379d00076a/solutions/javascript), you’ll notice that ours is longer. Our solution probably took much longer to write as well. However, our solution was a fantastic exercise in deliberate practice.
 

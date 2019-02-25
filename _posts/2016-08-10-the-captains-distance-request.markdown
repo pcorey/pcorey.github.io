@@ -10,7 +10,7 @@ tags: ["Javascript", "Codewars", "Literate Commits"]
 ---
 
 
-# [Project Setup]({{page.repo}}/commit/ea60bcf00bdabf4bbf1ec6e34a46af3b83ce069e)
+## [Project Setup]({{page.repo}}/commit/ea60bcf00bdabf4bbf1ec6e34a46af3b83ce069e)
 
 Under [the captain's
 orders](https://www.codewars.com/kata/the-captains-distance-request),
@@ -60,7 +60,7 @@ As always, we'll get started by creating a new project that uses
 
 
 
-# [The Simplest Test]({{page.repo}}/commit/6dc19a21f6c97668f73821e4201edf1293306be6)
+## [The Simplest Test]({{page.repo}}/commit/6dc19a21f6c97668f73821e4201edf1293306be6)
 
 To get started, we'll write the simplest test we can think of. We would
 expect the distance between two identical coordinates to be zero
@@ -107,7 +107,7 @@ equal `0`{:.language-javascript}. We can fix this by having our new `distance`{:
 
 
 
-# [Splitting on Lat/Lon]({{page.repo}}/commit/0348c230b3a34f469eb1bd171af42b4956f1cc11)
+## [Splitting on Lat/Lon]({{page.repo}}/commit/0348c230b3a34f469eb1bd171af42b4956f1cc11)
 
 We can think of our solution as a series of transformations. The first
 transformation we need to do is splitting our comma separated lat/lon
@@ -169,7 +169,7 @@ few [Lodash](https://lodash.com/) function calls.
 
 
 
-# [DMS To Decimal]({{page.repo}}/commit/f96a2dbade6cf16c5941c7e02d655eb2b6b493e7)
+## [DMS To Decimal]({{page.repo}}/commit/f96a2dbade6cf16c5941c7e02d655eb2b6b493e7)
 
 The next step in our transformation is converting our coordinates from
 their given degree, minute, second format into a decimal format that we
@@ -230,7 +230,7 @@ values into their decimal equivilants.
 
 
 
-# [The Haversine Formula]({{page.repo}}/commit/3ae294cc21d6871206aca495b827c80ceddcf328)
+## [The Haversine Formula]({{page.repo}}/commit/3ae294cc21d6871206aca495b827c80ceddcf328)
 
 The next step in our transformation is using the two sets of latidudes
 and longitudes we've constructured to calculate the distance between
@@ -315,7 +315,7 @@ After implementing this formula, our tests pass!
 
 
 
-# [Finishing the Transformation]({{page.repo}}/commit/004b05fd507fffb2cd6ccf7d35b47aeb28965da7)
+## [Finishing the Transformation]({{page.repo}}/commit/004b05fd507fffb2cd6ccf7d35b47aeb28965da7)
 
 Now that we have all of the finished pieces of our transformation we can refactor
 our `distance`{:.language-javascript} function.
@@ -345,7 +345,7 @@ After doing this refactoring, our tests still pass!
 
 
 
-# [Final Tests and Bug Fixes]({{page.repo}}/commit/c2694b32c0ef4715eac5e90b1345e1a5c640ad0a)
+## [Final Tests and Bug Fixes]({{page.repo}}/commit/c2694b32c0ef4715eac5e90b1345e1a5c640ad0a)
 
 After adding in the remaining given tests in the code kata, I noticed I
 was getting incorrect results form my `distance`{:.language-javascript} function. After looking
@@ -401,7 +401,7 @@ our tests passed.
 </code></pre>
 
 
-# Final Thoughts
+## Final Thoughts
 
 Lately, we’ve been playing around with functional programming and languages like [Elixir](http://elixir-lang.org/). Functional languages encourage you to express your programs as a series of pure transformations of your data.
 

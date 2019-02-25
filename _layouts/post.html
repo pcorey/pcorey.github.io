@@ -1,23 +1,36 @@
 ---
 layout: default
 ---
-<div class="post content">
+<div class="post content {% if page.literate %}literate{% endif %}">
 
+ <div class="hero" >
   <div class="margin">
 
-    <header class="post-header">
-      <h1>
-        {{page.title}}
-      </h1>
-    </header>
+    <h1>
+      {{page.title}}
+    </h1>
+
+  </div>
+
+  <div class="nav-block" >
+      <div class="margin" >
+          <p>This article was published on {{ page.date | date: "%B %-d, %Y" }} under the
+              {% assign sorted = page.tags | sort %}
+              <span class="tags" >{% for tag in sorted %}<span class="tag" ><a href="/blog/tags#{{tag | slugify}}" >{{ tag }}</a></span>{% endfor %}</span> tag{% if page.tags.size > 1 %}s{% endif %}. For more articles, visit <a href="/blog/all" >the archives</a>. Also check out <a href="/work" >the work I do</a>, and <a href="mailto:hello@petecorey.com" >reach out</a> if you’re interested in working together.
+          </p>
+      </div>
+  </div>
+
+ </div>
+
+  <div class="margin" >
 
     {% if page.literate %}
   </div>
   <div class="literate-introduction">
     <div class="margin">
       <div class="post-content">
-        <p>This post is written as a set of <a href="/blog/2016/07/11/literate-commits/">Literate Commits</a>. The goal of this style is to show you how this program came together from beginning to end.</p>
-        <p>Each commit in the project is represented by a section of the article. Click each section's header to see the commit on Github, or <a href="{{page.repo}}">check out the repository</a> and follow along.</p>
+        <p style="font-style: italic;">This post is written as a set of <a href="/blog/2016/07/11/literate-commits/">Literate Commits</a>. The goal of this style is to show you how this program came together from beginning to end. Each commit in the project is represented by a section of the article. Click each section’s header to see the commit on Github, or <a href="{{page.repo}}">check out the repository</a> and follow along.</p>
       </div>
     </div>
   </div>
@@ -25,17 +38,13 @@ layout: default
     {% endif %}
 
     <article class="post-content">
-        {% include side-block.html date=page.date %}
         {{ content }}
-        <hr/>
-        <div class="post-footer" >
-            <p class="post-tags" >
-                <i data-feather="tag"></i>
-                {% assign sorted = page.tags | sort %}
-                {% for tag in sorted %}
-                <a href="/blog/tags#{{tag | slugify}}">{{tag}}</a>{% if forloop.last == false %},{% endif %}
-                {% endfor %}
-            </p>
+    </article>
+  </div>
+    <div class="post-footer" >
+        <div class="margin" >
+            <p><strong>Want more reading material?</strong> Check out the related articles below, and browse through some of the other posts filed under the {% assign sorted = page.tags | sort %}
+                <span class="tags" >{% for tag in sorted %}<span class="tag" ><a href="/blog/tags#{{tag | slugify}}" >{{ tag }}</a></span>{% endfor %}</span> tag{% if page.tags.size > 1 %}s{% endif %}. If you still want more, feel free to dig through <a href="/blog/all" >the archives</a>.</p>
             {% for post in site.posts %}
                 {% if page.related contains post.url %}
                     <p class="post-related">
@@ -60,7 +69,7 @@ layout: default
                 </p>
             {% endif %}
         </div>
-    </article>
+    </div>
 
   </div>
 

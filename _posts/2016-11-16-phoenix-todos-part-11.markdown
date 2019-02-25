@@ -10,7 +10,7 @@ tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
 
-# [Make Private]({{page.repo}}/commit/0d8dae4dc90b11ead495e51be873da98d99ae3c9)
+## [Make Private]({{page.repo}}/commit/0d8dae4dc90b11ead495e51be873da98d99ae3c9)
 
 Now that our channel connection can be authenticated, we can gives users
 the ability to make their lists private.
@@ -192,7 +192,7 @@ After wiring up all of the necessary Redux plumbing to call our
 
 
 
-# [Make Public]({{page.repo}}/commit/3f0f95a214001bba35536a2016d3fe634c4ad0eb)
+## [Make Public]({{page.repo}}/commit/3f0f95a214001bba35536a2016d3fe634c4ad0eb)
 
 Just as we let users make their lists private, we need to let them make
 their private lists public again.
@@ -347,7 +347,7 @@ And with that, users can make their private lists public.
 
 
 
-# Final Thoughts
+## Final Thoughts
 
 At this point, we’ve roughly recreated all of the features of the Meteor Todos application in Phoenix and Elixir.
 

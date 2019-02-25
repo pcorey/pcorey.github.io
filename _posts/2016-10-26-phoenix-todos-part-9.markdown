@@ -10,7 +10,7 @@ tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
 
-# [Update List Name]({{page.repo}}/commit/9f8f646e9fc1d313c86ebc7e0a84bed461465c8e)
+## [Update List Name]({{page.repo}}/commit/9f8f646e9fc1d313c86ebc7e0a84bed461465c8e)
 
 The next piece of functionality we need to knock out is the ability to
 rename lists.
@@ -146,7 +146,7 @@ update the names of our lists.
 
 
 
-# [Delete Lists]({{page.repo}}/commit/625f96689455af66c4ac2bf9194ca0a90419ae3d)
+## [Delete Lists]({{page.repo}}/commit/625f96689455af66c4ac2bf9194ca0a90419ae3d)
 
 Let's give users the ability to delete lists in our application.
 
@@ -336,7 +336,7 @@ lists.
 
 
 
-# [Delete Todos]({{page.repo}}/commit/7d49a9c0ff41eca8845e070ef687cc4961e1ede6)
+## [Delete Todos]({{page.repo}}/commit/7d49a9c0ff41eca8845e070ef687cc4961e1ede6)
 
 Next, we'll give users the ability to delete completed todos from their
 lists.
@@ -480,7 +480,7 @@ items.
 </code></pre>
 
 
-# Final Thoughts
+## Final Thoughts
 
 These changes wrap up all of the list and task [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) functionality in our application. Again, it’s interesting to notice that the vast majority of the work required to implement these features lives in the front-end of the application.
 

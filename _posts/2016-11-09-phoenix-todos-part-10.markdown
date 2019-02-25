@@ -9,7 +9,7 @@ literate: true
 tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
-# [Authenticated Sockets]({{page.repo}}/commit/a366d906d856c2db754f6528626e5c04d6ef9934)
+## [Authenticated Sockets]({{page.repo}}/commit/a366d906d856c2db754f6528626e5c04d6ef9934)
 
 Now that we've implemented the bulk of the unauthenticated functionality
 in our application, we need to turn our attention to authenticated
@@ -67,7 +67,7 @@ All of the old functionality will continue to work as expected.
 
 
 
-# [Guardian Token]({{page.repo}}/commit/20d30697ddb515f3277feb293716536c0914071d)
+## [Guardian Token]({{page.repo}}/commit/20d30697ddb515f3277feb293716536c0914071d)
 
 Now that our socket connection is expecting a `guardian_token`{:.language-elixir}
 parameter, we need to supply it in our `connectSocket`{:.language-javascript} action.
@@ -83,7 +83,7 @@ parameter, we need to supply it in our `connectSocket`{:.language-javascript} ac
 
 
 
-# [Connect Socket Thunk]({{page.repo}}/commit/b26627c6562df4603c281ae5edc87dab9fad055c)
+## [Connect Socket Thunk]({{page.repo}}/commit/b26627c6562df4603c281ae5edc87dab9fad055c)
 
 Because our entire socket connection will be authenticated or
 unauthenticated, we need to prepare ourselves to re-establish the
@@ -135,7 +135,7 @@ time we connect.
 
 
 
-# [Reconnect]({{page.repo}}/commit/913a3ed64cdb85d7aeb98cbb7b31301a4a2399b3)
+## [Reconnect]({{page.repo}}/commit/913a3ed64cdb85d7aeb98cbb7b31301a4a2399b3)
 
 Now we'll reconnect to our socket every time a user signs in, signs up,
 or signs out. This ensures that the socket connection is always properly
@@ -173,7 +173,7 @@ These changes also introduced a few small bugs which we quickly fixed.
 
 
 
-# [Fetching All Lists]({{page.repo}}/commit/e326eb84243ae7916599ec912ec82ef7f96a4021)
+## [Fetching All Lists]({{page.repo}}/commit/e326eb84243ae7916599ec912ec82ef7f96a4021)
 
 To make things simpler, and to show off a feature of Phoenix, I've
 decided to merge the `"lists.public"`{:.language-elixir} and `"lists.private"`{:.language-elixir} publications
@@ -268,7 +268,7 @@ by that user (`^user_id == list.user_id`{:.language-elixir}), and all public lis
 </code></pre>
 
 
-# Final Thoughts
+## Final Thoughts
 
 In hashing out this authorization scheme, I've realized there are lots of problems with this approach. Splitting communication across both WebSockets and REST endpoints creates lots of confusion around a user's authorization state.
 

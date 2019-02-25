@@ -10,7 +10,7 @@ tags: ["Elixir", "Phoenix", "Literate Commits", "Phoenix Todos"]
 ---
 
 
-# [List and Todo Models]({{page.repo}}/commit/28cd479ad1ed33bf330c3f500c429aa8e932d255)
+## [List and Todo Models]({{page.repo}}/commit/28cd479ad1ed33bf330c3f500c429aa8e932d255)
 
 We're getting to the point where we'll be wanting real data in our
 application. To use real data, we'll need to define
@@ -200,7 +200,7 @@ Specifying this relationship on the parent `List`{:.language-elixir} as well as 
 
 
 
-# [Seeding Data]({{page.repo}}/commit/304fa36f2a77d79f1ee60d4905cf529bbd30ab6a)
+## [Seeding Data]({{page.repo}}/commit/304fa36f2a77d79f1ee60d4905cf529bbd30ab6a)
 
 Now that we've defined our schemas and models, we need to seed our
 database with data.
@@ -350,7 +350,7 @@ each with a set of associated todos.
 
 
 
-# [Public Lists]({{page.repo}}/commit/851ce21cb9a6b4d21125d410ecfe2baa0ac7a7f0)
+## [Public Lists]({{page.repo}}/commit/851ce21cb9a6b4d21125d410ecfe2baa0ac7a7f0)
 
 Now that our database is populated with `Lists`{:.language-elixir} and `Todos`{:.language-elixir}, we're in a
 position where we can start passing this data down the the client.
