@@ -8,6 +8,8 @@ date:   2016-05-30
 tags: ["Meteor", "Security", "Process"]
 ---
 
+__Unfortunately I’m no longer offering Meteor security assessments as a professional service. If you’re interested in securing your Meteor application, please check out [Secure Meteor](https://www.securemeteor.com/). This post will remain published for historical reasons.__
+
 I’ve been quitely offering Meteor security assessments as a service for nearly a year now. In that time, I’ve worked with some amazing teams to analyze and assess the state of security in their Meteor applications.
 
 An assessment is an in-depth, hands-on dive into your Meteor application. The goal of each assessment is to tease out any weak points that may leave your application susceptible to malicious users and outside attackers.
@@ -59,16 +61,6 @@ Take a look at an [___example assessment report___](https://docs.google.com/docu
 
 If you value the security of your Meteor application, I’d love to hear from you. Enter your email address below and I’ll send you a short questionnaire about your application. From there, I’ll reach out and start a discussion.
 
-<div class="signup-form" style="margin: 3em 0">
-  <form action="http://formspree.io/hello@petecorey.com" method="POST">
-    <div class="email-wrapper">
-      <input type="text" placeholder="First Name" value="" name="FNAME" class="" id="mce-FNAME" tabindex="1"><!--
-      --><input type="email" name="_replyto" placeholder="Email Address"><!--
-      --><input type="submit" value="Begin"><!--
-      --><input type="hidden" name="type" value="assess"> 
-      <input type="hidden" name="_next" value="/begin/"> 
-    </div>
-  </form>
-</div>
+__Unfortunately I’m no longer offering Meteor security assessments as a professional service. If you’re interested in securing your Meteor application, please check out [Secure Meteor](https://www.securemeteor.com/). This post will remain published for historical reasons.__
 
 I’m looking forward to hearing from you!

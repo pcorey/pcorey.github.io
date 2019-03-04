@@ -15,7 +15,6 @@ defaults:
 paginate: 3
 paginate_path: "/blog/:num/"
 
-published: false
 future: true
 
 # Build settings

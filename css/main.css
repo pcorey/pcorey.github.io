@@ -248,6 +248,7 @@ p .feather {
     }
     .margin {
         margin: 0 1em;
+        width: auto;
     }
     pre[class*="language-"] {
         margin: 0;
