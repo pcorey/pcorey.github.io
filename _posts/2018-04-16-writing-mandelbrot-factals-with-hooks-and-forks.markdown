@@ -4,7 +4,7 @@ title:  "Writing Mandelbrot Fractals with Hooks and Forks"
 description: "J's hooks and forks allow us to write solutions to problems exactly as we'd express them using the English language. Let's demonstrate by rendering a Mandelbrot fractal!"
 author: "Pete Corey"
 date:   2018-04-16
-tags: ["J", "Programming Languages"]
+tags: ["J", "Programming Languages", "Fractals"]
 related: ["/blog/2018/03/19/js-low-level-obfuscation-leads-to-higher-levels-of-clarity/"]
 ---
 
