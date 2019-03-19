@@ -10,7 +10,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /img/portrait-150x150.png
+      image: "/img/Pete and Lyra Square 300x300.png"
 
 paginate: 3
 paginate_path: "/blog/:num/"
