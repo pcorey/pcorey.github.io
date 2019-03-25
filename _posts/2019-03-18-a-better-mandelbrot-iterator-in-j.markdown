@@ -31,6 +31,8 @@ Let's refresh ourselves on [Mandelbrot fractals](https://en.wikipedia.org/wiki/M
 
 In English, the next value of `z`{:.language-j} is some constant, `c`{:.language-j}, plus the square of our previous value of `z`{:.language-j}. To render a picture of the Mandelbrot fractal, we map some section of the complex plane onto the screen, so that every pixel maps to some value of `c`{:.language-j}. We iterate on this equation until we decide that the values being calculated either remain small, or diverge to infinity. Every value of `c`{:.language-j} that doesn't diverge is part of the Mandelbrot set.
 
+{% include newsletter.html %}
+
 But let's back up. We just said that "the next value of `z`{:.language-j} is some constant, `c`{:.language-j}, plus the square of our previous value of `z`{:.language-j}".
 
 We can write that in J:
