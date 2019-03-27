@@ -6,7 +6,7 @@ html {
 }
 
 html {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 body {
@@ -120,8 +120,8 @@ a > code[class*="language-"] .token {
 
 .margin {
     margin: 0 auto;
-    max-width: 800px;
-    width: 800px;
+    max-width: 650px;
+    width: 650px;
 }
 
 .signup-form {
@@ -186,7 +186,7 @@ input[type="submit"] {
 .post-footer {
     background-color: #f8f8f8;
     padding: 2em 0;
-    margin: 4em 0;
+    margin: 6em 0;
 }
 
 .footer-content {
