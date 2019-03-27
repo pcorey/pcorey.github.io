@@ -28,7 +28,7 @@ Our goal is to find a way to reverse Jest's [monkey-patching](https://en.wikiped
 
 This change, or reversal of a change, will have some unavoidable consequences. Our Jest test suite won't be able to support concurrent test processes. This means that all our tests will have to run ["in band"](https://jestjs.io/docs/en/cli#runinband)(`--runInBand`{:.language-javascript}). More interestingly, Jest's ["watch mode"](https://jestjs.io/docs/en/cli#watch) will no longer work, as it uses multiple processes to run tests and maintain a responsive command line interface.
 
-Accepting these limitations, let's press on.
+Accepting these limitations and acknowledging that this is likely a very bad idea, let's press on.
 
 ## Dependency Hacking
 
