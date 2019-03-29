@@ -11,7 +11,7 @@ Before setting out on my own over five years ago, I spent ten years working as a
 
 Since then, I’ve had the chance to work with many amazing teams applying what I know to build robust software, improve people lives, and bring real value to organizations.
 
-Here’s a sampling of my most recent favorite projects:
+Here’s a sampling of some of my favorite projects:
 
 <ul>
 <li style="margin-bottom: 1em;"><a href="/work/patient-rounding-with-methodist"><strong>Patient Rounding with Methodist</strong></a> - Methodist Le Bonheur Healthcare, the largest hospital system in Memphis, Tennessee, was able to save a quarter of a million dollars per year by switching to an in-house software solution that I helped architect and build.</li>
