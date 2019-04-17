@@ -1,6 +1,6 @@
 ---
 layout: work
-title:  "My Work as a Software Developer"
+title:  "The Portfolio"
 hideFooter: false
 hideNewsletter: true
 ---

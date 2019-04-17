@@ -3,22 +3,12 @@ layout: default
 ---
 <div class="post content {% if page.literate %}literate{% endif %}">
 
- <div class="hero" >
   <div class="margin">
 
     <h1>
       {{page.title}}
     </h1>
 
-  </div>
-
-  <div class="nav-block" >
-      <div class="margin" >
-          <p>This article was published on {{ page.date | date: "%B %-d, %Y" }} under the
-              {% assign sorted = page.tags | sort %}
-              <span class="tags" >{% for tag in sorted %}<span class="tag" ><a href="/blog/tags#{{tag | slugify}}" >{{ tag }}</a></span>{% endfor %}</span> tag{% if page.tags.size > 1 %}s{% endif %}. For more articles, visit <a href="/blog/all" >the archives</a>. Also check out <a href="/work" >the work I do</a>, and <a href="mailto:hello@petecorey.com" >reach out</a> if you’re interested in working together.
-          </p>
-      </div>
   </div>
 
  </div>
@@ -43,8 +33,10 @@ layout: default
   </div>
     <div class="post-footer" >
         <div class="margin" >
-            <p><strong>Want more reading material?</strong> Check out the related articles below, and browse through some of the other posts filed under the {% assign sorted = page.tags | sort %}
-                <span class="tags" >{% for tag in sorted %}<span class="tag" ><a href="/blog/tags#{{tag | slugify}}" >{{ tag }}</a></span>{% endfor %}</span> tag{% if page.tags.size > 1 %}s{% endif %}. If you still want more, feel free to dig through <a href="/blog/all" >the archives</a>.</p>
+            <p><strong>This article was published on {{ page.date | date: "%B %-d, %Y" }} under the
+                {% assign sorted = page.tags | sort %}
+                <span class="tags" >{% for tag in sorted %}<span class="tag" ><a href="/blog/tags#{{tag | slugify}}" >{{ tag }}</a></span>{% endfor %}</span> tag{% if page.tags.size > 1 %}s{% endif %}.</strong> For more articles, visit <a href="/blog/all" >the archives</a>. Also check out <a href="/work" >the work I do</a>, and <a href="mailto:hello@petecorey.com" >reach out</a> if you’re interested in working together.
+            </p>
             {% for post in site.posts %}
                 {% if page.related contains post.url %}
                     <p class="post-related">

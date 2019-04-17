@@ -215,8 +215,17 @@ p .feather {
     font-weight: bold;
 }
 
+.header {
+    display: flex;
+    margin: 2em 0;
+}
+
+.header a,
+.header strong {
+    margin: 0 0.5em;
+}
+
 .hero {
-    height: 100vh;
     min-height: fit-content;
     display: flex;
     flex-direction: column;
