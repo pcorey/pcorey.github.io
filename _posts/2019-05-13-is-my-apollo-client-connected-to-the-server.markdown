@@ -12,16 +12,16 @@ When you're building a real-time, subscription-heavy front-end application, it c
 
 That's the dream, at least. Trying to implement this functionality using [Apollo](https://www.apollographql.com/) turned out to be more trouble than we expected on a recent client project.
 
-Let's go over a few of the solutions that we tried that didn't solve the problem, for various reasons, and then let's go over the final working solution that we came up with. Ultimately, I'm happy with what we landed on, but I didn't expect to uncover so many roadblocks along the way.
+Let's go over a few of the solutions we tried that didn't solve the problem, for various reasons, and then let's go over the final working solution we came up with. Ultimately, I'm happy with what we landed on, but I didn't expect to uncover so many roadblocks along the way.
 
 ## What Didn't Work
 
-Our first attempt was to build a component that polled for a `heartbeat`{:.language-javascript} query on the server. If the query ever failed with an `error`{:.language-javascript}, we'd show a "disconnected" message to the client. Presumably, once the connection to the server was re-established, the `error`{:.language-javascript} would clear, and we could render the children of our component:
+Our first attempt was to build a component that polled for an `online`{:.language-javascript} query on the server. If the query ever failed with an `error`{:.language-javascript} on the client, we'd show a "disconnected" message to the user. Presumably, once the connection to the server was re-established, the `error`{:.language-javascript} would clear, and we'd re-render the children of our component:
 
 <pre class='language-javascript'><code class='language-javascript'>
 const Connected = props => {
   return (
-    <Query query={gql'{ heartbeat }'} pollInterval={5000}>
+    <Query query={gql'{ online }'} pollInterval={5000}>
       {({error, loading}) => {
         if (loading) {
             return &lt;Loader/>;
@@ -48,7 +48,7 @@ __NOTE:__ Apparently, this should work, and in various simplified reproductions 
 
 ---- 
 
-We thought, "well, if polling is turned off on error, let's just turn it back on again!" Our next attempt used `startPolling`{:.language-javascript} to try restarting our periodic heartbeat query.
+We thought, "well, if polling is turned off on error, let's just turn it back on!" Our next attempt used `startPolling`{:.language-javascript} to try restarting our periodic heartbeat query.
 
 <pre class='language-javascript'><code class='language-javascript'>
 if (error) {
@@ -58,7 +58,7 @@ if (error) {
 
 No dice.
 
-Our component start refetching our query, but the `Query`{:.language-javascript} component returns values for both `data`{:.language-javascript} and `error`{:.language-javascript}, along with a `networkStatus`{:.language-javascript} of `8`{:.language-javascript}, which indicates that ["one or more errors were detected."](https://www.apollographql.com/docs/react/api/react-apollo#graphql-query-data-networkStatus)
+Our component successfully restarts polling and carries on refetching our query, but the `Query`{:.language-javascript} component returns values for both `data`{:.language-javascript} and `error`{:.language-javascript}, along with a `networkStatus`{:.language-javascript} of `8`{:.language-javascript}, which indicates that ["one or more errors were detected."](https://www.apollographql.com/docs/react/api/react-apollo#graphql-query-data-networkStatus)
 
 If a query returns both an error and data, how are we to know which to trust? Was the query successful? Or was there an error?
 
@@ -68,7 +68,7 @@ __NOTE:__ This should also work, though it would be unnecessary, if it weren't f
 
 ---- 
 
-Lastly, we tried to leverage subscriptions to build our connectivity detection system. We wrote a `heartbeat`{:.language-javascript} subscription which pushes a timestamp down to the client every five seconds. Our component subscribes to this publication… And then what?
+Lastly, we considered leveraging subscriptions to build our connectivity detection system. We wrote a `online`{:.language-javascript} subscription which pushes a timestamp down to the client every five seconds. Our component subscribes to this publication… And then what?
 
 We'd need to set up another five second interval on the client that flips into an error state if it hasn't seen a heartbeat in the last interval.
 
@@ -76,24 +76,31 @@ But once again, once our connection to the server is re-established, our subscri
 
 ## What Did Work
 
-We decided to go a different route and implement a solution that leverages the `SubscriptionClient`{:.language-javascript} lifecycle and Apollo's client-side query functionality.
+We decided to go a different route and implemented a solution that leverages the `SubscriptionClient`{:.language-javascript} lifecycle and Apollo's client-side query functionality.
 
-Starting things off, we added a purely client-side `online`{:.language-javascript} query that returns a `Boolean!`{:.language-javascript}:
+At a high level, we store our `online`{:.language-javascript} boolean in Apollo's client-side cache, and update this value whenever Apollo detects that a WebSocket connection has been disconnected or reconnected. Because we store `online`{:.language-javascript} in the cache, our Apollo components can easily query for its value.
+
+Starting things off, we added a purely client-side `online`{:.language-javascript} query that returns a `Boolean!`{:.language-javascript}, and a resolver that defaults to being "offline":
 
 <pre class='language-javascript'><code class='language-javascript'>
+const resolvers = {
+    Query: { online: () => false }
+};
+
 const typeDefs = gql`
   extend type Query {
     online: Boolean!
   }
 `;
 
-const client = new ApolloClient({
-  ...,
-  typeDefs
+const apolloClient = new ApolloClient({
+  ...
+  typeDefs,
+  resolvers
 });
 </code></pre>
 
-And We refactored our `Connected`{:.language-javascript} component to query for that value from the cache:
+Next we refactored our `Connected`{:.language-javascript} component to query for the value of `online` from the cache:
 
 <pre class='language-javascript'><code class='language-javascript'>
 const Connected = props => {
@@ -115,12 +122,22 @@ const Connected = props => {
 }
 </code></pre>
 
-Notice that we're not polling on this query. Any time we update our `online`{:.language-javascript} value in the cache, Apollo knows to re-render this component.
+Notice that we're not polling on this query. Any time we update our `online`{:.language-javascript} value in the cache, Apollo knows to re-render this component with the new value.
 
-Next, while setting up our `SubscriptionClient`{:.language-javascript} and `WebSocketLink`{:.language-javascript}, we added a few hooks to detect when our client is connected, disconnected, and later reconnected. In each of those cases, we write the appropriate value of `online`{:.language-javascript} to our cache:
+Next, while setting up our `SubscriptionClient`{:.language-javascript} and `WebSocketLink`{:.language-javascript}, we added a few hooks to detect when our client is connected, disconnected, and later reconnected to the server. In each of those cases, we write the appropriate value of `online`{:.language-javascript} to our cache:
 
 <pre class='language-javascript'><code class='language-javascript'>
-TODO: Do this snippet
+subscriptionClient.onConnected(() =>
+    apolloClient.writeData({ data: { online: true } })
+);
+
+subscriptionClient.onReconnected(() =>
+    apolloClient.writeData({ data: { online: true } })
+);
+
+subscriptionClient.onDisconnected(() =>
+    apolloClient.writeData({ data: { online: false } })
+);
 </code></pre>
 
 And that's all there is to it!
