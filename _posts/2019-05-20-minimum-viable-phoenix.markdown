@@ -19,7 +19,7 @@ This can be overwhelming to developers new to Phoenix.
 
 To build a better understanding of the framework and how all of its moving pieces interact, let’s strip Phoenix down to its bare bones. Let’s start from zero and slowly build up to a __minimum viable Phoenix application__.
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>.gitignore</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">.gitignore</p>
 <pre class='language-elixirDiff'><code class='language-elixirDiff'>
 +.DS_Store
 </code></pre>
@@ -45,7 +45,7 @@ Hello.
 
 This [confused me at first](https://twitter.com/petecorey/status/1122629600800989184), but it was explained to me that in the Elixir world, [compilation is also evaluation](https://stackoverflow.com/a/41235949).
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>lib/minimal/application.ex</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">lib/minimal/application.ex</p>
 <pre class='language-elixirDiff'><code class='language-elixirDiff'>
 +IO.puts("Hello.")
 </code></pre>
@@ -72,13 +72,13 @@ iex(1)> Minimal.Application.start()
 Hello.
 </code></pre>
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>.gitignore</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">.gitignore</p>
 <pre class='language-elixirDiff'><code class='language-elixirDiff'>
 +*.beam
 .DS_Store
 </code></pre>
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>lib/minimal/application.ex</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">lib/minimal/application.ex</p>
  <pre class='language-elixirDiff'><code class='language-elixirDiff'>
 -IO.puts("Hello.")
 +defmodule Minimal.Application do
@@ -135,7 +135,7 @@ Notice that we also changed the return value of `start/2`{:.language-elixir} to 
 Once these changes are done, we can run our application with `mix`{:.language-elixir} or `mix run`{:.language-elixir}, or fire up an interactive elixir shell with `iex -S mix`{:.language-elixir}. No bootstrap expression required!
 
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>.gitignore</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">.gitignore</p>
 <pre class='language-elixirDiff'><code class='language-elixirDiff'>
  *.beam
 -.DS_Store
@@ -143,7 +143,7 @@ Once these changes are done, we can run our application with `mix`{:.language-el
 +/_build/
 </code></pre>
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>lib/minimal/application.ex</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">lib/minimal/application.ex</p>
 <pre class='language-elixirDiff'><code class='language-elixirDiff'>
  defmodule Minimal.Application do
 -  def start do
@@ -153,7 +153,7 @@ Once these changes are done, we can run our application with `mix`{:.language-el
    end
 </code></pre>
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>mix.exs</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">mix.exs</p>
    <pre class='language-elixirDiff'><code class='language-elixirDiff'>
 +defmodule Minimal.MixProject do
 +  use Mix.Project
@@ -205,20 +205,20 @@ config :phoenix, :json_library, Jason</code></pre>
 Heeding that advice, we’ll install `:jason`{:.language-elixir} and add that configuration line to a new file in our project, `config/config.exs`{:.language-elixir}.
 
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>.gitignore</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">.gitignore</p>
 <pre class='language-elixirDiff'><code class='language-elixirDiff'>
  /_build/
 +/deps/
 </code></pre>
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>config/config.exs</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">config/config.exs</p>
 <pre class='language-elixirDiff'><code class='language-elixirDiff'>
 +use Mix.Config
 +
 +config :phoenix, :json_library, Jason
 </code></pre>
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>mix.exs</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">mix.exs</p>
 <pre class='language-elixirDiff'><code class='language-elixirDiff'>
    app: :minimal,
 -  version: "0.1.0"
@@ -307,7 +307,7 @@ config :minimal, MinimalWeb.Endpoint, server: true
 </code></pre>
 
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>config/config.exs</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">config/config.exs</p>
 <pre class='language-elixirDiff'><code class='language-elixirDiff'>
 +config :minimal, MinimalWeb.Endpoint, []
 +
@@ -316,7 +316,7 @@ config :minimal, MinimalWeb.Endpoint, server: true
 +import_config "#{Mix.env()}.exs"
 </code></pre>
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>config/dev.exs</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">config/dev.exs</p>
 <pre class='language-elixirDiff'><code class='language-elixirDiff'>
 +use Mix.Config
 +
@@ -325,7 +325,7 @@ config :minimal, MinimalWeb.Endpoint, server: true
 +  http: [port: 4000]
 </code></pre>
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>lib/minimal/application.ex</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">lib/minimal/application.ex</p>
 <pre class='language-elixirDiff'><code class='language-elixirDiff'>
  defmodule Minimal.Application do
 +  use Application
@@ -342,7 +342,7 @@ config :minimal, MinimalWeb.Endpoint, server: true
    end
  </code></pre>
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>lib/minimal_web/endpoint.ex</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">lib/minimal_web/endpoint.ex</p>
    <pre class='language-elixirDiff'><code class='language-elixirDiff'>
 +defmodule MinimalWeb.Endpoint do
 +  use Phoenix.Endpoint, otp_app: :minimal
@@ -433,7 +433,7 @@ And ultimately `send_resp/3`{:.language-elixir} is just modifying our `conn`{:.l
 These three expressions are identical, and we can use whichever one we choose to return our HTML fragment from our controller. For now, we’ll follow best practices and stick with Phoenix’s `html/2`{:.language-elixir} helper function.
 
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>lib/minimal_web/controllers/home_controller.ex</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">lib/minimal_web/controllers/home_controller.ex</p>
 <pre class='language-elixirDiff'><code class='language-elixirDiff'>
 +defmodule MinimalWeb.HomeController do
 +  use Phoenix.Controller, namespace: MinimalWeb
@@ -446,7 +446,7 @@ These three expressions are identical, and we can use whichever one we choose to
 +end
 </code></pre>
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>lib/minimal_web/endpoint.ex</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">lib/minimal_web/endpoint.ex</p>
 <pre class='language-elixirDiff'><code class='language-elixirDiff'>
    use Phoenix.Endpoint, otp_app: :minimal
 +
@@ -454,7 +454,7 @@ These three expressions are identical, and we can use whichever one we choose to
  end
  </code></pre>
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>lib/minimal_web/router.ex</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">lib/minimal_web/router.ex</p>
  <pre class='language-elixirDiff'><code class='language-elixirDiff'>
 +defmodule MinimalWeb.Router do
 +  use Phoenix.Router
@@ -506,7 +506,7 @@ Our `render/2`{:.language-elixir} function is a view, not a controller, so we ju
 Be sure to read move about [the `ErrorView`{:.language-elixir} module](https://hexdocs.pm/phoenix/views.html#the-errorview), and how it incorporates into our application’s endpoint. Also note that the module called to render errors is customizable through [the `:render_errors`{:.language-elixir} configuration option](https://hexdocs.pm/phoenix/Phoenix.Endpoint.html#module-compile-time-configuration).
 
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;'>lib/minimal_web/views/error_view.ex</p>
+<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">lib/minimal_web/views/error_view.ex</p>
 <pre class='language-elixirDiff'><code class='language-elixirDiff'>
 +defmodule MinimalWeb.ErrorView do
 +  def render("404.html", _assigns) do

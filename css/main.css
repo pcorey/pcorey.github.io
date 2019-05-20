@@ -263,6 +263,9 @@ p .feather {
         margin: 0;
         padding: 1em 0;
     }
+    .diff-filename {
+        margin-bottom: 0 !important;
+    }
 }
 
 
