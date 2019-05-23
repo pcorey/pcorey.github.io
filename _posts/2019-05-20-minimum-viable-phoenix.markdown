@@ -13,7 +13,7 @@ literate: true
 
 ## [Starting at the Beginning]({{page.repo}}/commit/6f8c9d84ea05d8dd4e137ae6133db4ad06fb6498)
 
-Phoenix ships with quite a few bells and whistles. Whenever you fire up `mix phx.new`{:.language-elixir} to create a new web application, fourty six files are created and spread across thirty directories!
+Phoenix ships with quite a few bells and whistles. Whenever you fire up `mix phx.new`{:.language-elixir} to create a new web application, forty six files are created and spread across thirty directories!
 
 This can be overwhelming to developers new to Phoenix.
 
@@ -39,7 +39,7 @@ IO.puts("Hello.")
 Surprisingly, we can execute our newly written Elixir application by compiling it:
 
 <pre class='language-elixir'><code class='language-elixir'>
-➜ elixirc lib/minimal.ex
+➜ elixirc lib/minimal/application.ex
 Hello.
 </code></pre>
 
@@ -130,9 +130,9 @@ def start(:normal, []) do
 end
 </code></pre>
 
-Notice that we also changed the return value of `start/2`{:.language-elixir} to be an `:ok`{:.language-elixir} tuple who’s second value is a PID. Normally, an application would spin up a supervisor process as its first act of life and return its PID. We’re not doing that yet, so we simply return the current process’ PID.
+Notice that we also changed the return value of `start/2`{:.language-elixir} to be an `:ok`{:.language-elixir} tuple whose second value is a PID. Normally, an application would spin up a supervisor process as its first act of life and return its PID. We’re not doing that yet, so we simply return the current process’ PID.
 
-Once these changes are done, we can run our application with `mix`{:.language-elixir} or `mix run`{:.language-elixir}, or fire up an interactive elixir shell with `iex -S mix`{:.language-elixir}. No bootstrap expression required!
+Once these changes are done, we can run our application with `mix`{:.language-elixir} or `mix run`{:.language-elixir}, or fire up an interactive Elixir shell with `iex -S mix`{:.language-elixir}. No bootstrap expression required!
 
 
 <p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">.gitignore</p>
