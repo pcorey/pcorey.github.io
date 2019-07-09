@@ -6,6 +6,7 @@ author: "Pete Corey"
 date:   2019-07-09
 tags: ["J"]
 related: []
+image: "/img/2019-07-09-the-many-ways-to-define-verbs-in-j/plot.png"
 ---
 
 I recently watched [an interesting 12tone video on the "Euler Gradus Suavitatis"](https://www.youtube.com/watch?v=B6Dvfv_ASVg) which is a formula devised by Leonhard Euler to analytically compute the consonance, or translated literally, the "degree of pleasure" of a given musical interval.
