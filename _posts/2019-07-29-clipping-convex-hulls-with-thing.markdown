@@ -29,7 +29,7 @@ My plan of attack is to take my two random sets of two dimensional points, run t
 
 Before diving in and building a poorly implemented, bug riddled implementation of each of these algorithms, I decided to see if the hard work had already been done for me. As it turns out, it had!
 
-I discovered that [the `@thi.ng`{:.language-javascript} project](http://thi.ng/) a , which is a set of computational design tools for Clojure and Clojurescript and also includes a smorgasbord of incredibly useful [Javascript packages](https://github.com/thi-ng/umbrella), contains exactly what I was looking for.
+I discovered that [the `thi.ng`{:.language-javascript} project](http://thi.ng/) a , which is a set of computational design tools for Clojure and Clojurescript and also includes a smorgasbord of incredibly useful [Javascript packages](https://github.com/thi-ng/umbrella), contains exactly what I was looking for.
 
 - `@thi.ng/geom-hull`{:.language-javascript} implements Graham's scan.
 - `@thi.ng/geom-clip`{:.language-javascript} implements the Sutherland–Hodgman clipping algorithm.
@@ -145,7 +145,9 @@ drawArea(clip, context);
 
 <div id="root4" style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0;"></div>
 
-As you can see, with the right tools at our disposal, this potentially difficult task is a breeze. I'm incredibly happy that I discovered the `@thi.ng`{:.language-javascript} set of libraries when I did, and I can see myself reaching for them in the future.
+As you can see, with the right tools at our disposal, this potentially difficult task is a breeze. I'm incredibly happy that I discovered the `thi.ng`{:.language-javascript} set of libraries when I did, and I can see myself reaching for them in the future.
+
+<strong>Update:</strong> The Thi.ng creator put together a demo outlining a much more elegant way of approaching this problem. Be sure to [check out their solution](https://gist.github.com/postspectacular/063b190b5540a1615f3e43a6fcb82fdd), and once again, check out [`thi.ng`{:.language-*}](http://thi.ng/)!
 
 <script src="/js/2019-07-29-clipping-convex-hulls-with-thing/runtime.js"></script>
 <script src="/js/2019-07-29-clipping-convex-hulls-with-thing/app.js"></script>
