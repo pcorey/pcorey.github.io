@@ -9,14 +9,6 @@ related: []
 image: "/img/2019-07-29-clipping-convex-hulls-with-thing/image.png"
 ---
 
-<style>
-canvas {
-  width: 100%;
-  height: 100%;
-}
-</style>
-
-
 I recently found myself knee-deep in a sea of points and polygons. Specifically, I found myself with two polygons represented by two random sets of two dimensional points. I wanted to convert each set of points into a convex polygon, or a [convex hull](https://en.wikipedia.org/wiki/Convex_hull), and find the overlapping area between the two.
 
 After doing some research, I learned about the existence of a few algorithms that would help me on my quest:
@@ -152,3 +144,10 @@ As you can see, with the right tools at our disposal, this potentially difficult
 <script src="/js/2019-07-29-clipping-convex-hulls-with-thing/runtime.js"></script>
 <script src="/js/2019-07-29-clipping-convex-hulls-with-thing/app.js"></script>
 <script src="/js/2019-07-29-clipping-convex-hulls-with-thing/main.js"></script>
+
+<style>
+canvas {
+  width: 100%;
+  height: 100%;
+}
+</style>
