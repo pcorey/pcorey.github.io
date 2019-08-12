@@ -2,7 +2,7 @@
 layout: post
 title:  "Exporting ES6 Classes From Meteor Packages"
 titleParts: ["Exporting ES6 Classes From", "Meteor Packages"]
-description: "How do you export ES6 classes from Meteor packages? This articles dives into the topic."
+excerpt: "How do you export ES6 classes from Meteor packages? This articles dives into the topic."
 author: "Pete Corey"
 date:   2015-09-23
 tags: ["Javascript", "Meteor"]

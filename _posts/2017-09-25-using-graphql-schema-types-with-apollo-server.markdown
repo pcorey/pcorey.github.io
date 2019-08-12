@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using GraphQL Schema Types with Apollo Server"
-description: "It can be difficult using raw GraphQL schema types in conjection with Apollo's server-side tools. This article digs into the pros and cons of a potential solution."
+excerpt: "It can be difficult using raw GraphQL schema types in conjection with Apollo's server-side tools. This article digs into the pros and cons of a potential solution."
 author: "Pete Corey"
 date:   2017-09-25
 tags: ["Javascript", "Node.js", "GraphQL", "Apollo", "MongoDB", "Mongoose"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Assessing Mobile Meteor Applications"
-description: "How do I carry out security assessments against mobile-only Meteor applications? The same way I carry out any other security assessment!"
+excerpt: "How do I carry out security assessments against mobile-only Meteor applications? The same way I carry out any other security assessment!"
 author: "Pete Corey"
 date:   2016-08-29
 tags: ["Javascript", "Meteor", "Security", "Mobile"]

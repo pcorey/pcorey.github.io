@@ -2,7 +2,7 @@
 layout: post
 title:  "Check-Checker Checks Your Checks"
 titleParts: ["Check-Checker", "Checks Your Checks"]
-description: "Check-Checker is a package that looks for missing or incomplete calls to 'check' in your Meteor methods and publications. It's a powerful tool in the fight against NoSQL Injection."
+excerpt: "Check-Checker is a package that looks for missing or incomplete calls to 'check' in your Meteor methods and publications. It's a powerful tool in the fight against NoSQL Injection."
 author: "Pete Corey"
 date:   2015-07-27
 tags: ["Javascript", "Meteor", "Security", "NoSQL Injection", "Announcement"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rendering Life on a Canvas with Phoenix Channels"
-description: "Watch Conway's Game of Life come to life on an HTML5 canvas using an Elixir umbrella application and Phoenix channels."
+excerpt: "Watch Conway's Game of Life come to life on an HTML5 canvas using an Elixir umbrella application and Phoenix channels."
 author: "Pete Corey"
 date:   2017-02-20
 tags: ["Elixir", "Phoenix", "Channels", "Game of Life", "Experiments", "Channels"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Clipping Convex Hulls with Thi.ng!"
-description: "I recently discovered Thi.ng, a set of computational design tools created by the Clojure and Clojurescript community, and it helped me traverse my way through a sea of points and polygons. Check out how we can use the tools to generate convex hulls, clip polygons, and calculate polygon areas."
+excerpt: "I recently discovered Thi.ng, a set of computational design tools created by the Clojure and Clojurescript community, and it helped me traverse my way through a sea of points and polygons. Check out how we can use the tools to generate convex hulls, clip polygons, and calculate polygon areas."
 author: "Pete Corey"
 date:   2019-07-29
 tags: ["Javascript", "Geometry", "Thi.ng"]

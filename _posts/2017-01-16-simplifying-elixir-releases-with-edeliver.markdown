@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Simplifying Elixir Releases With Edeliver"
-description: "Edeliver simplifies the process of building and deploying standard releases for your Elixir and Phoenix applications."
+excerpt: "Edeliver simplifies the process of building and deploying standard releases for your Elixir and Phoenix applications."
 author: "Pete Corey"
 date:   2017-01-16
 tags: ["Elixir", "Phoenix", "Deployment"]

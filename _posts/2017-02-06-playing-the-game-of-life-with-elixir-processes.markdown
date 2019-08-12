@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Playing the Game of Life with Elixir Processes"
-description: "Explore the concept of life and death with Elixir processes by implementing Conway's Game of Life where each cell is a living Elixir process."
+excerpt: "Explore the concept of life and death with Elixir processes by implementing Conway's Game of Life where each cell is a living Elixir process."
 author: "Pete Corey"
 date:   2017-02-06
 tags: ["Elixir", "Game of Life", "Experiments"]

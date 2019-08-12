@@ -2,7 +2,7 @@
 layout: post
 title:  "Aspect Ratio Media Queries"
 titleParts: ["Aspect Ratio", "Media Queries"]
-description: "Aspect ratio media queries can be used to create interesting and incredibly useful layouts. Check out this example."
+excerpt: "Aspect ratio media queries can be used to create interesting and incredibly useful layouts. Check out this example."
 author: "Pete Corey"
 date:   2014-12-16
 tags: ["CSS"]

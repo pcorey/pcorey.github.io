@@ -2,7 +2,7 @@
 layout: post
 title:  "Black Box Meteor - Package Scanning"
 titleParts:  ["Black Box Meteor", "Package Scanning"]
-description: "A malicious user can view a list of package being used by your Meteor application from the client."
+excerpt: "A malicious user can view a list of package being used by your Meteor application from the client."
 author: "Pete Corey"
 date:   2015-04-24
 categories:

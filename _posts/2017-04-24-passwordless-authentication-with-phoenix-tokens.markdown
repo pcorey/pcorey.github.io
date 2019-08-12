@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Passwordless Authentication with Phoenix Tokens"
-description: "Passwordless authentication is a powerful new paradigm for authentication workflows. Learn how to implement passwordless in an Elixir and Phoenix application."
+excerpt: "Passwordless authentication is a powerful new paradigm for authentication workflows. Learn how to implement passwordless in an Elixir and Phoenix application."
 author: "Pete Corey"
 date:   2017-04-24
 tags: ["Elixir", "Phoenix", "Passwordless", "Authentication"]

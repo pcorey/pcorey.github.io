@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Modeling Formulas with Recursive Discriminators"
-description: "I ran into an interesting problem recently where I needed to model a nested set of either/or sub-schemas. With some creative thinking and a healthy dose of recursion, Mongoose's discriminator feature turned out to be just the tool for the job."
+excerpt: "I ran into an interesting problem recently where I needed to model a nested set of either/or sub-schemas. With some creative thinking and a healthy dose of recursion, Mongoose's discriminator feature turned out to be just the tool for the job."
 author: "Pete Corey"
 date:   2018-05-28
 tags: ["Javascript", "MongoDB"]

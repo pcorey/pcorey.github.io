@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Many Ways to Define Verbs in J"
-description: "Let's explore the various ways of defining verbs in the J programming language while implementing Euler's Gradus Suavitatis function."
+excerpt: "Let's explore the various ways of defining verbs in the J programming language while implementing Euler's Gradus Suavitatis function."
 author: "Pete Corey"
 date:   2019-07-09
 tags: ["J"]

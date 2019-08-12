@@ -2,7 +2,7 @@
 layout: post
 title:  "My Concurrent Jekyll Gruntfile"
 titleParts: ["My Concurrent", "Jekyll Gruntfile"]
-description: "Use concurrency to simultaneously run multiple Grunt commands."
+excerpt: "Use concurrency to simultaneously run multiple Grunt commands."
 author: "Pete Corey"
 date:   2014-08-28
 tags: ["Grunt", "Jekyll"]

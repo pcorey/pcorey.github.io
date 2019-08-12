@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Allow Yourself to do Things Poorly"
-description: "Giving yourself permission to do things poorly can be liberating. Forgiving yourself for hacking together code is sometimes a prerequisite for productivity."
+excerpt: "Giving yourself permission to do things poorly can be liberating. Forgiving yourself for hacking together code is sometimes a prerequisite for productivity."
 author: "Pete Corey"
 date:   2018-12-03
 tags: ["Meta", "Music"]

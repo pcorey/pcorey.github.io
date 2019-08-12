@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bitcoin's Base58Check in Pure Elixir"
-description: "Elixir ships out of the box with nearly all of the tools required to generate Bitcoin private keys and transform them into public addresses. All except one. In this article we implement the missing piece of the puzzle: Base58Check encoding."
+excerpt: "Elixir ships out of the box with nearly all of the tools required to generate Bitcoin private keys and transform them into public addresses. All except one. In this article we implement the missing piece of the puzzle: Base58Check encoding."
 author: "Pete Corey"
 date:   2018-01-08
 tags: ["Elixir", "Bitcoin", "Mastering Bitcoin"]

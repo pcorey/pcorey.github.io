@@ -2,7 +2,7 @@
 layout: post
 title:  "Customizable Meteor Navbar with Orion CMS"
 titleParts:  ["Customizable Meteor Navbar", "with Orion CMS"]
-description: "Let's extend the Meteor-based Orion CMS with our own customizable navbar."
+excerpt: "Let's extend the Meteor-based Orion CMS with our own customizable navbar."
 author: "Pete Corey"
 date:   2015-03-02
 tags: ["Javascript", "Meteor"]

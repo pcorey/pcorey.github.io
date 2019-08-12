@@ -2,7 +2,7 @@
 layout: post
 title:  "Allow & Deny Challenge - Check Yourself"
 titleParts: ["Allow & Deny Challenge", "Check Yourself", "Before You Wreck Yourself"]
-description: "Can you write an air-tight set of allow & deny rules? Take a look at Sacha Greif's challange, try it for yourself, and take a look at my solution."
+excerpt: "Can you write an air-tight set of allow & deny rules? Take a look at Sacha Greif's challange, try it for yourself, and take a look at my solution."
 author: "Pete Corey"
 date:   2015-06-15
 tags: ["Javscript", "Meteor", "Security"]

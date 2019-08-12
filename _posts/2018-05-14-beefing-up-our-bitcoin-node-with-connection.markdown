@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Beefing Up our Bitcoin Node with Connection"
-description: "Let's beef up the resiliency of our Elixir-based Bitcoin node by incorporating some connection retry behavior."
+excerpt: "Let's beef up the resiliency of our Elixir-based Bitcoin node by incorporating some connection retry behavior."
 author: "Pete Corey"
 date:   2018-05-14
 tags: ["Elixir", "Bitcoin"]

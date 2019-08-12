@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deploying Elixir Applications with Distillery"
-description: "Use Distillery to build and deploy your Elixir and Phoenix applications."
+excerpt: "Use Distillery to build and deploy your Elixir and Phoenix applications."
 author: "Pete Corey"
 date:   2016-12-26
 tags: ["Elixir", "Phoenix", "Deployment"]

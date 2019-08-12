@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Embedding React Components in Jekyll Posts"
-description: "In my last post I embedded several React-based examples directly into my Jekyll-generated article. Let's dig into how I accomplished that and how you can embed React components into your own Jekyll pages."
+excerpt: "In my last post I embedded several React-based examples directly into my Jekyll-generated article. Let's dig into how I accomplished that and how you can embed React components into your own Jekyll pages."
 author: "Pete Corey"
 date:   2019-08-05
 tags: ["Javascript", "React", "Jekyll"]

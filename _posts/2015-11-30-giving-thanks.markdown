@@ -2,7 +2,7 @@
 layout: post
 title:  "Giving Thanks"
 titleParts: ["Giving Thanks"]
-description: "It's been a little over a year since I started experimenting with Meteor. In that time it has given me the confidence to start successfully working for myself. Thanks Meteor!"
+excerpt: "It's been a little over a year since I started experimenting with Meteor. In that time it has given me the confidence to start successfully working for myself. Thanks Meteor!"
 author: "Pete Corey"
 date:   2015-11-30
 tags: ["Meteor", "Meta"]

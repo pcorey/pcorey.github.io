@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hacking Prototypal Inheritance for Fun and Profit"
-description: "Abuse of prototypal inheritance can allow attackers to exploit your application in various ways. Learn what to watch out for, and how to prevent vulnerabilities."
+excerpt: "Abuse of prototypal inheritance can allow attackers to exploit your application in various ways. Learn what to watch out for, and how to prevent vulnerabilities."
 author: "Pete Corey"
 date:   2018-01-29
 tags: ["Javascript", "Meteor", "Security"]

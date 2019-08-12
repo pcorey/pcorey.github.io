@@ -2,7 +2,7 @@
 layout: post
 title:  "Custom Categories with Meteor's Orion CMS"
 titleParts: ["Custom Categories", "with Meteor's Orion CMS"]
-description: "Let's extend the Meteor-based Orion CMS with our own custom categories."
+excerpt: "Let's extend the Meteor-based Orion CMS with our own custom categories."
 author: "Pete Corey"
 date:   2015-02-23
 tags: ["Javascript", "Meteor"]

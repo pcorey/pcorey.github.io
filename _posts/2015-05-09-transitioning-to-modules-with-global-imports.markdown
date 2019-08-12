@@ -2,7 +2,7 @@
 layout: post
 title:  "Transitioning to Modules With Global Imports"
 titleParts: ["Transitioning to Modules With", "Global Imports"]
-description: "Transitioning your entire Meteor application towards using imports is a time-consuming and error-prone process. Thankfully, there's a middle way."
+excerpt: "Transitioning your entire Meteor application towards using imports is a time-consuming and error-prone process. Thankfully, there's a middle way."
 author: "Pete Corey"
 date:   2016-05-09
 tags: ["Javascript", "Meteor"]

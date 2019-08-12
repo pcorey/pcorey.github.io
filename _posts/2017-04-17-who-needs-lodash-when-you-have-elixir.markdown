@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Who Needs Lodash When You Have Elixir?"
-description: "Watch how Elixir's standard library outclasses Javascript's Lodash in day-to-day tasks."
+excerpt: "Watch how Elixir's standard library outclasses Javascript's Lodash in day-to-day tasks."
 author: "Pete Corey"
 date:   2017-04-17
 tags: ["Elixir", "Javascript"]

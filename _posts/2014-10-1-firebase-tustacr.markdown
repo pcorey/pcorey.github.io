@@ -2,7 +2,7 @@
 layout: post
 title:  "Firebase! - T.U.S.T.A.C.R. Part 2"
 titleParts: ["Firebase!", "T.U.S.T.A.C.R. Part 2"]
-description: "Follow along as I build out the back-end of a URL shortener built using Firebase!"
+excerpt: "Follow along as I build out the back-end of a URL shortener built using Firebase!"
 author: "Pete Corey"
 date:   2014-10-1
 tags: ["Javascript", "Firebase", "Video"]

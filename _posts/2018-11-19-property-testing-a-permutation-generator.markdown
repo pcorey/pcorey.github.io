@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Property Testing a Permutation Generator"
-description: "Permutations have some nice, intrinsic properties that lend themselves well to property testing."
+excerpt: "Permutations have some nice, intrinsic properties that lend themselves well to property testing."
 author: "Pete Corey"
 date:   2018-11-19
 tags: ["Elixir", "Testing"]

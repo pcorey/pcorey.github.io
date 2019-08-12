@@ -2,7 +2,7 @@
 layout: post
 title:  "Why You Should Always Check Your Arguments"
 titleParts: ["Why You Should Always", "Check Your Arguments"]
-description: "Here's a video of the talk I gave at Meteor Space Camp in 2016 outlining the dangers of NoSQL Injection."
+excerpt: "Here's a video of the talk I gave at Meteor Space Camp in 2016 outlining the dangers of NoSQL Injection."
 author: "Pete Corey"
 date:   2016-02-29
 tags: ["Javascript", "Meteor", "Security", "NoSQL Injection", "MongoDB", "Appearance"]

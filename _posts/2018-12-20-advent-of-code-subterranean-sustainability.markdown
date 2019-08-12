@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Advent of Code: Subterranean Sustainability"
-description: "Day twelve of 2018's Advent of Code challenge. Pots, plants, and cellular autamata, oh my!"
+excerpt: "Day twelve of 2018's Advent of Code challenge. Pots, plants, and cellular autamata, oh my!"
 author: "Pete Corey"
 date:   2018-12-20
 tags: ["J", "Advent of Code 2018"]

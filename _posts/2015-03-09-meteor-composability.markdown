@@ -2,7 +2,7 @@
 layout: post
 title:  "Meteor Composability"
 titleParts:  ["Meteor Composability"]
-description: "It can be difficult to build a truly composable application using Meteor's out-of-the-box front-end framework. Here are a few tips and tricks."
+excerpt: "It can be difficult to build a truly composable application using Meteor's out-of-the-box front-end framework. Here are a few tips and tricks."
 author: "Pete Corey"
 date:   2015-03-09
 tags: ["Javascript", "Meteor", "Appearance"]

@@ -2,7 +2,7 @@
 layout: post
 title:  "Meteor Club Q&A on Security"
 titleParts: ["Meteor Club Q&A", "on Security"]
-description: "I had a great time on Josh Owens' Meteor Club Q&A talking about Meteor security. Be sure to checkout the Youtube recording."
+excerpt: "I had a great time on Josh Owens' Meteor Club Q&A talking about Meteor security. Be sure to checkout the Youtube recording."
 author: "Pete Corey"
 date:   2015-12-14
 tags: ["Meteor", "Security"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Favorite Pattern Revisited"
-description: "Elixir's 'with' special form is a powerful tool that can lead to some elegant patterns in your code. Let's look at a few examples."
+excerpt: "Elixir's 'with' special form is a powerful tool that can lead to some elegant patterns in your code. Let's look at a few examples."
 author: "Pete Corey"
 date:   2017-02-27
 tags: ["Elixir"]

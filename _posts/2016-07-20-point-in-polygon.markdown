@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Point in Polygon"
-description: "Is this point in this polygon? This Literate Commits articles explores one possible solution to this code kata."
+excerpt: "Is this point in this polygon? This Literate Commits articles explores one possible solution to this code kata."
 author: "Pete Corey"
 date:   2016-07-20
 repo: "https://github.com/pcorey/point-in-polygon"

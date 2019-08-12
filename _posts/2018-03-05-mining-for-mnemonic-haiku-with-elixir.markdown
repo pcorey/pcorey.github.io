@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mining for Mnemonic Haiku with Elixir"
-description: "What are some interesting things we can do with the BIP-39 mnemonic generator we built in a previous article? How about mine for structurally sound mnemonic haiku?!"
+excerpt: "What are some interesting things we can do with the BIP-39 mnemonic generator we built in a previous article? How about mine for structurally sound mnemonic haiku?!"
 author: "Pete Corey"
 date:   2018-03-05
 tags: ["Elixir", "Bitcoin", "Mastering Bitcoin"]

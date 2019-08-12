@@ -2,7 +2,7 @@
 layout: post
 title:  "NoSQL Injection in Modern Web Applications"
 titleParts: ["NoSQL Injection", "in Modern Web Applications"]
-description: "Check out my presentation at the 2016 Crater Remote Conference for an in-depth overview of NoSQL Injection in Modern Web Applications!"
+excerpt: "Check out my presentation at the 2016 Crater Remote Conference for an in-depth overview of NoSQL Injection in Modern Web Applications!"
 author: "Pete Corey"
 date:   2016-03-21
 tags: ["Javascript", "Meteor", "Security", "NoSQL Injection", "MongoDB"]

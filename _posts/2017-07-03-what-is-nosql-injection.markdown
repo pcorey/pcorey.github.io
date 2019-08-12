@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What is NoSQL Injection?"
-description: "NoSQL Injection is an attack that can be leveraged to gain complete control over the queries run against your database. Inject Detect aims to prevent it."
+excerpt: "NoSQL Injection is an attack that can be leveraged to gain complete control over the queries run against your database. Inject Detect aims to prevent it."
 author: "Pete Corey"
 date:   2017-07-03
 tags: ["Inject Detect", "NoSQL Injection", "Meteor", "Security", "MongoDB"]

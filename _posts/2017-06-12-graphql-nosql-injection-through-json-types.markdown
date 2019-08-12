@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GraphQL NoSQL Injection Through JSON Types"
-description: "GraphQL servers are not safe from the threat of NoSQL Injection attacks. This article explores how unchecked JSON types can be exploited by malicious users."
+excerpt: "GraphQL servers are not safe from the threat of NoSQL Injection attacks. This article explores how unchecked JSON types can be exploited by malicious users."
 author: "Pete Corey"
 date:   2017-06-12
 tags: ["Inject Detect", "NoSQL Injection", "GraphQL", "Meteor", "Security", "MongoDB"]

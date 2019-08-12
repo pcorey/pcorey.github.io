@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How am I Building Inject Detect?"
-description: "Here's a high-level architectural and technilogical outline for how I plan to build out the Inject Detect application."
+excerpt: "Here's a high-level architectural and technilogical outline for how I plan to build out the Inject Detect application."
 author: "Pete Corey"
 date:   2017-03-20
 tags: ["Inject Detect", "Elixir", "MongoDB"]

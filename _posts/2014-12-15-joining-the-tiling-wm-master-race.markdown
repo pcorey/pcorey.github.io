@@ -2,7 +2,7 @@
 layout: post
 title:  "Joining the Tiling WM Master Race"
 titleParts: ["Joining the", "Tiling WM", "Master Race"]
-description: "Tiling window managers aren't well-known outside of the Linux ricing community, but they're an incredibly powerful tool for a developer looking to improve their efficiency."
+excerpt: "Tiling window managers aren't well-known outside of the Linux ricing community, but they're an incredibly powerful tool for a developer looking to improve their efficiency."
 author: "Pete Corey"
 date:   2014-12-15
 tags: ["Development Environment"]

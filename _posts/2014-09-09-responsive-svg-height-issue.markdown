@@ -2,7 +2,7 @@
 layout: post
 title:  "Responsive SVG Height Issue"
 titleParts: ["Responsive SVG", "Height Issue"]
-description: "I recently faced an issue with responsive SVGs not sizing correctly. Here's how I came up with a solution."
+excerpt: "I recently faced an issue with responsive SVGs not sizing correctly. Here's how I came up with a solution."
 author: "Pete Corey"
 date:   2014-09-09
 tags: ["SVG"]

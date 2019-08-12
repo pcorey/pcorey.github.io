@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Grokking the Y Combinator with Elixir"
-description: "The Y combinator is something to be marveled over. Dive into this amazing contraption with me as we build it from the ground up with simple Elixir anonymous functions."
+excerpt: "The Y combinator is something to be marveled over. Dive into this amazing contraption with me as we build it from the ground up with simple Elixir anonymous functions."
 author: "Pete Corey"
 date:   2017-10-30
 tags: ["Elixir", "Books", "Computer Science"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rewriting History"
-description: "Is your Git-foo strong enough to change the past? Let's explore some advanced techniques for modifying the commit history of a Git repository."
+excerpt: "Is your Git-foo strong enough to change the past? Let's explore some advanced techniques for modifying the commit history of a Git repository."
 author: "Pete Corey"
 date:   2016-09-12
 tags: ["Literate Commits", "Git"]

@@ -42,7 +42,7 @@ layout: default
                     <p class="post-related">
                         <i data-feather="link"></i>
                         <a href="{{post.url}}" >{{post.title}}</a>
-                        – {{post.description}}
+                        – {{post.excerpt}}
                     </p>
                 {% endif %}
             {% endfor %}
@@ -50,14 +50,14 @@ layout: default
                 <p class="post-next" >
                     <i data-feather="arrow-left"></i>
                     <a href="{{page.previous.url}}" class="previous">{{page.previous.title}}</a>
-                    – {{page.previous.description}}
+                    – {{page.previous.excerpt}}
                 </p>
             {% endif %}
             {% if page.next.url %}
                 <p class="post-next" >
                     <i data-feather="arrow-right"></i>
                     <a href="{{page.next.url}}" class="next">{{page.next.title}}</a>
-                    – {{page.next.description}}
+                    – {{page.next.excerpt}}
                 </p>
             {% endif %}
         </div>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Anonymizing GraphQL Resolvers with Decorators"
-description: "The structure and modular nature of GraphQL resolvers lets us do some amazing things. Check out how we can recursively apply decorators to our resolver tree to elegantly build a \"demo mode\" into our application."
+excerpt: "The structure and modular nature of GraphQL resolvers lets us do some amazing things. Check out how we can recursively apply decorators to our resolver tree to elegantly build a \"demo mode\" into our application."
 author: "Pete Corey"
 date:   2019-04-22
 tags: ["Javascript", "GraphQL", "Node.js", "Mongoose"]

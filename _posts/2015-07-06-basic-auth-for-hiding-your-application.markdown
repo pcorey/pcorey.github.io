@@ -2,7 +2,7 @@
 layout: post
 title:  "Basic Auth For Hiding Your Application"
 titleParts: ["Basic Auth", "For Hiding Your Application"]
-description: "Basic authentication is a great way to quickly lock down an application from prying eyes. Learn the ins and outs."
+excerpt: "Basic authentication is a great way to quickly lock down an application from prying eyes. Learn the ins and outs."
 author: "Pete Corey"
 date:   2015-07-06
 tags: ["Javascript", "Meteor", "Security"]

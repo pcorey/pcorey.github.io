@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Advent of Code: Not Quite Lisp"
-description: "This Literate Commits post solves a Lisp-flavored code kata using Elixir!"
+excerpt: "This Literate Commits post solves a Lisp-flavored code kata using Elixir!"
 author: "Pete Corey"
 date:   2016-08-17
 repo: "https://github.com/pcorey/advent_of_code_01"

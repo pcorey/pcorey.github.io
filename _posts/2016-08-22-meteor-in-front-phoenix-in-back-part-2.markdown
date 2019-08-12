@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Meteor in Front, Phoenix in Back - Part 2"
-description: "Part two of our Meteor in Front, Phoenix in Back series. Today we finish up our Franken-stack by wiring our front-end up to an actual database with Phoenix Channels."
+excerpt: "Part two of our Meteor in Front, Phoenix in Back series. Today we finish up our Franken-stack by wiring our front-end up to an actual database with Phoenix Channels."
 author: "Pete Corey"
 date:   2016-08-22
 tags: ["Elixir", "Phoenix", "Meteor", "Channels"]

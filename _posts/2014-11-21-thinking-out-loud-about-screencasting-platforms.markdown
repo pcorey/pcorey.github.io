@@ -2,7 +2,7 @@
 layout: post
 title:  "Thinking Out Loud About Screencasting Platforms"
 titleParts: ["Thinking Out Loud About", "Screencasting Platforms"]
-description: "I've been thinking out loud lately about building a screen-casting platform designed for software developers."
+excerpt: "I've been thinking out loud lately about building a screen-casting platform designed for software developers."
 author: "Pete Corey"
 date:   2014-11-21
 tags: []

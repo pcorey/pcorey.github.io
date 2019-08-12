@@ -2,7 +2,7 @@
 layout: post
 title:  "The Missing Link In Meteor's Rate Limiter"
 titleParts: ["The Missing Link In Meteor's", "Rate Limiter"]
-description: "It's possible to carry out a Denial of Service attack against a Meteor application by flooding it with subscriptions. Check out how you can protect yourself."
+excerpt: "It's possible to carry out a Denial of Service attack against a Meteor application by flooding it with subscriptions. Check out how you can protect yourself."
 author: "Pete Corey"
 date:   2016-05-16
 tags: ["Javascript", "Meteor", "Security"]

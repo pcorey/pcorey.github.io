@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "FizzBuzz is Just a Three Against Five Polyrhythm"
-description: "Sometimes the lines blur between band practice and programming practice. It turns out that the classic FizzBuzz problem is just a three against five polyrhythm."
+excerpt: "Sometimes the lines blur between band practice and programming practice. It turns out that the classic FizzBuzz problem is just a three against five polyrhythm."
 author: "Pete Corey"
 date:   2019-04-08
 tags: ["Javascript", "Music"]

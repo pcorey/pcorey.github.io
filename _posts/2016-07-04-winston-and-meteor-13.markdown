@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Winston and Meteor 1.3"
-description: "Due to the intricacies of Meteor's build system, integrating Winston into your Meteor project is more difficult that it seems at first glance."
+excerpt: "Due to the intricacies of Meteor's build system, integrating Winston into your Meteor project is more difficult that it seems at first glance."
 author: "Pete Corey"
 date:   2016-07-04
 tags: ["Javascript", "Meteor"]

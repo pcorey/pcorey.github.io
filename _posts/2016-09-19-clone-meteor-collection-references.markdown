@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Clone Meteor Collection References"
-description: "Ever wanted to have two different sets of helpers attached to a single Meteor collection? It's more complicated than you may think."
+excerpt: "Ever wanted to have two different sets of helpers attached to a single Meteor collection? It's more complicated than you may think."
 author: "Pete Corey"
 date:   2016-09-19
 tags: ["Javascript", "Meteor"]

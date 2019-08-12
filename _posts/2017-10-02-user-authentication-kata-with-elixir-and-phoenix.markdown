@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "User Authentication Kata with Elixir and Phoenix"
-description: "Practical code katas are a tool to practice valuable web development skills in an applicable way. Start practicing with this user authentication kata."
+excerpt: "Practical code katas are a tool to practice valuable web development skills in an applicable way. Start practicing with this user authentication kata."
 author: "Pete Corey"
 date:   2017-10-02
 tags: ["Elixir", "Katas", "Phoenix", "Authentication"]

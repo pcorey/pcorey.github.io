@@ -2,7 +2,7 @@
 layout: post
 title:  "CollectionFS Safety Considerations"
 titleParts: ["CollectionFS", "Safety Considerations"]
-description: "Allowing file uploads to your applications opens you up to a world of potential vulnerabilities. Make sure you're protected."
+excerpt: "Allowing file uploads to your applications opens you up to a world of potential vulnerabilities. Make sure you're protected."
 author: "Pete Corey"
 date:   2016-04-04
 tags: ["Javascript", "Meteor", "Security"]

@@ -2,7 +2,7 @@
 layout: post
 title:  "Building Ms. Estelle Marie"
 titleParts:  ["Building Ms.", "Estelle Marie"]
-description: "Recently I spent some time customizing a Wordpress template for a client. Here's a quick rundown of my process and impressions."
+excerpt: "Recently I spent some time customizing a Wordpress template for a client. Here's a quick rundown of my process and impressions."
 author: "Pete Corey"
 date:   2014-11-12
 tags: ["PHP", "Wordpress", "Grunt"]

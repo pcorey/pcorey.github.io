@@ -2,7 +2,7 @@
 layout: post
 title:  "Blaze Meets Clusterize.js"
 titleParts: ["Blaze Meets", "Clusterize.js"]
-description: "Blaze can be slow when rendering hundreds of elements. Speed it up with Clusterize.js!"
+excerpt: "Blaze can be slow when rendering hundreds of elements. Speed it up with Clusterize.js!"
 author: "Pete Corey"
 date:   2016-04-18
 tags: ["Javascript", "Meteor"]

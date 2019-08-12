@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ping, Pong, and Unresponsive Bitcoin Nodes"
-description: "The last step in maintaining our pool of Bitcoin peer nodes is to detect and remove unresponsive nodes from our network."
+excerpt: "The last step in maintaining our pool of Bitcoin peer nodes is to detect and remove unresponsive nodes from our network."
 author: "Pete Corey"
 date:   2018-07-09
 tags: ["Elixir", "Bitcoin"]

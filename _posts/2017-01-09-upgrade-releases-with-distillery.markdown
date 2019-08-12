@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Upgrade Releases With Distillery"
-description: "Use Distillery to build and deploy hot-upgrades to your Elixir and Phoenix applications through the process of upgrade releases."
+excerpt: "Use Distillery to build and deploy hot-upgrades to your Elixir and Phoenix applications through the process of upgrade releases."
 author: "Pete Corey"
 date:   2017-01-09
 tags: ["Elixir", "Phoenix", "Deployment"]

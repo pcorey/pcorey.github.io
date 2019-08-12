@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GenServers and Memory Images: A Match Made in Heaven"
-description: "Elixir's GenServers are the perfect tool for implementing Memory Images — a powerful replacement for storing state in conventional databases."
+excerpt: "Elixir's GenServers are the perfect tool for implementing Memory Images — a powerful replacement for storing state in conventional databases."
 author: "Pete Corey"
 date:   2017-06-19
 tags: ["Elixir", "Inject Detect", "Event Sourcing"]

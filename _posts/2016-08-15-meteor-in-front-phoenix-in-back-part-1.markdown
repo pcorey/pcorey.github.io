@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Meteor in Front, Phoenix in Back - Part 1"
-description: "Part one of our Meteor in Front, Phoenix in Back series. Let's put our mad scientist hats on and transplant a Meteor front-end into a Phoenix application!"
+excerpt: "Part one of our Meteor in Front, Phoenix in Back series. Let's put our mad scientist hats on and transplant a Meteor front-end into a Phoenix application!"
 author: "Pete Corey"
 date:   2016-08-15
 tags: ["Elixir", "Phoenix", "Meteor"]

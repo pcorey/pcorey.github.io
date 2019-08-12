@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Better Mandelbrot Iterator in J"
-description: "There are times you come back to a problem and realize that a much simpler solution exists. This is one of those times."
+excerpt: "There are times you come back to a problem and realize that a much simpler solution exists. This is one of those times."
 author: "Pete Corey"
 date:   2019-03-18
 tags: ["J", "Programming Languages", "Fractals"]

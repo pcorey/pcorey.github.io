@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fly Straight, Dammit!"
-description: "Let's use the J programming language to implement and plot an interesting function that was featured on a recent Numberphile video. Memoization and agenda-based conditionals abound!"
+excerpt: "Let's use the J programming language to implement and plot an interesting function that was featured on a recent Numberphile video. Memoization and agenda-based conditionals abound!"
 author: "Pete Corey"
 date:   2019-08-12
 tags: ["J", "Numberphile", "Math"]

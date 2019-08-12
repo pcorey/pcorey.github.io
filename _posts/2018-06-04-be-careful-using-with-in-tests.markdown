@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Be Careful Using With in Tests"
-description: "Elixir's 'with' special form is a fantastic tool, but be careful using it in tests. Read all about how my incorrect usage of 'with' lead to a false positive in my test suite!"
+excerpt: "Elixir's 'with' special form is a fantastic tool, but be careful using it in tests. Read all about how my incorrect usage of 'with' lead to a false positive in my test suite!"
 author: "Pete Corey"
 date:   2018-06-04
 tags: ["Elixir", "Testing"]

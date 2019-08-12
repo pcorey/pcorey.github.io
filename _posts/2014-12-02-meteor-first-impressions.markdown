@@ -2,7 +2,7 @@
 layout: post
 title:  "Meteor First Impressions"
 titleParts:  ["Meteor", "First Impressions"]
-description: "This video summarizes my first impressions of the Meteor framework. Wow!"
+excerpt: "This video summarizes my first impressions of the Meteor framework. Wow!"
 author: "Pete Corey"
 date:   2014-12-02
 tags: ["Meteor"]

@@ -2,7 +2,7 @@
 layout: post
 title:  "NoSQL Injection - Or, Always Check Your Arguments!"
 titleParts:  ["NoSQL Injection", "Or, Always Check Your Arguments!"]
-description: "NoSQL Injection is a very common vulnerability found in Meteor applications. Find out what it is and how you can protect your application with this article."
+excerpt: "NoSQL Injection is a very common vulnerability found in Meteor applications. Find out what it is and how you can protect your application with this article."
 author: "Pete Corey"
 date:   2015-04-06
 tags: ["Javascript", "Meteor", "Security", "NoSQL Injection"]

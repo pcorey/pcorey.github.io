@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Phoenix Todos - Static Assets"
-description: "Part one of our 'Phoenix Todos' Literate Commits series. Transplanting static assets to kick off our project."
+excerpt: "Part one of our 'Phoenix Todos' Literate Commits series. Transplanting static assets to kick off our project."
 author: "Pete Corey"
 date:   2016-08-31
 repo: "https://github.com/pcorey/phoenix_todos"

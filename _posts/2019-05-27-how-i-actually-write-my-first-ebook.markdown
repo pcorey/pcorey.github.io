@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How I Actually Wrote My First Ebook"
-description: "It turns out that the process of turning words into a well-formatted, distributable ebook is much more complicated that it seems. Here's how I managed."
+excerpt: "It turns out that the process of turning words into a well-formatted, distributable ebook is much more complicated that it seems. Here's how I managed."
 author: "Pete Corey"
 date:   2019-05-27
 tags: ["Writing", "Secure Meteor"]

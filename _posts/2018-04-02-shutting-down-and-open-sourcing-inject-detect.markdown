@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Shutting Down and Open Sourcing Inject Detect"
-description: "It's with a heavy heart that I'm announcing that my security-focused SaaS application, Inject Detect, is shutting down."
+excerpt: "It's with a heavy heart that I'm announcing that my security-focused SaaS application, Inject Detect, is shutting down."
 author: "Pete Corey"
 date:   2018-04-02
 tags: ["Elixir", "Meteor", "Security", "Announcement", "Inject Detect"]

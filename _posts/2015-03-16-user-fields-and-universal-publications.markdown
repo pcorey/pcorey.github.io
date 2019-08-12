@@ -2,7 +2,7 @@
 layout: post
 title:  "User Fields and Universal Publications"
 titleParts:  ["User Fields and", "Universal Publications"]
-description: "Universal publications are a piece of black magic that are often brushed under the rug of Meteor applications. Learn what they are and how they're used in this question and answer style article."
+excerpt: "Universal publications are a piece of black magic that are often brushed under the rug of Meteor applications. Learn what they are and how they're used in this question and answer style article."
 author: "Pete Corey"
 date:   2015-03-16
 tags: ["Javascript", "Meteor"]

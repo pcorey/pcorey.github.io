@@ -2,7 +2,7 @@
 layout: post
 title:  "The Ecstasy of Testing"
 titleParts: ["The Ecstasy of", "Testing"]
-description: "You dive in, equipped with nothing more than a creeping dissatisfaction and a passing test suite..."
+excerpt: "You dive in, equipped with nothing more than a creeping dissatisfaction and a passing test suite..."
 author: "Pete Corey"
 date:   2015-08-18
 tags: ["Javascriot", "Testing", "Writing"]

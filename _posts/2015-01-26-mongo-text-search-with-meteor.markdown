@@ -2,7 +2,7 @@
 layout: post
 title:  "Mongo Text Search with Meteor"
 titleParts: ["Mongo Text Search", "with Meteor"]
-description: "MongoDB text searches can offer significant performance boosts over simple regular expression based queries."
+excerpt: "MongoDB text searches can offer significant performance boosts over simple regular expression based queries."
 author: "Pete Corey"
 date:   2015-01-26
 tags: ["Javascript", "MongoDB", "Meteor"]

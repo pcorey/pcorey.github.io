@@ -2,7 +2,7 @@
 layout: post
 title:  "Keep It Secret, Keep It Safe"
 titleParts: ["Keep It Secret", "Keep It Safe"]
-description: "Are you accidentally leaking your application's secrets to the client? It's more likely than you may think."
+excerpt: "Are you accidentally leaking your application's secrets to the client? It's more likely than you may think."
 author: "Pete Corey"
 date:   2015-05-25
 tags: ["Javascript", "Meteor", "Security"]

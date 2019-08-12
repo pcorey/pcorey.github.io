@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Limiting Peers with DynamicSupervisor Options"
-description: "We can simplify our Bitcoin node's peer management code by letting Elixir do the heavy lifting for us! Let's dive into the `:max_children`{:.language-elixir} option and see how it can help us."
+excerpt: "We can simplify our Bitcoin node's peer management code by letting Elixir do the heavy lifting for us! Let's dive into the `:max_children`{:.language-elixir} option and see how it can help us."
 author: "Pete Corey"
 date:   2018-06-18
 tags: ["Elixir", "Bitcoin"]

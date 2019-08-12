@@ -2,7 +2,7 @@
 layout: post
 title:  "Zapier Named Variables - Scheduling Posts Part 2"
 titleParts: ["Zapier Named Variables", "Scheduling Posts", "Part 2"]
-description: "Zapier named variables can help you schedule posts to a Jekyll based blog. Find out how!"
+excerpt: "Zapier named variables can help you schedule posts to a Jekyll based blog. Find out how!"
 author: "Pete Corey"
 date:   2015-01-05
 tags: ["Jekyll", "Zapier"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Algorithmically Fingering Guitar Chords with Elixir"
-description: "Let's use Elixir and a sieving algorithm to recursively generate all possible fingerings for a given guitar chord voicing."
+excerpt: "Let's use Elixir and a sieving algorithm to recursively generate all possible fingerings for a given guitar chord voicing."
 author: "Pete Corey"
 date:   2018-08-13
 tags: ["Elixir", "Music"]

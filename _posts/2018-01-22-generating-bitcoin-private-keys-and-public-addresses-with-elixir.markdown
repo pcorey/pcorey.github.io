@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Generating Bitcoin Private Keys and Public Addresses with Elixir"
-description: "Elixir ships with the tools required to generate a cryptographically secure private key and transform it into a public address. Check out this step-by-step walkthrough."
+excerpt: "Elixir ships with the tools required to generate a cryptographically secure private key and transform it into a public address. Check out this step-by-step walkthrough."
 author: "Pete Corey"
 date:   2018-01-22
 tags: ["Elixir", "Bitcoin", "Mastering Bitcoin"]

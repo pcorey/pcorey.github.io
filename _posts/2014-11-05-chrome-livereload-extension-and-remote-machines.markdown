@@ -2,7 +2,7 @@
 layout: post
 title:  "Chrome LiveReload Extension and Remote Machines"
 titleParts: ["Chrome LiveReload Extension", "and Remote Machines"]
-description: "The Chrome LiveReload plugin doesn't work well with remote development servers. Here's a workaround."
+excerpt: "The Chrome LiveReload plugin doesn't work well with remote development servers. Here's a workaround."
 author: "Pete Corey"
 date:   2014-11-05
 tags: ["Javascript", "Grunt"]

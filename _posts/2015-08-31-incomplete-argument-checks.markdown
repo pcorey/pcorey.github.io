@@ -2,7 +2,7 @@
 layout: post
 title:  "Incomplete Argument Checks"
 titleParts: ["Incomplete", "Argument Checks"]
-description: "Incomplete argument checks are one of the primary causes of NoSQL Injection attacks in Meteor applications."
+excerpt: "Incomplete argument checks are one of the primary causes of NoSQL Injection attacks in Meteor applications."
 author: "Pete Corey"
 date:   2015-08-31
 tags: ["Javascript", "Meteor", "Security", "NoSQL Injection"]

@@ -2,7 +2,7 @@
 layout: post
 title:  "The Dangers of Debouncing Meteor Subscriptions"
 titleParts: ["The Dangers", "of Debouncing", "Meteor Subscriptions"]
-description: "Debouncing Meteor subscriptions can lead to subtle bugs. Let's explore those bugs and find out how to prevent them in your application."
+excerpt: "Debouncing Meteor subscriptions can lead to subtle bugs. Let's explore those bugs and find out how to prevent them in your application."
 author: "Pete Corey"
 date:   2015-01-19
 tags: ["Javascript", "Meteor"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Method Imports and Exports"
-description: "When we define Meteor methods and publication in modules, what do we export? This articles dives into that question and more."
+excerpt: "When we define Meteor methods and publication in modules, what do we export? This articles dives into that question and more."
 author: "Pete Corey"
 date:   2016-08-01
 tags: ["Javascript", "Meteor", "Testing"]

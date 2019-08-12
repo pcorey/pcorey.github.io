@@ -2,7 +2,7 @@
 layout: post
 title:  "Building Check-Checker as a Meteor Plugin"
 titleParts: ["Building check-checker as a", "Meteor Plugin"]
-description: "Let's use Meteor's Build Plugin API to refactor our Check Checker package into a plugin."
+excerpt: "Let's use Meteor's Build Plugin API to refactor our Check Checker package into a plugin."
 author: "Pete Corey"
 date:   2015-11-23
 tags: ["Javascript", "Meteor", "Security"]

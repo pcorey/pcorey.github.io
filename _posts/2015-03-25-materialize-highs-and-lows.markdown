@@ -2,7 +2,7 @@
 layout: post
 title:  "Materialize Highs and Lows"
 titleParts: ["Materialize", "Highs and Lows"]
-description: "Materialize is a CSS frameworks with its ups and downs. Here are my experiences."
+excerpt: "Materialize is a CSS frameworks with its ups and downs. Here are my experiences."
 author: "Pete Corey"
 date:   2015-03-25
 tags: ["Javascript"]

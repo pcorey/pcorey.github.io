@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Advanced MongoDB Query Batching with DataLoader and Sift"
-description: "DataLoader and Sift.js are a powerful duo when it comes to implementing advanced caching strategies for your GraphQL queries."
+excerpt: "DataLoader and Sift.js are a powerful duo when it comes to implementing advanced caching strategies for your GraphQL queries."
 author: "Pete Corey"
 date:   2017-08-21
 tags: ["Javascript", "Node.js", "GraphQL", "MongoDB"]

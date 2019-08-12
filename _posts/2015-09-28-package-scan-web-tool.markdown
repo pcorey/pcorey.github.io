@@ -2,7 +2,7 @@
 layout: post
 title:  "Package Scan Web Tool"
 titleParts: ["Package Scan", "Web Tool"]
-description: "Package Scan is now available as an easy-to-use web tool. Drag and drop your versions file to see if your application is vulnerable."
+excerpt: "Package Scan is now available as an easy-to-use web tool. Drag and drop your versions file to see if your application is vulnerable."
 author: "Pete Corey"
 date:   2015-09-28
 tags: ["Javascript", "Meteor", "Security", "Announcement"]

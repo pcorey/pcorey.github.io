@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to use MongoDB With Elixir - Revisited"
-description: "A recent upgrade to Elixir's MongoDB package requires that we revisit how we interact with the database through Elixir."
+excerpt: "A recent upgrade to Elixir's MongoDB package requires that we revisit how we interact with the database through Elixir."
 author: "Pete Corey"
 date:   2016-12-05
 tags: ["Elixir", "MongoDB"]

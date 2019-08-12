@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Generating Test Fixtures with Wireshark"
-description: "Wireshark can be an invaluable tool for testing the parsing and serializing of a well-known binary protocol. Check out how we can use binary fixtures exported from Wireshark to test our Elixir-based Bitcoin protocol parser and serializer."
+excerpt: "Wireshark can be an invaluable tool for testing the parsing and serializing of a well-known binary protocol. Check out how we can use binary fixtures exported from Wireshark to test our Elixir-based Bitcoin protocol parser and serializer."
 author: "Pete Corey"
 date:   2018-06-11
 tags: ["Elixir", "Testing", "Bitcoin"]

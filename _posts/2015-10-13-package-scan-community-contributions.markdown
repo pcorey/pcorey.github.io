@@ -2,7 +2,7 @@
 layout: post
 title:  "Package Scan Community Contributions"
 titleParts: ["Package Scan", "Community Contributions"]
-description: "Package Scan is getting some love from the community!"
+excerpt: "Package Scan is getting some love from the community!"
 author: "Pete Corey"
 date:   2015-10-13
 tags: ["Meteor", "Security"]

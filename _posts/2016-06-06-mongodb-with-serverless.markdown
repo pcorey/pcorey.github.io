@@ -2,7 +2,7 @@
 layout: post
 title:  "MongoDB With Serverless"
 titleParts: ["MongoDB", "with Serverless"]
-description: "Using MongoDB from an AWS Lambda function is more difficult than you may expect. Here's one possible solution."
+excerpt: "Using MongoDB from an AWS Lambda function is more difficult than you may expect. Here's one possible solution."
 author: "Pete Corey"
 date:   2016-06-06
 tags: ["Javascript", "Serverless", "MongoDB"]

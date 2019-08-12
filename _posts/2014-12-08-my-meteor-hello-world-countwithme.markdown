@@ -2,7 +2,7 @@
 layout: post
 title:  "My Meteor Hello World - countwith.me"
 titleParts: ["My Meteor Hello World", "countwith.me"]
-description: "My first application made with Meteor, countwith.me, is a simple distributed counting application. How high can the internet count?"
+excerpt: "My first application made with Meteor, countwith.me, is a simple distributed counting application. How high can the internet count?"
 author: "Pete Corey"
 date:   2014-12-08
 tags: ["Javascript", "Meteor", "Announcement"]

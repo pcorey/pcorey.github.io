@@ -2,7 +2,7 @@
 layout: post
 title:  "Meteor Club Podcast - Talking Security"
 titleParts: ["Meteor Club Podcast", "Talking Security"]
-description: "Josh Owens, Ben Strahan, Dean Radcliffe, and I sat down recently and talked shop about Meteor and Meteor security. Be sure to listen!"
+excerpt: "Josh Owens, Ben Strahan, Dean Radcliffe, and I sat down recently and talked shop about Meteor and Meteor security. Be sure to listen!"
 author: "Pete Corey"
 date:   2015-06-22
 tags: ["Javascript", "Meteor", "Security", "Appearance"]

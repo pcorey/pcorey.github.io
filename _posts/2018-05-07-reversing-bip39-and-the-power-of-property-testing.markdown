@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Reversing BIP-39 and the Power of Property Testing"
-description: "In which an attempt to reverse the BIP-39 encoding algorithm sends me down a debugging rabbit hole, and the power of property testing shows me the light."
+excerpt: "In which an attempt to reverse the BIP-39 encoding algorithm sends me down a debugging rabbit hole, and the power of property testing shows me the light."
 author: "Pete Corey"
 date:   2018-05-07
 tags: ["Elixir", "Bitcoin"]

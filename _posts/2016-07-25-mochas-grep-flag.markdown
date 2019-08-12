@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mocha's Grep Flag"
-description: "Today I learned about Mocha's grep flag; an insanely useful tool for quickly isolating individual tests of groups of tests."
+excerpt: "Today I learned about Mocha's grep flag; an insanely useful tool for quickly isolating individual tests of groups of tests."
 author: "Pete Corey"
 date:   2016-07-25
 tags: ["Javascript", "Testing"]

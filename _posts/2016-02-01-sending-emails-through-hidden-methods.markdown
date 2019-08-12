@@ -2,7 +2,7 @@
 layout: post
 title:  "Sending Emails Through Hidden Methods"
 titleParts: ["Sending Emails Through", "Hidden Methods"]
-description: "Even if your methods aren't published to the client, they can still be called by malicious users to send emails or do other nefarious things."
+excerpt: "Even if your methods aren't published to the client, they can still be called by malicious users to send emails or do other nefarious things."
 author: "Pete Corey"
 date:   2016-02-01
 tags: ["Meteor", "Security"]

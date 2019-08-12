@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bending Jest to Our Will: Caching Modules Across Tests"
-description: "I recently had to go trudging through the weeds in an effort to make my test suite pass more reliably. It turns out that loading a module once in Jest is extremely difficult."
+excerpt: "I recently had to go trudging through the weeds in an effort to make my test suite pass more reliably. It turns out that loading a module once in Jest is extremely difficult."
 author: "Pete Corey"
 date:   2018-11-05
 tags: ["Javascript", "Testing", "Jest"]

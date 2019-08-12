@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What if Elixir were Homoiconic?"
-description: "Despite what some people say, Elixir is not a homoiconic language. This articles explores what the language would look like if it were."
+excerpt: "Despite what some people say, Elixir is not a homoiconic language. This articles explores what the language would look like if it were."
 author: "Pete Corey"
 date:   2017-08-07
 tags: ["Elixir", "Computer Science"]

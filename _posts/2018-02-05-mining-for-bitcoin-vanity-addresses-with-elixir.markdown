@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mining for Bitcoin Vanity Addresses with Elixir"
-description: "In this article we'll our Bitcoin private key generator to mine for vanity addresses. Once we've built our naive solution, we'll add a drop of Elixir and parallelize the implementation."
+excerpt: "In this article we'll our Bitcoin private key generator to mine for vanity addresses. Once we've built our naive solution, we'll add a drop of Elixir and parallelize the implementation."
 author: "Pete Corey"
 date:   2018-02-05
 tags: ["Elixir", "Bitcoin", "Mastering Bitcoin"]

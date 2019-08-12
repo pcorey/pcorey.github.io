@@ -2,7 +2,7 @@
 layout: post
 title:  "Bypassing Package-Based Basic Auth"
 titleParts: ["Bypassing Package-Based", "Basic Auth"]
-description: "Are you using Basic Auth to protect your Meteor application? You're probably not protecting your DDP endpoint. Find out how to fix it."
+excerpt: "Are you using Basic Auth to protect your Meteor application? You're probably not protecting your DDP endpoint. Find out how to fix it."
 author: "Pete Corey"
 date:   2016-03-28
 tags: ["Javascript", "Meteor", "Security"]

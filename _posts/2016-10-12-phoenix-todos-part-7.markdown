@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Phoenix Todos - Preloading Todos"
-description: "Part seven of our 'Phoenix Todos' Literate Commits series. Populating our todo lists with Ecto's preload feature."
+excerpt: "Part seven of our 'Phoenix Todos' Literate Commits series. Populating our todo lists with Ecto's preload feature."
 author: "Pete Corey"
 date:   2016-10-12
 repo: "https://github.com/pcorey/phoenix_todos"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Minimal Coding with Spacemacs and Olivetti"
-description: "Less is more when it comes to your code editor. Check out how I used Olivetti to configure a visually minimal Spacemacs setup."
+excerpt: "Less is more when it comes to your code editor. Check out how I used Olivetti to configure a visually minimal Spacemacs setup."
 author: "Pete Corey"
 date:   2018-09-10
 tags: ["Emacs"]

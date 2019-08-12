@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Advent of Code: Chronal Charge"
-description: "Day eleven of 2018's Advent of Code challenge. Using an Elixir-inspired verb to generate sub-grids in J."
+excerpt: "Day eleven of 2018's Advent of Code challenge. Using an Elixir-inspired verb to generate sub-grids in J."
 author: "Pete Corey"
 date:   2018-12-14
 tags: ["J", "Advent of Code 2018"]

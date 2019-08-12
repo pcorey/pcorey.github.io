@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Phoenix Todos - Public and Private Lists"
-description: "Part eleven of our 'Phoenix Todos' Literate Commits series. Implementing public and private lists."
+excerpt: "Part eleven of our 'Phoenix Todos' Literate Commits series. Implementing public and private lists."
 author: "Pete Corey"
 date:   2016-11-16
 repo: "https://github.com/pcorey/phoenix_todos"

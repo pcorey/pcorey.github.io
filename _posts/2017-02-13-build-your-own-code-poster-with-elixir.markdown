@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Build Your Own Code Poster with Elixir"
-description: "I used Elixir to merge together a client's logo with the code we'd worked together to develop. The result was a beautiful code poster and this open source Elixir project."
+excerpt: "I used Elixir to merge together a client's logo with the code we'd worked together to develop. The result was a beautiful code poster and this open source Elixir project."
 author: "Pete Corey"
 date:   2017-02-13
 tags: ["Elixir", "Experiments"]

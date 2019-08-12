@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Golfing for FizzBuzz in Clojure and Elixir"
-description: "Let's take a look at an interesting Clojure-based solution to the FizzBuzz problem and see if we can eloquently restate it using Elixir."
+excerpt: "Let's take a look at an interesting Clojure-based solution to the FizzBuzz problem and see if we can eloquently restate it using Elixir."
 author: "Pete Corey"
 date:   2018-07-09
 tags: ["Elixir", "Clojure"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rum Boogie Café"
-description: "Character encodings have long been the bane of software developers. Read about the lengths I recently went to in order to debug a character encoding issue."
+excerpt: "Character encodings have long been the bane of software developers. Read about the lengths I recently went to in order to debug a character encoding issue."
 author: "Pete Corey"
 date:   2017-11-06
 tags: ["Javascript", "Node.js", "Debugging"]

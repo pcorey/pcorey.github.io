@@ -2,7 +2,7 @@
 layout: post
 title:  "Black Box Meteor - Method Auditing"
 titleParts:  ["Black Box Meteor", "Method Auditing"]
-description: "Malicious users can view the entire contents of every Meteor method defined in a shared location. Be sure your methods are secure!"
+excerpt: "Malicious users can view the entire contents of every Meteor method defined in a shared location. Be sure your methods are secure!"
 author: "Pete Corey"
 date:   2015-04-15
 tags: ["Javascript", "Meteor", "Security", "Black Box Meteor"]

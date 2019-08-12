@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Inject Detect - Coming Soon!"
-description: "I've decided to put my knowledge into practice and build an application called Inject Detect to detect NoSQL Injection attacks as they happen."
+excerpt: "I've decided to put my knowledge into practice and build an application called Inject Detect to detect NoSQL Injection attacks as they happen."
 author: "Pete Corey"
 date:   2017-03-06
 tags: ["Inject Detect", "Security", "NoSQL Injection"]

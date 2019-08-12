@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Secure Meteor is Live"
-description: "Secure Meteor is live and available for purchase. Be sure to check it out if you're a Meteor developer or application owner!"
+excerpt: "Secure Meteor is live and available for purchase. Be sure to check it out if you're a Meteor developer or application owner!"
 author: "Pete Corey"
 date:   2019-03-04
 tags: ["Announcement", "Meteor", "Security", "Secure Meteor"]

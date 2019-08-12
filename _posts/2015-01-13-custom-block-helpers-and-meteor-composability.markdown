@@ -2,7 +2,7 @@
 layout: post
 title:  "Custom Block Helpers and Meteor Composability"
 titleParts: ["Custom Block", "Helpers and", "Meteor Composability"]
-description: "Custom block helpers can help you build more composable Meteor front-ends. This article can help you master them."
+excerpt: "Custom block helpers can help you build more composable Meteor front-ends. This article can help you master them."
 author: "Pete Corey"
 date:   2015-01-13
 tags: ["Javascript", "Meteor"]

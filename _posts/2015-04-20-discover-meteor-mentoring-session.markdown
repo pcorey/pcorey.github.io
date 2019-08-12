@@ -2,7 +2,7 @@
 layout: post
 title:  "Discover Meteor - Mentoring Session"
 titleParts: ["Discover Meteor", "Mentoring Session"]
-description: "I'll be hosting a Discover Meteor mentor section. Stop by and ask questions!"
+excerpt: "I'll be hosting a Discover Meteor mentor section. Stop by and ask questions!"
 author: "Pete Corey"
 date:   2015-04-20
 tags: ["Meteor", "Appearance"]

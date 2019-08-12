@@ -2,7 +2,7 @@
 layout: post
 title:  "A New Look For East5th"
 titleParts: ["A New Look", "For East5th"]
-description: "The East5th page has been given a face lift! Same old content, fresh new look."
+excerpt: "The East5th page has been given a face lift! Same old content, fresh new look."
 author: "Pete Corey"
 date:   2016-06-27
 tags: ["Meta"]

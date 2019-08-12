@@ -2,7 +2,7 @@
 layout: post
 title:  "Scheduling Posts with Jekyll, Github Pages & Zapier"
 titleParts: ["Scheduling Posts with", "Jekyll, Github", "Pages & Zapier"]
-description: "Find out how I'm using Zapier to schedule posts to my Jekyll-powered blog hosted on Github Pages!"
+excerpt: "Find out how I'm using Zapier to schedule posts to my Jekyll-powered blog hosted on Github Pages!"
 author: "Pete Corey"
 date:   2014-12-29
 tags: ["Jekyll", "Zapier"]

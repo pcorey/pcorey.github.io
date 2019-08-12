@@ -2,7 +2,7 @@
 layout: post
 title:  "Preparing for the Crater Conference"
 titleParts: ["Preparing for the crater", "Conference"]
-description: "Be sure to buy your tickets to the 2016 Crater Remote Conference to hear my talk on NoSQL Injection in Modern Web Applications!"
+excerpt: "Be sure to buy your tickets to the 2016 Crater Remote Conference to hear my talk on NoSQL Injection in Modern Web Applications!"
 author: "Pete Corey"
 date:   2016-02-08
 tags: ["Meteor", "Security", "NoSQL Injection", "MongoDB"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Phoenix Todos - Finishing Authentication"
-description: "Part five of our 'Phoenix Todos' Literate Commits series. Finishing up authentication."
+excerpt: "Part five of our 'Phoenix Todos' Literate Commits series. Finishing up authentication."
 author: "Pete Corey"
 date:   2016-09-28
 repo: "https://github.com/pcorey/phoenix_todos"

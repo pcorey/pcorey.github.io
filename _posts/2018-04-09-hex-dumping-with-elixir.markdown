@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hex Dumping with Elixir"
-description: "Is it better to call out to an existing external tool, or roll your own solution to a problem? Climb down this rabbit hole with me as we implement a hex dump utility in Elixir."
+excerpt: "Is it better to call out to an existing external tool, or roll your own solution to a problem? Climb down this rabbit hole with me as we implement a hex dump utility in Elixir."
 author: "Pete Corey"
 date:   2018-04-09
 tags: ["Elixir", "Bitcoin"]

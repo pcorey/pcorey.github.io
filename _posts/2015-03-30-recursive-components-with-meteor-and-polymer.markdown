@@ -2,7 +2,7 @@
 layout: post
 title:  "Recursive Components with Meteor and Polymer"
 titleParts:  ["Recursive Components", "with Meteor", "and Polymer"]
-description: "Let's put on our mad scientist hats and build a Cantor set using recursive components in both Meteor and Polymer."
+excerpt: "Let's put on our mad scientist hats and build a Cantor set using recursive components in both Meteor and Polymer."
 author: "Pete Corey"
 date:   2015-03-30
 tags: ["Meteor", "Polymer", "Experiments"]

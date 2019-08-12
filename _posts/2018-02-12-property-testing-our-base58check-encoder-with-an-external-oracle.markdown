@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Property Testing our Base58Check Encoder with an External Oracle"
-description: "Property-based testing is an amazingly powerful tool to add to your testing toolbox. Check out how we can use it to verify the correctness of our Base58Check encoder against an external oracle."
+excerpt: "Property-based testing is an amazingly powerful tool to add to your testing toolbox. Check out how we can use it to verify the correctness of our Base58Check encoder against an external oracle."
 author: "Pete Corey"
 date:   2018-02-12
 tags: ["Elixir", "Bitcoin", "Mastering Bitcoin"]

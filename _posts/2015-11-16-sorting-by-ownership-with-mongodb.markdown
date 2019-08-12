@@ -2,7 +2,7 @@
 layout: post
 title:  "Sorting By Ownership With MongoDB"
 titleParts: ["Sorting By Ownership With", "MongoDB"]
-description: "This post explores the problem of crafting a difficult query in MongoDB. Use your tools; don't let your tools use you."
+excerpt: "This post explores the problem of crafting a difficult query in MongoDB. Use your tools; don't let your tools use you."
 author: "Pete Corey"
 date:   2015-11-16
 tags: ["Javascript", "MongoDB"]

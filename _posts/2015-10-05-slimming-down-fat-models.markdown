@@ -2,7 +2,7 @@
 layout: post
 title:  "Slimming Down Fat Models"
 titleParts: ["Slimming Down", "Fat Models"]
-description: "While fat models are better than fat controllers, sometimes your models need to trim the fat as well. Event-based architectures may be the solution to your troubles."
+excerpt: "While fat models are better than fat controllers, sometimes your models need to trim the fat as well. Event-based architectures may be the solution to your troubles."
 author: "Pete Corey"
 date:   2015-10-05
 tags: ["Javascript", "Meteor"]

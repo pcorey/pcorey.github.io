@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Is My Apollo Client Connected to the Server?"
-description: "It turns out that the problem of detecting server connectivity is more complicated than it first seems in the current state of Apollo."
+excerpt: "It turns out that the problem of detecting server connectivity is more complicated than it first seems in the current state of Apollo."
 author: "Pete Corey"
 date:   2019-05-13
 tags: ["Javascript", "GraphQL", "Apollo"]

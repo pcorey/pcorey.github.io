@@ -2,7 +2,7 @@
 layout: post
 title:  "Black Box Meteor - Triple Brace XSS"
 titleParts: ["Black Box Meteor", "Triple Brace XSS"]
-description: "Meteor's 'tripple braces' are a primary source of Cross Site Scripting vulnerabilities in your application. Learn how an attacker can find them in your application."
+excerpt: "Meteor's 'tripple braces' are a primary source of Cross Site Scripting vulnerabilities in your application. Learn how an attacker can find them in your application."
 author: "Pete Corey"
 date:   2015-04-03
 tags: ["Javascript", "Meteor", "Security", "XSS", "Black Box Meteor"]

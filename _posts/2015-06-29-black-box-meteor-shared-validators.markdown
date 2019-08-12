@@ -2,7 +2,7 @@
 layout: post
 title:  "Black Box Meteor - Shared Validators"
 titleParts: ["Black Box Meteor", "Shared Validators"]
-description: "Validator functions for Meteor collections belong on the server. Find out why from a hands-on perspective."
+excerpt: "Validator functions for Meteor collections belong on the server. Find out why from a hands-on perspective."
 author: "Pete Corey"
 date:   2015-06-29
 tags: ["Javascript", "Meteor", "Security", "Black Box Meteor"]

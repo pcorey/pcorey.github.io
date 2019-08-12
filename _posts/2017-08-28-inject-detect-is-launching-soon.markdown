@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Inject Detect is Launching Soon"
-description: "It's been a long, tumultuous road building Inject Detect, but the end is in sight; Inject Detect is launching soon!"
+excerpt: "It's been a long, tumultuous road building Inject Detect, but the end is in sight; Inject Detect is launching soon!"
 author: "Pete Corey"
 date:   2017-08-28
 tags: ["Inject Detect", "NoSQL Injection", "Meteor", "Security", "MongoDB"]

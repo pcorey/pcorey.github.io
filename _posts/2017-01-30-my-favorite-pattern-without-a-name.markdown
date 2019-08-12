@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Favorite Pattern Without a Name"
-description: "I've been notice a recurring pattern in modern open source projects and even my own Elixir code, but strangely, this pattern doesn't seem to have a name."
+excerpt: "I've been notice a recurring pattern in modern open source projects and even my own Elixir code, but strangely, this pattern doesn't seem to have a name."
 author: "Pete Corey"
 date:   2017-01-30
 tags: ["Elixir"]

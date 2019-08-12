@@ -2,7 +2,7 @@
 layout: post
 title:  "Meteor Unit Testing With Testdouble.js"
 titleParts: ["Meteor Unit Testing With", "Testdouble.js"]
-description: "Smooth out your Meteor testing experience with Testdouble.js."
+excerpt: "Smooth out your Meteor testing experience with Testdouble.js."
 author: "Pete Corey"
 date:   2016-05-02
 tags: ["Javascript", "Meteor", "Testing"]

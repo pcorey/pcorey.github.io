@@ -2,7 +2,7 @@
 layout: post
 title:  "Method Auditing Revisited"
 titleParts: ["Method Auditing", "Revisited"]
-description: "How would a malicious user find vulnerabilities in your Meteor methods? Put on your black hat and find out."
+excerpt: "How would a malicious user find vulnerabilities in your Meteor methods? Put on your black hat and find out."
 author: "Pete Corey"
 date:   2016-02-15
 tags: ["Meteor", "Security", "NoSQL Injection"]

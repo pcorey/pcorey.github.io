@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Generating Realistic Pseudonyms with Faker.js and Deterministic Seeds"
-description: "Let's build on the \"demo mode\" we added to our application in the last article and breath some life into the pseudonyms generated for our application's users."
+excerpt: "Let's build on the \"demo mode\" we added to our application in the last article and breath some life into the pseudonyms generated for our application's users."
 author: "Pete Corey"
 date:   2019-04-29
 tags: ["Javascript", "Node.js", "Mongoose"]

@@ -2,7 +2,7 @@
 layout: post
 title:  "Hijacking Meteor Accounts by Sniffing DDP"
 titleParts: ["Hijacking Meteor Accounts", "By Sniffing DDP"]
-description: "Meteor accounts can be hijacked by an attacker listening for your credentials as they fly across the wire. Find out how to protect your application."
+excerpt: "Meteor accounts can be hijacked by an attacker listening for your credentials as they fly across the wire. Find out how to protect your application."
 author: "Pete Corey"
 date:   2015-08-23
 tags: ["Javascript", "Meteor", "Security"]

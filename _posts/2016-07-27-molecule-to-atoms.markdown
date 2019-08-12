@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Molecule to Atoms"
-description: "Let's go back to chemistry class and figure out how to break a molecule into its component elements in this Javascript Literate Commits code kata."
+excerpt: "Let's go back to chemistry class and figure out how to break a molecule into its component elements in this Javascript Literate Commits code kata."
 author: "Pete Corey"
 date:   2016-07-27
 repo: "https://github.com/pcorey/molecule-to-atoms"

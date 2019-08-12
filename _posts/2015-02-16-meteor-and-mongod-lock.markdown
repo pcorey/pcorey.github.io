@@ -2,7 +2,7 @@
 layout: post
 title:  "Meteor and Mongod.lock"
 titleParts:  ["Meteor and", "Mongod.lock"]
-description: "Crashing Meteor applications can sometimes wreak havok on your MongoDB lock file. Learn how to fix that problem in this article."
+excerpt: "Crashing Meteor applications can sometimes wreak havok on your MongoDB lock file. Learn how to fix that problem in this article."
 author: "Pete Corey"
 date:   2015-02-16
 tags: ["Meteor", "MongoDB"]

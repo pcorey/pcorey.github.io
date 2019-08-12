@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "J's Low-level Obfuscation Leads to Higher Levels of Clarity"
-description: "It's argued that J is a \"write-only\" programming language because of its extreme terseness and complexity of syntax. I'm starting to warm up the the idea that it might be more readable than it first lets on."
+excerpt: "It's argued that J is a \"write-only\" programming language because of its extreme terseness and complexity of syntax. I'm starting to warm up the the idea that it might be more readable than it first lets on."
 author: "Pete Corey"
 date:   2018-03-19
 tags: ["J", "Programming Languages"]

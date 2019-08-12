@@ -2,7 +2,7 @@
 layout: post
 title:  "Suffixer! Find Meaningful Unregistered Domains"
 titleParts: ["Suffixer!", "Find Meaningful Unregistered Domains"]
-description: "Suffixer is a tool designed to find meaningful unregistered domains for your latest project."
+excerpt: "Suffixer is a tool designed to find meaningful unregistered domains for your latest project."
 author: "Pete Corey"
 date:   2015-02-02
 tags: ["Javascript", "Meteor", "Announcement"]

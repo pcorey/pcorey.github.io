@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GraphQL Authentication with Elixir and Absinthe"
-description: "Let's build out the back-end authentication functionality of an Absinthe-powered Elixir and Phoenix application."
+excerpt: "Let's build out the back-end authentication functionality of an Absinthe-powered Elixir and Phoenix application."
 author: "Pete Corey"
 date:   2017-05-08
 tags: ["Elixir", "Phoenix", "Absinthe", "GraphQL", "Authentication"]

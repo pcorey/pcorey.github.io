@@ -2,7 +2,7 @@
 layout: post
 title:  "Hide Menu: My First Sublime Text Plugin"
 titleParts: ["Hide Menu", "My First Sublime Text Plugin"]
-description: "I've created a Sublime Text plugin to scratch an itch, and I documented the whole process."
+excerpt: "I've created a Sublime Text plugin to scratch an itch, and I documented the whole process."
 author: "Pete Corey"
 date:   2014-12-24
 tags: ["Python"]

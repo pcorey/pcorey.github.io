@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to Use MongoDB with Elixir"
-description: "What is the best way to use MongoDB as your primary database in a Phoenix or Elixir application? This article explores a few options."
+excerpt: "What is the best way to use MongoDB as your primary database in a Phoenix or Elixir application? This article explores a few options."
 author: "Pete Corey"
 date:   2016-10-31
 tags: ["Elixir", "Phoenix", "MongoDB"]

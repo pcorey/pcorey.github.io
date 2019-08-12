@@ -2,7 +2,7 @@
 layout: post
 title:  "Prism.js and Github Pages"
 titleParts: ["Prism.js", "and Github Pages"]
-description: "This blog is build using Jekyll and hosted on Github Pages. This presents certain difficulties when paired with the Prism.js syntax highlighter."
+excerpt: "This blog is build using Jekyll and hosted on Github Pages. This presents certain difficulties when paired with the Prism.js syntax highlighter."
 author: "Pete Corey"
 date:   2014-08-27 15:19:00
 tags: ["Jekyll"]

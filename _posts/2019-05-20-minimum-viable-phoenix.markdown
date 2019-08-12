@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Minimum Viable Phoenix"
-description: "Let's walk through the process of building a dead simple Phoenix application from the ground up."
+excerpt: "Let's walk through the process of building a dead simple Phoenix application from the ground up."
 author: "Pete Corey"
 date:   2019-05-20
 tags: ["Literate Commits", "Elixir", "Phoenix"]

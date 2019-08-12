@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Advent of Code: Memory Maneuver"
-description: "Day eight of 2018's Advent of Code challenge. We can plant a house, and we can build a tree."
+excerpt: "Day eight of 2018's Advent of Code challenge. We can plant a house, and we can build a tree."
 author: "Pete Corey"
 date:   2018-12-08
 tags: ["J", "Advent of Code 2018"]

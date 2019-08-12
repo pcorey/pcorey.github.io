@@ -2,7 +2,7 @@
 layout: post
 title:  "BYO Meteor Package"
 titleParts:  ["BYO Meteor", "Package"]
-description: "Follow along as I build and publish my first Meteor package!"
+excerpt: "Follow along as I build and publish my first Meteor package!"
 author: "Pete Corey"
 date:   2014-12-22
 tags: ["Javascript", "Meteor"]

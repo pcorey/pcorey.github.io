@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spreading Through the Bitcoin Network"
-description: "Let's replace our Bitcoin node's supervisor with a dynamic supervisor and start recursively spreading through the Bitcoin peer-to-peer network!"
+excerpt: "Let's replace our Bitcoin node's supervisor with a dynamic supervisor and start recursively spreading through the Bitcoin peer-to-peer network!"
 author: "Pete Corey"
 date:   2018-05-21
 tags: ["Elixir", "Bitcoin"]

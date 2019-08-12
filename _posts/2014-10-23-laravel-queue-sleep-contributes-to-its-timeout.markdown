@@ -2,7 +2,7 @@
 layout: post
 title:  "Laravel Queue's Sleep Contributes to its Timeout"
 titleParts: ["Laravel Queue's", "Sleep Contributes", "to its Timeout"]
-description: "Follow along as I track down a bug in Laravel's queue system."
+excerpt: "Follow along as I track down a bug in Laravel's queue system."
 author: "Pete Corey"
 date:   2014-10-23
 tags: ["PHP", "Laravel", "Debugging"]

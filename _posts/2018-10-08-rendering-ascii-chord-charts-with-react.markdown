@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rendering ASCII Chord Charts with React"
-description: "It's time to move our Chord project to the web. Let's use React to generate ASCII-based guitar chord charts."
+excerpt: "It's time to move our Chord project to the web. Let's use React to generate ASCII-based guitar chord charts."
 author: "Pete Corey"
 date:   2018-10-08
 tags: ["Javascript", "Music"]

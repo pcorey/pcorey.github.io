@@ -2,7 +2,7 @@
 layout: post
 title:  "Hijacking Meteor Accounts With XSS"
 titleParts: ["Hijacking Meteor Accounts", "With XSS"]
-description: "Cross Site Scripting attacks are especially dangerous in Meteor applications. Watch how an XSS vulnerability can lead to privilege escalation."
+excerpt: "Cross Site Scripting attacks are especially dangerous in Meteor applications. Watch how an XSS vulnerability can lead to privilege escalation."
 author: "Pete Corey"
 date:   2015-09-07
 tags: ["Javascript", "Meteor", "Security", "XSS"]

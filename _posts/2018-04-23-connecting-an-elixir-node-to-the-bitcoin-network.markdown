@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Connecting an Elixir Node to the Bitcoin Network"
-description: "Let's use the tools provided by the Elixir programming language to connect to a node on Bitcoin's peer-to-peer ad-hoc network. Hello, Bitcoin!"
+excerpt: "Let's use the tools provided by the Elixir programming language to connect to a node on Bitcoin's peer-to-peer ad-hoc network. Hello, Bitcoin!"
 author: "Pete Corey"
 date:   2018-04-23
 tags: ["Elixir", "Bitcoin"]

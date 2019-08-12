@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building My Own Spacemacs"
-description: "I've decided to ditch Spacemacs in favor of maintaining my own custom Emacs configuration. I couldn't be happier with the result."
+excerpt: "I've decided to ditch Spacemacs in favor of maintaining my own custom Emacs configuration. I couldn't be happier with the result."
 author: "Pete Corey"
 date:   2019-07-01
 tags: ["Emacs"]

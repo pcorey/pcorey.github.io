@@ -2,7 +2,7 @@
 layout: post
 title:  "Why I Can't Wait For ES6 Proxies"
 titleParts: ["Why I Can't Wait For", "ES6 Proxies"]
-description: "Proxies will open the door for new advances in Javascript security. To say I'm excited is an understatement."
+excerpt: "Proxies will open the door for new advances in Javascript security. To say I'm excited is an understatement."
 author: "Pete Corey"
 date:   2015-11-09
 tags: ["Javascript", "Meteor", "Security", "NoSQL Injection"]

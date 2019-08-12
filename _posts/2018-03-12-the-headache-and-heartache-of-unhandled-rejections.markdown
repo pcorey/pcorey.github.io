@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Headache and Heartache of Unhandled Rejections"
-description: "Out of the box, Node.js doesn't do much to deal with unhandled promise rejections. This can lead to a world of hurt when trying to debug these rejections in your application. Thankfully, we have the tools to fix the problem!"
+excerpt: "Out of the box, Node.js doesn't do much to deal with unhandled promise rejections. This can lead to a world of hurt when trying to debug these rejections in your application. Thankfully, we have the tools to fix the problem!"
 author: "Pete Corey"
 date:   2018-03-12
 tags: ["Javascript", "Node.js"]

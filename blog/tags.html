@@ -19,7 +19,7 @@ hideFooter: true
                 {% for post in site.tags[tag] %}
                     <p>
                         <a href="{{post.url}}" >{{post.title}}</a>
-                        – {{post.description}}
+                        – {{post.excerpt}}
                         <br/>
                         <i data-feather="calendar"></i> {{post.date | date: "%b %-d, %Y" }}
                     </p>

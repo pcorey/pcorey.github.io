@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Secure Meteor Releasing Next Week!"
-description: "While I haven't been iterating publicly, I've been doing lots of work in the new year."
+excerpt: "While I haven't been iterating publicly, I've been doing lots of work in the new year."
 author: "Pete Corey"
 date:   2019-02-25
 tags: ["Meteor", "Security", "Secure Meteor"]

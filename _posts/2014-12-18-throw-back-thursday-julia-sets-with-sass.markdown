@@ -2,7 +2,7 @@
 layout: post
 title:  "Throw Back Thursday: Julia Sets with Sass"
 titleParts: ["Throw Back Thursday", "Julia Sets with Sass"]
-description: "Have you ever thought about generating a Julia set from nothing but HTML and CSS? I have..."
+excerpt: "Have you ever thought about generating a Julia set from nothing but HTML and CSS? I have..."
 author: "Pete Corey"
 date:   2014-12-18
 tags: ["CSS", "Experiments"]

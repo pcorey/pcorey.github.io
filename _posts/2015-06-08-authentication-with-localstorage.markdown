@@ -2,7 +2,7 @@
 layout: post
 title:  "Authentication with localStorage"
 titleParts: ["Authentication With", "localStorage"]
-description: "Authentication through localStorage has the handy property of being CSRF-proof. Find out what that means and why it matters in this article!"
+excerpt: "Authentication through localStorage has the handy property of being CSRF-proof. Find out what that means and why it matters in this article!"
 author: "Pete Corey"
 date:   2015-06-08
 tags: ["Javascript", "Meteor", "Security"]

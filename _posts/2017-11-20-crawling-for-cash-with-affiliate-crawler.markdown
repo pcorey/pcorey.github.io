@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Crawling for Cash with Affiliate Crawler"
-description: "I've created a new tool called Affiliate Crawler that's designed to crawl through your written web content, looking for affiliate and referral marketing opportunities."
+excerpt: "I've created a new tool called Affiliate Crawler that's designed to crawl through your written web content, looking for affiliate and referral marketing opportunities."
 author: "Pete Corey"
 date:   2017-11-20
 tags: ["Elixir", "Affiliate Crawler", "Announcement", "Tools", "Web Crawling"]

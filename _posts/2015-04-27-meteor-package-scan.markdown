@@ -2,7 +2,7 @@
 layout: post
 title:  "Meteor Package Scan"
 titleParts:  ["Meteor", "Package Scan"]
-description: "Are you using Meteor packages with known security vulnerabilities? Package Scan will tell you."
+excerpt: "Are you using Meteor packages with known security vulnerabilities? Package Scan will tell you."
 author: "Pete Corey"
 date:   2015-04-27
 categories:

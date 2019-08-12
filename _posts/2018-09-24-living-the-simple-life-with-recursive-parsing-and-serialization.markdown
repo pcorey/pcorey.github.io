@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Living the Simple Life with Recursive Parsing and Serialization"
-description: "I've been working on a refactor of my Elixir-powered Bitcoin full node for weeks now. Let's dive into the solution I landed on."
+excerpt: "I've been working on a refactor of my Elixir-powered Bitcoin full node for weeks now. Let's dive into the solution I landed on."
 author: "Pete Corey"
 date:   2018-09-24
 tags: ["Bitcoin", "Elixir"]

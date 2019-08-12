@@ -2,7 +2,7 @@
 layout: post
 title:  "Mongo's Multi Parameter Saves the Day"
 titleParts: ["Mongo's Multi Parameter", "Saves the Day"]
-description: "The 'multi' flag on MongoDB's update operator just narrowly prevented a vulnerability in this application. Check out this rundown for the details."
+excerpt: "The 'multi' flag on MongoDB's update operator just narrowly prevented a vulnerability in this application. Check out this rundown for the details."
 author: "Pete Corey"
 date:   2015-05-18
 tags: ["Javascript", "Meteor", "Security", "NoSQL Injection"]

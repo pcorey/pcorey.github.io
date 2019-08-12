@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Advent of Code: Marble Mania"
-description: "Day ten of 2018's Advent of Code challenge. Let's build a circular, doubly linked list using the J programming language."
+excerpt: "Day ten of 2018's Advent of Code challenge. Let's build a circular, doubly linked list using the J programming language."
 author: "Pete Corey"
 date:   2018-12-14
 tags: ["J", "Advent of Code 2018"]

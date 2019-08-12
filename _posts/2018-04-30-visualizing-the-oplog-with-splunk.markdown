@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Visualizing the Oplog with Splunk"
-description: "In an attempt to track down the cause of a mysterious spike in CPU consumption in a Meteor application, I decided to plot a time series chart of Mongo's Oplog collection."
+excerpt: "In an attempt to track down the cause of a mysterious spike in CPU consumption in a Meteor application, I decided to plot a time series chart of Mongo's Oplog collection."
 author: "Pete Corey"
 date:   2018-04-30
 tags: ["Meteor", "Splunk"]

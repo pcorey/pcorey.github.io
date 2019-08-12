@@ -2,7 +2,7 @@
 layout: post
 title:  "Namecheap + Amazon S3"
 titleParts: ["Namecheap", "+ Amazon S3"]
-description: "Namecheap and Amazon's S3 are a match made in heaven. Follow these steps to get both working together seamlessly."
+excerpt: "Namecheap and Amazon's S3 are a match made in heaven. Follow these steps to get both working together seamlessly."
 author: "Pete Corey"
 date:   2014-09-23
 tags: ["Infrastructure"]

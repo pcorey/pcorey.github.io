@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Advent of Code: The Sum of Its Parts"
-description: "Day seven of 2018's Advent of Code challenge. In which we use J to navigate a directed graph."
+excerpt: "Day seven of 2018's Advent of Code challenge. In which we use J to navigate a directed graph."
 author: "Pete Corey"
 date:   2018-12-07
 tags: ["J", "Advent of Code 2018"]

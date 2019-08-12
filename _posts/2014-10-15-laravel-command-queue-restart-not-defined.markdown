@@ -2,7 +2,7 @@
 layout: post
 title:  "Laravel 4.2 Command \"Queue:Restart\" is Not Defined"
 titleParts:  ["Laravel 4.2 Command", "\"Queue:Restart\"", "is Not Defined"]
-description: "A sudden anomalous skipe in CPU usage led me down the rabbit hole of debugging an issue with my Laravel configuration. Follow along in this article."
+excerpt: "A sudden anomalous skipe in CPU usage led me down the rabbit hole of debugging an issue with my Laravel configuration. Follow along in this article."
 author: "Pete Corey"
 date:   2014-10-15
 tags: ["PHP", "Laravel"]

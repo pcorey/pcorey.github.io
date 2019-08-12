@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Let's Get Personal"
-description: "I've decided to move away from the East5th name and start publishing everything I do under my name: Pete Corey."
+excerpt: "I've decided to move away from the East5th name and start publishing everything I do under my name: Pete Corey."
 author: "Pete Corey"
 date:   2017-12-18
 tags: ["Meta", "Announcement"]

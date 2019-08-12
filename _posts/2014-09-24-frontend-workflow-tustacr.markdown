@@ -2,7 +2,7 @@
 layout: post
 title:  "Frontend Workflow - T.U.S.T.A.C.R. Part 1"
 titleParts: ["Frontend Workflow", "T.U.S.T.A.C.R.", "Part 1"]
-description: "Follow along as I build out the front-end of a URL shortener built using Firebase!"
+excerpt: "Follow along as I build out the front-end of a URL shortener built using Firebase!"
 author: "Pete Corey"
 date:   2014-09-24
 tags: ["Javascript", "Firebase", "CSS", "Video"]

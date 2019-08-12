@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Controlling a Bitcoin Node with Elixir"
-description: "Explore how to communicate with a Bitcoin full node through its JSON-RPC interface from an Elixir application."
+excerpt: "Explore how to communicate with a Bitcoin full node through its JSON-RPC interface from an Elixir application."
 author: "Pete Corey"
 date:   2017-09-04
 tags: ["Bitcoin", "Blockchain", "Elixir", "Mastering Bitcoin"]

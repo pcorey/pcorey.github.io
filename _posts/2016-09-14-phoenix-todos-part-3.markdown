@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Phoenix Todos - Back-end Authentication"
-description: "Part three of our 'Phoenix Todos' Literate Commits series. Buiding out our back-end authentication solution."
+excerpt: "Part three of our 'Phoenix Todos' Literate Commits series. Buiding out our back-end authentication solution."
 author: "Pete Corey"
 date:   2016-09-14
 repo: "https://github.com/pcorey/phoenix_todos"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Phoenix Todos - Transition to Redux"
-description: "Part four of our 'Phoenix Todos' Literate Commits series. Replacing Meteor's front-end Accounts system with Redux."
+excerpt: "Part four of our 'Phoenix Todos' Literate Commits series. Replacing Meteor's front-end Accounts system with Redux."
 author: "Pete Corey"
 date:   2016-09-21
 repo: "https://github.com/pcorey/phoenix_todos"

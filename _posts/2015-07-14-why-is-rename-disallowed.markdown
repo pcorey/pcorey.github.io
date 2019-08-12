@@ -2,7 +2,7 @@
 layout: post
 title:  "Why Is Rename Disallowed?"
 titleParts: ["Why Is Rename", "Disallowed"]
-description: "The MongoDB 'rename' operator is disallowed in Meteor client-side queries. Let's explore why that may be."
+excerpt: "The MongoDB 'rename' operator is disallowed in Meteor client-side queries. Let's explore why that may be."
 author: "Pete Corey"
 date:   2015-07-14
 tags: ["Javascript", "Meteor", "Security"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Elixir Mix"
-description: "I was lucky enough to have the opportunity to appear on the Elixir Mix podcast. Check it out!"
+excerpt: "I was lucky enough to have the opportunity to appear on the Elixir Mix podcast. Check it out!"
 author: "Pete Corey"
 date:   2018-11-19
 tags: ["Elixir", "Podcast"]

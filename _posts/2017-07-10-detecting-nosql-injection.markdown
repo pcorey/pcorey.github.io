@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Detecting NoSQL Injection"
-description: "Check out how Inject Detect uses the structures of the MongoDB queries made by your application to detect NoSQL Injection attacks as they happen."
+excerpt: "Check out how Inject Detect uses the structures of the MongoDB queries made by your application to detect NoSQL Injection attacks as they happen."
 author: "Pete Corey"
 date:   2017-07-10
 tags: ["Inject Detect", "NoSQL Injection", "Meteor", "Security", "MongoDB"]

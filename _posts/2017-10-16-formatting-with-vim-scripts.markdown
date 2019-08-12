@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Formatting with Vim Scripts"
-description: "Vim has become the cornerstone of my day-to-day work as a software developer. Check out how I use Vim scripts to format articles and posts."
+excerpt: "Vim has become the cornerstone of my day-to-day work as a software developer. Check out how I use Vim scripts to format articles and posts."
 author: "Pete Corey"
 date:   2017-10-16
 tags: ["Vim", "Markdown", "Literate Commits"]

@@ -2,7 +2,7 @@
 layout: post
 title:  "Anatomy of an Assessment"
 titleParts: ["Anatomy of an", "Assessment"]
-description: "What are Meteor security assessments? How do they work and what can I expect?"
+excerpt: "What are Meteor security assessments? How do they work and what can I expect?"
 author: "Pete Corey"
 date:   2016-05-30
 tags: ["Meteor", "Security", "Process"]

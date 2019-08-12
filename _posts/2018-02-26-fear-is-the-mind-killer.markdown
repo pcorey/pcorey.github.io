@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fear is the Mind Killer"
-description: "I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration."
+excerpt: "I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration."
 author: "Pete Corey"
 date:   2018-02-26
 tags: ["Writing"]

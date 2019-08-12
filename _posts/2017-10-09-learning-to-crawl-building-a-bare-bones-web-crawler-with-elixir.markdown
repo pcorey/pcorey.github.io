@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Learning to Crawl - Building a Bare Bones Web Crawler with Elixir"
-description: "Roll up your sleaves and get ready to build a fully function (but feature limited) web crawler using Elixir."
+excerpt: "Roll up your sleaves and get ready to build a fully function (but feature limited) web crawler using Elixir."
 author: "Pete Corey"
 date:   2017-10-09
 tags: ["Elixir", "Web Crawling", "Affiliate Crawler"]

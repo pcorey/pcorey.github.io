@@ -2,7 +2,7 @@
 layout: post
 title:  "NoSQL Injection and GraphQL"
 titleParts: ["NoSQL Injection and", "GraphQL"]
-description: "Are GraphQL applications vulnerable to NoSQL Injection attacks? Check out how a fully fleshed out schema can protect you and your data!"
+excerpt: "Are GraphQL applications vulnerable to NoSQL Injection attacks? Check out how a fully fleshed out schema can protect you and your data!"
 author: "Pete Corey"
 date:   2016-06-13
 tags: ["Javascript", "Meteor", "NoSQL Injection", "Security", "GraphQL"]

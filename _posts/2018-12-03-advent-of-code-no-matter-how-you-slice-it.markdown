@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Advent of Code: No Matter How You Slice It"
-description: "Day three of 2018's Advent of Code challenge. Let's use J matricies to model rectangular intersections."
+excerpt: "Day three of 2018's Advent of Code challenge. Let's use J matricies to model rectangular intersections."
 author: "Pete Corey"
 date:   2018-12-03
 tags: ["J", "Advent of Code 2018"]

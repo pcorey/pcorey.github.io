@@ -2,7 +2,7 @@
 layout: post
 title:  "Meteor Security in the Wild"
 titleParts: ["Meteor Security", "in the Wild"]
-description: "Read along with this deep hands-on dive into a vulnerability I found in a client's production Meteor application."
+excerpt: "Read along with this deep hands-on dive into a vulnerability I found in a client's production Meteor application."
 author: "Pete Corey"
 date:   2015-05-05
 tags: ["Javascript", "Meteor", "Security"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Recurring Tasks in Elixir"
-description: "Today we're digging into the details of how to program recurring tasks in Elixir using GenServers. Behold the Fruit Printer 🍉."
+excerpt: "Today we're digging into the details of how to program recurring tasks in Elixir using GenServers. Behold the Fruit Printer 🍉."
 author: "Pete Corey"
 date:   2017-07-17
 tags: ["Elixir"]

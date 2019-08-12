@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "NoSQL Injection in Kadira"
-description: "I discovered and disclosed a NoSQL Injection vulnerability in the open-sourced Kadira project. Let's disect it and see how it could have been prevented."
+excerpt: "I discovered and disclosed a NoSQL Injection vulnerability in the open-sourced Kadira project. Let's disect it and see how it could have been prevented."
 author: "Pete Corey"
 date:   2017-05-22
 tags: ["Inject Detect", "NoSQL Injection", "Meteor", "MongoDB", "Security"]

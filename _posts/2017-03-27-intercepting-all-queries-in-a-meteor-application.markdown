@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Intercepting All Queries in a Meteor Application"
-description: "Find out how to write a Meteor package to interecept all queries sent to MongoDB using a technique called monkey patching."
+excerpt: "Find out how to write a Meteor package to interecept all queries sent to MongoDB using a technique called monkey patching."
 author: "Pete Corey"
 date:   2017-03-27
 tags: ["Inject Detect", "Javascript", "Meteor", "MongoDB", "Monkey Patching"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Literate Commits"
-description: "Literate Commits is a new take on the concept of Donald Knuth's Literate Programming that tells a story through your repository's commit history."
+excerpt: "Literate Commits is a new take on the concept of Donald Knuth's Literate Programming that tells a story through your repository's commit history."
 author: "Pete Corey"
 date:   2016-07-11
 tags: ["Literate Commits"]

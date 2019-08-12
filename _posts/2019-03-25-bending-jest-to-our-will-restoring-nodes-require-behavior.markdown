@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bending Jest to Our Will: Restoring Node's Require Behavior"
-description: "Jest overrides the behavior of Node's require behavior to support concurrent testing and better test isolation. But what if we don't want that?"
+excerpt: "Jest overrides the behavior of Node's require behavior to support concurrent testing and better test isolation. But what if we don't want that?"
 author: "Pete Corey"
 date:   2019-03-25
 tags: ["Javascript", "Testing", "Jest"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Exploring the Bitcoin Blockchain with Elixir and Phoenix"
-description: "Let's use the Phoenix framework and our Bitcoin node interface to build a basic Bitcoin blockchain explorer!"
+excerpt: "Let's use the Phoenix framework and our Bitcoin node interface to build a basic Bitcoin blockchain explorer!"
 author: "Pete Corey"
 date:   2017-09-18
 tags: ["Bitcoin", "Blockchain", "Elixir", "Phoenix"]

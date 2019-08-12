@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Making Noise with J"
-description: "Let's try to make music with the J programming language and a handful of other helpful tools and utilities."
+excerpt: "Let's try to make music with the J programming language and a handful of other helpful tools and utilities."
 author: "Pete Corey"
 date:   2018-07-02
 tags: ["J", "Music"]

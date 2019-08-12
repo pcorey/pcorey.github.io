@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building Mixed Endian Binaries with Elixir"
-description: "Working with mixed-endian binaries is something we rarely have to think about as web developers. When it does come up, Elixir thankfully ships with the perfect tools for the job."
+excerpt: "Working with mixed-endian binaries is something we rarely have to think about as web developers. When it does come up, Elixir thankfully ships with the perfect tools for the job."
 author: "Pete Corey"
 date:   2018-03-19
 tags: ["Elixir", "Bitcoin"]

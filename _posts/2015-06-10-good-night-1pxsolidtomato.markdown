@@ -2,7 +2,7 @@
 layout: post
 title:  "Good Night 1pxsolidtomato"
 titleParts: ["Good Night", "1pxsolidtomato"]
-description: "The name '1pxsolidtomato' is no more. But this site and all of its content will live on!"
+excerpt: "The name '1pxsolidtomato' is no more. But this site and all of its content will live on!"
 author: "Pete Corey"
 date:   2015-06-10
 tags: ["Meta"]

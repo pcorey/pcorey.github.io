@@ -2,7 +2,7 @@
 layout: post
 title:  "Scanning Meteor Projects for Node Vulnerabilities"
 titleParts: ["Scanning Meteor Projects for", "Node Vulnerabilities"]
-description: "Meteor applications can make use of Node.js packages, which opens them up to a world of vulnerabilities. Protect yourself by learning how to scan those packages for known vulnerabilities."
+excerpt: "Meteor applications can make use of Node.js packages, which opens them up to a world of vulnerabilities. Protect yourself by learning how to scan those packages for known vulnerabilities."
 author: "Pete Corey"
 date:   2015-12-07
 tags: ["Meteor", "Security"]

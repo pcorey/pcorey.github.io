@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using Create React App with Phoenix"
-description: "Skip brunch today and use Create React App to lay the foundation for the front-end of your next Elixir and Phoenix project."
+excerpt: "Skip brunch today and use Create React App to lay the foundation for the front-end of your next Elixir and Phoenix project."
 author: "Pete Corey"
 date:   2017-04-03
 tags: ["Elixir", "Phoenix", "React"]

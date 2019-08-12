@@ -2,7 +2,7 @@
 layout: post
 title:  "Stored XSS and Unexpected Unsafe-Eval"
 titleParts: ["Stored XSS", "and Unexpected Unsafe-Eval"]
-description: "Event your Content Security Policy can't save you from stored Cross Site Scripting attacks."
+excerpt: "Event your Content Security Policy can't save you from stored Cross Site Scripting attacks."
 author: "Pete Corey"
 date:   2016-03-14
 tags: ["Javascript", "Meteor", "Security"]

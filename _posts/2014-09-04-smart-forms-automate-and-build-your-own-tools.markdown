@@ -2,7 +2,7 @@
 layout: post
 title:  "Smart Forms - Automate and Build Your Own Tools!"
 titleParts: ["Smart Forms", "Automate and Build", "Your Own Tools!"]
-description: "Sometimes it's the code you throw away that's the most valuable. Here's a story about how a one-off tool built quickly and poorly saved a client hundreds of hours of billable work."
+excerpt: "Sometimes it's the code you throw away that's the most valuable. Here's a story about how a one-off tool built quickly and poorly saved a client hundreds of hours of billable work."
 author: "Pete Corey"
 date:   2014-09-04
 tags: ["Javascript", "Process"]

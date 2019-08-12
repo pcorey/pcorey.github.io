@@ -2,7 +2,7 @@
 layout: post
 title:  "Returning Promises Synchronously"
 titleParts: ["Returning Promises", "Synchronously"]
-description: "I often find myself tasked with returning promises synchronously from Meteor fibers. I've written a Meteor package that helps with the task."
+excerpt: "I often find myself tasked with returning promises synchronously from Meteor fibers. I've written a Meteor package that helps with the task."
 author: "Pete Corey"
 date:   2015-08-03
 tags: ["Javascript", "Meteor"]

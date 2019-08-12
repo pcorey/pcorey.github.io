@@ -2,7 +2,7 @@
 layout: post
 title:  "Git Bisect and Commit History"
 titleParts: ["Git Bisect", "and Commit History"]
-description: "Git's bisect tool is a powerhouse of a tool that often doesn't get the love it deserves."
+excerpt: "Git's bisect tool is a powerhouse of a tool that often doesn't get the love it deserves."
 author: "Pete Corey"
 date:   2014-09-16
 tags: ["Git"]

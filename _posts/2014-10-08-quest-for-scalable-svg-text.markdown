@@ -2,7 +2,7 @@
 layout: post
 title:  "The Quest for Scalable SVG Text"
 titleParts:  ["The Quest for", "Scalable", "SVG Text"]
-description: "Creating an SVG with scalable text presents more challenges than you would expect. Especially when you're trying to shoot for full browser compatibility."
+excerpt: "Creating an SVG with scalable text presents more challenges than you would expect. Especially when you're trying to shoot for full browser compatibility."
 author: "Pete Corey"
 date:   2014-10-08
 tags: ["SVG"]

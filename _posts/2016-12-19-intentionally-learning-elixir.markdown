@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Intentionally Learning Elixir"
-description: "How I've fast-tracked my absorption of Elixir through intentional learning."
+excerpt: "How I've fast-tracked my absorption of Elixir through intentional learning."
 author: "Pete Corey"
 date:   2016-12-19
 tags: ["Elixir", "Books"]

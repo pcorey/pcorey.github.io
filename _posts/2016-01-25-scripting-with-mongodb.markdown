@@ -2,7 +2,7 @@
 layout: post
 title:  "Scripting With MongoDB"
 titleParts: ["Scripting With", "MongoDB"]
-description: "Scripting with Javascript is an often overlooked, but incredibly powerful feature of MongoDB. Take advantage of it!"
+excerpt: "Scripting with Javascript is an often overlooked, but incredibly powerful feature of MongoDB. Take advantage of it!"
 author: "Pete Corey"
 date:   2016-01-25
 tags: ["Javascript", "MongoDB"]

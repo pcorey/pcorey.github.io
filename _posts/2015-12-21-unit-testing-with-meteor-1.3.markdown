@@ -2,7 +2,7 @@
 layout: post
 title:  "Unit Testing With Meteor 1.3"
 titleParts: ["Unit Testing", "With Meteor 1.3"]
-description: "Meteor's official testing solution, Velocity, is just too slow. Check out how to use ES6 modules and Mocha to write lightning fast unit tests!"
+excerpt: "Meteor's official testing solution, Velocity, is just too slow. Check out how to use ES6 modules and Mocha to write lightning fast unit tests!"
 author: "Pete Corey"
 date:   2015-12-21
 tags: ["Javascript", "Meteor", "Testing"]

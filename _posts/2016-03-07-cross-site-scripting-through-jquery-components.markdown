@@ -2,7 +2,7 @@
 layout: post
 title:  "Cross Site Scripting Through jQuery Components"
 titleParts: ["Cross Site Scripting Through", "jQuery Components"]
-description: "Your application may be correctly sanitizing user-provided input, but are your jQuery components? Watch out for Cross Site Scripting attacks!"
+excerpt: "Your application may be correctly sanitizing user-provided input, but are your jQuery components? Watch out for Cross Site Scripting attacks!"
 author: "Pete Corey"
 date:   2016-03-07
 tags: ["Javascript", "Meteor", "Security"]

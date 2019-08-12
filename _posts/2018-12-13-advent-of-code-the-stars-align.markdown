@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Advent of Code: The Stars Align"
-description: "Day ten of 2018's Advent of Code challenge. Converging on hidden messages using the J programming language."
+excerpt: "Day ten of 2018's Advent of Code challenge. Converging on hidden messages using the J programming language."
 author: "Pete Corey"
 date:   2018-12-13
 tags: ["J", "Advent of Code 2018"]

@@ -2,7 +2,7 @@
 layout: post
 title:  "CrossView Fun With CSS"
 titleParts: ["CrossView Fun", "With CSS"]
-description: "CrossView illusions are an interesting way of hiding information in plain sight."
+excerpt: "CrossView illusions are an interesting way of hiding information in plain sight."
 author: "Pete Corey"
 date:   2014-11-02
 tags: ["CSS", "Experiments"]

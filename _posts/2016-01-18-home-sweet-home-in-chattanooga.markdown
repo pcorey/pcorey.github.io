@@ -2,7 +2,7 @@
 layout: post
 title:  "Home Sweet Home in Chattanooga"
 titleParts: ["Home Sweet Home in", "Chattanooga"]
-description: "I've officially relocated to Chattanooga, Tennessee!"
+excerpt: "I've officially relocated to Chattanooga, Tennessee!"
 author: "Pete Corey"
 date:   2016-01-18
 tags: ["Meta"]

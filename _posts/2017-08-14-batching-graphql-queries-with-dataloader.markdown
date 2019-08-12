@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Batching GraphQL Queries with DataLoader"
-description: "Learn how to avoid the dreaded N+1 problem and optimize your GraphQL queries with DataLoader and MongoDB."
+excerpt: "Learn how to avoid the dreaded N+1 problem and optimize your GraphQL queries with DataLoader and MongoDB."
 author: "Pete Corey"
 date:   2017-08-14
 tags: ["Javascript", "Node.js", "GraphQL", "Apollo", "MongoDB"]

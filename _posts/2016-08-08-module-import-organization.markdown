@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Module Import Organization"
-description: "Now that Meteor supports native modules, imports, and exports... Where do we put everything?"
+excerpt: "Now that Meteor supports native modules, imports, and exports... Where do we put everything?"
 author: "Pete Corey"
 date:   2016-08-08
 tags: ["Javascript", "Meteor"]

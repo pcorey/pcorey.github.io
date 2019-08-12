@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Do you know that a man is not dead while his name is still spoken?"
-description: "I've decided to move away from the East5th name and start publishing everything I do under my name: Pete Corey."
+excerpt: "I've decided to move away from the East5th name and start publishing everything I do under my name: Pete Corey."
 author: "Pete Corey"
 date:   2017-12-25
 tags: ["Elixir", "Phoenix", "Books"]

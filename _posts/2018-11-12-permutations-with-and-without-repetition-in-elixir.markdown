@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Permutations With and Without Repetition in Elixir"
-description: "Let's get back to basics for a minute and use Elixir to write a function that will compute all possible permutations of a given list of elements."
+excerpt: "Let's get back to basics for a minute and use Elixir to write a function that will compute all possible permutations of a given list of elements."
 author: "Pete Corey"
 date:   2018-11-12
 tags: ["Elixir"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why Security?"
-description: "Why should we, as software developers, be concerned about the security of the software they write? Because everything we do depends on it."
+excerpt: "Why should we, as software developers, be concerned about the security of the software they write? Because everything we do depends on it."
 author: "Pete Corey"
 date:   2017-03-13
 tags: ["Inject Detect", "Security", "Process"]

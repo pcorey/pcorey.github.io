@@ -2,7 +2,7 @@
 layout: post
 title:  "Announcing East5th!"
 titleParts:  ["Announcing", "East5th!"]
-description: "I've decided to start working for myself under the name of 'East5th'!"
+excerpt: "I've decided to start working for myself under the name of 'East5th'!"
 author: "Pete Corey"
 date:   2015-02-04
 tags: ["Meta", "Announcement"]

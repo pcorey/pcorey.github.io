@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Phoenix Todos - Authorized Sockets"
-description: "Part ten of our 'Phoenix Todos' Literate Commits series. Implementing authorization over Phoenix sockets."
+excerpt: "Part ten of our 'Phoenix Todos' Literate Commits series. Implementing authorization over Phoenix sockets."
 author: "Pete Corey"
 date:   2016-11-09
 repo: "https://github.com/pcorey/phoenix_todos"

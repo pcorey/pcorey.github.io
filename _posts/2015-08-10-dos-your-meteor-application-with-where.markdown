@@ -2,7 +2,7 @@
 layout: post
 title:  "DOS Your Meteor Application With Where"
 titleParts: ["DOS Your Meteor Application", "With Where"]
-description: "MongoDB's 'where' operator can be used by malicious users to wreak serious havok on your database. Learn to protect yourself."
+excerpt: "MongoDB's 'where' operator can be used by malicious users to wreak serious havok on your database. Learn to protect yourself."
 author: "Pete Corey"
 date:   2015-08-10
 tags: ["Javascript", "Meteor", "Security", "NoSQL Injection"]

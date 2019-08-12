@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Kingdom for Transactions"
-description: "Transactions are an incredibly undervalued tool in a developer's toolbox. They're often not missed until they're desperately needed. By then, it may be too late."
+excerpt: "Transactions are an incredibly undervalued tool in a developer's toolbox. They're often not missed until they're desperately needed. By then, it may be too late."
 author: "Pete Corey"
 date:   2016-09-26
 tags: ["Javascript", "MongoDB"]

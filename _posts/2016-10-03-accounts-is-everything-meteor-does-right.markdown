@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Accounts is Everything Meteor Does Right"
-description: "Meteor's Accounts system is one of Meteor's most killer features, and one of the reasons I find it difficult to leave the framework."
+excerpt: "Meteor's Accounts system is one of Meteor's most killer features, and one of the reasons I find it difficult to leave the framework."
 author: "Pete Corey"
 date:   2016-10-03
 tags: ["Javascript", "Meteor", "Authentication"]

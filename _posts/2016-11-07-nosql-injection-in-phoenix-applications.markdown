@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "NoSQL Injection in Phoenix Applications"
-description: "Phoenix applications using MongoDB as a data store are susceptible to NoSQL Injection attacks. Learn what they are and how to preven them."
+excerpt: "Phoenix applications using MongoDB as a data store are susceptible to NoSQL Injection attacks. Learn what they are and how to preven them."
 author: "Pete Corey"
 date:   2016-11-07
 tags: ["Elixir", "Phoenix", "NoSQL Injection", "Security", "MongoDB"]
