@@ -4,7 +4,7 @@ title:  "Using Facades to Simplify Elixir Modules"
 excerpt: "Let's use facades to separate our module's interface from our implementation, simplifying our overall application!"
 author: "Pete Corey"
 date:   2018-09-03
-tags: ["Elixir"]
+tags: ["Elixir", "Chord"]
 related: []
 ---
 

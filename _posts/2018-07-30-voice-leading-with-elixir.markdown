@@ -4,7 +4,7 @@ title:  "Voice Leading with Elixir"
 excerpt: "Let's harness the power of Elixir to programatically generate optimal chord progressions and voice leading for guitar!"
 author: "Pete Corey"
 date:   2018-07-30
-tags: ["Elixir", "Music"]
+tags: ["Elixir", "Music", "Chord"]
 related: []
 ---
 

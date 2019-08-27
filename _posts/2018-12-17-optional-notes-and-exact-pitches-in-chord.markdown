@@ -4,7 +4,7 @@ title:  "Optional Notes and Exact Pitches in Chord"
 excerpt: "My main goal with the Chord project is to model lead sheets. Let's move one step closer to that goal and add support for generating chords with optional notes and exact pitches."
 author: "Pete Corey"
 date:   2018-12-17
-tags: ["Elixir", "Music"]
+tags: ["Elixir", "Music", "Chord"]
 related: []
 ---
 

@@ -4,7 +4,7 @@ title:  "Computing Fingering Distance with Dr. Levenshtein"
 excerpt: "In this article I get by with a little help from my friend, Vladimir Levenshtein, and algorithmically compute the fingering distance between two guitar chords."
 author: "Pete Corey"
 date:   2018-08-27
-tags: ["Elixir", "Music"]
+tags: ["Elixir", "Music", "Chord"]
 related: ["/blog/2018/07/30/voice-leading-with-elixir/", "/blog/2018/08/13/algorithmically-fingering-guitar-chords-with-elixir/"]
 image: "https://s3-us-west-1.amazonaws.com/www.east5th.co/img/computing-fingering-distance-with-dr-levenshtein/1.png"
 ---
