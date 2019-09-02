@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Animating a Canvas with Phoenix LiveView"
-excerpt: "LiveView's new hook functinality have opened the doors to a whole new world of possibilities. Get a taste of what's possible by checking out how we can render an HTML5 canvas based on real-time data provided by the server."
+excerpt: "LiveView's new hook functinality has opened the doors to a whole new world of possibilities. Get a taste of what's possible by checking out how we can animate an HTML5 canvas based on real-time data provided by the server."
 author: "Pete Corey"
 date:   2019-09-02
 tags: ["Elixir", "Phoenix", "LiveView"]
