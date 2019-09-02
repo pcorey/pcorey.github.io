@@ -297,6 +297,6 @@ We can take things further by generating and animating a much larger set of data
   <img src="/img/2019-09-02-animating-a-canvas-with-phoenix-liveview/particles.png" style=" width: 100%;"/>
 </div>
 
-Be sure to [check out the entire source for this example on Github](https://github.com/pcorey/live_canvas)!
+Is it a good idea to take this approach if your goal is to animate a bunch of particles on the client? __Probably not.__ Is it amazing that LiveView gives us the tools to do this? __Absolutely, yes!__ Be sure to [check out the entire source for this example on Github](https://github.com/pcorey/live_canvas)!
 
 Hooks have opened the doors to a world of new possibilities for LiveView-based applications. I hope this demonstration has given you a taste of those possibilities, and I hope you're as eager as I am to explore what we can do with LiveView moving forward.
