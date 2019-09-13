@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Obverse and Under"
-excerpt: "Have you ever thought of JSON parsing and serialization as a domain transformation? If not, expand your brain a bit with this overview of J's concept of \"obverse\" verbs and the \"under\" conjunction."
+excerpt: "Have you ever thought of JSON parsing and serialization as a domain transformation? If not, forcibly expand your brain a bit with this overview of J's concept of \"obverse\" verbs and the \"under\" conjunction."
 author: "Pete Corey"
 date:   2019-09-13
 tags: ["J"]
