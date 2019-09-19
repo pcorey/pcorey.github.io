@@ -31,7 +31,9 @@
         {% if page.hideFooter != true %}
           {% include footer.html %}
         {% endif %}
+	{% comment %}
         {% include google_analytics.html %}
+	{% endcomment %}
         <script>
             $(".menu-opener").click(function(){
                 $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
