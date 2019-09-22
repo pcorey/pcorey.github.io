@@ -35,7 +35,7 @@ The code that opened my proverbial eyes is the <code class="language-javascript"
 }
 </code></pre>
 
-If you've read my [previous](http://www.1pxsolidtomato.com/2015/04/06/nosql-injection-or-always-check-your-arguments/) [posts](http://www.1pxsolidtomato.com/2015/05/05/meteor-security-in-the-wild/), I hope you'll immediately notice that <code class="language-javascript">userId</code> and <code class="language-javascript">newEmail</code> are not being [checked](http://docs.meteor.com/#/full/check). Can that be exploited? What happens if a malicious user, Mallory, decides to pass in a carefully crafted object as the <code class="language-javascript">userId</code>?
+If you've read my [previous](/blog/2015/04/06/nosql-injection-or-always-check-your-arguments/) [posts](/blog/2015/05/05/meteor-security-in-the-wild/), I hope you'll immediately notice that <code class="language-javascript">userId</code> and <code class="language-javascript">newEmail</code> are not being [checked](http://docs.meteor.com/#/full/check). Can that be exploited? What happens if a malicious user, Mallory, decides to pass in a carefully crafted object as the <code class="language-javascript">userId</code>?
 
 <pre class="language-javascript"><code class="language-javascript">Meteor.call(‘changeEmail', {_id: {$gte: Meteor.userId()}}, ‘mallory@is.evil');
 </code></pre>

@@ -9,7 +9,7 @@ categories:
 tags: ["Meteor", "Security", "Announcement"]
 ---
 
-In response to my last Meteor Black Box post about [Package Scanning](http://www.1pxsolidtomato.com/2015/04/24/black-box-meteor-package-scanning/), I was inspired to build a tool to help improve the safety of the Meteor package ecosystem. That tool is [Package Scan](https://github.com/East5th/package-scan)!
+In response to my last Meteor Black Box post about [Package Scanning](/blog/2015/04/24/black-box-meteor-package-scanning/), I was inspired to build a tool to help improve the safety of the Meteor package ecosystem. That tool is [Package Scan](https://github.com/East5th/package-scan)!
 
 Package Scan is a [Meteor](https://www.meteor.com/) package that will parse your <code class="language-*">.meteor/versions</code> file and compare the packages being used by your project against a list of packages with known security issues. If a vulnerable package is detected, a warning will be shown in your server logs. Package Scan is debug only, so it will never be built into your production application.
 
