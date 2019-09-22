@@ -8,7 +8,7 @@ date:   2016-06-06
 tags: ["Javascript", "Serverless", "MongoDB"]
 ---
 
-Last week I wrote about how excited I was about [AWS Lambda’s pricing model](http://blog.east5th.co/2016/05/24/aws-lambda-first-impressions/). Fueled by that excitement, I spent some time this week experimenting on how I could incorporate [Lambda functions](https://aws.amazon.com/lambda/) into my software development toolbox.
+Last week I wrote about how excited I was about [AWS Lambda’s pricing model](/blog/2016/05/24/aws-lambda-first-impressions/). Fueled by that excitement, I spent some time this week experimenting on how I could incorporate [Lambda functions](https://aws.amazon.com/lambda/) into my software development toolbox.
 
 As a [Meteor](https://www.meteor.com/) developer, I’m fairly intimately associated with [MongoDB](https://www.mongodb.com/) (for better or worse). It goes without saying that any Lambda functions I write will most likely need to interact with a Mongo database in some way.
 

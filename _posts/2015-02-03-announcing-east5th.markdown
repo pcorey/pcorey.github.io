@@ -14,7 +14,7 @@ Throughout my career as a software developer, I’ve come to believe in many ide
 
 I couldn’t be more excited to put these beliefs into practice with [East5th](http://www.east5th.co/).
 
-[1pxsolidtomato](http://1pxsolidtomato.com/) will live on! I’ll continue blogging on a variety of technical topics, but I hope to mix it up with updates on [East5th](http://www.east5th.co/) and my experiences as a business owner. Stay tuned!
+[1pxsolidtomato](/blog/) will live on! I’ll continue blogging on a variety of technical topics, but I hope to mix it up with updates on [East5th](http://www.east5th.co/) and my experiences as a business owner. Stay tuned!
 
 <div style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">
     <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="//www.youtube.com/embed/i3MXiTeH_Pg" frameborder="0" allowfullscreen></iframe>

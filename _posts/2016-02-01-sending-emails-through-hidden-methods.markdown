@@ -18,7 +18,7 @@ When no methods appear in the `Meteor.connection._methodHandlers`{:.language-jav
 
 ## Finding Hidden Methods
 
-If you've read my post on [auditing Meteor methods](http://blog.east5th.co/2015/04/15/black-box-meteor-method-auditing/), you'll remember that even though a method may be hidden from the client, the client is still able to invoke that method. This means that while we may not see any interesting methods defined in the `Meteor.connection._methodHandlers`{:.langauge-javascript} object, we might be able to find interesting method calls being done by the client.
+If you've read my post on [auditing Meteor methods](/blog/2015/04/15/black-box-meteor-method-auditing/), you'll remember that even though a method may be hidden from the client, the client is still able to invoke that method. This means that while we may not see any interesting methods defined in the `Meteor.connection._methodHandlers`{:.langauge-javascript} object, we might be able to find interesting method calls being done by the client.
 
 To find these method calls, I opened up the minified Javascript source of the application, and started searching through the code for `/\.call("/`{:.language-javascript}. Very quickly, I started seeing calls to hidden Meteor methods.
 

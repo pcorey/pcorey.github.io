@@ -8,7 +8,7 @@ date:   2016-03-28
 tags: ["Javascript", "Meteor", "Security"]
 ---
 
-In a previous post, I talked about using [Basic Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basic_access_authentication) to [hide your Meteor application from prying eyes](http://blog.east5th.co/2015/07/06/basic-auth-for-hiding-your-application/). Unfortunately, the most straight-forward way of implementing this kind of protection has its flaws.
+In a previous post, I talked about using [Basic Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basic_access_authentication) to [hide your Meteor application from prying eyes](/blog/2015/07/06/basic-auth-for-hiding-your-application/). Unfortunately, the most straight-forward way of implementing this kind of protection has its flaws.
 
 To see those flaws, let’s imagine that we’ve set up a basic [Meteor](https://www.meteor.com/) application with the `kit:basic-auth`{:.language-javascript} package and a Meteor method:
 
@@ -57,4 +57,4 @@ However, a more straightforward approach to this problem may be to move your app
 
 I'd like to give a massive thanks to [Jesse Rosenberger](https://github.com/abernix) who pointed out this issue to me, and gave me a huge amount of very helpful information and observations.
 
-I'd also like to apologize to anyone hiding applications behind a package-based Basic Auth guard based on my advice. I've updated my [previous post](http://blog.east5th.co/2015/07/06/basic-auth-for-hiding-your-application/) on this subject to reflect what I've learned and pointed out the current shortcomings of this package-based approach.
+I'd also like to apologize to anyone hiding applications behind a package-based Basic Auth guard based on my advice. I've updated my [previous post](/blog/2015/07/06/basic-auth-for-hiding-your-application/) on this subject to reflect what I've learned and pointed out the current shortcomings of this package-based approach.

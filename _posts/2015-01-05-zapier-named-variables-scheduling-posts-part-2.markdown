@@ -8,7 +8,7 @@ date:   2015-01-05
 tags: ["Jekyll", "Zapier"]
 ---
 
-[Last time](http://1pxsolidtomato.com/2014/12/29/scheduling-posts-with-jekyll-github-pages-and-zapier/), I talked about using [Zapier](https://zapier.com/app/dashboard) to schedule [Jekyll](http://jekyllrb.com/) blog posts with [Github Pages](https://pages.github.com/). I briefly touched on how I wished that Zapier had some kind of string manipulation functionality to help pull a schedule date out of the git commit message. Not long after the post went live, [@zapier](https://twitter.com/zapier) sent me a link that helped me accomplish exactly that.
+[Last time](/blog/2014/12/29/scheduling-posts-with-jekyll-github-pages-and-zapier/), I talked about using [Zapier](https://zapier.com/app/dashboard) to schedule [Jekyll](http://jekyllrb.com/) blog posts with [Github Pages](https://pages.github.com/). I briefly touched on how I wished that Zapier had some kind of string manipulation functionality to help pull a schedule date out of the git commit message. Not long after the post went live, [@zapier](https://twitter.com/zapier) sent me a link that helped me accomplish exactly that.
 
 <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/petecorey">@petecorey</a> Awesome stuff Pete! re: string manipulation, we don&#39;t do much on that front but this may help: <a href="https://t.co/PR9WqbMVVO">https://t.co/PR9WqbMVVO</a></p>&mdash; Zapier (@zapier) <a href="https://twitter.com/zapier/status/549637465133182976">December 29, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

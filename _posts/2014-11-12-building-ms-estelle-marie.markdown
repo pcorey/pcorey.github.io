@@ -50,7 +50,7 @@ As with nearly all of my projects, my frontend workflow for this project relied 
 
 ## SVG Logo
 
-In [previous](http://1pxsolidtomato.com/2014/10/08/quest-for-scalable-svg-text/) [posts](http://1pxsolidtomato.com/2014/09/09/responsive-svg-height-issue/), I described creating scaling SVG text. I used a technique like this to manually create the [Ms. Estelle Marie](http://www.msestellemarie.com/) logo. My technique was fairly primitive. I created two text elements, styled them with a Google font and then resized and positioned them until I was happy with the results. Because the SVG element is using a <code class="language-*">viewBox</code> to define its internal coordinate system, the logo can responsively resize to whatever size is needed.
+In [previous](/blog/2014/10/08/quest-for-scalable-svg-text/) [posts](/blog/2014/09/09/responsive-svg-height-issue/), I described creating scaling SVG text. I used a technique like this to manually create the [Ms. Estelle Marie](http://www.msestellemarie.com/) logo. My technique was fairly primitive. I created two text elements, styled them with a Google font and then resized and positioned them until I was happy with the results. Because the SVG element is using a <code class="language-*">viewBox</code> to define its internal coordinate system, the logo can responsively resize to whatever size is needed.
 
 ## Google Fonts
 

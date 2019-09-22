@@ -8,7 +8,7 @@ date:   2015-07-27
 tags: ["Javascript", "Meteor", "Security", "NoSQL Injection", "Announcement"]
 ---
 
-I’ve been shouting about why you should [check](http://docs.meteor.com/#/full/check) all of the user provided arguments in your [Meteor](https://www.meteor.com/) applications for months now. Working with unchecked arguments can lead to [a variety](http://blog.east5th.co/2015/07/21/exploiting-findone-to-aggregate-collection-data/) [of serious](http://blog.east5th.co/2015/06/15/allow-and-deny-challenge-check-yourself/) [security issues](http://blog.east5th.co/2015/04/06/nosql-injection-or-always-check-your-arguments/) in your application.
+I’ve been shouting about why you should [check](http://docs.meteor.com/#/full/check) all of the user provided arguments in your [Meteor](https://www.meteor.com/) applications for months now. Working with unchecked arguments can lead to [a variety](/blog/2015/07/21/exploiting-findone-to-aggregate-collection-data/) [of serious](/blog/2015/06/15/allow-and-deny-challenge-check-yourself/) [security issues](/blog/2015/04/06/nosql-injection-or-always-check-your-arguments/) in your application.
 
 But still, I find myself coming into [client projects](http://www.east5th.co/) and [security assessments](http://assess.east5th.co/) where I see developers forgetting to <code class="language-*">check</code> their arguments!
 

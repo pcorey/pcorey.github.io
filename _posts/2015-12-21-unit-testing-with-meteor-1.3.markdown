@@ -8,7 +8,7 @@ date:   2015-12-21
 tags: ["Javascript", "Meteor", "Testing"]
 ---
 
-It's no secret that [I love testing](http://blog.east5th.co/2015/08/18/the-ecstasy-of-testing/). My ideal testing setup is a neatly mocked, blazingly fast unit test suite backed by a sprinkling of happy-path end-to-end tests as a last bastion against bugs. I want my [test pyramid](http://martinfowler.com/bliki/TestPyramid.html)!
+It's no secret that [I love testing](/blog/2015/08/18/the-ecstasy-of-testing/). My ideal testing setup is a neatly mocked, blazingly fast unit test suite backed by a sprinkling of happy-path end-to-end tests as a last bastion against bugs. I want my [test pyramid](http://martinfowler.com/bliki/TestPyramid.html)!
 
 Until very recently, this setup has been at odds with how Meteor has envisioned software testing. Meteor has always placed more emphasis on end-to-end testing, effectively turning the test pyramid into a deliciously unstable [ice cream cone](http://watirmelon.com/2012/01/31/introducing-the-software-testing-ice-cream-cone/).
 

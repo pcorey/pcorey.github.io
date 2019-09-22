@@ -39,12 +39,12 @@ By passing in an object that houses a [MongoDB query operator](https://docs.mong
 
 Hopefully that quick primer shows you how serious NoSQL injection can be. For more information on this type of vulnerability, check out some of my previous posts:
 
-[NoSQL Injection in Modern Web Applications](http://blog.east5th.co/2016/03/21/nosql-injection-in-modern-web-applications/)<br/>
-[Why You Should Always Check Your Arguments](http://blog.east5th.co/2016/02/29/why-you-should-always-check-your-arguments/)<br/>
-[Rename Your Way to Admin Rights](http://blog.east5th.co/2015/10/19/rename-your-way-to-admin-permissions/)<br/>
-[DOS Your Meteor Application With Where](http://blog.east5th.co/2015/08/10/dos-your-meteor-application-with-where/)<br/>
-[Meteor Security in the Wild](http://blog.east5th.co/2015/05/05/meteor-security-in-the-wild/)<br/>
-[NoSQL Injection - Or, Always Check Your Arguments](http://blog.east5th.co/2015/04/06/nosql-injection-or-always-check-your-arguments/)
+[NoSQL Injection in Modern Web Applications](/blog/2016/03/21/nosql-injection-in-modern-web-applications/)<br/>
+[Why You Should Always Check Your Arguments](/blog/2016/02/29/why-you-should-always-check-your-arguments/)<br/>
+[Rename Your Way to Admin Rights](/blog/2015/10/19/rename-your-way-to-admin-permissions/)<br/>
+[DOS Your Meteor Application With Where](/blog/2015/08/10/dos-your-meteor-application-with-where/)<br/>
+[Meteor Security in the Wild](/blog/2015/05/05/meteor-security-in-the-wild/)<br/>
+[NoSQL Injection - Or, Always Check Your Arguments](/blog/2015/04/06/nosql-injection-or-always-check-your-arguments/)
 
 ## Check to the Rescue - Kind of…
 
@@ -66,7 +66,7 @@ While using `check`{:.language-javascript} correctly can prevent all instances o
 
 Unfortunately, ___using `check`{:.language-javascript} correctly___ can be a significant undertaking. Not only does it require that you explicitly check every argument passed into all of your methods and publications, but it requires that you remember to continue to do so for the lifetime of your application.
 
-Additionally, you must remember to write exhaustive checks. Lax checks will only lead to pain down the road. For example, `check(_id, Match.Any)`{:.language-javascript} or `check(_id, Object)`{:.language-javascript} won’t prevent anyone from passing in a Mongo operator. [Incomplete argument checks](http://blog.east5th.co/2015/08/31/incomplete-argument-checks/) can be just as dangerous as no checks at all.
+Additionally, you must remember to write exhaustive checks. Lax checks will only lead to pain down the road. For example, `check(_id, Match.Any)`{:.language-javascript} or `check(_id, Object)`{:.language-javascript} won’t prevent anyone from passing in a Mongo operator. [Incomplete argument checks](/blog/2015/08/31/incomplete-argument-checks/) can be just as dangerous as no checks at all.
 
 There are tools ([`east5th:check-checker`{:.language-javascript}](https://github.com/East5th/check-checker), [`audit-argument-checks`{:.language-javascript}](https://atmospherejs.com/meteor/audit-argument-checks), [`aldeed:simple-schema`{:.language-javascript}](https://github.com/aldeed/meteor-simple-schema)) and patterns ([Validated Methods](http://guide.meteor.com/methods.html#validated-method)) designed to overcome these shortcomings, but the truth is that `check`{:.language-javascript} will always be a superfluous security layer that sits on top of your application.
 

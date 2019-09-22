@@ -8,7 +8,7 @@ date:   2016-05-02
 tags: ["Javascript", "Meteor", "Testing"]
 ---
 
-It’s been several months since my [first post on unit testing with Meteor 1.3](http://blog.east5th.co/2015/12/21/unit-testing-with-meteor-1.3/), and Meteor 1.3 has [finally been officially released](http://info.meteor.com/blog/announcing-meteor-1.3)!
+It’s been several months since my [first post on unit testing with Meteor 1.3](/blog/2015/12/21/unit-testing-with-meteor-1.3/), and Meteor 1.3 has [finally been officially released](http://info.meteor.com/blog/announcing-meteor-1.3)!
 
 With this release, Meteor’s new [recommending testing solution](http://guide.meteor.com/testing.html) is the all-in-one `meteor test`{:.language-javascript} command. When you run your application with `meteor test`{:.language-javascript}, it spins up your application server, but only loads your test files and modules explicitly imported by your tests. In theory, you can run your unit tests, integration tests, and (with an extra flag), your end-to-end tags with this tool.
 
@@ -18,7 +18,7 @@ As I mentioned in my last post, I can easily find myself lost on Twitter by the 
 
 ## Dependency Injection Woes
 
-Recently, I’ve been getting feedback from people who read my [Unit Testing With Meteor 1.3](http://blog.east5th.co/2015/12/21/unit-testing-with-meteor-1.3/).
+Recently, I’ve been getting feedback from people who read my [Unit Testing With Meteor 1.3](/blog/2015/12/21/unit-testing-with-meteor-1.3/).
 
 They like the idea of using [Mocha](https://mochajs.org/) directly and bypassing `meteor test`{:.language-javascript} for faster unit test turnarounds, but find the dependency injection technique I described to be too much work in practice. But without dependency injection, how do we get around Meteor’s “magic imports”?
 

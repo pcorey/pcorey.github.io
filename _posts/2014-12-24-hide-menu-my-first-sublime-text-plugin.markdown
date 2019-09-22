@@ -8,7 +8,7 @@ date:   2014-12-24
 tags: ["Python"]
 ---
 
-My new [bspwm setup](http://1pxsolidtomato.com/2014/12/15/joining-the-tiling-wm-master-race/) currently doesn’t have a pretty [GTK](http://www.gtk.org/) theme installed, so the menu in [Sublime Text](http://www.sublimetext.com/3) looks fairly unattractive. With my workflow, whenever I open Sublime Text (<code class="language-*">subl .</code>), the menu is always shown, regardless of if I hid it during my last session. So what’s the solution to hiding the menu at startup? <span style="text-decoration: line-through">Find a plugin, of course! Oh, there are no plugins that do this?</span> Write a plugin, of course!
+My new [bspwm setup](/blog/2014/12/15/joining-the-tiling-wm-master-race/) currently doesn’t have a pretty [GTK](http://www.gtk.org/) theme installed, so the menu in [Sublime Text](http://www.sublimetext.com/3) looks fairly unattractive. With my workflow, whenever I open Sublime Text (<code class="language-*">subl .</code>), the menu is always shown, regardless of if I hid it during my last session. So what’s the solution to hiding the menu at startup? <span style="text-decoration: line-through">Find a plugin, of course! Oh, there are no plugins that do this?</span> Write a plugin, of course!
 
 <a href="http://i.imgur.com/w0JqpLg.png"><img src="http://i.imgur.com/w0JqpLg.png" alt="My current bspwm setup" style="max-width: 100%;"></a>
 

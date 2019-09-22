@@ -12,7 +12,7 @@ Maybe it's the pumpkin pie talking, but the spirit of thankfulness is flowing th
 
 <hr/>
 
-A little over [one year ago](http://blog.east5th.co/2014/12/02/meteor-first-impressions/) I started seriously experimenting with [Meteor](https://www.meteor.com/) as a platform. Coming from a Java and PHP background and cobbling together front-ends with everything from [Flex](http://www.adobe.com/products/flex.html) to [AngluarJS](https://angularjs.org/) and [everything in-between](https://jquery.com/), Meteor was a breath of fresh air. ___It let me focus on getting things done, rather than focusing on how to get things done.___
+A little over [one year ago](/blog/2014/12/02/meteor-first-impressions/) I started seriously experimenting with [Meteor](https://www.meteor.com/) as a platform. Coming from a Java and PHP background and cobbling together front-ends with everything from [Flex](http://www.adobe.com/products/flex.html) to [AngluarJS](https://angularjs.org/) and [everything in-between](https://jquery.com/), Meteor was a breath of fresh air. ___It let me focus on getting things done, rather than focusing on how to get things done.___
 
 The productivity boost I experienced when switching to Meteor was a game changer for my career. At the same time I was first digging into Meteor I decided to pursue full-time self employment. I opened up shop under the [East5th](http://www.east5th.co/) name, and after my first year of business, I fully recognize that much of my success as a freelance developer and consultant is thanks to the technical foundation Meteor and the [Meteor Development Group](https://www.meteor.com/people) built out for me.
 

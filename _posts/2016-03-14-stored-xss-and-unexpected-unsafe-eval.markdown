@@ -8,7 +8,7 @@ date:   2016-03-14
 tags: ["Javascript", "Meteor", "Security"]
 ---
 
-In a [previous post](http://blog.east5th.co/2016/03/07/cross-site-scripting-through-jquery-components/), I discussed the possibility of exposing [Cross Site Scripting](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) (XSS) vulnerabilities in your [Meteor](https://www.meteor.com/) application through the use of [jQuery](https://jquery.com/) components.
+In a [previous post](/blog/2016/03/07/cross-site-scripting-through-jquery-components/), I discussed the possibility of exposing [Cross Site Scripting](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) (XSS) vulnerabilities in your [Meteor](https://www.meteor.com/) application through the use of [jQuery](https://jquery.com/) components.
 
 I gave an example where a malicious string with a `<script>`{:.language-markup} tag was being injected into the DOM through a call to `$.html`{:.language-javascript}. For example:
 

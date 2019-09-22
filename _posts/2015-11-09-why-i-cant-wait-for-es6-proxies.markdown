@@ -19,7 +19,7 @@ Proxies make some incredibly exciting things possible. Imagine a [Meteor method]
 });
 </code></pre>
 
-As [I've talked about in the past](http://blog.east5th.co/2015/08/31/incomplete-argument-checks/), this method exposes our application to a serious security vulnerability. A user can pass in an arbitrary [MongoDB query object](http://docs.meteor.com/#/full/selectors) in the `_id`{:.language-javascript} field of `bar`{:.language-javascript} like this:
+As [I've talked about in the past](/blog/2015/08/31/incomplete-argument-checks/), this method exposes our application to a serious security vulnerability. A user can pass in an arbitrary [MongoDB query object](http://docs.meteor.com/#/full/selectors) in the `_id`{:.language-javascript} field of `bar`{:.language-javascript} like this:
 
 <pre class="language-javascript"><code class="language-javascript">Meteor.call("foo", {_id: {$gte: ""}});
 </code></pre>

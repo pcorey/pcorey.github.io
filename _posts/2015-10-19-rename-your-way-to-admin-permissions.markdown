@@ -68,7 +68,7 @@ What would happen if I [`$rename`{:.language-*}](https://docs.mongodb.org/manual
 }, Meteor.userId());
 </code></pre>
 
-Instantly, various admin controls appear in our browser ([isn't reactivity cool?](http://blog.east5th.co/2014/12/02/meteor-first-impressions/))! And just like that, we gave ourself admin permissions.
+Instantly, various admin controls appear in our browser ([isn't reactivity cool?](/blog/2014/12/02/meteor-first-impressions/))! And just like that, we gave ourself admin permissions.
 
 So, what's going on here?
 
@@ -103,13 +103,13 @@ Most of the admin checks throughout Telescope were checks against the truthiness
 
 After reporting this fix, Sacha immediately fixed this issue in the [v0.21.1](https://github.com/TelescopeJS/Telescope/blob/master/History.md#v0211-slugscope) release of Telescope.
 
-His first fix was to [disallow `$rename` across the board](https://github.com/TelescopeJS/Telescope/commit/7e518007f1bf8b09f88977554abe11f489a2caf1), just like Meteor does [in updates originating from the client](http://blog.east5th.co/2015/07/14/why-is-rename-disallowed/). Later, he went on to `check`{:.language-javascript} that the modifiers being used are either [`$set`{:language-*} or `$unset`{:language-javascript}](https://github.com/TelescopeJS/Telescope/blob/v0.22.1/packages/telescope-users/lib/methods.js#L14).
+His first fix was to [disallow `$rename` across the board](https://github.com/TelescopeJS/Telescope/commit/7e518007f1bf8b09f88977554abe11f489a2caf1), just like Meteor does [in updates originating from the client](/blog/2015/07/14/why-is-rename-disallowed/). Later, he went on to `check`{:.language-javascript} that the modifiers being used are either [`$set`{:language-*} or `$unset`{:language-javascript}](https://github.com/TelescopeJS/Telescope/blob/v0.22.1/packages/telescope-users/lib/methods.js#L14).
 
 <hr/>
 
 MongoDB modifier objects can be very difficult to work with, especially in the context of security. You may be preventing `$set`{:.language-*} updates against certain fields, but are you also preventing `$inc`{:.language-*} updates, or even `$bin`{:.language-*} updates? Are you disallowing `$push`{:.language-*}, but forgetting `$addToSet`{:.language-*}? Are you appropriately handling `$rename`{:.language-javascript} when dealing with raw modifier objects?
 
-All of these things need to be taken into consideration when [writing collection validators](http://blog.east5th.co/2015/06/15/allow-and-deny-challenge-check-yourself/), or accepting modifier object from clients in your Meteor methods. It's often a better solution to whitelist the modifiers you expect, and disallow the rest.
+All of these things need to be taken into consideration when [writing collection validators](/blog/2015/06/15/allow-and-deny-challenge-check-yourself/), or accepting modifier object from clients in your Meteor methods. It's often a better solution to whitelist the modifiers you expect, and disallow the rest.
 
 <hr/>
 

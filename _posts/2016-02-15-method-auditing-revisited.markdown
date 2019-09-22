@@ -8,11 +8,11 @@ date:   2016-02-15
 tags: ["Meteor", "Security", "NoSQL Injection"]
 ---
 
-In the past I've written about how a potentially malicious user can [view all of the isometrically defined methods](http://blog.east5th.co/2015/04/15/black-box-meteor-method-auditing/) in your [Meteor](https://www.meteor.com/) application. By inspecting the `Meteor.connection._methodHandlers`{:.language-javascript} object on the client, they can see all client-side executable instances of your methods, which in most cases are identical to your server-side executable methods. This lets an attacker identify weaknesses in your application security that may lead to an attack.
+In the past I've written about how a potentially malicious user can [view all of the isometrically defined methods](/blog/2015/04/15/black-box-meteor-method-auditing/) in your [Meteor](https://www.meteor.com/) application. By inspecting the `Meteor.connection._methodHandlers`{:.language-javascript} object on the client, they can see all client-side executable instances of your methods, which in most cases are identical to your server-side executable methods. This lets an attacker identify weaknesses in your application security that may lead to an attack.
 
 `Meteor.connection._methodHandlers`{:.language-javascript} only poses a potential problem for methods defined in a shared location. Methods defined in a `server.js`{:.language-bash} file, or within a `server/`{:.language-bash} folder will never be shipped to the client, and won't appear in the `_methodHandlers`{:.language-javascript} object.
 
-However, defining methods in server-only locations doesn't mean your methods are free from prying eyes! Depending on how your application is structured, it may still be possible for an attacker to [find and exploit these methods](http://blog.east5th.co/2016/02/01/sending-emails-through-hidden-methods/).
+However, defining methods in server-only locations doesn't mean your methods are free from prying eyes! Depending on how your application is structured, it may still be possible for an attacker to [find and exploit these methods](/blog/2016/02/01/sending-emails-through-hidden-methods/).
 
 ## Source Snooping
 
@@ -36,7 +36,7 @@ When the Meteor application is minified, the `Meteor`{:.language-javascript} obj
 
 <img src="https://s3-us-west-1.amazonaws.com/www.1pxsolidtomato.com/call.png" style="max-width: 100%">
 
-For example, in the above screenshot we can see a call to a Meteor method called `"increasePostViews"`{:.language-javascript}. This method is taking two arguments. I wonder if both of those arguments [are being checked](http://blog.east5th.co/2015/07/27/check-checker-checks-your-checks/)?
+For example, in the above screenshot we can see a call to a Meteor method called `"increasePostViews"`{:.language-javascript}. This method is taking two arguments. I wonder if both of those arguments [are being checked](/blog/2015/07/27/check-checker-checks-your-checks/)?
 
 ## Watching the Wire
 

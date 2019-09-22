@@ -8,7 +8,7 @@ date:   2015-08-10
 tags: ["Javascript", "Meteor", "Security", "NoSQL Injection"]
 ---
 
-If you’ve read my previous posts, you’ll know that [I talk](http://blog.east5th.co/2015/07/14/why-is-rename-disallowed/) [quite a bit](http://blog.east5th.co/2015/07/21/exploiting-findone-to-aggregate-collection-data/) [about the dangers](http://blog.east5th.co/2015/06/15/allow-and-deny-challenge-check-yourself/) of [not checking](http://blog.east5th.co/2015/05/05/meteor-security-in-the-wild/) your method and publication arguments. These posts usually boil down to the dangers of letting users pass arbitrary data into your collection query objects. These types of vulnerabilities usually take the form of data leakage, or unauthorized data modifications (which are very serious issues), but it's also possible to completely hang an application with a well-crafted query.
+If you’ve read my previous posts, you’ll know that [I talk](/blog/2015/07/14/why-is-rename-disallowed/) [quite a bit](/blog/2015/07/21/exploiting-findone-to-aggregate-collection-data/) [about the dangers](/blog/2015/06/15/allow-and-deny-challenge-check-yourself/) of [not checking](/blog/2015/05/05/meteor-security-in-the-wild/) your method and publication arguments. These posts usually boil down to the dangers of letting users pass arbitrary data into your collection query objects. These types of vulnerabilities usually take the form of data leakage, or unauthorized data modifications (which are very serious issues), but it's also possible to completely hang an application with a well-crafted query.
 
 Let’s dig into an example to see how this can happen and what we can do to prevent it!
 
