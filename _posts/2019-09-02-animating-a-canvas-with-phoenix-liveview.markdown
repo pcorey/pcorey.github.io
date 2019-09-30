@@ -334,4 +334,4 @@ import { Socket } from "phoenix";
 let liveSocket = new LiveSocket("/live", Socket, { hooks });
 </code></pre>
 
-And that's all there is to it! Our LiveView-powered confetti generator is back up and running with the addition of a small layer of markup. For more information on this update, [be sure to check out this issue I filed](https://github.com/phoenixframework/phoenix_live_view/issues/388) to try to get clarity on the situation. And I'd like to give a huge thanks to Joxy for doing all the hard work on putting this fix together!
+And that's all there is to it! Our LiveView-powered confetti generator is back up and running with the addition of a small layer of markup. For more information on this update, [be sure to check out this issue I filed](https://github.com/phoenixframework/phoenix_live_view/issues/388) to try to get clarity on the situation. And I'd like to give a huge thanks to Joxy for doing all the hard work in putting this fix together!
