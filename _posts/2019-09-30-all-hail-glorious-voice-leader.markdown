@@ -6,6 +6,7 @@ author: "Pete Corey"
 date:   2019-09-30
 tags: ["Announcement", "Music", "Glorious Voice Leader"]
 related: []
+image: "/img/2019-09-30-all-hail-glorious-voice-leader/cmaj7.png"
 ---
 
 I’ve been writing code that generates guitar chords [for over a year now](http://www.petecorey.com/blog/tags/#music), in [various languages](https://github.com/pcorey/chord) and with varying degrees of success. My newest addition to this family of chord-creating programs is [Glorious Voice Leader](https://www.gloriousvoiceleader.com/)!
