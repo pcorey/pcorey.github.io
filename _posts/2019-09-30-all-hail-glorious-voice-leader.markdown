@@ -37,7 +37,7 @@ __Choose your Cmaj7 voicing:__
 
 <div id="c" style="width: 100%;"></div>
 
-That's it! With Glorious Voice Leader's help, we've come up with an entire ii-V-I chord progression. Grab yourself a guitar and play through the whole progression. I'm willing to bet it sounded pretty nice.
+That's it! With Glorious Voice Leader's help, we've come up with an entire ii-V-I chord progression. Grab yourself a guitar and play through the whole progression. I'm willing to bet it sounds pretty nice.
 
 For this example, we’ve embedded a small, reluctant version of Glorious Voice Leader directly into this page. [Check out the above example in its full-fledged glory](https://www.gloriousvoiceleader.com/#eJyFzrsKAjEQheF3mXqQmUlmc3mVkGKFFIvBoMZClry7iyAKinY/p/g4aYVDuUGknYhaZq9KJEFVHcK5tQ5REE7XuS59KReIKREadMiUM8Kx9ce4ZZ33pW69joEv1Gsw1isbT84I6Ydlf1vPE+4NtcoSxAarYhxPk/uO8l+URr4DVgNJ1A==) at the Glorious Voice Leader website. If you're eager for another example, here's [the entire series of diatonic seventh chords descending in fourths](https://www.gloriousvoiceleader.com/#eJyN08FuwjAMBuB36TmabMd2HF6l6oFJHNDQ0DZ2mFDffWmaQCg5cGmq1Or/1XHH6/Bx+Bt28AZMIuCNfBT2JOSG7/P5kh654et3fzpejoefYTeO4NgFhzhNbvg8X9ZNcgiTG3FdvIvpyg5pKTrt3w+nVHUdlqr8Qqw3qTKvS226mWd3A6H5GBMoiGoktfCKA52lZNow4JGRinIodRTLxlw/XVoOqrCZBlQTUnrSeKclqelKzE2xjAldDJXsikp1XQtig4HUE6+B0AJCOq3IHU7YcjATVlTl2LY1obQmbjTWYrixGEamoBDBlDjqKxLK6avHO+lJqCRXUSrrSWIjUZTAxssAp9nxL/WEHgyaVdKX3AVaZNJKqJEEgNSLQMbMAUz6o7uVSElfPFw8G4k0yYuIG9FNEhoJg7B4NSCJpgrPx9P5i2q85HFZWf6Rco+WMjCV5lsKzNM/8YQgEQ==), as suggested by Glorious Voice Leader.
 
