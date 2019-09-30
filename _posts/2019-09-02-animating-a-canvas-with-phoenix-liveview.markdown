@@ -300,3 +300,38 @@ We can take things further by generating and animating a much larger set of data
 Is it a good idea to take this approach if your goal is to animate a bunch of particles on the client? __Probably not.__ Is it amazing that LiveView gives us the tools to do this? __Absolutely, yes!__ Be sure to [check out the entire source for this example on Github](https://github.com/pcorey/live_canvas)!
 
 Hooks have opened the doors to a world of new possibilities for LiveView-based applications. I hope this demonstration has given you a taste of those possibilities, and I hope you're as eager as I am to explore what we can do with LiveView moving forward.
+
+## Update: 9/30/2019
+
+The technique of using both `phx-hook`{:.language-javascript} and `phx-update="ignore"`{:.language-javascript} on a single component no longer works as of `phoenix_live_view`{:.language-javascript} version `0.2.0`{:.language-javascript}. The `"ignore"`{:.language-javascript} update rule causes our hook's `updated`{:.language-javascript} callback to not be called with updates.
+
+[Joxy](https://twitter.com/joxyandsuch) pointed this issue out to me, and helped me come up with a workaround. The solution we landed on is to wrap our `canvas`{:.language-javascript} component in another DOM element, like a `div`{:.language-javascript}. We leave our `phx-update="ignore"`{:.language-javascript} on our canvas to preserve our computed width and height attributes, but move our `phx-hook`{:.language-javascript} and data attributes to the wrapping `div`{:.language-javascript}:
+
+<pre class="language-markup"><code class="language-markup">
+&lt;div
+  phx-hook="canvas"
+  data-particles="&lt;%= Jason.encode!(@particles) %>"
+>
+  &lt;canvas phx-update="ignore">
+    Canvas is not supported!
+  &lt;/canvas>
+&lt;/div>
+</code></pre>
+
+In the `mounted`{:.language-javascript} callback of our `canvas`{:.language-javascript} hook, we need to look to the first child of our `div`{:.language-javascript} to find our `canvas`{:.language-javascript} element:
+
+<pre class="language-javascript"><code class="language-javascript">
+mounted() {
+  let canvas = this.el.firstElementChild;
+  ...
+}
+</code></pre>
+
+Finally, we need to pass a reference to a Phoenix `Socket`{:.language-javascript} directly into our `LiveSocket`{:.language-javascript} constructor to be compatible with our new version of `phoenix_live_view`{:.language-javascript}:
+
+<pre class="language-javascript"><code class="langauge-javascript">
+import { Socket } from "phoenix";
+let liveSocket = new LiveSocket("/live", Socket, { hooks });
+</code></pre>
+
+And that's all there is to it! Our LiveView-powered confetti generator is back up and running with the addition of a small layer of markup. For more information on this update, [be sure to check out this issue I filed](https://github.com/phoenixframework/phoenix_live_view/issues/388) to try to get clarity on the situation. And I'd like to give a huge thanks to Joxy for doing all the hard work on putting this fix together!
