@@ -5,11 +5,11 @@ excerpt: "Things are moving fast in the LiveView world. If you're using LiveView
 author: "Pete Corey"
 date:   2019-10-01
 tags: ["Elixir", "Phoenix", "LiveView"]
-related: ["/2019/09/02/animating-a-canvas-with-phoenix-liveview"]
+related: ["/blog/2019/09/02/animating-a-canvas-with-phoenix-liveview"]
 image: "/img/2019-09-02-animating-a-canvas-with-phoenix-liveview/particles.png"
 ---
 
-In my previous post on [animating an HTML5 canvas using Phoenix LiveView](/2019/09/02/animating-a-canvas-with-phoenix-liveview), we used both a `phx-hook`{:.language-javascript} attribute and a `phx-update="ignore"`{:.language-javascript} attribute simultaneously on a single DOM element. The goal was to ignore DOM updates (`phx-update="ignore"`{:.language-javascript}), while still receiving updated data from our server (`phx-hook`{:.language-javascript}) via our `data-particles`{:.language-javascript} attribute.
+In my previous post on [animating an HTML5 canvas using Phoenix LiveView](/blog/2019/09/02/animating-a-canvas-with-phoenix-liveview), we used both a `phx-hook`{:.language-javascript} attribute and a `phx-update="ignore"`{:.language-javascript} attribute simultaneously on a single DOM element. The goal was to ignore DOM updates (`phx-update="ignore"`{:.language-javascript}), while still receiving updated data from our server (`phx-hook`{:.language-javascript}) via our `data-particles`{:.language-javascript} attribute.
 
 Unfortunately, the technique of using both `phx-hook`{:.language-javascript} and `phx-update="ignore"`{:.language-javascript} on a single component no longer works as of `phoenix_live_view`{:.language-javascript} version `0.2.0`{:.language-javascript}. The `"ignore"`{:.language-javascript} update rule causes our hook's `updated`{:.language-javascript} callback to not be called with updates. In hindsight, the previous behavior doesn't even make sense, and the new behavior seems much more consistent with the metaphors in play.
 
