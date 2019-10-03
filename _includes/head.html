@@ -17,6 +17,10 @@
     <meta name="google-site-verification" content="ut-g0UTIu8DWrEtUvWSXrVlCq1exF4YD54ANC-c9rsk" />
     <link rel="icon" type="image/png" href="{{ "/img/favicon.png?version=04172019" | prepend: site.baseurl }}">
 
+    {% if page.words %}
+        <meta name="words" content="{{page.words}}">
+    {% endif  %}
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/normalize.css?version=04172019" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/prism.css?version=04172019" | prepend: site.baseurl }}">
