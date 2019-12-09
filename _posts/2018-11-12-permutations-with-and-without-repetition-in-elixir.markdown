@@ -106,7 +106,7 @@ We've been trying to find permutations where repetitions of elements from `list`
 It turns out that the solution is fairly straight-forward. When we generate our set of sub-permutations, or `tail`{:.language-elixir} values, we can simply pass in `list`{:.language-elixir} without the current value of `head`{:.language-elixir}:
 
 <pre class='language-elixir'><code class='language-elixir'>
-def with_repetitions(list, k) do
+def without_repetitions(list, k) do
   for head <- list, tail <- with_repetitions(list -- [head], k - 1), 
     do: [head | tail]
 end
