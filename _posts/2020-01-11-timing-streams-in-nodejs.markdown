@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Timing Streams in Node.js"
-excerpt: "Tasked with optimizing a Node.js stream-based pipeline, my first step was figuring out the runtime duration of each stage of the pipeline. Check out this small helper function I wrote that does just that."
+excerpt: "I've been tasked with speeding up a Node.js stream-based pipeline. The first step of making something faster is figuring out how slow it is. Check out this small helper function I wrote to do just that!"
 author: "Pete Corey"
 date:   2020-01-11
 tags: ["Javascript", "Streams"]
