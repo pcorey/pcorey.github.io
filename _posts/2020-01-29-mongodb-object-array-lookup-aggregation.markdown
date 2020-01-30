@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MongoDB Object Array Lookup Aggregation"
-excerpt: ""
+excerpt: "It turns out looking up documents who's ID exists as a field on an object in an array is no easy task for MongoDB. Come with me on a journey as we delve into a six stage aggregation pipeline that does just that."
 author: "Pete Corey"
 date:   2020-01-29
 tags: ["Javascript", "MongoDB"]
