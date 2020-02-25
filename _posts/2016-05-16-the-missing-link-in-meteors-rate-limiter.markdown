@@ -8,6 +8,14 @@ date:   2016-05-16
 tags: ["Javascript", "Meteor", "Security"]
 ---
 
+{% capture correction %}
+I was contacted on __February 25th, 2020__, by Ross Newton, who informed me that this article may no longer be correct or relevant.
+
+> In the Meteor docs for [DDPRateLimiter](https://docs.meteor.com/api/methods.html#ddpratelimiter), they have updated it to now allow rules to be created on an actual connectionId. As I understand it, this would effectively solve the problem that your blog article is about. The fact that connections are not being rate limited.
+{% endcapture %}
+
+{% include correction.html content=correction %}
+
 Meteor’s [`DDPRateLimiter`{:.language-javascript}](http://docs.meteor.com/#/full/ddpratelimiter) was released into Meteor in version 1.2 with surprisingly little fanfare. I say this is surprising because `DDPRateLimiter`{:.language-javascript} helps minimize one of the most prevalent risks found in nearly all Meteor applications: [Denial of Service attacks](https://www.owasp.org/index.php/Denial_of_Service).
 
 By putting hard limits on the rate at which people can call your methods and subscribe to your publications, you prevent them from being able to overrun your server with these potentially expensive and time consuming requests.

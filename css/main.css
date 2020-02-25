@@ -317,3 +317,21 @@ pre[class*="language-"] .information {
     font-size: 2rem;
     font-weight: 400;
 }
+
+
+
+
+
+
+.correction {
+    background-color: #f8f8f8;
+    padding: 2em;
+}
+
+.correction *:nth-child(1) {
+    margin-top: 0;
+}
+
+.correction *:last-child {
+    margin-bottom: 0;
+}
