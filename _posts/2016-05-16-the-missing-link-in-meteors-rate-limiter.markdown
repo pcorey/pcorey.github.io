@@ -9,7 +9,7 @@ tags: ["Javascript", "Meteor", "Security"]
 ---
 
 {% capture correction %}
-I was contacted on __February 25th, 2020__, by Ross Newton, who informed me that this article may no longer be correct or relevant.
+I was informed on __February 25th, 2020__ that this article may no longer be correct or relevant.
 
 > In the Meteor docs for [DDPRateLimiter](https://docs.meteor.com/api/methods.html#ddpratelimiter), they have updated it to now allow rules to be created on an actual connectionId. As I understand it, this would effectively solve the problem that your blog article is about. The fact that connections are not being rate limited.
 {% endcapture %}
