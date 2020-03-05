@@ -7,6 +7,12 @@ date:   2017-07-31
 tags: ["Javascript", "GraphQL", "Apollo", "Offline"]
 ---
 
+{% capture correction %}
+Be aware that this article was written using Apollo Client version 1, which internally uses Redux to manage its state. __This technique of implementing offline support will not work with later versions of Apollo Client.__
+{% endcapture %}
+
+{% include correction.html content=correction %}
+
 Last week we started a deep dive into adding offline support to a [React](https://facebook.github.io/react/) application using a [GraphQL data layer](http://graphql.org/) powered by [Apollo](http://www.apollodata.com/).
 
 Thanks to out of the box features provided by [Apollo Client](http://dev.apollodata.com/?_ga=2.269348409.97412003.1501272917-1726448265.1489453690), and a little extra help provided by [Redux Offline](https://github.com/jevakallio/redux-offline) and [Redux Persist](https://github.com/rt2zz/redux-persist), we’ve managed to get our Apollo queries persisting through page loads and network disruptions.

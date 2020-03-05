@@ -7,6 +7,12 @@ date:   2017-07-24
 tags: ["Javascript", "GraphQL", "Apollo", "Offline"]
 ---
 
+{% capture correction %}
+Be aware that this article was written using Apollo Client version 1, which internally uses Redux to manage its state. __This technique of implementing offline support will not work with later versions of Apollo Client.__
+{% endcapture %}
+
+{% include correction.html content=correction %}
+
 Ironically, in our ever more connected world, demands for offline capabilities of web applications are growing. Our users (and clients) expect to use rich internet applications while online, offline, and in areas of questionable connectivity.
 
 This can be… difficult.
