@@ -74,4 +74,4 @@ The complete repository for this project [can be found on Github](https://github
 
 <script src="/js/2020-03-16-lissajous-curves/runtime-main.64eabccb.js"></script>
 <script src="/js/2020-03-16-lissajous-curves/2.dc548566.chunk.js"></script>
-<script src="/js/2020-03-16-lissajous-curves/main.1f7a3f4d.chunk.js"></script>
+<script src="/js/2020-03-16-lissajous-curves/main.f1b30a2d.chunk.js"></script>
