@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Glorious Voice Leader Reborn"
-excerpt: ""
+excerpt: "I recently finished a major visual overhaul of my current pet project, Glorious Voice Leader. The redesign was primarily intended to give musicians a (hopefully) more natural interface for working with the tool."
 author: "Pete Corey"
 date:   2020-03-27
 tags: ["Glorious Voice Leader", "Announcement", "Music"]
