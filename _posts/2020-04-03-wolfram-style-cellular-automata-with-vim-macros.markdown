@@ -4,6 +4,7 @@ title:  "Wolfram Style Cellular Automata with Vim Macros"
 excerpt: "Let's use substitutions and recursive macros to generate Wolfram-style cellular automata entirely within Vim. Why? Because it's Friday."
 author: "Pete Corey"
 date:   2020-04-03
+image: "/img/2020-04-03-wolfram-style-cellular-automata-with-vim-macros/rule30.png"
 tags: ["Vim", "Cellular Automata", "Math"]
 related: []
 ---
