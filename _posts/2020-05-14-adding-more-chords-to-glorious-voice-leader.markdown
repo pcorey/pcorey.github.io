@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Adding More Chords to Glorious Voice Leader"
-excerpt: "Algorithmically generating \"all possible\" chord qualities is a suprisingly complex task. Read about how I took a hybrid approach to account for the ambiguities and asymmetries of how humans name chords."
+excerpt: "Algorithmically generating \"all possible\" chord qualities is a surprisingly complex task. Read about how I took a hybrid approach to account for the ambiguities and asymmetries of how humans name chords."
 author: "Pete Corey"
 date:   2020-05-14
 tags: ["Music", "Glorious Voice Leader"]
