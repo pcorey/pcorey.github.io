@@ -3,9 +3,9 @@ layout: post
 title:  "Hello Roguelike"
 excerpt: "Let's take a breather and use a random walk algorithm to generate a roguelike-style dunegon in the browser."
 author: "Pete Corey"
-date:   2020-06-01
+date:   2020-07-01
 tags: ["Gamedev", "Roguelike", "Javascript", "React", "Canvas"]
-image: "/img/2020-06-01-hello-roguelike/roguelike.png"
+image: "/img/2020-07-01-hello-roguelike/roguelike.png"
 related: []
 ---
 
@@ -70,9 +70,9 @@ This is a ridiculously simple algorithm, but what comes out of it absolutely pul
 
 Refresh the page to get more dunegons!
 
-<script src="/js/2020-06-01-hello-roguelike/runtime-main.b70e5729.js"></script>
-<script src="/js/2020-06-01-hello-roguelike/2.fb7ba099.chunk.js"></script>
-<script src="/js/2020-06-01-hello-roguelike/main.df842370.chunk.js"></script>
+<script src="/js/2020-07-01-hello-roguelike/runtime-main.b70e5729.js"></script>
+<script src="/js/2020-07-01-hello-roguelike/2.fb7ba099.chunk.js"></script>
+<script src="/js/2020-07-01-hello-roguelike/main.df842370.chunk.js"></script>
 
 <style>
 canvas {
