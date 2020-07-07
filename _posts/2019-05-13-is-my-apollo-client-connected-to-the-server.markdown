@@ -142,6 +142,6 @@ subscriptionClient.onDisconnected(() =>
 
 And that's all there is to it!
 
-Any time our `SubscriptionClient`{:.language-javascript} detects that it's disconnected from the server, we write `offline: false`{:.language-javascript} into our cache, and any time we connect or reconnect, we write `offline: true`{:.language-javascript}. Our component picks up each of these changes and shows a corresponding message to the user.
+Any time our `SubscriptionClient`{:.language-javascript} detects that it's disconnected from the server, we write `online: false`{:.language-javascript} into our cache, and any time we connect or reconnect, we write `online: true`{:.language-javascript}. Our component picks up each of these changes and shows a corresponding message to the user.
 
 Huge thanks to [this StackOverflow comment](https://stackoverflow.com/questions/50887793/check-for-internet-connectivity-using-websocketlink-from-apollo-link-ws/50893219#50893219) for pointing us in the right direction.
