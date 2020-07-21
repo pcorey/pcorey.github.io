@@ -18,7 +18,7 @@ The progression is simply the [C major](https://en.wikipedia.org/wiki/C_major) s
 
 To break that down further, we're starting on C. Harmonizing C as a diatonic seventh chord in the scale of C major gives us a [Cmaj7](https://en.wikipedia.org/wiki/Major_seventh_chord) chord. Next we’d move down a fourth to F. Harmonizing F as a seventh chord gives us Fmaj7. Next we’d move to B and a [Bm7b5](https://en.wikipedia.org/wiki/Half-diminished_seventh_chord) chord, and continue until we arrive back at C.
 
-video
+<video style="width: 100%;" src="/webm/2020-07-21-the-progression-that-led-me-to-build-glorious-voice-leader/progression.webm" controls></video>
 
 For something that’s basically a glorified scale exercise, this chord progressions sounds _good_. It’s almost... _musical_.
 
