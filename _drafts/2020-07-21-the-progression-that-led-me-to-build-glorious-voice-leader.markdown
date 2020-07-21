@@ -2,7 +2,6 @@
 layout: post
 title:  "The Progression That Led Me to Build Glorious Voice Leader"
 excerpt: "This straight forward chord progression completely changed how I approach playing the guitar, and inspired me to pour hundreds of hours into building Glorious Voice Leader."
-draft: true
 author: "Pete Corey"
 date:   2020-07-21
 tags: ["Music", "Glorious Voice Leader"]
