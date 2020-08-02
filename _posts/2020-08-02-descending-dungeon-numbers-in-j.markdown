@@ -5,7 +5,7 @@ excerpt: "Neil Sloane of the On-Line Encyclopedia of Integer Sequences is featur
 author: "Pete Corey"
 date:   2020-08-02
 tags: ["J", "Numberphile", "Math"]
-image: "/img/2020-08-02-descending-dunegon-numbers-in-j/plot.png"
+image: "/img/2020-08-02-descending-dungeon-numbers-in-j/plot.png"
 related: []
 ---
 
