@@ -241,7 +241,7 @@ defmodule MinimalWeb.Endpoint do
 end
 </code></pre>
 
-The [`__using__/1`{:.language-elixir} macro](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/endpoint.ex#L488-L497) in `Phoenix.Endpoint`{:.language-elixir} does quite a bit of heaving lifting. Among many other things, it loads the endpoint’s [initial configuration](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/endpoint.ex#L499-L515), sets up a [plug pipeline](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/endpoint.ex#L588-L613) using [`Plug.Builder`{:.language-elixir}](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/endpoint.ex#L590), and [defines helper functions](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/endpoint.ex#L621-L634) to describe our endpoint as an OTP process. If you’re curious about how Phoenix works at a low level, start your search here.
+The [`__using__/1`{:.language-elixir} macro](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/endpoint.ex#L488-L497) in `Phoenix.Endpoint`{:.language-elixir} does quite a bit of heaving lifting. Among many other things, it loads the endpoint’s [initial configuration](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/endpoint.ex#L499-L515), sets up a [plug pipeline](https://github.com/phoenixframework/phoenix/blob/858f1ea439e8cef3cb1206812fc41db7199ba884/lib/phoenix/endpoint.ex#L588-L613) using [`Plug.Builder`{:.language-elixir}](https://github.com/phoenixframework/phoenix/blob/858f1ea439e8cef3cb1206812fc41db7199ba884/lib/phoenix/endpoint.ex#L590), and [defines helper functions](https://github.com/phoenixframework/phoenix/blob/858f1ea439e8cef3cb1206812fc41db7199ba884/lib/phoenix/endpoint.ex#L621-L634) to describe our endpoint as an OTP process. If you’re curious about how Phoenix works at a low level, start your search here.
 
 `Phoenix.Endpoint`{:.language-elixir} uses the value we provide in `:otp_app`{:.language-elixir} to look up configuration values for our application. Phoenix will complain if we don’t provide a bare minimum configuration entry for our endpoint, so we’ll add that to our `config/config.exs`{:.language-elixir} file:
 
@@ -288,7 +288,7 @@ end
 
 Once we’ve done that, we can fire up our application using `mix phx.server`{:.language-elixir} or `iex -S mix phx.server`{:.language-elixir} and see that our endpoint is listening on `localhost`{:.language-elixir} port `4000`{:.language-elixir}.
 
-Alternatively, if you want to use our old standby of `mix run`{:.language-elixir}, either configure Phoenix to serve all endpoints on startup, [which is what `mix phx.server`{:.language-elixir} does under the hood](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/mix/tasks/phx.server.ex#L31):
+Alternatively, if you want to use our old standby of `mix run`{:.language-elixir}, either configure Phoenix to serve all endpoints on startup, [which is what `mix phx.server`{:.language-elixir} does under the hood](https://github.com/phoenixframework/phoenix/blob/858f1ea439e8cef3cb1206812fc41db7199ba884/lib/mix/tasks/phx.server.ex#L31):
 
 <pre class='language-elixir'><code class='language-elixir'>
 config :phoenix, :serve_endpoints, true
