@@ -19,12 +19,6 @@ This can be overwhelming to developers new to Phoenix.
 
 To build a better understanding of the framework and how all of its moving pieces interact, let’s strip Phoenix down to its bare bones. Let’s start from zero and slowly build up to a __minimum viable Phoenix application__.
 
-<p style='margin-bottom:-2rem;font-family:"fira-mono",monospace;font-size:0.85rem;color:#aaa;text-align:right;' class="diff-filename">.gitignore</p>
-<pre class='language-elixirDiff'><code class='language-elixirDiff'>
-+.DS_Store
-</code></pre>
-
-
 
 ## [Minimum Viable Elixir]({{page.repo}}/commit/4e2e319595415ff66fdc18679547ac49247979e7)
 
@@ -247,7 +241,7 @@ defmodule MinimalWeb.Endpoint do
 end
 </code></pre>
 
-The [`__using__/1`{:.language-elixir} macro](https://github.com/phoenixframework/phoenix/blob/v1.4/lib/phoenix/endpoint.ex#L488-L497) in `Phoenix.Endpoint`{:.language-elixir} does quite a bit of heaving lifting. Among many other things, it loads the endpoint’s [initial configuration](https://github.com/phoenixframework/phoenix/blob/v1.4/lib/phoenix/endpoint.ex#L499-L515), sets up a [plug pipeline](https://github.com/phoenixframework/phoenix/blob/v1.4/lib/phoenix/endpoint.ex#L588-L613) using [`Plug.Builder`{:.language-elixir}](https://github.com/phoenixframework/phoenix/blob/v1.4/lib/phoenix/endpoint.ex#L590), and [defines helper functions](https://github.com/phoenixframework/phoenix/blob/v1.4/lib/phoenix/endpoint.ex#L621-L634) to describe our endpoint as an OTP process. If you’re curious about how Phoenix works at a low level, start your search here.
+The [`__using__/1`{:.language-elixir} macro](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/endpoint.ex#L488-L497) in `Phoenix.Endpoint`{:.language-elixir} does quite a bit of heaving lifting. Among many other things, it loads the endpoint’s [initial configuration](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/endpoint.ex#L499-L515), sets up a [plug pipeline](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/endpoint.ex#L588-L613) using [`Plug.Builder`{:.language-elixir}](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/endpoint.ex#L590), and [defines helper functions](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/endpoint.ex#L621-L634) to describe our endpoint as an OTP process. If you’re curious about how Phoenix works at a low level, start your search here.
 
 `Phoenix.Endpoint`{:.language-elixir} uses the value we provide in `:otp_app`{:.language-elixir} to look up configuration values for our application. Phoenix will complain if we don’t provide a bare minimum configuration entry for our endpoint, so we’ll add that to our `config/config.exs`{:.language-elixir} file:
 
@@ -294,7 +288,7 @@ end
 
 Once we’ve done that, we can fire up our application using `mix phx.server`{:.language-elixir} or `iex -S mix phx.server`{:.language-elixir} and see that our endpoint is listening on `localhost`{:.language-elixir} port `4000`{:.language-elixir}.
 
-Alternatively, if you want to use our old standby of `mix run`{:.language-elixir}, either configure Phoenix to serve all endpoints on startup, [which is what `mix phx.server`{:.language-elixir} does under the hood](https://github.com/phoenixframework/phoenix/blob/v1.4/lib/mix/tasks/phx.server.ex#L31):
+Alternatively, if you want to use our old standby of `mix run`{:.language-elixir}, either configure Phoenix to serve all endpoints on startup, [which is what `mix phx.server`{:.language-elixir} does under the hood](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/mix/tasks/phx.server.ex#L31):
 
 <pre class='language-elixir'><code class='language-elixir'>
 config :phoenix, :serve_endpoints, true
@@ -371,7 +365,7 @@ And we can instruct our `MinimalWeb.Endpoint`{:.language-elixir} to use our new 
 plug(MinimalWeb.Router)
 </code></pre>
 
-The `Phoenix.Router`{:.language-elixir} module [generates a handful of helpful macros](https://github.com/phoenixframework/phoenix/blob/v1.4/lib/phoenix/router.ex#L216), like [`match`{:.language-elixir}](https://github.com/phoenixframework/phoenix/blob/v1.4/lib/phoenix/router.ex#L433-L435), [`get`{:.language-elixir}, `post`{:.language-elixir}, etc…](https://github.com/phoenixframework/phoenix/blob/v1.4/lib/phoenix/router.ex#L437-L444) and configures itself to a [module-based plug](https://github.com/phoenixframework/phoenix/blob/v1.4/lib/phoenix/router.ex#L288). This is the reason we can seamlessly incorporate it in our endpoint using the `plug`{:.language-elixir} macro.
+The `Phoenix.Router`{:.language-elixir} module [generates a handful of helpful macros](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/router.ex#L216), like [`match`{:.language-elixir}](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/router.ex#L433-L435), [`get`{:.language-elixir}, `post`{:.language-elixir}, etc…](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/router.ex#L437-L444) and configures itself to a [module-based plug](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/router.ex#L288). This is the reason we can seamlessly incorporate it in our endpoint using the `plug`{:.language-elixir} macro.
 
 Now that our router is wired into our endpoint, let’s add a route to our application:
 
@@ -389,7 +383,7 @@ defmodule MinimalWeb.HomeController do
 end
 </code></pre>
 
-`Phoenix.Controller`{:.language-elixir}, like `Phoenix.Endpoint`{:.language-elixir} and `Phoenix.Router`{:.language-elixir} does quite a bit. It [establishes itself as a plug](https://github.com/phoenixframework/phoenix/blob/v1.4/lib/phoenix/controller/pipeline.ex#L7-L37) and by using [`Phoenix.Controller.Pipeline`{:.language-elixir}](https://github.com/phoenixframework/phoenix/blob/v1.4/lib/phoenix/controller.ex#L168), and it uses the `:namespace`{:.language-elixir} module we provide to do some [automatic layout and view module detection](https://github.com/phoenixframework/phoenix/blob/v1.4/lib/phoenix/controller.ex#L170-L171).
+`Phoenix.Controller`{:.language-elixir}, like `Phoenix.Endpoint`{:.language-elixir} and `Phoenix.Router`{:.language-elixir} does quite a bit. It [establishes itself as a plug](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/controller/pipeline.ex#L7-L37) and by using [`Phoenix.Controller.Pipeline`{:.language-elixir}](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/controller.ex#L168), and it uses the `:namespace`{:.language-elixir} module we provide to do some [automatic layout and view module detection](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/controller.ex#L170-L171).
 
  Because our controller module is essentially a glorified plug, we can expect Phoenix to pass `conn`{:.language-elixir} as the first argument to our specified controller function, and any user-provided parameters as the second argument. Just like any other plug’s `call/2`{:.language-elixir} function, our `index/2`{:.language-elixir} should return our (potentially modified) `conn`{:.language-elixir}:
 
@@ -409,7 +403,7 @@ Phoenix.Controller.html(conn, """
 """)
 </code></pre>
 
-If we dig into [`html/2`{:.language-elixir}](https://github.com/phoenixframework/phoenix/blob/v1.4/lib/phoenix/controller.ex#L375-L377), we’ll find that it’s using Plug’s built-in `Plug.Conn.send_resp/3`{:.language-elixir} function:
+If we dig into [`html/2`{:.language-elixir}](https://github.com/phoenixframework/phoenix/blob/714b21d3ab8d0329d26a48cf2cae98427df22a01/lib/phoenix/controller.ex#L375-L377), we’ll find that it’s using Plug’s built-in `Plug.Conn.send_resp/3`{:.language-elixir} function:
 
 <pre class='language-elixir'><code class='language-elixir'>
 Plug.Conn.send_resp(conn, 200, """
