@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Now You're Thinking with Arrays"
-excerpt: ""
+excerpt: "The road to enlightenment is paved with verbs that calculate the discrete derivative of an array of integers. Or something like that..."
 author: "Pete Corey"
 date:   2020-08-08
 tags: ["J", "Math"]
