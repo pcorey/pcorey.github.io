@@ -5,7 +5,7 @@ hideFooter: false
 hideNewsletter: true
 ---
 
-I’m Pete. I'm an independent consulant, remote web developer, and writer based out of <a href="https://www.google.com/maps/place/Denver,+CO/">Denver, Colorado</a>.
+I’m Pete. I'm an independent consultant, remote web developer, and writer based out of <a href="https://www.google.com/maps/place/Denver,+CO/">Denver, Colorado</a>.
 
 Before setting out on my own over five years ago, I spent ten years working as a software developer for companies like <a href="http://www.amazon.com/">Amazon</a>, <a href="https://www.cigital.com/">Cigital</a>, <a href="http://www.tapestrysolutions.com/">Tapestry solutions</a>, and <a href="http://www.surgeforward.com/">Surge Forward</a>. My time in the industry has taught me many things about the software development process, business, and people.
 
