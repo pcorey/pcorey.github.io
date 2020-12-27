@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MongoDB Lookup Aggregation"
-excerpt: ""
+excerpt: "In which a reader and I work together to write a MongoDB aggregation pipeline to reconstruct a tree, where each level of the tree is stored in separate collections."
 author: "Pete Corey"
 date:   2020-12-26
 tags: ["Correspondence", "MongoDB", "Javascript"]
