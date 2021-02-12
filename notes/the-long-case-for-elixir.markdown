@@ -1,6 +1,6 @@
 ---
 layout: work
-title: "The Case for Elixir"
+title: "The Long Case for Elixir"
 hideHeader: true
 hideFooter: true
 hideNewsletter: true
