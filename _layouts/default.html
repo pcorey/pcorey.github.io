@@ -6,12 +6,14 @@
     <body>
 
         <div class="margin" >
-            <div class="header" >
-                <strong>Pete Corey</strong>
-                <a href="/blog/all" >Writing</a>
-                <a href="/work" >Work</a>
-                <a href="mailto:hello@petecorey.com" >Contact</a>
-            </div>
+            {% if page.hideFooter != true %}
+                <div class="header" >
+                    <strong>Pete Corey</strong>
+                    <a href="/blog/all" >Writing</a>
+                    <a href="/work" >Work</a>
+                    <a href="mailto:hello@petecorey.com" >Contact</a>
+                </div>
+            {% endif %}
         </div>
 
         {{ content }}
