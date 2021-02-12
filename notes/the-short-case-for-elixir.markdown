@@ -53,6 +53,6 @@ blockquote p {
 
 - It's a new language and ecosystem to learn.
 
-- It’s different than Apogee’s and JACE’s stack. There’s value in consistency.
+- It’s different than our other stacks. There’s value in consistency.
 
 - The backend language would (potentially) be different than the frontend language.

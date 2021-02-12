@@ -88,7 +88,7 @@ This has grown to be a long document... __Things in bold are the important point
 #### It's a new language and ecosystem.
 - Learning a new language is always a struggle, especially when it comes with new concepts like functional programming and Elixir's process model.
 
-#### It’s different than Apogee’s and JACE’s stack.
+#### It’s different than our other stacks.
 - There's value in consistency.
 
 #### The backend language would (potentially) be different than the frontend language.
