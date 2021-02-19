@@ -16,9 +16,9 @@ blockquote p {
 }
 </style>
 
-### Elixir is a fantastic choice for building a fast, scalable, and resilient core that is a joy to develop and maintain. Here’s why.
+### Elixir is a fantastic choice for building a fast, scalable, and resilient server that is a joy to develop and maintain. Here’s why.
 
-I want to acknowledge upfront that we can obviously build the core using Node (we’ve already done it!). We can even make some big improvements over the previous version by swapping out various libraries and making a few architectural tweaks. At the end of the day, it will do what it needs to do.
+I want to acknowledge upfront that we can obviously build the server using Node (we’ve already done it!). We can even make some big improvements over the previous version by swapping out various libraries and making a few architectural tweaks. At the end of the day, it will do what it needs to do.
 
 That said, to build a Node application that achieves the same level of resiliency, robustness, and observability as an Elixir application is a gargantuan effort, and most Node applications just never get there. The end result is an application that _probably_ works _most_ of the time. But when it doesn’t work it’s incredibly difficult to figure out why, and sometimes incredibly difficult and costly to fix.
 
@@ -61,7 +61,7 @@ This has grown to be a long document... __Things in bold are the important point
 - [“Why WhatsApp Only Needs 50 Engineers for Its 900M Users”](https://www.wired.com/2015/09/whatsapp-serves-900-million-users-50-engineers/)
     
 #### There is a community focus on building distributed systems.
-- Like it or not, any web server that scales past a single box is a distributed system. Along with that extra box comes a world of problems you need to watch out for.
+- Like it or not, any web server that scales past a single CPU core is a distributed system. Along with that extra core comes a world of problems you need to watch out for.
 
 #### The documentation is fantastic.
 - The official documentation and guides are amazingly well written and thorough.

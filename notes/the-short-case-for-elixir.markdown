@@ -16,7 +16,7 @@ blockquote p {
 }
 </style>
 
-### Elixir is a fantastic choice for building a fast, scalable, and resilient core that is a joy to develop and maintain. Here’s why.
+### Elixir is a fantastic choice for building a fast, scalable, and resilient server that is a joy to develop and maintain. Here’s why.
 
 - Failures are isolated in Elixir applications. An uncaught exception in Node could and often would crash the entire application.
 
