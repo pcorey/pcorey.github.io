@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Genuary 2021"
+excerpt: "I didn't participate in Genuary this year, but I did put together a few sketches inspired by the prompts."
+author: "Pete Corey"
+date:   2021-02-18
+tags: ["Javascript", "Genuary", "Generative", "Art"]
+related: []
+---
+
+I didn’t participate in [Genuary](https://genuary2021.github.io/) this year, but I was inspired by a few of the submissions I saw to hack together my own sketches. Here’s what I came up with.
+
+I was originally inspired by [this Reddit post on expanding circles](https://www.reddit.com/r/generative/comments/kyb93x/genuary_16_circles_i_contain_multitudes/), so I recreated it and added some extra layers of depth. My kingdom for a plotter and a mechanical pencil:
+
+<div style="width: 100%; margin: 2em auto;">
+  <img src="/img/2021-02-18-genuary-2021/download.png" style=" width: 100%;"/>
+</div>
+
+From there, I thickened the stroke width of each circle, and colored each pixel based on the number of circle intersections there (using [2D SDF](https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm) to check for intersections, and [the cubehelix algorithm](http://www.mrao.cam.ac.uk/~dag/CUBEHELIX/) for coloring). There's some really cool kaleidoscope vibes in some of these variations:
+
+<div style="width: 100%; margin: 2em auto;">
+  <img src="/img/2021-02-18-genuary-2021/glow.png" style=" width: 100%;"/>
+</div>
+
+The SDF technique caught my imagination, so I spent some more time playing with using SDF and cubehelix to render simple circles:
+
+<div style="width: 100%; margin: 2em auto;">
+  <img src="/img/2021-02-18-genuary-2021/download (1).png" style=" width: 100%;"/>
+</div>
+
+<div style="width: 100%; margin: 2em auto;">
+  <img src="/img/2021-02-18-genuary-2021/download (3).png" style=" width: 100%;"/>
+</div>
+
+<div style="width: 100%; margin: 2em auto;">
+  <img src="/img/2021-02-18-genuary-2021/download (4).png" style=" width: 100%;"/>
+</div>
+
+<div style="width: 100%; margin: 2em auto;">
+  <img src="/img/2021-02-18-genuary-2021/download (5).png" style=" width: 100%;"/>
+</div>
+
+<div style="width: 100%; margin: 2em auto;">
+  <img src="/img/2021-02-18-genuary-2021/circles.png" style=" width: 100%;"/>
+</div>
+
+[This post](https://twitter.com/schckngs/status/1353501361032237057) inspired me to play with [turmites](https://en.wikipedia.org/wiki/Turmite) a bit. The <code class="language-*">&lbrace;&lbrace;&lbrace;1, 2, 1}, &lbrace;1, 8, 1}}, &lbrace;&lbrace;1, 2, 1}, &lbrace;0, 2, 0}}}</code> turmite is especially cool. Coloring it based on the number of visits to each cell, and removing the "state lines" shows some interesting structures:
+
+<div style="width: 100%; margin: 2em auto;">
+  <img src="/img/2021-02-18-genuary-2021/download (6).png" style=" width: 100%;"/>
+</div>
+
+While I didn’t officially participate, I had a lot of fun with Genuary this year.
