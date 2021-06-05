@@ -76,7 +76,7 @@ To reduce our list of lists of permutations, we need to append each list of perm
 This will order our permutations in lexical order (assuming our initial `list`{:.language-elixir} was sorted). If we wanted our final set of permutations in reverse order, we could switch the order of our concatenation:
 
 <pre class='language-elixir'><code class='language-elixir'>
-|> Enum.reduce(&(&2 ++ &1))
+|> Enum.reduce(&(&1 ++ &2))
 </code></pre>
 
 Or we could just use `Kernel.++/2`{:.language-elixir} to accomplish the same thing:
@@ -107,7 +107,7 @@ It turns out that the solution is fairly straight-forward. When we generate our 
 
 <pre class='language-elixir'><code class='language-elixir'>
 def without_repetitions(list, k) do
-  for head <- list, tail <- with_repetitions(list -- [head], k - 1), 
+  for head <- list, tail <- without_repetitions(list -- [head], k - 1), 
     do: [head | tail]
 end
 </code></pre>
