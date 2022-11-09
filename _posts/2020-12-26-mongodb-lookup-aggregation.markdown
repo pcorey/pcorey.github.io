@@ -18,7 +18,8 @@ Recently, I received an email from a reader asking for tips on writing a MongoDB
 
 > The end goal is to write an aggregation that fleshes out every layer of the tree:
 
-<blockquote><pre class='language-javascript'><code class='language-javascript'>{
+<blockquote><pre class='language-javascript'><code class='language-javascript'>
+{
   _id
   B: [
     {
@@ -41,7 +42,8 @@ Hello friend,
 
 I feel your pain. Writing MongoDB aggregation feels like an under-documented dark art. In newer versions of Mongo you can write sub-pipelines under lookups. I think this will get you where you want to go:
 
-<pre class='language-javascript'><code class='language-javascript'>db.getCollection('a').aggregate([
+<pre class='language-javascript'><code class='language-javascript'>
+db.getCollection('a').aggregate([
   {
     $lookup: {
       from: 'b',
