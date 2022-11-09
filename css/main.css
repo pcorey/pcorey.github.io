@@ -87,12 +87,16 @@ h3 {
 .nav-block .margin {
 }
 
-pre[class*="language-"] {
+pre {
     margin: 0 -2em;
     padding: 0.4rem 2em 2em;
 }
 
-code[class*="language-"], pre[class*="language-"] {
+pre.highlight {
+    padding: 2rem;
+}
+
+code, pre, pre > code {
     font-family: 'fira-mono', monospace;
     line-height: 1.6;
     text-shadow: none;
@@ -100,21 +104,21 @@ code[class*="language-"], pre[class*="language-"] {
     font-weight: bold;
 }
 
-:not(pre) > code[class*="language-"] {
+:not(pre) > code {
     border-radius: 0;
     background: transparent !important;
 }
-:not(pre) > code[class*="language-"],
-:not(pre) > code[class*="language-"] .token {
+:not(pre) > code,
+:not(pre) > code .token {
     font-weight: bold;
 }
 
-a > code[class*="language-"],
-a > code[class*="language-"] .token {
+a > code,
+a > code .token {
     color: #FF0055 !important;
 }
 
-:not(pre) > code[class*="language-"], pre[class*="language-"] {
+:not(pre) > code, pre {
     background: #f8f8f8;
     overflow: auto;
 }
@@ -260,7 +264,7 @@ p .feather {
         margin: 0 1em;
         width: auto;
     }
-    pre[class*="language-"] {
+    pre {
         margin: 0;
         padding: 1em 0;
     }
@@ -274,7 +278,7 @@ p .feather {
     margin: 4em 0;
 }
 
-pre[class*="language-"] .information {
+pre .information {
     float: right;
     opacity: .75;
     margin: 0;
