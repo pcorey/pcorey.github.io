@@ -61,6 +61,6 @@ Take a look at an [___example assessment report___](https://docs.google.com/docu
 
 If you value the security of your Meteor application, I’d love to hear from you. Enter your email address below and I’ll send you a short questionnaire about your application. From there, I’ll reach out and start a discussion.
 
-__Unfortunately I’m no longer offering Meteor security assessments as a professional service. If you’re interested in securing your Meteor application, please check out [Secure Meteor](https://www.securemeteor.com/). This post will remain published for historical reasons.__
+<!-- __Unfortunately I’m no longer offering Meteor security assessments as a professional service. If you’re interested in securing your Meteor application, please check out [Secure Meteor](https://www.securemeteor.com/). This post will remain published for historical reasons.__ -->
 
 I’m looking forward to hearing from you!
