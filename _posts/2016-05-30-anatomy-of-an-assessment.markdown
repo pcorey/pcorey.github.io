@@ -8,7 +8,7 @@ date:   2016-05-30
 tags: ["Meteor", "Security", "Process"]
 ---
 
-__Unfortunately I’m no longer offering Meteor security assessments as a professional service. If you’re interested in securing your Meteor application, please check out [Secure Meteor](https://www.securemeteor.com/). This post will remain published for historical reasons.__
+<!-- __Unfortunately I’m no longer offering Meteor security assessments as a professional service. If you’re interested in securing your Meteor application, please check out [Secure Meteor](https://www.securemeteor.com/). This post will remain published for historical reasons.__ -->
 
 I’ve been quitely offering Meteor security assessments as a service for nearly a year now. In that time, I’ve worked with some amazing teams to analyze and assess the state of security in their Meteor applications.
 
