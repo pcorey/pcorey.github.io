@@ -33,7 +33,7 @@ This has grown to be a long document... __Things in bold are the important point
 - __In Elixir, those types of blockages are impossible.__ Erlang/Elixir’s concurrency model uses “pre-emptive” scheduling, instead of Node’s “cooperative” scheduling. Processes are only given a few cycles of CPU time before moving onto the next process, so these kinds of blocks can never happen. A long running, CPU-bound computation won’t block other processes from doing their work.
 
 #### Profiling
-- It’s been __my experience that it’s next to impossible to track down memory leaks, and CPU hogs in a Node app.__ We’ve ran into many of these situations when developing IQD, and we ultimately only found them thanks to intuition and lots of trial and error. Problems in production are even harder to track down. The only way I’ve found is to dump the production database locally and pray you can recreate it.
+- It’s been __my experience that it’s next to impossible to track down memory leaks, and CPU hogs in a Node app.__ We’ve ran into many of these situations when developing services in the past, and we ultimately only found them thanks to intuition and lots of trial and error. Problems in production are even harder to track down. The only way I’ve found is to dump the production database locally and pray you can recreate it.
 - __Elixir's process isolation makes it easy to find slow, or leaky code.__ Erlang’s Observer lets you sort processes by memory usage, CPU cycles, and unprocessed messages. Rowdy processes stand out like sore thumbs. You can connect to Observer to a production Elixir instance and track down issues where they’re happening.
 
 #### Debugging
@@ -77,7 +77,7 @@ This has grown to be a long document... __Things in bold are the important point
 #### Telemetry.
 - Telemetry is a metrics library built into the Elixir core.
 - It integrates automatically with the LiveView dashboard, and can be integrated with other external dataviz tools such as a Grafana/Prometheus stack or Splunk.
-- Lots of libraries are integrating with Telemtry to offer out-of-the-box metrics.
+- Lots of libraries are integrating with Telemetry to offer out-of-the-box metrics.
 
 ### Elixir does have a few downsides. Here they are.
 
