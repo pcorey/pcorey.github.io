@@ -27,6 +27,8 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+include: [ "/.well-known" ]
+
 exclude:
   - node_modules
   - less
