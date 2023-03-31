@@ -48,7 +48,7 @@ blockquote p {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 1.6em;
     font-weight: 800;
     margin: 1em 0;
 }
@@ -93,7 +93,7 @@ pre {
 }
 
 pre.highlight {
-    padding: 2rem;
+    padding: 1rem 2rem;
 }
 
 code, pre, pre > code {
@@ -109,7 +109,7 @@ code, pre, pre > code {
 }
 :not(pre) > code,
 :not(pre) > code .token {
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 a > code,
@@ -120,6 +120,7 @@ a > code .token {
 :not(pre) > code, pre {
     background: #f8f8f8;
     overflow: auto;
+    color: #666;
 }
 
 .margin {
@@ -226,7 +227,7 @@ p .feather {
 
 .header a,
 .header strong {
-    margin: 0 0.5em;
+    margin: 0 1em 0 0;
 }
 
 .hero {
@@ -244,10 +245,10 @@ p .feather {
 
 @media (max-width: 850px) {
     h1 {
-        font-size: 2em;
+        font-size: 1.6em;
     }
     h2 {
-        font-size: 1.5em;
+        font-size: 1.33em;
     }
     h3 {
         font-size: 1.25em;
@@ -274,7 +275,7 @@ p .feather {
 
 
 .post-content {
-    margin: 4em 0;
+    margin: 2rem 0 0 0;
 }
 
 pre .information {
