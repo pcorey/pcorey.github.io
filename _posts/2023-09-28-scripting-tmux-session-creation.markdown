@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Scripting Tmux Session Creation"
-excerpt: ""
+excerpt: "I decided to script my tmux session creation process."
 author: "Pete Corey"
 date:   2023-09-28
 tags: ["Tmux", "Automation"]
