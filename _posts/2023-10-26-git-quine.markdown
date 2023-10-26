@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "Git Quine"
+excerpt: "I spent a day building a self referential git quine."
+author: "Pete Corey"
+date:   2023-10-26
+tags: ["Git", "Quine", "Javascript"]
+related: []
+---
+
+
+
+
+
+Last week I couldn't convince my brain to do work I'd get paid for, so instead I wasted a day writing a "git quine."
+
+The idea is that running a node script in [the `quine` branch](https://github.com/pcorey/git-quine/tree/quine) of this repo will print the (short) hash of the current commit. The code itself contains its own commit hash. Pretty cool! The [`main` branch](https://github.com/pcorey/git-quine/tree/main) shows you how the quine works. It repeatedly generates a random, truncated, SHA1 hash and uses it to replace an output placeholder in the script itself. It then commits the change, compares the randomly generated short hash with the repository's new short hash, and finally either reverts the commit and repeats, or terminates in triumphant glory.
+
+I ran the script for several days, off and on, and eventually landed on this quine:
+
+<div style="width: 100%; margin: 2em auto;">
+  <img src="/img/2023-10-26-git-quine/quine.png" style=" width: 100%;"/>
+</div>
+
+---
+
+I also learned quite a bit about git in the process...
+
+Firstly, the length of a short hash, given with the `--short` flag passed into `git rev-parse`, is variable depending on the number of objects in the repository. If you tell `git rev-parse` that you want a short hash of length `4`, it will give you the smallest possible _unique_ short hash at least four characters in length. If any two objects in your repository have identical four characters short hashes, it will increase the short hash length to five characters and try again.
+
+---
+
+Secondly, resetting commits _will not_ remove them from git. When you repeatedly commit and reverse for hours and hours on end, as I did, you'll end up with millions of objects tracked by git. As a result, the minimum short hash git will generate for your repository will be very long (~10 characters for me).
+
+---
+
+I tried using various commands to remove these unreferenced commits, like `git reflog expire --all --expire=now` (which did nothing), and `git gc --aggressive` (which mysteriously ballooned my `.git` folder in size from 1GB to 14GB) to no avail.
+
+I finally found [this helpful and deeply ungrokable command on StackOverflow](https://stackoverflow.com/a/14729486) that removed all of my unwanted branches:
+
+```sh
+git -c gc.reflogExpire=0 -c gc.reflogExpireUnreachable=0 \
+  -c gc.rerereresolved=0 -c gc.rerereunresolved=0 \
+  -c gc.pruneExpire=now gc "$@"
+```
+
+Thanks [@sswam@sigmoid.social](https://sigmoid.social/@sswam)!
