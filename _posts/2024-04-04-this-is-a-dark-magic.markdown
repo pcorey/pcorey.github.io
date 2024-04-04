@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "This is a dark magic"
+title:  "This is a Dark Magic"
 excerpt: "This is a dark magic, but there is no need to limit yourself."
 author: "Pete Corey"
 date:   2024-04-04
