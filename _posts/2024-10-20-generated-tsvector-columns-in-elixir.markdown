@@ -10,7 +10,7 @@ related: []
 
 I've played with many techniques for adding and maintaining `tsvector` columns in PostgresSQL tables used by my Elixir applications. This is the techique that I've had the most success with. It's easy to set up in a migration, and maintains itself. No need for additional views on top of our tables that require manual refreshes.
 
-Assuming we're in a migration, we can start by creating a function that converts any given parameters into a `tsvector`. Wrap each of the given SQL fragments in a call to `execute/1`:
+Assuming we're in a migration, we can start by creating a function that converts any given parameters into a `tsvector`. Wrap each of the given SQL fragments in a call to [`execute/1`](https://hexdocs.pm/ecto_sql/Ecto.Migration.html#execute/1):
 
 ```sql
 CREATE FUNCTION get_my_table_ts(id bigint, display_name text, description text)
