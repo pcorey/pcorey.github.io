@@ -6,7 +6,7 @@ html {
 }
 
 html {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 body {
@@ -125,8 +125,8 @@ a > code .token {
 
 .margin {
     margin: 0 auto;
-    max-width: 650px;
-    width: 650px;
+    max-width: 80ch;
+    width: 80ch;
 }
 
 .signup-form {
